@@ -406,7 +406,7 @@ include 'components/navbar.php';
 
                 <!-- GDPR & CCPA Notice -->
                 <div
-                    style="background: linear-gradient(135deg, #1a2a3a 0%, #2c3e50 100%); color: white; padding: 30px; border-radius: 24px; margin-top: 20px;">
+                    style="background: var(--bg-gradient-green); color: white; padding: 30px; border-radius: 24px; margin-top: 20px;">
                     <h3 style="color: white; margin-bottom: 16px;"><i class="fas fa-gavel"></i> Additional Information
                         for EEA, UK & California Residents</h3>
                     <p style="margin-bottom: 12px;">If you reside in the European Economic Area (EEA), United Kingdom,
@@ -433,7 +433,7 @@ include 'components/navbar.php';
 <section style="background: #F0F8FF; padding: 80px 0;">
     <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">
         <div class="cta-section"
-            style="text-align: center; background: linear-gradient(135deg, #1a2a3a 0%, #2c3e50 100%); border-radius: 48px; padding: 60px 40px; color: white;">
+            style="text-align: center; background: var(--bg-gradient-green); border-radius: 48px; padding: 60px 40px; color: white;">
             <h2 style="color: white; margin-bottom: 20px;">Have questions about your data?</h2>
             <p style="margin-bottom: 32px;">Our privacy team is here to help. Reach out anytime.</p>
             <div class="cta-buttons" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
