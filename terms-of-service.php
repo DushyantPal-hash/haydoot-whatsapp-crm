@@ -37,16 +37,15 @@ include 'components/navbar.php';
 ?>
 
 <!-- Terms of Service Hero Section -->
-<section class="terms-hero"
-    style="background: linear-gradient(135deg, #F0F8FF 0%, #E8F4FD 100%); padding: 80px 0 60px;">
+<section class="terms-hero" style="background: var(--bg-gradient-green); padding: 80px 0 60px;">
     <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">
         <div style="text-align: center;">
             <span class="security-badge"
                 style="background: rgba(37, 211, 102, 0.1); color: var(--wa-green); margin-bottom: 20px; display: inline-block;">
                 <i class="fas fa-gavel"></i> Legal Agreement
             </span>
-            <h1 style="font-size: 3rem; font-weight: 800; margin-bottom: 20px; color: #1a2a3a;">Terms of Service</h1>
-            <p style="font-size: 1.2rem; color: #4a5b6e; max-width: 800px; margin: 0 auto;">Please read these terms
+            <h1 style="font-size: 3rem; font-weight: 800; margin-bottom: 20px; color: #dde0e2;">Terms of Service</h1>
+            <p style="font-size: 1.2rem; color: #9fafc1; max-width: 800px; margin: 0 auto;">Please read these terms
                 carefully before using HeyDoot. By using our service, you agree to be bound by these terms.</p>
         </div>
     </div>
@@ -55,8 +54,8 @@ include 'components/navbar.php';
 <!-- Last Updated Banner -->
 <section style="background: #fff; border-bottom: 1px solid #eef2f6;">
     <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto; padding: 20px 0;">
-        <div style="background: #F0F8FF; padding: 15px 25px; border-radius: 16px; text-align: center;">
-            <p style="margin: 0; color: #2c3e50;"><i class="fas fa-calendar-alt"
+        <div style="background: var(--bg-gradient-green); padding: 15px 25px; border-radius: 16px; text-align: center;">
+            <p style="margin: 0; color: #d6e0e9;"><i class="fas fa-calendar-alt"
                     style="color: var(--wa-green); margin-right: 10px;"></i> <strong>Effective Date:</strong> January 1,
                 2026 &nbsp;|&nbsp; <strong>Last Updated:</strong> January 15, 2026</p>
         </div>
@@ -449,7 +448,7 @@ include 'components/navbar.php';
 
                 <!-- Complete Agreement -->
                 <div
-                    style="background: linear-gradient(135deg, #1a2a3a 0%, #2c3e50 100%); color: white; padding: 30px; border-radius: 24px; margin-top: 20px;">
+                    style="background: var(--bg-gradient-green); color: white; padding: 30px; border-radius: 24px; margin-top: 20px;">
                     <h3 style="color: white; margin-bottom: 16px;"><i class="fas fa-file-signature"></i> Entire
                         Agreement</h3>
                     <p style="margin-bottom: 0;">These Terms, together with our Privacy Policy, constitute the entire
@@ -465,7 +464,7 @@ include 'components/navbar.php';
 <section style="background: #F0F8FF; padding: 80px 0;">
     <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">
         <div class="cta-section"
-            style="text-align: center; background: linear-gradient(135deg, #1a2a3a 0%, #2c3e50 100%); border-radius: 48px; padding: 60px 40px; color: white;">
+            style="text-align: center; background: var(--bg-gradient-green); border-radius: 48px; padding: 60px 40px; color: white;">
             <h2 style="color: white; margin-bottom: 20px;">Questions about our Terms?</h2>
             <p style="margin-bottom: 32px;">Our legal team is available to address your concerns.</p>
             <div class="cta-buttons" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">

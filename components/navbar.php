@@ -46,7 +46,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
         align-items: center;
         gap: 12px;
         padding: 12px 16px;
-        color: var(--text-color, #333);
+        color: var(--text-color, #b9b9b9);
         text-decoration: none;
         font-size: 14px;
         border-radius: 8px;
@@ -95,14 +95,22 @@ $current_page = basename($_SERVER['PHP_SELF']);
             <div class="nav-item">
                 <a href="<?php echo BASE_URL; ?>/features.php" class="nav-link">Features</a>
                 <div class="dropdown-menu">
-                    <a href="<?php echo BASE_URL; ?>/multi-inbox.php"><i class="fas fa-inbox"></i> Multi-Number
+                    <a href="javascript:void(0)"><i class="fas fa-inbox"></i> Multi-Number
+                        Inbox</a>
+                    <a href="javascript:void(0)"><i class="fas fa-ticket-alt"></i> Tickets &
+                        Tasks</a>
+                    <a href="javascript:void(0)"><i class="fas fa-users"></i> Group
+                        Management</a>
+                    <a href="javascript:void(0)"><i class="fas fa-robot"></i> AI
+                        Automations</a>
+                    <!-- <a href="<?php echo BASE_URL; ?>/multi-inbox.php"><i class="fas fa-inbox"></i> Multi-Number
                         Inbox</a>
                     <a href="<?php echo BASE_URL; ?>/tickets.php"><i class="fas fa-ticket-alt"></i> Tickets &
                         Tasks</a>
                     <a href="<?php echo BASE_URL; ?>/group-management.php"><i class="fas fa-users"></i> Group
                         Management</a>
                     <a href="<?php echo BASE_URL; ?>/automation.php"><i class="fas fa-robot"></i> AI
-                        Automations</a>
+                        Automations</a> -->
                 </div>
             </div>
             <div class="nav-item">
@@ -118,8 +126,8 @@ $current_page = basename($_SERVER['PHP_SELF']);
             </div>
             <a href="<?php echo BASE_URL; ?>/pricing.php" class="nav-link">Pricing</a>
             <a href="<?php echo BASE_URL; ?>/whyus.php" class="nav-link">Why Us</a>
-            <a href="<?php echo BASE_URL; ?>/faq.php" class="nav-link">FAQ</a>
             <a href="<?php echo BASE_URL; ?>/about.php" class="nav-link">About Us</a>
+            <a href="<?php echo BASE_URL; ?>/contact.php" class="nav-link">Contact Us</a>
         </div>
 
         <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>"
@@ -182,10 +190,11 @@ $current_page = basename($_SERVER['PHP_SELF']);
         <a href="<?php echo BASE_URL; ?>/pricing.php" class="mobile-nav-link"><i class="fas fa-tag"></i>
             Pricing</a>
         <a href="<?php echo BASE_URL; ?>/whyus.php" class="mobile-nav-link"><i class="fas fa-star"></i> Why Us</a>
-        <a href="<?php echo BASE_URL; ?>/faq.php" class="mobile-nav-link"><i class="fas fa-question-circle"></i>
-            FAQ</a>
         <a href="<?php echo BASE_URL; ?>/about.php" class="mobile-nav-link"><i class="fas fa-info-circle"></i>
             About Us</a>
+        <a href="<?php echo BASE_URL; ?>/contact.php" class="mobile-nav-link"><i class="fas fa-question-circle"></i>
+            Contact Us</a>
+
 
         <div class="mobile-menu-cta">
             <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>"
