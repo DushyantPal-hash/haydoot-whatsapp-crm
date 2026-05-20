@@ -68,7 +68,7 @@ include 'components/navbar.php';
     .team-avatar {
         width: 120px;
         height: 120px;
-        background: linear-gradient(135deg, var(--wa-green) 0%, #128C7E 100%);
+        background: linear-gradient(135deg, var(--wa-teal) 0%, #128C7E 100%);
         border-radius: 50%;
         margin: 0 auto 20px;
         display: flex;
@@ -92,7 +92,7 @@ include 'components/navbar.php';
         transform: translateX(-50%);
         width: 2px;
         height: 100%;
-        background: linear-gradient(to bottom, var(--wa-green), #eef2f6);
+        background: linear-gradient(to bottom, var(--wa-teal), #eef2f6);
     }
 
     .timeline-item {
@@ -118,7 +118,7 @@ include 'components/navbar.php';
     .timeline-year {
         font-size: 1.2rem;
         font-weight: 800;
-        color: var(--wa-green);
+        color: var(--wa-teal);
         margin-bottom: 8px;
     }
 
@@ -128,7 +128,7 @@ include 'components/navbar.php';
         transform: translateX(-50%);
         width: 16px;
         height: 16px;
-        background: var(--wa-green);
+        background: var(--wa-teal);
         border-radius: 50%;
         top: 20px;
     }
@@ -162,12 +162,12 @@ include 'components/navbar.php';
         justify-content: center;
         margin: 0 auto 20px;
         font-size: 32px;
-        color: var(--wa-green);
+        color: var(--wa-teal);
     }
 
     .feature-pair-badge {
         background: rgba(37, 211, 102, 0.1);
-        color: var(--wa-green);
+        color: var(--wa-teal);
         padding: 6px 16px;
         border-radius: 40px;
         font-size: 0.85rem;
@@ -193,7 +193,7 @@ include 'components/navbar.php';
     .stat-number-modern {
         font-size: 3rem;
         font-weight: 800;
-        color: var(--wa-green);
+        color: var(--wa-teal);
     }
 
     .stat-label-modern {
@@ -233,9 +233,11 @@ include 'components/navbar.php';
     <section style="background: var(--bg-gradient-green); padding: 80px 0 60px;">
         <div class="floating-dots"></div>
         <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto; text-align: center;">
-            <span class="feature-pair-badge"><i class="fas fa-heart"></i> Our Story</span>
+            <span class="feature-pair-badge"
+                style="background: rgba(37, 211, 102, 0.1); color: var( --wa-green); margin-bottom: 20px; display: inline-block;"><i
+                    class="fas fa-heart"></i> Our Story</span>
             <h1 style="font-size: 3rem; font-weight: 800; margin-bottom: 16px; ">About <span
-                    style="color: var(--wa-green);">HeyDoot</span></h1>
+                    style="color: var( --wa-green);">HeyDoot</span></h1>
             <p style="font-size: 1.2rem; color: #cdddef; max-width: 700px; margin: 0 auto;">We're on a mission to
                 simplify WhatsApp communication for businesses worldwide.</p>
         </div>
@@ -248,7 +250,7 @@ include 'components/navbar.php';
                 <div>
                     <span class="feature-pair-badge"><i class="fas fa-bullseye"></i> Our Mission</span>
                     <h2 style="font-size: 2rem; margin-bottom: 20px; color: #1a2a3a;">Empowering Teams with <span
-                            style="color: var(--wa-green);">Seamless WhatsApp Collaboration</span></h2>
+                            style="color: var( --wa-teal);">Seamless WhatsApp Collaboration</span></h2>
                     <p style="font-size: 1.1rem; line-height: 1.6; color: #5a6b7e;">HeyDoot was founded to solve a
                         simple problem: managing WhatsApp communication at scale is broken. Teams jump between phones,
                         lose context, and struggle to collaborate.</p>
@@ -258,7 +260,7 @@ include 'components/navbar.php';
                     <div style="margin-top: 32px;;">
                         <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20HeyDoot"
                             class="btn btn-primary"
-                            style="background: var(--wa-green); border-color: var(--wa-green); padding: 10px"
+                            style="background: var( --wa-teal); border-color: var( --wa-teal); padding: 10px"
                             target="_blank">
                             <i class="fab fa-whatsapp"></i> Join Our Journey
                         </a>
@@ -266,10 +268,10 @@ include 'components/navbar.php';
                 </div>
                 <div
                     style="background: linear-gradient(135deg, #F0F8FF 0%, #E8F4FD 100%); border-radius: 48px; padding: 48px 40px; text-align: center;">
-                    <i class="fas fa-quote-right" style="font-size: 56px; color: var(--wa-green); opacity: 0.3;"></i>
+                    <i class="fas fa-quote-right" style="font-size: 56px; color: var( --wa-teal); opacity: 0.3;"></i>
                     <p style="font-size: 1.3rem; font-weight: 500; color: #1a2a3a; margin-top: 16px;">"Democratizing
                         access to enterprise-grade WhatsApp tools for businesses of all sizes."</p>
-                    <p style="margin-top: 20px; color: var(--wa-green); font-weight: 600;">— HashStudioz Technologies
+                    <p style="margin-top: 20px; color: var( --wa-teal); font-weight: 600;">— HashStudioz Technologies
                     </p>
                 </div>
             </div>
@@ -409,7 +411,7 @@ include 'components/navbar.php';
     </section>
 
     <!-- Leadership Team Section -->
-    <section style="padding: 60px 0; background: #fff;">
+    <!-- <section style="padding: 60px 0; background: #fff;">
         <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">
             <div style="text-align: center; margin-bottom: 48px;">
                 <span class="feature-pair-badge"><i class="fas fa-user-tie"></i> Leadership</span>
@@ -422,7 +424,7 @@ include 'components/navbar.php';
                         <i class="fas fa-user-circle"></i>
                     </div>
                     <h3>Vikram Singh</h3>
-                    <p style="color: var(--wa-green); font-weight: 500;">CEO & Founder</p>
+                    <p style="color: var( --wa-teal); font-weight: 500;">CEO & Founder</p>
                     <p style="color: #5a6b7e; font-size: 0.9rem;">15+ years in SaaS and enterprise software. Visionary
                         behind HeyDoot.</p>
                     <div style="margin-top: 16px;">
@@ -435,7 +437,7 @@ include 'components/navbar.php';
                         <i class="fas fa-user-circle"></i>
                     </div>
                     <h3>Priya Mehta</h3>
-                    <p style="color: var(--wa-green); font-weight: 500;">CTO</p>
+                    <p style="color: var( --wa-teal); font-weight: 500;">CTO</p>
                     <p style="color: #5a6b7e; font-size: 0.9rem;">10+ years in full-stack development and AI systems.
                     </p>
                     <div style="margin-top: 16px;">
@@ -448,7 +450,7 @@ include 'components/navbar.php';
                         <i class="fas fa-user-circle"></i>
                     </div>
                     <h3>Ankit Sharma</h3>
-                    <p style="color: var(--wa-green); font-weight: 500;">Head of Sales</p>
+                    <p style="color: var( --wa-teal); font-weight: 500;">Head of Sales</p>
                     <p style="color: #5a6b7e; font-size: 0.9rem;">Former sales leader at multiple SaaS startups.</p>
                     <div style="margin-top: 16px;">
                         <a href="#" style="color: #1a2a3a; margin: 0 8px;"><i class="fab fa-linkedin"></i></a>
@@ -460,7 +462,7 @@ include 'components/navbar.php';
                         <i class="fas fa-user-circle"></i>
                     </div>
                     <h3>Neha Gupta</h3>
-                    <p style="color: var(--wa-green); font-weight: 500;">Customer Success</p>
+                    <p style="color: var( --wa-teal); font-weight: 500;">Customer Success</p>
                     <p style="color: #5a6b7e; font-size: 0.9rem;">Dedicated to ensuring every customer succeeds.</p>
                     <div style="margin-top: 16px;">
                         <a href="#" style="color: #1a2a3a; margin: 0 8px;"><i class="fab fa-linkedin"></i></a>
@@ -468,15 +470,16 @@ include 'components/navbar.php';
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Built by HashStudioz Section -->
     <section style="background: linear-gradient(135deg, #1a2a3a 0%, #2c3e50 100%); padding: 60px 0;">
         <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto; text-align: center;">
             <div style="max-width: 800px; margin: 0 auto;">
-                <i class="fas fa-code-branch" style="font-size: 48px; color: var(--wa-green); margin-bottom: 24px;"></i>
+                <i class="fas fa-code-branch"
+                    style="font-size: 48px; color: var( --wa-green); margin-bottom: 24px;"></i>
                 <h2 style="color: white; font-size: 2rem; margin-bottom: 16px;">Built with ❤️ by <span
-                        style="color: var(--wa-green);">HashStudioz Technologies</span></h2>
+                        style="color: var( --wa-green);">HashStudioz Technologies</span></h2>
                 <p style="color: #e0e0e0; font-size: 1rem; line-height: 1.6;">HashStudioz is a global technology
                     consulting firm specializing in AI, IoT, and enterprise software solutions. With offices in India,
                     USA, and UK, we've helped 500+ businesses achieve digital transformation.</p>
@@ -498,11 +501,11 @@ include 'components/navbar.php';
                 communication revolution. Start your free trial today.</p>
             <div class="cta-buttons" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
                 <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20start%20a%20free%20trial%20of%20HeyDoot"
-                    class="btn btn-primary btn-lg" style="background: var(--wa-green); border-color: var(--wa-green);"
+                    class="btn btn-primary btn-lg" style="background: var( --wa-green); border-color: var( --wa-teal);"
                     target="_blank">
                     <i class="fab fa-whatsapp"></i> Start Free Trial
                 </a>
-                <a href="/contact" class="btn btn-secondary btn-lg">
+                <a href="<?php echo BASE_URL; ?>/contact.php" class="btn btn-secondary btn-lg">
                     <i class="fas fa-envelope"></i> Contact Us
                 </a>
             </div>

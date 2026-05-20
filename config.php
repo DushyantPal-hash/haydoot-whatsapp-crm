@@ -19,6 +19,7 @@ if ($is_local) {
 define('SITE_NAME', 'HeyDoot');
 define('SITE_EMAIL', 'info@heydoot.com');
 define('PHONE_NUMBER', '+91 97185 17228');
+define('CALL_NUMBER', '+91 950000 69296');
 define('WHATSAPP_NUMBER', '919500069296');
 
 // Start session if needed

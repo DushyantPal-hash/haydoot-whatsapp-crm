@@ -38,7 +38,7 @@ include 'components/navbar.php';
 
 <style>
     .feature-card.popular {
-        border: 2px solid var(--wa-green);
+        border: 2px solid var(--wa-teal);
         background: linear-gradient(135deg, #fff 0%, #F8FAFE 100%);
     }
 
@@ -47,7 +47,7 @@ include 'components/navbar.php';
         top: -50px;
         left: 50%;
         transform: translateX(-50%);
-        background: var(--wa-green);
+        background: var(--wa-teal);
         color: white;
         padding: 6px 18px;
         border-radius: 40px;
@@ -60,7 +60,7 @@ include 'components/navbar.php';
     .price {
         font-size: 3.2rem;
         font-weight: 800;
-        color: var(--wa-green);
+        color: var(--wa-teal);
         margin: 16px 0 8px;
     }
 
@@ -73,7 +73,7 @@ include 'components/navbar.php';
     .price-custom {
         font-size: 2rem;
         font-weight: 700;
-        color: var(--wa-green);
+        color: var(--wa-teal);
         margin: 16px 0 8px;
     }
 
@@ -106,7 +106,7 @@ include 'components/navbar.php';
     }
 
     .feature-list li i {
-        color: var(--wa-green);
+        color: var(--wa-teal);
         width: 20px;
         font-size: 1rem;
     }
@@ -126,7 +126,7 @@ include 'components/navbar.php';
 
     .feature-pair-badge {
         background: rgba(37, 211, 102, 0.1);
-        color: var(--wa-green);
+        color: var(--wa-teal);
         padding: 6px 16px;
         border-radius: 40px;
         font-size: 0.85rem;
@@ -163,7 +163,7 @@ include 'components/navbar.php';
     }
 
     .comparison-table i.fa-check {
-        color: var(--wa-green);
+        color: var(--wa-teal);
     }
 
     .comparison-table i.fa-times {
@@ -186,15 +186,17 @@ include 'components/navbar.php';
     <section style="background: var(--bg-gradient-green); padding: 80px 0 60px;">
         <div class="floating-dots"></div>
         <div class=" container" style="width: 90%; max-width: 1280px; margin: 0 auto; text-align: center;">
-            <span class="feature-pair-badge"><i class="fas fa-tag"></i> Simple, Transparent Pricing</span>
+            <span class="feature-pair-badge"
+                style="background: rgba(37, 211, 102, 0.1); color: var( --wa-green); margin-bottom: 20px; display: inline-block;"><i
+                    class="fas fa-tag"></i> Simple, Transparent Pricing</span>
             <h1 style="font-size: 3rem; font-weight: 800; margin-bottom: 16px;">Choose the <span
-                    style="color: var(--wa-green);">Perfect Plan</span> for Your Team</h1>
+                    style="color: var( --wa-green);">Perfect Plan</span> for Your Team</h1>
             <p style="font-size: 1.2rem; color: #cdddef; max-width: 600px; margin: 0 auto;">No hidden fees, no
                 surprises. Start with a 14-day free trial, cancel anytime.</p>
             <div style="margin-top: 24px;">
                 <span
                     style="display: inline-flex; align-items: center; gap: 8px; background: rgba(37,211,102,0.1); padding: 6px 16px; border-radius: 40px; color: #cdddef;">
-                    <i class="fas fa-check-circle" style="color: var(--wa-green);"></i> <span>14-day free trial on all
+                    <i class="fas fa-check-circle" style="color: var( --wa-green);"></i> <span>14-day free trial on all
                         plans</span>
                 </span>
             </div>
@@ -274,7 +276,7 @@ include 'components/navbar.php';
 
             <!-- Annual Billing Note -->
             <div style="text-align: center; margin-top: 40px; padding: 16px; background: #F0F8FF; border-radius: 48px;">
-                <p style="margin: 0;"><i class="fas fa-gem" style="color: var(--wa-green);"></i> <strong>Save
+                <p style="margin: 0;"><i class="fas fa-gem" style="color: var( --wa-teal);"></i> <strong>Save
                         20%</strong> with annual billing — pay for 10 months, get 2 months free!</p>
             </div>
         </div>
@@ -414,33 +416,33 @@ include 'components/navbar.php';
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
                 <div style="background: #F8FAFE; border-radius: 24px; padding: 24px; text-align: center;">
                     <i class="fas fa-phone-alt"
-                        style="font-size: 40px; color: var(--wa-green); margin-bottom: 16px;"></i>
+                        style="font-size: 40px; color: var( --wa-teal); margin-bottom: 16px;"></i>
                     <h3>Extra WhatsApp Number</h3>
-                    <p style="font-size: 1.5rem; font-weight: 700; color: var(--wa-green);">$10<span
+                    <p style="font-size: 1.5rem; font-weight: 700; color: var( --wa-teal);">$10<span
                             style="font-size: 0.9rem;">/month</span></p>
                     <p style="color: #5a6b7e;">Add additional numbers beyond your plan limit</p>
                 </div>
                 <div style="background: #F8FAFE; border-radius: 24px; padding: 24px; text-align: center;">
                     <i class="fas fa-user-plus"
-                        style="font-size: 40px; color: var(--wa-green); margin-bottom: 16px;"></i>
+                        style="font-size: 40px; color: var( --wa-teal); margin-bottom: 16px;"></i>
                     <h3>Extra Team Member</h3>
-                    <p style="font-size: 1.5rem; font-weight: 700; color: var(--wa-green);">$8<span
+                    <p style="font-size: 1.5rem; font-weight: 700; color: var( --wa-teal);">$8<span
                             style="font-size: 0.9rem;">/month</span></p>
                     <p style="color: #5a6b7e;">Add team members beyond your plan limit</p>
                 </div>
                 <div style="background: #F8FAFE; border-radius: 24px; padding: 24px; text-align: center;">
                     <i class="fas fa-database"
-                        style="font-size: 40px; color: var(--wa-green); margin-bottom: 16px;"></i>
+                        style="font-size: 40px; color: var( --wa-teal); margin-bottom: 16px;"></i>
                     <h3>Extended Chat History</h3>
-                    <p style="font-size: 1.5rem; font-weight: 700; color: var(--wa-green);">$20<span
+                    <p style="font-size: 1.5rem; font-weight: 700; color: var( --wa-teal);">$20<span
                             style="font-size: 0.9rem;">/month</span></p>
                     <p style="color: #5a6b7e;">Upgrade to 2-year chat history retention</p>
                 </div>
                 <div style="background: #F8FAFE; border-radius: 24px; padding: 24px; text-align: center;">
                     <i class="fas fa-shield-alt"
-                        style="font-size: 40px; color: var(--wa-green); margin-bottom: 16px;"></i>
+                        style="font-size: 40px; color: var( --wa-teal); margin-bottom: 16px;"></i>
                     <h3>SLA Guarantee</h3>
-                    <p style="font-size: 1.5rem; font-weight: 700; color: var(--wa-green);">$99<span
+                    <p style="font-size: 1.5rem; font-weight: 700; color: var( --wa-teal);">$99<span
                             style="font-size: 0.9rem;">/month</span></p>
                     <p style="color: #5a6b7e;">99.99% uptime with financial credits</p>
                 </div>
@@ -463,7 +465,7 @@ include 'components/navbar.php';
                 </a>
                 <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>" class="btn btn-cta-white btn-lg"
                     style="background: white; color: #1a2a3a;">
-                    <i class="fas fa-phone-alt"></i> Talk to Sales
+                    <i class="fas fa-volume-control-phone"></i> Talk to Sales
                 </a>
             </div>
         </div>

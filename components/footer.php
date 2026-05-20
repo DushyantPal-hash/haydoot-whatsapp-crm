@@ -23,10 +23,8 @@
             <div class="footer-brand">
                 <div class="logo" style="margin-bottom: 16px;">
                     <div class="logo-icon">
-                        <img src="<?php echo BASE_URL; ?>/assets/icons/favicon.png" alt="Logo"
-                            style="width: 25px; height: 25px;">
+                        <img src="<?php echo BASE_URL; ?>/assets/images/logo/logo-white.png" alt="Logo">
                     </div>
-                    <span>Hey<span style="color: var(--primary);">Doot</span></span>
                 </div>
                 <p>Manage WhatsApp Groups at Scale for Modern Businesses</p>
                 <div class="social-links">
@@ -49,7 +47,8 @@
             </div>
             <div class="footer-links">
                 <h4>Contact</h4>
-                <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>"><i class="fas fa-phone"></i>
+                <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>"><i
+                        class="fas fa-volume-control-phone"></i>
                     <?php echo PHONE_NUMBER; ?>
                 </a>
                 <a href="https://wa.me/919500069296?text=Hi%20Doot%20team%2C%20I%27d%20like%20a%20price%20quote%20for%20the%20Doot%20License.%0A%0ATeam%20size%3A%20%0AExpected%20numbers%3A%20%0AUse%20case%3A%20"

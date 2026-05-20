@@ -233,7 +233,7 @@ include 'components/navbar.php';
             </div>
         </div>
         <div style="margin-top: 48px; text-align: center;">
-            <a href="tel:+91 97185 17228" class="btn btn-ghost-dark btn-md demo-btn"><i class="fas fa-cogs"></i>
+            <a href="tel:+91 9500069296" class="btn btn-ghost-dark btn-md demo-btn"><i class="fas fa-cogs"></i>
                 Explore all triggers <i class="fas fa-arrow-right"></i></a>
         </div>
     </div>
@@ -509,8 +509,10 @@ include 'components/navbar.php';
                 <a href="https://wa.me/919500069296?text=Hi%20Doot%20team%2C%20I%27d%20like%20a%20price%20quote%20for%20the%20Doot%20License.%0A%0ATeam%20size%3A%20%0AExpected%20numbers%3A%20%0AUse%20case%3A%20"
                     class="btn btn-outline-light btn-lg demo-btn"><i class="fab fa-whatsapp"></i> Chat with
                     sales</a>
-                <a href="tel:+91 97185 17228" class="btn btn-cta-white btn-lg trial-btn"><i
-                        class="fas fa-calendar-alt"></i> Book Demo <i class="fas fa-arrow-right"></i></a>
+
+                <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>"
+                    class="btn btn-cta-white btn-lg trial-btn"><i class="fas fa-calendar-alt"></i> Book Demo <i
+                        class="fas fa-arrow-right"></i></a>
             </div>
             <p style="margin-top: 28px; font-size:0.85rem;">No credit card required. Free 14-day trial.</p>
         </div>

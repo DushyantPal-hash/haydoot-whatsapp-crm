@@ -73,7 +73,7 @@ include 'components/navbar.php';
         align-items: center;
         justify-content: center;
         font-size: 24px;
-        color: var(--wa-green);
+        color: var(--wa-teal);
     }
 
     .contact-details h3 {
@@ -88,7 +88,7 @@ include 'components/navbar.php';
     }
 
     .contact-details a {
-        color: var(--wa-green);
+        color: var(--wa-teal);
         text-decoration: none;
         font-weight: 500;
     }
@@ -331,16 +331,20 @@ include 'components/navbar.php';
                         <div class="contact-details">
                             <h3>WhatsApp</h3>
                             <p>Chat with our sales team instantly</p>
-                            <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20HeyDoot"
+                            <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20start%20a%20free%20trial"
                                 target="_blank">
                                 <?php echo WHATSAPP_NUMBER; ?>
+                            </a>
+                            <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20start%20a%20free%20trial"
+                                target="_blank">
+
                             </a>
                         </div>
                     </div>
 
                     <div class="contact-method">
                         <div class="contact-icon">
-                            <i class="fas fa-phone-alt"></i>
+                            <i class="fas fa-volume-control-phone"></i>
                         </div>
                         <div class="contact-details">
                             <h3>Phone</h3>
@@ -358,11 +362,11 @@ include 'components/navbar.php';
                         <div class="contact-details">
                             <h3>Email</h3>
                             <p>For general inquiries</p>
-                            <a href="mailto:hello@heydoot.com">hello@heydoot.com</a>
+                            <a href="mailto:info@heydoot.com">info@heydoot.com</a>
                         </div>
                     </div>
 
-                    <div class="contact-method">
+                    <!-- <div class="contact-method">
                         <div class="contact-icon">
                             <i class="fas fa-headset"></i>
                         </div>
@@ -382,7 +386,7 @@ include 'components/navbar.php';
                             <p>For pricing and invoice questions</p>
                             <a href="mailto:sales@heydoot.com">sales@heydoot.com</a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
                 <!-- Contact Form -->
@@ -457,7 +461,8 @@ include 'components/navbar.php';
                     <p>PEGASUS TOWER Block A</p>
                     <p>Sector 68, Noida</p>
                     <p>Uttar Pradesh 201309</p>
-                    <p style="margin-top: 12px;"><i class="fas fa-phone-alt"></i> +91 97185 17228</p>
+                    <p style="margin-top: 12px;"><i class="fas fa-volume-control-phone"></i> <?php echo CALL_NUMBER; ?>
+                    </p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -467,7 +472,7 @@ include 'components/navbar.php';
                     <p>548 Market St, PMB 52935</p>
                     <p>San Francisco, CA 94104</p>
                     <p>USA</p>
-                    <p style="margin-top: 12px;"><i class="fas fa-phone-alt"></i> +1 (555) 123-4567</p>
+                    <p style="margin-top: 12px;"><i class="fas fa-volume-control-phone"></i> +1 (555) 123-4567</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -477,7 +482,7 @@ include 'components/navbar.php';
                     <p>86-90 Paul Street</p>
                     <p>London, EC2A 4NE</p>
                     <p>United Kingdom</p>
-                    <p style="margin-top: 12px;"><i class="fas fa-phone-alt"></i> +44 20 1234 5678</p>
+                    <p style="margin-top: 12px;"><i class="fas fa-volume-control-phone"></i> +44 20 1234 5678</p>
                 </div>
             </div>
         </div>
@@ -514,7 +519,7 @@ include 'components/navbar.php';
                 </a>
                 <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>" class="btn btn-cta-white btn-lg"
                     style="background: white; color: #1a2a3a;">
-                    <i class="fas fa-phone-alt"></i> Call Now
+                    <i class="fas fa-volume-control-phone"></i> Call Now
                 </a>
             </div>
         </div>
