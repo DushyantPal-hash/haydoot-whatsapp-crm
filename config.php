@@ -11,7 +11,7 @@ if ($is_local) {
     define('ROOT_PATH', $_SERVER['DOCUMENT_ROOT'] . '/heydoot');
 } else {
     // cPanel production settings
-    define('BASE_URL', 'https://yourdomain.com'); // Change to your domain
+    define('BASE_URL', 'https://heydoot.com/'); // Change to your domain
     define('ROOT_PATH', $_SERVER['DOCUMENT_ROOT']);
 }
 
