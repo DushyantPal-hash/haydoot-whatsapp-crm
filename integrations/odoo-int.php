@@ -426,7 +426,7 @@ include ROOT_PATH . '/components/navbar.php';
                         <div style="margin-top: 36px;">
                             <a href="https://wa.me/919500069296?text=Hi%20Doot%20team%2C%20I%27d%20like%20a%20price%20quote%20for%20the%20Doot%20License.%0A%0ATeam%20size%3A%20%0AExpected%20numbers%3A%20%0AUse%20case%3A%20"
                                 class="btn btn-lg" style="background: white; color: #714B67; font-weight: 700;"><i
-                                    class="fab fa-whatsapp"></i> Get Started with HeyDoot Today</a>
+                                    class="fab fa-whatsapp"></i> Get Started Today</a>
                         </div>
                     </div>
 

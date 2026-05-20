@@ -65,7 +65,7 @@ include 'components/navbar.php';
     }
 
     .comparison-table i.fa-check {
-        color: var(--wa-green);
+        color: var(--wa-teal);
     }
 
     .comparison-table i.fa-times {
@@ -89,7 +89,7 @@ include 'components/navbar.php';
                 <p style="font-size: 1.2rem; color: #cdddef; max-width: 700px; margin: 0 auto;">Powerful WhatsApp tools
                     that help your team collaborate, automate, and scale.</p>
                 <div class="cta-group" style="margin-top: 32px;">
-                    <a href="#all-features" class="btn btn-primary btn-lg"
+                    <a href="javascript:void(0)" class="btn btn-primary btn-lg"
                         style="background: var(--wa-green); border-color: var(--wa-green);">
                         <i class="fas fa-arrow-down"></i> Explore All Features
                     </a>

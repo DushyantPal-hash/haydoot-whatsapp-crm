@@ -46,7 +46,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
         align-items: center;
         gap: 12px;
         padding: 12px 16px;
-        color: var(--text-color, #b9b9b9);
+        color: var(--text-color, #0f4f1e);
         text-decoration: none;
         font-size: 14px;
         border-radius: 8px;
@@ -68,10 +68,11 @@ $current_page = basename($_SERVER['PHP_SELF']);
         align-items: center;
         gap: 12px;
         padding: 14px 20px;
-        color: var(--text-color, #ffffff);
+        color: var(--text-color, #1d4b2c);
         text-decoration: none;
         font-weight: 500;
         transition: background 0.2s;
+        justify-content: flex-start;
     }
 
     .mobile-nav-link i {
@@ -84,10 +85,8 @@ $current_page = basename($_SERVER['PHP_SELF']);
     <nav class="navbar">
         <a href="<?php echo BASE_URL; ?>/" class="logo">
             <div class="logo-icon">
-                <img src="<?php echo BASE_URL; ?>/assets/icons/favicon.png" alt="Logo"
-                    style="width: 25px; height: 25px;">
+                <img src="<?php echo BASE_URL; ?>/assets/images/logo/logo.png" alt="HeyDoot Logo">
             </div>
-            <span>Hey<span style="color: var(--primary);">Doot</span></span>
         </a>
 
         <!-- Desktop Navigation -->
@@ -130,7 +129,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
             <a href="<?php echo BASE_URL; ?>/contact.php" class="nav-link">Contact Us</a>
         </div>
 
-        <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>"
+        <a href="tel:<?php echo str_replace(' ', '', CALL_NUMBER); ?>"
             class="btn btn-primary btn-sm demo-btn desktop-only">
             <i class="fas fa-calendar-alt"></i> Book a demo
         </a>

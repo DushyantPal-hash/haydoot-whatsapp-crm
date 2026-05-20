@@ -42,16 +42,16 @@ include 'components/navbar.php';
     <div class="container-fluid">
         <div style="text-align: center;">
             <span class="security-badge"
-                style="background: rgba(37, 211, 102, 0.1); color: var(--wa-green); margin-bottom: 20px; display: inline-block;">
+                style="background: rgba(37, 211, 102, 0.1); color: var( --wa-green); margin-bottom: 20px; display: inline-block;">
                 <i class="fas fa-puzzle-piece"></i> 50+ Integrations & Growing
             </span>
             <h1 style="font-size: 3rem; font-weight: 800; margin-bottom: 20px;">Seamless <span
-                    style="color: var(--wa-green);">Integrations</span></h1>
+                    style="color: var( --wa-green);">Integrations</span></h1>
             <p class="hero-desc" style="font-size: 1.2rem; color: #cdddef; max-width: 700px; margin: 0 auto;">Connect
                 HeyDoot with your favorite tools and supercharge your WhatsApp workflow. No coding required.</p>
             <div class="cta-group" style="margin-top: 32px;">
-                <a href="#all-integrations" class="btn btn-primary btn-lg"
-                    style="background: var(--wa-green); border-color: var(--wa-green);">
+                <a href="javascript:void(0)" class="btn btn-primary btn-lg"
+                    style="background: var( --wa-green); border-color: var( --wa-green);">
                     <i class="fas fa-search"></i> Explore All Integrations
                 </a>
                 <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27m%20interested%20in%20custom%20integrations%20for%20HeyDoot"
@@ -99,7 +99,7 @@ include 'components/navbar.php';
         <!-- Category: CRM -->
         <div style="margin-bottom: 60px;">
             <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
-                <i class="fas fa-chart-line" style="font-size: 28px; color: var(--wa-green);"></i>
+                <i class="fas fa-chart-line" style="font-size: 28px; color: var( --wa-teal);"></i>
                 <h3 style="font-size: 1.6rem; font-weight: 700; margin: 0;">CRM & Sales Platforms</h3>
             </div>
             <div class="feature-grid"
@@ -156,7 +156,7 @@ include 'components/navbar.php';
         <!-- Category: Collaboration -->
         <div style="margin-bottom: 60px;">
             <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
-                <i class="fas fa-comments" style="font-size: 28px; color: var(--wa-green);"></i>
+                <i class="fas fa-comments" style="font-size: 28px; color: var( --wa-teal);"></i>
                 <h3 style="font-size: 1.6rem; font-weight: 700; margin: 0;">Team Collaboration</h3>
             </div>
             <div class="feature-grid"
@@ -199,7 +199,7 @@ include 'components/navbar.php';
         <!-- Category: Automation -->
         <div style="margin-bottom: 60px;">
             <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
-                <i class="fas fa-robot" style="font-size: 28px; color: var(--wa-green);"></i>
+                <i class="fas fa-robot" style="font-size: 28px; color: var( --wa-teal);"></i>
                 <h3 style="font-size: 1.6rem; font-weight: 700; margin: 0;">Automation & iPaaS</h3>
             </div>
             <div class="feature-grid"
@@ -241,7 +241,7 @@ include 'components/navbar.php';
         <!-- Category: Help Desk -->
         <div style="margin-bottom: 60px;">
             <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
-                <i class="fas fa-headset" style="font-size: 28px; color: var(--wa-green);"></i>
+                <i class="fas fa-headset" style="font-size: 28px; color: var( --wa-teal);"></i>
                 <h3 style="font-size: 1.6rem; font-weight: 700; margin: 0;">Help Desk & Support</h3>
             </div>
             <div class="feature-grid"
@@ -282,7 +282,7 @@ include 'components/navbar.php';
         <!-- Category: E-commerce -->
         <div style="margin-bottom: 60px;">
             <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
-                <i class="fas fa-shopping-cart" style="font-size: 28px; color: var(--wa-green);"></i>
+                <i class="fas fa-shopping-cart" style="font-size: 28px; color: var( --wa-teal);"></i>
                 <h3 style="font-size: 1.6rem; font-weight: 700; margin: 0;">E-commerce & Payments</h3>
             </div>
             <div class="feature-grid"
@@ -322,7 +322,7 @@ include 'components/navbar.php';
         <!-- Category: Marketing -->
         <div style="margin-bottom: 60px;">
             <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
-                <i class="fas fa-chart-simple" style="font-size: 28px; color: var(--wa-green);"></i>
+                <i class="fas fa-chart-simple" style="font-size: 28px; color: var( --wa-teal);"></i>
                 <h3 style="font-size: 1.6rem; font-weight: 700; margin: 0;">Marketing & Analytics</h3>
             </div>
             <div class="feature-grid"
@@ -361,7 +361,7 @@ include 'components/navbar.php';
         <!-- Category: Developer Tools -->
         <div style="margin-bottom: 60px;">
             <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
-                <i class="fas fa-terminal" style="font-size: 28px; color: var(--wa-green);"></i>
+                <i class="fas fa-terminal" style="font-size: 28px; color: var( --wa-teal);"></i>
                 <h3 style="font-size: 1.6rem; font-weight: 700; margin: 0;">Developer Tools</h3>
             </div>
             <div class="feature-grid"
@@ -410,7 +410,7 @@ include 'components/navbar.php';
         <div class="api-grid"
             style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
             <div style="background: #fff; border-radius: 24px; padding: 28px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
-                <i class="fas fa-paper-plane" style="font-size: 40px; color: var(--wa-green); margin-bottom: 20px;"></i>
+                <i class="fas fa-paper-plane" style="font-size: 40px; color: var( --wa-teal); margin-bottom: 20px;"></i>
                 <h3>Send Messages</h3>
                 <p style="margin-bottom: 15px;">Programmatically send text, images, documents, and templates via API.
                 </p>
@@ -418,7 +418,7 @@ include 'components/navbar.php';
                     style="background: #f0f0f0; padding: 8px 12px; border-radius: 8px; display: inline-block; font-size: 0.8rem;">POST /api/v1/messages/send</code>
             </div>
             <div style="background: #fff; border-radius: 24px; padding: 28px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
-                <i class="fas fa-download" style="font-size: 40px; color: var(--wa-green); margin-bottom: 20px;"></i>
+                <i class="fas fa-download" style="font-size: 40px; color: var( --wa-teal); margin-bottom: 20px;"></i>
                 <h3>Receive Webhooks</h3>
                 <p style="margin-bottom: 15px;">Get real-time notifications for incoming messages, status updates, and
                     events.</p>
@@ -426,14 +426,14 @@ include 'components/navbar.php';
                     style="background: #f0f0f0; padding: 8px 12px; border-radius: 8px; display: inline-block; font-size: 0.8rem;">POST /webhook/incoming</code>
             </div>
             <div style="background: #fff; border-radius: 24px; padding: 28px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
-                <i class="fas fa-users" style="font-size: 40px; color: var(--wa-green); margin-bottom: 20px;"></i>
+                <i class="fas fa-users" style="font-size: 40px; color: var( --wa-teal); margin-bottom: 20px;"></i>
                 <h3>Manage Contacts</h3>
                 <p style="margin-bottom: 15px;">Create, update, and sync contact lists programmatically.</p>
                 <code
                     style="background: #f0f0f0; padding: 8px 12px; border-radius: 8px; display: inline-block; font-size: 0.8rem;">GET /api/v1/contacts</code>
             </div>
             <div style="background: #fff; border-radius: 24px; padding: 28px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
-                <i class="fas fa-chart-line" style="font-size: 40px; color: var(--wa-green); margin-bottom: 20px;"></i>
+                <i class="fas fa-chart-line" style="font-size: 40px; color: var( --wa-teal); margin-bottom: 20px;"></i>
                 <h3>Analytics API</h3>
                 <p style="margin-bottom: 15px;">Fetch conversation metrics, agent performance, and engagement data.</p>
                 <code
@@ -441,8 +441,8 @@ include 'components/navbar.php';
             </div>
         </div>
         <div style="text-align: center; margin-top: 40px;">
-            <a href="https://docs.heydoot.com/api" class="btn btn-primary btn-lg"
-                style="background: var(--wa-green); border-color: var(--wa-green);">
+            <a href="javascript:void(0)" class="btn btn-primary btn-lg"
+                style="background: var( --wa-teal); border-color: var( --wa-teal);">
                 <i class="fas fa-book-open"></i> View API Documentation
             </a>
         </div>
@@ -461,10 +461,13 @@ include 'components/navbar.php';
                 style="border: 2px solid white; color: white; background: transparent;" target="_blank">
                 <i class="fab fa-whatsapp"></i> Request Custom Integration
             </a>
-            <a href="mailto:sales@heydoot.com" class="btn btn-cta-white btn-lg"
+            <!-- <a href="mailto:sales@heydoot.com" class="btn btn-cta-white btn-lg"
                 style="background: white; color: #1a2a3a;">
                 <i class="fas fa-envelope"></i> Email Sales Team
-            </a>
+            </a> -->
+            <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>" class=" btn btn-cta-white btn-lg
+                trial-btn"><i class="fas fa-calendar-alt"></i>
+                Book Demo <i class="fas fa-arrow-right"></i></a>
         </div>
     </div>
 </section>
@@ -479,23 +482,23 @@ include 'components/navbar.php';
         <div class="benefits-grid"
             style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
             <div style="text-align: center; padding: 20px;">
-                <i class="fas fa-clock" style="font-size: 48px; color: var(--wa-green); margin-bottom: 16px;"></i>
+                <i class="fas fa-clock" style="font-size: 48px; color: var( --wa-teal); margin-bottom: 16px;"></i>
                 <h3>Save Time</h3>
                 <p style="color: #5a6b7e;">Automate repetitive tasks and eliminate manual data entry across platforms.
                 </p>
             </div>
             <div style="text-align: center; padding: 20px;">
-                <i class="fas fa-chart-line" style="font-size: 48px; color: var(--wa-green); margin-bottom: 16px;"></i>
+                <i class="fas fa-chart-line" style="font-size: 48px; color: var( --wa-teal); margin-bottom: 16px;"></i>
                 <h3>Increase Efficiency</h3>
                 <p style="color: #5a6b7e;">Streamline communication and reduce context switching between apps.</p>
             </div>
             <div style="text-align: center; padding: 20px;">
-                <i class="fas fa-shield-alt" style="font-size: 48px; color: var(--wa-green); margin-bottom: 16px;"></i>
+                <i class="fas fa-shield-alt" style="font-size: 48px; color: var( --wa-teal); margin-bottom: 16px;"></i>
                 <h3>Secure & Reliable</h3>
                 <p style="color: #5a6b7e;">Enterprise-grade security with encrypted data transmission and storage.</p>
             </div>
             <div style="text-align: center; padding: 20px;">
-                <i class="fas fa-expand-alt" style="font-size: 48px; color: var(--wa-green); margin-bottom: 16px;"></i>
+                <i class="fas fa-expand-alt" style="font-size: 48px; color: var( --wa-teal); margin-bottom: 16px;"></i>
                 <h3>Scalable</h3>
                 <p style="color: #5a6b7e;">From 10 to 10,000+ conversations, our integrations scale with you.</p>
             </div>
@@ -507,7 +510,7 @@ include 'components/navbar.php';
 <section class="section-container" style="background: #F0F8FF; padding: 60px 0;">
     <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">
         <div style="text-align: center; margin-bottom: 48px;">
-            <span class="security-badge" style="background: rgba(37, 211, 102, 0.1); color: var(--wa-green);">
+            <span class="security-badge" style="background: rgba(37, 211, 102, 0.1); color: var( --wa-teal);">
                 <i class="fas fa-question-circle"></i> Frequently Asked Questions
             </span>
             <h2 class="section-title" style="margin-bottom: 12px;">Got Questions About Integrations?</h2>

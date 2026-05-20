@@ -552,7 +552,7 @@ include 'components/navbar.php';
                 </a>
                 <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>" class="btn btn-cta-white btn-lg"
                     style="background: white; color: #1a2a3a;">
-                    <i class="fas fa-phone-alt"></i> Talk to Sales
+                    <i class="fas fa-volume-control-phone"></i> Talk to Sales
                 </a>
             </div>
             <p style="color: #a0b0c0; margin-top: 24px; font-size: 0.85rem;">No credit card required. 14-day free trial.
