@@ -469,20 +469,21 @@ include 'components/navbar.php';
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
                     <h3>United States</h3>
-                    <p>548 Market St, PMB 52935</p>
-                    <p>San Francisco, CA 94104</p>
-                    <p>USA</p>
-                    <p style="margin-top: 12px;"><i class="fas fa-volume-control-phone"></i> +1 (555) 123-4567</p>
+                    <p>161 W Altadena Dr,</p>
+                    <p>Unit 501 STE Altadena,</p>
+                    <p>CA 91001-4735 ,USA</p>
+                    <p style="margin-top: 12px;"><i class="fas fa-volume-control-phone"></i> +1 (408) 757 0570 </p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
-                    <h3>United Kingdom</h3>
-                    <p>86-90 Paul Street</p>
-                    <p>London, EC2A 4NE</p>
-                    <p>United Kingdom</p>
-                    <p style="margin-top: 12px;"><i class="fas fa-volume-control-phone"></i> +44 20 1234 5678</p>
+                    <h3>India</h3>
+                    <p>Plot No. 45B, Doon IT Park,</p>
+                    <p>Sahastradhara Road,</p>
+                    <p>Dehradun, Uttarakhand 248013</p>
+                    <p style="margin-top: 12px;"><i class="fas fa-volume-control-phone"></i> <?php echo PHONE_NUMBER; ?>
+                    </p>
                 </div>
             </div>
         </div>

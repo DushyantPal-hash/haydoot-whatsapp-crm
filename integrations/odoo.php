@@ -92,7 +92,8 @@ include ROOT_PATH . '/components/navbar.php';
         <div style="max-width: 900px; margin: 0 auto; position: relative; z-index: 2;">
             <div
                 style="display: inline-block; background: rgba(255,255,255,0.12); backdrop-filter: blur(8px); padding: 6px 18px; border-radius: 60px; margin-bottom: 24px;">
-                <span style="color: #ffffff; font-weight: 700;"><i class="fab fa-odoo"></i> Official Odoo Ready
+                <span style="color: #ffffff; font-weight: 700; display: flex; align-items: center; gap: 10px;"><i
+                        class="si si-odoo"></i> Official Odoo Ready
                     Partner</span>
             </div>
             <h1 style="color: white;">Connect <span style="color: #ffffff;">HeyDoot</span> <br>with <span
@@ -100,8 +101,10 @@ include ROOT_PATH . '/components/navbar.php';
             <p class="hero-desc">Automate WhatsApp notifications for Sales Orders, Invoices, Purchase Orders, and Stock
                 updates — directly from your Odoo instance.</p>
             <div class="cta-group">
-                <a href="#" class="btn btn-odoo btn-lg"><i class="fab fa-odoo"></i> Connect Odoo</a>
-                <a href="#" class="btn btn-secondary btn-lg"><i class="fas fa-file-alt"></i> View Docs</a>
+                <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20HeyDoot%20features"
+                    class="btn btn-odoo btn-lg"><i class="si si-odoo"></i> Connect Odoo</a>
+                <a href="<?php echo BASE_URL; ?>/services/odoo.php" class="btn btn-secondary btn-lg"><i
+                        class="fas fa-file-alt"></i> View Services</a>
             </div>
         </div>
         <div class="visual-stage" style="margin-top: 20px;">
@@ -424,7 +427,7 @@ include ROOT_PATH . '/components/navbar.php';
                                     class="fas fa-bolt"></i> Real-Time Notifications</span>
                         </div>
                         <div style="margin-top: 36px;">
-                            <a href="https://wa.me/919500069296?text=Hi%20Doot%20team%2C%20I%27d%20like%20a%20price%20quote%20for%20the%20Doot%20License.%0A%0ATeam%20size%3A%20%0AExpected%20numbers%3A%20%0AUse%20case%3A%20"
+                            <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20HeyDoot%20features"
                                 class="btn btn-lg" style="background: white; color: #714B67; font-weight: 700;"><i
                                     class="fab fa-whatsapp"></i> Get Started Today</a>
                         </div>

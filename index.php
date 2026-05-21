@@ -506,7 +506,7 @@ include 'components/navbar.php';
             <h2>Ready to scale your WhatsApp communication?</h2>
             <p>Join hundreds of teams who’ve upgraded to HeyDoot — start your free trial today.</p>
             <div class="cta-buttons">
-                <a href="https://wa.me/919500069296?text=Hi%20Doot%20team%2C%20I%27d%20like%20a%20price%20quote%20for%20the%20Doot%20License.%0A%0ATeam%20size%3A%20%0AExpected%20numbers%3A%20%0AUse%20case%3A%20"
+                <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20HeyDoot%20features"
                     class="btn btn-outline-light btn-lg demo-btn"><i class="fab fa-whatsapp"></i> Chat with
                     sales</a>
 
