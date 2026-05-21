@@ -35,9 +35,10 @@
             </div>
             <div class="footer-links">
                 <h4>Product</h4>
-                <a href="<?php echo BASE_URL; ?>/features.php">Features</a>
-                <a href="<?php echo BASE_URL; ?>/pricing.php">Pricing</a>
                 <a href="<?php echo BASE_URL; ?>/integrations.php">Integrations</a>
+                <a href="<?php echo BASE_URL; ?>/features.php">Features</a>
+                <a href="<?php echo BASE_URL; ?>/services.php">Services</a>
+                <a href="<?php echo BASE_URL; ?>/pricing.php">Pricing</a>
             </div>
             <div class="footer-links">
                 <h4>Company</h4>
@@ -51,7 +52,7 @@
                         class="fas fa-volume-control-phone"></i>
                     <?php echo PHONE_NUMBER; ?>
                 </a>
-                <a href="https://wa.me/919500069296?text=Hi%20Doot%20team%2C%20I%27d%20like%20a%20price%20quote%20for%20the%20Doot%20License.%0A%0ATeam%20size%3A%20%0AExpected%20numbers%3A%20%0AUse%20case%3A%20"
+                <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20HeyDoot%20features"
                     target="_blank">
                     <i class="si si-whatsapp" style="font-size: 15px; color: #25D366;"></i> Chat on WhatsApp
                 </a>

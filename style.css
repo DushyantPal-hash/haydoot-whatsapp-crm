@@ -437,7 +437,6 @@ h1 {
 .hero-desc {
     font-size: 1.2rem;
     color: #c8cacb;
-    max-width: 700px;
     margin: 0 auto 1.2rem;
 }
 
@@ -580,7 +579,7 @@ h1 {
     align-items: center;
     justify-content: space-between;
     gap: 48px;
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
     flex-wrap: wrap;
 }
 
@@ -619,7 +618,7 @@ h1 {
 .feature-pair-content p {
     font-size: 1.1rem;
     color: #2d3e3f;
-    line-height: 1.5;
+    /* line-height: 1.5; */
     margin-bottom: 24px;
 }
 

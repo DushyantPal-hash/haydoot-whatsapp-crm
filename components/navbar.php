@@ -119,7 +119,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
                         HubSpot CRM Integration</a>
                     <a href="<?php echo BASE_URL; ?>/integrations/zapier.php"><i class="fas fa-bolt"></i>
                         Zapier & Make Integration</a>
-                    <a href="<?php echo BASE_URL; ?>/integrations/odoo-int.php"><i class="fab fa-slack"></i>
+                    <a href="<?php echo BASE_URL; ?>/integrations/odoo.php"><i class="fab fa-slack"></i>
                         Odoo WhatsApp Integration</a>
                 </div>
             </div>
@@ -181,7 +181,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
                     CRM</a>
                 <a href="<?php echo BASE_URL; ?>/integrations/zapier.php"><i class="fas fa-bolt"></i> Zapier &
                     Make</a>
-                <a href="<?php echo BASE_URL; ?>/integrations/odoo-int.php"><i class="fab fa-slack"></i> Odoo
+                <a href="<?php echo BASE_URL; ?>/integrations/odoo.php"><i class="fab fa-slack"></i> Odoo
                     Integration</a>
             </div>
         </div>
