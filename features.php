@@ -1,5 +1,4 @@
 <?php
-// pages/features.php
 $page_meta = [
     'title' => 'Features - HeyDoot WhatsApp CRM',
     'meta_title' => 'Features | HeyDoot - Powerful WhatsApp CRM for Teams',

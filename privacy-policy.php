@@ -1,5 +1,4 @@
 <?php
-// pages/privacy-policy.php
 $page_meta = [
     'title' => 'Privacy Policy - HeyDoot WhatsApp CRM',
     'meta_title' => 'Privacy Policy | HeyDoot - WhatsApp CRM for Teams',

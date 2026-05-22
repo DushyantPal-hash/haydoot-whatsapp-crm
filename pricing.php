@@ -1,5 +1,4 @@
 <?php
-// pages/pricing.php
 $page_meta = [
     'title' => 'Pricing - HeyDoot WhatsApp CRM',
     'meta_title' => 'Pricing | HeyDoot - Simple & Transparent WhatsApp CRM Plans',

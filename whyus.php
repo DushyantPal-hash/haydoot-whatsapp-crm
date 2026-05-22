@@ -1,5 +1,4 @@
 <?php
-// pages/why-us.php
 $page_meta = [
     'title' => 'Why Us - HeyDoot WhatsApp CRM',
     'meta_title' => 'Why Businesses Choose HeyDoot | WhatsApp CRM Platform',

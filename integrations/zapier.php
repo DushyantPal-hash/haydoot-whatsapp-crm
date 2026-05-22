@@ -73,9 +73,11 @@ include ROOT_PATH . '/components/navbar.php';
             <p class="hero-desc">Automate WhatsApp messages, create leads, sync conversations — no code. Trigger actions
                 across your entire stack.</p>
             <div class="cta-group">
-                <a href="#" class="btn btn-zapier btn-lg" style="background: #FF4A00;"><i class="fas fa-bolt"></i>
+                <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20HeyDoot%20features"
+                    class="btn btn-zapier btn-lg" style="background: #FF4A00;"><i class="fas fa-bolt"></i>
                     Connect to Zapier</a>
-                <a href="#" class="btn btn-secondary btn-lg"><i class="fas fa-play-circle"></i> Watch Demo</a>
+                <a href="javascript:void(0)" class="btn btn-secondary btn-lg"><i class="fas fa-play-circle"></i> Watch
+                    Demo</a>
             </div>
         </div>
         <div class="visual-stage" style="margin-top: 20px;">
@@ -112,10 +114,10 @@ include ROOT_PATH . '/components/navbar.php';
                     <strong>HeyDoot + Zapier integration is live and fully certified.</strong>
                     <span style="color: #4b5563;"> Connect your HeyDoot account with Zapier to unlock 6000+
                         automations.</span>
-                    <a href="#" style="color: #FF4A00; font-weight: 600;"> Start building Zaps →</a>
+                    <a href="javascript:void(0)" style="color: #FF4A00; font-weight: 600;"> Start building Zaps →</a>
                 </div>
                 <div>
-                    <a href="#"
+                    <a href="javascript:void(0)"
                         style="background: #f3f4f6; padding: 8px 18px; border-radius: 40px; font-size: 0.85rem;"><i
                             class="fas fa-headset"></i> Troubleshooting: Zap not triggering?</a>
                 </div>
@@ -318,7 +320,7 @@ include ROOT_PATH . '/components/navbar.php';
                         <h2 style="font-size: 2rem; font-weight: 800; margin-top: 12px;">Done</h2>
                         <p style="margin-top: 8px;">Your HeyDoot + Zapier connection is ready. Start building powerful
                             cross-app workflows.</p>
-                        <a href="#" class="btn"
+                        <a href="javascript:void(0)" class="btn"
                             style="background: #FF4A00; color: white; margin-top: 20px; padding: 10px;"><i
                                 class="fab fa-zapier"></i> Explore Zap Templates</a>
                     </div>
@@ -371,7 +373,7 @@ include ROOT_PATH . '/components/navbar.php';
 
                     <span class="shortcut-key">Ctrl K</span>
 
-                    <a href="#" class="utility-item utility-link" style="color: #FF4A00;">
+                    <a href="javascript:void(0)" class="utility-item utility-link" style="color: #FF4A00;">
                         <i class="fas fa-code"></i>
                         Zapier API collection
                     </a>
@@ -381,7 +383,7 @@ include ROOT_PATH . '/components/navbar.php';
                         Support
                     </a>
 
-                    <a href="#" class="dashboard-btn" style=" background: #FF4A00; color: white;">
+                    <a href="javascript:void(0)" class="dashboard-btn" style=" background: #FF4A00; color: white;">
                         <i class="fas fa-tachometer-alt"></i>
                         Dashboard
                     </a>

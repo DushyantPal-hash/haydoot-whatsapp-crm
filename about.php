@@ -1,5 +1,4 @@
 <?php
-// pages/about.php
 $page_meta = [
     'title' => 'About Us - HeyDoot WhatsApp CRM',
     'meta_title' => 'About Us | HeyDoot - Our Mission & Story',

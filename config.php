@@ -1,17 +1,15 @@
 <?php
-// config.php - This file handles paths for both local and cPanel
 
 // Detect environment
 $is_local = ($_SERVER['SERVER_NAME'] == 'localhost' ||
     $_SERVER['SERVER_NAME'] == '127.0.0.1');
 
 if ($is_local) {
-    // Local XAMPP settings
     define('BASE_URL', 'http://localhost/heydoot');
     define('ROOT_PATH', $_SERVER['DOCUMENT_ROOT'] . '/heydoot');
 } else {
     // cPanel production settings
-    define('BASE_URL', 'https://heydoot.com/'); // Change to your domain
+    define('BASE_URL', 'https://heydoot.com/');
     define('ROOT_PATH', $_SERVER['DOCUMENT_ROOT']);
 }
 
