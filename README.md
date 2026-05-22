@@ -161,17 +161,21 @@ http://localhost/haydoot-whatsapp-crm
 
 # 📸 Screenshots
 
-## Dashboard
-(Add Screenshot Here)
+## Home
+<img width="1902" height="889" alt="image" src="https://github.com/user-attachments/assets/7d8dd8cf-e581-4749-898a-794cbcb0e2a7" />
 
-## Shared Inbox
-(Add Screenshot Here)
 
-## Analytics
-(Add Screenshot Here)
+## About Us
+<img width="1326" height="828" alt="image" src="https://github.com/user-attachments/assets/f03433c8-5dd1-4eac-958d-1862da6da74a" />
 
-## Ticketing
-(Add Screenshot Here)
+
+## Contact Us
+<img width="1244" height="920" alt="image" src="https://github.com/user-attachments/assets/7c1486b1-b48f-4c35-9431-59d774f125b9" />
+
+
+## Features
+<img width="1743" height="914" alt="image" src="https://github.com/user-attachments/assets/82aa1d16-9dd2-4b2a-8c73-8aaa4e5d4554" />
+
 
 ---
 
