@@ -459,7 +459,7 @@ include 'components/navbar.php';
 
                 <!-- Complete Agreement -->
                 <div
-                    style="background: var(--bg-gradient-teal); color: white; padding: 30px; border-radius: 24px; margin-top: 20px;">
+                    style="background: var(--bg-gradient-green); color: white; padding: 30px; border-radius: 24px; margin-top: 20px;">
                     <h3 style="color: white; margin-bottom: 16px;"><i class="fas fa-file-signature"></i> Entire
                         Agreement</h3>
                     <p style="margin-bottom: 0;">These Terms, together with our Privacy Policy, constitute the entire
