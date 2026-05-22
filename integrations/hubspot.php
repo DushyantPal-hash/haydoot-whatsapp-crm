@@ -1,6 +1,45 @@
 <?php
 require_once dirname(__DIR__) . '/config.php';
-$page_title = "Features - HeyDoot";
+
+$page_meta = [
+    'title' => 'HubSpot WhatsApp Integration | HeyDoot',
+    'meta_title' => 'HubSpot WhatsApp Integration – Automate Customer Conversations with HeyDoot',
+    'description' => 'Connect HubSpot with WhatsApp using HeyDoot and automate lead engagement, deal updates, customer support, reminders, and sales conversations without WhatsApp API complexity.',
+
+    'og_title' => 'HubSpot WhatsApp Integration | HeyDoot',
+    'og_description' => 'Integrate HubSpot with WhatsApp using HeyDoot. Automate lead notifications, deal updates, customer communication, and sales workflows directly from HubSpot.',
+    'og_image' => 'https://heydoot.com/public/images/m1.png',
+    'og_url' => 'https://heydoot.com/integrations/hubspot.php',
+
+    'twitter_title' => 'HubSpot WhatsApp Integration | HeyDoot',
+    'twitter_description' => 'Automate HubSpot customer communication on WhatsApp with HeyDoot. Send lead updates, reminders, sales notifications, and customer messages instantly.',
+    'twitter_image' => 'https://heydoot.com/public/images/m1.png',
+
+    'canonical' => 'https://heydoot.com/integrations/hubspot.php'
+];
+
+$page_json_ld = [
+    "@context" => "https://schema.org",
+    "@type" => "Service",
+    "name" => "HubSpot WhatsApp Integration",
+    "serviceType" => "WhatsApp Integration Service",
+    "provider" => [
+        "@type" => "Organization",
+        "name" => "HeyDoot",
+        "url" => "https://heydoot.com/"
+    ],
+    "description" => "Integrate HubSpot CRM with WhatsApp using HeyDoot to automate lead notifications, deal updates, reminders, customer engagement, and sales communication workflows.",
+    "areaServed" => "Worldwide",
+    "url" => "https://heydoot.com/integrations/hubspot.php",
+    "offers" => [
+        "@type" => "Offer",
+        "price" => "0",
+        "priceCurrency" => "USD"
+    ]
+];
+
+$page_gtag_id = 'G-Q64SDSY0Y4';
+
 include ROOT_PATH . '/components/header.php';
 include ROOT_PATH . '/components/navbar.php';
 ?>
@@ -12,7 +51,8 @@ include ROOT_PATH . '/components/navbar.php';
         <div style="max-width: 900px; margin: 0 auto; position: relative; z-index: 2;">
             <div
                 style="display: inline-block; background: rgba(255,255,255,0.15); backdrop-filter: blur(8px); padding: 6px 16px; border-radius: 60px; margin-bottom: 24px;">
-                <span style="color: #25D366; font-weight: 600;">✨ HubSpot Native Integration</span>
+                <span style="color: #25D366; font-weight: 600;"><i class="fab fa-hubspot"></i> HubSpot Native
+                    Integration</span>
             </div>
             <h1 style="color: white;">Connect HeyDoot <br>with <span style="color: #FF7A59;">HubSpot</span></h1>
             <p class="hero-desc">Sync WhatsApp conversations, automatically create contacts, and trigger workflows — all
@@ -274,7 +314,7 @@ include ROOT_PATH . '/components/navbar.php';
                     <div id="done"
                         style="background: linear-gradient(115deg, #e8faf0, #e0f2fe); border-radius: 32px; padding: 32px; text-align: center; margin: 40px 0 32px;">
                         <i class="fas fa-party-horn" style="font-size: 48px; color: var(--wa-teal);"></i>
-                        <h2 style="font-size: 2rem; font-weight: 800; margin-top: 12px;">Done 🥳</h2>
+                        <h2 style="font-size: 2rem; font-weight: 800; margin-top: 12px;">Done</h2>
                         <p style="margin-top: 8px;">Your HubSpot + WhatsApp integration is live. Start engaging
                             customers
                             smarter.</p>

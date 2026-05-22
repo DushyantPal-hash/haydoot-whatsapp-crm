@@ -401,39 +401,46 @@ include 'components/navbar.php';
 
 <!-- API Section -->
 <section id="api" class="section-container" style="background: #FDF7F0; padding: 60px 0;">
-    <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">
+    <div class="container-fluid">
         <div style="text-align: center; margin-bottom: 48px;">
             <span class="security-badge"><i class="fas fa-code"></i> Powerful & Flexible</span>
             <h2 class="section-title" style="margin-bottom: 12px;">REST API & Webhooks</h2>
             <p class="section-sub">Build custom integrations with our developer-friendly APIs</p>
         </div>
-        <div class="api-grid"
-            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
-            <div style="background: #fff; border-radius: 24px; padding: 28px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
-                <i class="fas fa-paper-plane" style="font-size: 40px; color: var( --wa-teal); margin-bottom: 20px;"></i>
+        <div class="automation-grid">
+            <div class="automation-card">
+                <div class="automation-icon">
+                    <i class="fas fa-paper-plane"></i>
+                </div>
                 <h3>Send Messages</h3>
                 <p style="margin-bottom: 15px;">Programmatically send text, images, documents, and templates via API.
                 </p>
                 <code
                     style="background: #f0f0f0; padding: 8px 12px; border-radius: 8px; display: inline-block; font-size: 0.8rem;">POST /api/v1/messages/send</code>
             </div>
-            <div style="background: #fff; border-radius: 24px; padding: 28px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
-                <i class="fas fa-download" style="font-size: 40px; color: var( --wa-teal); margin-bottom: 20px;"></i>
+            <div class="automation-card">
+                <div class="automation-icon">
+                    <i class="fas fa-download"></i>
+                </div>
                 <h3>Receive Webhooks</h3>
                 <p style="margin-bottom: 15px;">Get real-time notifications for incoming messages, status updates, and
                     events.</p>
                 <code
                     style="background: #f0f0f0; padding: 8px 12px; border-radius: 8px; display: inline-block; font-size: 0.8rem;">POST /webhook/incoming</code>
             </div>
-            <div style="background: #fff; border-radius: 24px; padding: 28px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
-                <i class="fas fa-users" style="font-size: 40px; color: var( --wa-teal); margin-bottom: 20px;"></i>
+            <div class="automation-card">
+                <div class="automation-icon">
+                    <i class="fas fa-users"></i>
+                </div>
                 <h3>Manage Contacts</h3>
                 <p style="margin-bottom: 15px;">Create, update, and sync contact lists programmatically.</p>
                 <code
                     style="background: #f0f0f0; padding: 8px 12px; border-radius: 8px; display: inline-block; font-size: 0.8rem;">GET /api/v1/contacts</code>
             </div>
-            <div style="background: #fff; border-radius: 24px; padding: 28px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
-                <i class="fas fa-chart-line" style="font-size: 40px; color: var( --wa-teal); margin-bottom: 20px;"></i>
+            <div class="automation-card">
+                <div class="automation-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
                 <h3>Analytics API</h3>
                 <p style="margin-bottom: 15px;">Fetch conversation metrics, agent performance, and engagement data.</p>
                 <code

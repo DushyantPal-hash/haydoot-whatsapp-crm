@@ -201,6 +201,29 @@ include 'components/navbar.php';
         font-weight: 500;
     }
 
+    .cta-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .cta-image {
+        flex: 0.5;
+        min-width: 280px;
+    }
+
+    .cta-image img {
+        width: 100%;
+        border-radius: 32px;
+        box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.1);
+    }
+
+    .cta-text {
+        flex: 1;
+        text-align: center;
+    }
+
     @media (max-width: 768px) {
         .mission-section {
             grid-template-columns: 1fr;
@@ -224,6 +247,10 @@ include 'components/navbar.php';
         .timeline-dot {
             left: 12px;
             transform: none;
+        }
+
+        .cta-container {
+            flex-direction: column;
         }
     }
 </style>
@@ -494,20 +521,29 @@ include 'components/navbar.php';
     </section>
 
     <!-- CTA Section -->
-    <section style="background: #F0F8FF; padding: 80px 0;">
-        <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto; text-align: center;">
-            <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 20px;">Join Our Growing Community</h2>
-            <p style="color: #5a6b7e; font-size: 1.1rem; max-width: 600px; margin: 0 auto 32px;">Be part of the WhatsApp
-                communication revolution. Start your free trial today.</p>
-            <div class="cta-buttons" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-                <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20start%20a%20free%20trial%20of%20HeyDoot"
-                    class="btn btn-primary btn-lg" style="background: var( --wa-green); border-color: var( --wa-teal);"
-                    target="_blank">
-                    <i class="fab fa-whatsapp"></i> Start Free Trial
-                </a>
-                <a href="<?php echo BASE_URL; ?>/contact.php" class="btn btn-secondary btn-lg">
-                    <i class="fas fa-envelope"></i> Contact Us
-                </a>
+    <section style="background: #F0F8FF; padding: 70px 0;">
+        <div class="container-fluid">
+            <div class="cta-container">
+                <div class="cta-image feature-pair-image">
+                    <img src="<?php echo BASE_URL; ?>/assets/images/logo/heydoot.webp" alt="Why Choose HeyDoot">
+                </div>
+                <div class="cta-text">
+                    <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 20px;">Join Our Growing Community</h2>
+                    <p style="color: #5a6b7e; font-size: 1.1rem; max-width: 600px; margin: 0 auto 32px;">Be part of the
+                        WhatsApp
+                        communication revolution. Start your free trial today.</p>
+                    <div class="cta-buttons"
+                        style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                        <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20start%20a%20free%20trial%20of%20HeyDoot"
+                            class="btn btn-primary btn-lg"
+                            style="background: var( --wa-green); border-color: var( --wa-teal);" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Start Free Trial
+                        </a>
+                        <a href="<?php echo BASE_URL; ?>/contact.php" class="btn btn-secondary btn-lg">
+                            <i class="fas fa-envelope"></i> Contact Us
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

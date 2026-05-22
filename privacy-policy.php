@@ -39,7 +39,7 @@ include 'components/navbar.php';
 <!-- Privacy Policy Hero Section -->
 <section class="hero">
     <div class="floating-dots"></div>
-    <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">
+    <div class="container-fluid">
         <div style="text-align: center;">
             <span class="security-badge"
                 style="background: rgba(37, 211, 102, 0.1); color: var(--wa-green); margin-bottom: 20px; display: inline-block;">
@@ -76,47 +76,47 @@ include 'components/navbar.php';
                         <li style="margin-bottom: 12px;"><a href="#intro"
                                 style="color: #2c3e50; text-decoration: none; transition: color 0.2s;"><i
                                     class="fas fa-chevron-right"
-                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-green);"></i>
+                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-teal);"></i>
                                 Introduction</a></li>
                         <li style="margin-bottom: 12px;"><a href="#info-collect"
                                 style="color: #2c3e50; text-decoration: none;"><i class="fas fa-chevron-right"
-                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-green);"></i> Information
+                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-teal);"></i> Information
                                 We Collect</a></li>
                         <li style="margin-bottom: 12px;"><a href="#info-use"
                                 style="color: #2c3e50; text-decoration: none;"><i class="fas fa-chevron-right"
-                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-green);"></i> How We Use
+                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-teal);"></i> How We Use
                                 Your Information</a></li>
                         <li style="margin-bottom: 12px;"><a href="#data-security"
                                 style="color: #2c3e50; text-decoration: none;"><i class="fas fa-chevron-right"
-                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-green);"></i> Data
+                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-teal);"></i> Data
                                 Security</a></li>
                         <li style="margin-bottom: 12px;"><a href="#data-sharing"
                                 style="color: #2c3e50; text-decoration: none;"><i class="fas fa-chevron-right"
-                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-green);"></i> Data
+                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-teal);"></i> Data
                                 Sharing</a></li>
                         <li style="margin-bottom: 12px;"><a href="#your-rights"
                                 style="color: #2c3e50; text-decoration: none;"><i class="fas fa-chevron-right"
-                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-green);"></i> Your
+                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-teal);"></i> Your
                                 Rights</a></li>
                         <li style="margin-bottom: 12px;"><a href="#cookies"
                                 style="color: #2c3e50; text-decoration: none;"><i class="fas fa-chevron-right"
-                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-green);"></i> Cookies &
+                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-teal);"></i> Cookies &
                                 Tracking</a></li>
                         <li style="margin-bottom: 12px;"><a href="#thirdparty"
                                 style="color: #2c3e50; text-decoration: none;"><i class="fas fa-chevron-right"
-                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-green);"></i> Third-Party
+                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-teal);"></i> Third-Party
                                 Links</a></li>
                         <li style="margin-bottom: 12px;"><a href="#children"
                                 style="color: #2c3e50; text-decoration: none;"><i class="fas fa-chevron-right"
-                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-green);"></i> Children's
+                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-teal);"></i> Children's
                                 Privacy</a></li>
                         <li style="margin-bottom: 12px;"><a href="#policy-changes"
                                 style="color: #2c3e50; text-decoration: none;"><i class="fas fa-chevron-right"
-                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-green);"></i> Policy
+                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-teal);"></i> Policy
                                 Changes</a></li>
                         <li style="margin-bottom: 12px;"><a href="#contact"
                                 style="color: #2c3e50; text-decoration: none;"><i class="fas fa-chevron-right"
-                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-green);"></i> Contact
+                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-teal);"></i> Contact
                                 Us</a></li>
                     </ul>
                 </div>
@@ -132,13 +132,13 @@ include 'components/navbar.php';
                         committed to protecting your personal information and your right to privacy. This Privacy Policy
                         explains how we collect, use, disclose, and safeguard your information when you use our WhatsApp
                         CRM platform and website (<a href="https://heydoot.com"
-                            style="color: var(--wa-green);">https://heydoot.com</a>).</p>
+                            style="color: var(--wa-teal);">https://heydoot.com</a>).</p>
                     <p style="margin-bottom: 16px; line-height: 1.7;">HeyDoot is a product of <strong>HashStudioz
                             Technologies</strong>, and we follow strict data protection standards including GDPR and
                         CCPA compliance frameworks. By using our services, you agree to the collection and use of
                         information in accordance with this policy.</p>
                     <div style="background: #F0F8FF; padding: 20px; border-radius: 16px; margin-top: 20px;">
-                        <i class="fas fa-info-circle" style="color: var(--wa-green); margin-right: 10px;"></i>
+                        <i class="fas fa-info-circle" style="color: var(--wa-teal); margin-right: 10px;"></i>
                         <strong>Key Principle:</strong> We never sell your personal data. Period.
                     </div>
                 </div>
@@ -177,7 +177,7 @@ include 'components/navbar.php';
                     </ul>
 
                     <div style="background: #FDF7F0; padding: 20px; border-radius: 16px; margin: 20px 0;">
-                        <i class="fas fa-database" style="color: var(--wa-green); margin-right: 10px;"></i>
+                        <i class="fas fa-database" style="color: var(--wa-teal); margin-right: 10px;"></i>
                         <strong>Note about WhatsApp Data:</strong> HeyDoot does not access or store your WhatsApp
                         contacts beyond what is necessary for platform functionality. All message data is encrypted
                         end-to-end.
@@ -193,28 +193,28 @@ include 'components/navbar.php';
                         style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 24px 0;">
                         <div style="background: #F8FAFE; padding: 20px; border-radius: 16px;">
                             <i class="fas fa-cogs"
-                                style="font-size: 28px; color: var(--wa-green); margin-bottom: 12px; display: inline-block;"></i>
+                                style="font-size: 28px; color: var(--wa-teal); margin-bottom: 12px; display: inline-block;"></i>
                             <h4 style="margin-bottom: 10px;">Provide & Maintain Service</h4>
                             <p style="color: #5a6b7e;">Operate our platform, process WhatsApp messages, and deliver core
                                 functionality.</p>
                         </div>
                         <div style="background: #F8FAFE; padding: 20px; border-radius: 16px;">
                             <i class="fas fa-chart-line"
-                                style="font-size: 28px; color: var(--wa-green); margin-bottom: 12px; display: inline-block;"></i>
+                                style="font-size: 28px; color: var(--wa-teal); margin-bottom: 12px; display: inline-block;"></i>
                             <h4 style="margin-bottom: 10px;">Improve & Optimize</h4>
                             <p style="color: #5a6b7e;">Analyze usage patterns to enhance features, performance, and user
                                 experience.</p>
                         </div>
                         <div style="background: #F8FAFE; padding: 20px; border-radius: 16px;">
                             <i class="fas fa-headset"
-                                style="font-size: 28px; color: var(--wa-green); margin-bottom: 12px; display: inline-block;"></i>
+                                style="font-size: 28px; color: var(--wa-teal); margin-bottom: 12px; display: inline-block;"></i>
                             <h4 style="margin-bottom: 10px;">Customer Support</h4>
                             <p style="color: #5a6b7e;">Respond to inquiries, troubleshoot issues, and provide technical
                                 assistance.</p>
                         </div>
                         <div style="background: #F8FAFE; padding: 20px; border-radius: 16px;">
                             <i class="fas fa-shield-alt"
-                                style="font-size: 28px; color: var(--wa-green); margin-bottom: 12px; display: inline-block;"></i>
+                                style="font-size: 28px; color: var(--wa-teal); margin-bottom: 12px; display: inline-block;"></i>
                             <h4 style="margin-bottom: 10px;">Security & Compliance</h4>
                             <p style="color: #5a6b7e;">Detect fraud, prevent abuse, and comply with legal obligations.
                             </p>
@@ -230,17 +230,17 @@ include 'components/navbar.php';
                         data:</p>
                     <ul style="margin-bottom: 20px; padding-left: 20px;">
                         <li style="margin-bottom: 10px;"><i class="fas fa-lock"
-                                style="color: var(--wa-green); margin-right: 10px;"></i> <strong>Encryption:</strong>
+                                style="color: var(--wa-teal); margin-right: 10px;"></i> <strong>Encryption:</strong>
                             AES-256 encryption for data at rest and TLS 1.3 for data in transit.</li>
                         <li style="margin-bottom: 10px;"><i class="fas fa-user-shield"
-                                style="color: var(--wa-green); margin-right: 10px;"></i> <strong>Access
+                                style="color: var(--wa-teal); margin-right: 10px;"></i> <strong>Access
                                 Controls:</strong> Strict role-based access controls and multi-factor authentication.
                         </li>
                         <li style="margin-bottom: 10px;"><i class="fas fa-database"
-                                style="color: var(--wa-green); margin-right: 10px;"></i> <strong>Regular
+                                style="color: var(--wa-teal); margin-right: 10px;"></i> <strong>Regular
                                 Backups:</strong> Automated encrypted backups with point-in-time recovery.</li>
                         <li style="margin-bottom: 10px;"><i class="fas fa-chart-simple"
-                                style="color: var(--wa-green); margin-right: 10px;"></i> <strong>Monitoring:</strong>
+                                style="color: var(--wa-teal); margin-right: 10px;"></i> <strong>Monitoring:</strong>
                             24/7 security monitoring and regular penetration testing.</li>
                     </ul>
                     <div
@@ -286,44 +286,44 @@ include 'components/navbar.php';
                         style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: 24px 0;">
                         <div style="border: 1px solid #eef2f6; padding: 16px; border-radius: 12px;">
                             <i class="fas fa-eye"
-                                style="color: var(--wa-green); margin-bottom: 8px; display: inline-block;"></i>
+                                style="color: var(--wa-teal); margin-bottom: 8px; display: inline-block;"></i>
                             <strong>Access</strong>
                             <p style="margin: 8px 0 0; font-size: 0.9rem;">Request a copy of your data</p>
                         </div>
                         <div style="border: 1px solid #eef2f6; padding: 16px; border-radius: 12px;">
                             <i class="fas fa-edit"
-                                style="color: var(--wa-green); margin-bottom: 8px; display: inline-block;"></i>
+                                style="color: var(--wa-teal); margin-bottom: 8px; display: inline-block;"></i>
                             <strong>Rectification</strong>
                             <p style="margin: 8px 0 0; font-size: 0.9rem;">Correct inaccurate information</p>
                         </div>
                         <div style="border: 1px solid #eef2f6; padding: 16px; border-radius: 12px;">
                             <i class="fas fa-trash-alt"
-                                style="color: var(--wa-green); margin-bottom: 8px; display: inline-block;"></i>
+                                style="color: var(--wa-teal); margin-bottom: 8px; display: inline-block;"></i>
                             <strong>Deletion</strong>
                             <p style="margin: 8px 0 0; font-size: 0.9rem;">Request data deletion (Right to be forgotten)
                             </p>
                         </div>
                         <div style="border: 1px solid #eef2f6; padding: 16px; border-radius: 12px;">
                             <i class="fas fa-download"
-                                style="color: var(--wa-green); margin-bottom: 8px; display: inline-block;"></i>
+                                style="color: var(--wa-teal); margin-bottom: 8px; display: inline-block;"></i>
                             <strong>Portability</strong>
                             <p style="margin: 8px 0 0; font-size: 0.9rem;">Receive data in a machine-readable format</p>
                         </div>
                         <div style="border: 1px solid #eef2f6; padding: 16px; border-radius: 12px;">
                             <i class="fas fa-ban"
-                                style="color: var(--wa-green); margin-bottom: 8px; display: inline-block;"></i>
+                                style="color: var(--wa-teal); margin-bottom: 8px; display: inline-block;"></i>
                             <strong>Objection</strong>
                             <p style="margin: 8px 0 0; font-size: 0.9rem;">Opt-out of certain processing</p>
                         </div>
                         <div style="border: 1px solid #eef2f6; padding: 16px; border-radius: 12px;">
                             <i class="fas fa-sliders-h"
-                                style="color: var(--wa-green); margin-bottom: 8px; display: inline-block;"></i>
+                                style="color: var(--wa-teal); margin-bottom: 8px; display: inline-block;"></i>
                             <strong>Restriction</strong>
                             <p style="margin: 8px 0 0; font-size: 0.9rem;">Limit how we process your data</p>
                         </div>
                     </div>
                     <p>To exercise these rights, contact us at <a href="mailto:privacy@heydoot.com"
-                            style="color: var(--wa-green);">privacy@heydoot.com</a>. We will respond within 30 days.</p>
+                            style="color: var(--wa-teal);">privacy@heydoot.com</a>. We will respond within 30 days.</p>
                 </div>
 
                 <!-- Cookies -->
@@ -340,7 +340,7 @@ include 'components/navbar.php';
                     <p>You can control cookies through your browser settings. Disabling cookies may affect certain
                         platform features.</p>
                     <div style="background: #F8FAFE; padding: 15px; border-radius: 12px; margin-top: 16px;">
-                        <i class="fas fa-cookie-bite" style="color: var(--wa-green); margin-right: 10px;"></i>
+                        <i class="fas fa-cookie-bite" style="color: var(--wa-teal); margin-right: 10px;"></i>
                         <strong>Cookie Types We Use:</strong> Essential (required), Functional (preferences), Analytics
                         (performance), Marketing (with consent).
                     </div>
@@ -386,18 +386,22 @@ include 'components/navbar.php';
                     </p>
                     <div style="background: #F8FAFE; padding: 24px; border-radius: 20px; margin-top: 20px;">
                         <p style="margin-bottom: 12px;"><i class="fas fa-envelope"
-                                style="width: 30px; color: var(--wa-green);"></i> <strong>Email:</strong> <a
-                                href="mailto:privacy@heydoot.com"
-                                style="color: var(--wa-green);">privacy@heydoot.com</a></p>
-                        <p style="margin-bottom: 12px;"><i class="fas fa-phone-alt"
-                                style="width: 30px; color: var(--wa-green);"></i> <strong>Phone:</strong> <a
-                                href="tel:+919718517228" style="color: var(--wa-green);">+91 97185 17228</a></p>
+                                style="width: 30px; color: var(--wa-teal);"></i> <strong>Email:</strong> <a
+                                href="mailto:<?php echo SITE_EMAIL; ?>" style="color: var(--wa-teal);">
+                                <?php echo SITE_EMAIL; ?>
+                            </a></p>
+                        <p style="margin-bottom: 12px;"><i class="fas fa-headset"
+                                style="width: 30px; color: var(--wa-teal);"></i> <strong>Phone:</strong> <a
+                                href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>"
+                                style="color: var(--wa-teal);"><?php echo PHONE_NUMBER; ?></a></p>
                         <p style="margin-bottom: 12px;"><i class="fas fa-map-marker-alt"
-                                style="width: 30px; color: var(--wa-green);"></i> <strong>Address:</strong> HashStudioz
-                            Technologies, [Your Full Address Here]</p>
-                        <p><i class="fab fa-whatsapp" style="width: 30px; color: #25D366;"></i>
-                            <strong>WhatsApp:</strong> <a href="https://wa.me/919718517228"
-                                style="color: var(--wa-green);">+91 97185 17228</a>
+                                style="width: 30px; color: var(--wa-teal);"></i> <strong>Address:</strong> HashStudioz
+                            Technologies, PEGASUS TOWER
+                            Block A, Sector 68, Noida, Uttar Pradesh 201309, India</p>
+                        <p><i class="fab fa-whatsapp" style="width: 30px; color: var(--wa-teal);"></i>
+                            <strong>WhatsApp:</strong> <a
+                                href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20HeyDoot%20features"
+                                style="color: var(--wa-teal);"><?php echo CALL_NUMBER; ?></a>
                         </p>
                     </div>
                     <p style="margin-top: 20px;">For data protection inquiries, you may also contact our Data Protection
@@ -406,7 +410,7 @@ include 'components/navbar.php';
 
                 <!-- GDPR & CCPA Notice -->
                 <div
-                    style="background: var(--bg-gradient-green); color: white; padding: 30px; border-radius: 24px; margin-top: 20px;">
+                    style="background: var(--bg-gradient-teal); color: white; padding: 30px; border-radius: 24px; margin-top: 20px;">
                     <h3 style="color: white; margin-bottom: 16px;"><i class="fas fa-gavel"></i> Additional Information
                         for EEA, UK & California Residents</h3>
                     <p style="margin-bottom: 12px;">If you reside in the European Economic Area (EEA), United Kingdom,
@@ -433,7 +437,7 @@ include 'components/navbar.php';
 <section style="background: #F0F8FF; padding: 80px 0;">
     <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">
         <div class="cta-section"
-            style="text-align: center; background: var(--bg-gradient-green); border-radius: 48px; padding: 60px 40px; color: white;">
+            style="text-align: center; background: var(--bg-gradient-teal); border-radius: 48px; padding: 60px 40px; color: white;">
             <h2 style="color: white; margin-bottom: 20px;">Have questions about your data?</h2>
             <p style="margin-bottom: 32px;">Our privacy team is here to help. Reach out anytime.</p>
             <div class="cta-buttons" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">

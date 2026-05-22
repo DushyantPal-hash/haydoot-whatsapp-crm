@@ -1,0 +1,23 @@
+/* reset.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* variables.css */
+:root {
+    --wa-green: #25D366;
+    --wa-dark: #075E54;
+    --wa-teal: #0d6a2e;
+    --wa-head: var(--token-9e58b467-d431-4da3-9173-ad5c0badc8c4, rgb(34, 197, 94));
+    --purple-accent: #5e5ce6;
+    --bg-gradient: radial-gradient(circle at 20% 30%, #e9f5f2 0%, #f7faff 100%);
+    --bg-gradient-green: linear-gradient(135deg, #0a2b2c 0%, #1d4b2c 100%);
+    --glass: rgba(255, 255, 255, 0.75);
+    --navbar-bg: rgba(255, 255, 255, 0.96);
+    --primary: #00A1E0;
+    --secondary: #F59E0B;
+    --dark-bg: #0f2125;
+    --card-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.08);
+}

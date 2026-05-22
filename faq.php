@@ -1,8 +1,65 @@
 <?php
 require_once 'config.php';
-$page_title = "F&Q - HeyDoot";
-include ROOT_PATH . '/components/header.php';
-include ROOT_PATH . '/components/navbar.php';
+$page_meta = [
+    'title' => 'Frequently Asked Questions | HeyDoot',
+    'meta_title' => 'FAQ – Frequently Asked Questions About HeyDoot',
+    'description' => 'Find answers to common questions about HeyDoot, WhatsApp integrations, pricing, setup, automation, multi-agent access, CRM integrations, and customer communication features.',
+
+    'og_title' => 'Frequently Asked Questions | HeyDoot',
+    'og_description' => 'Explore HeyDoot FAQs covering WhatsApp automation, CRM integrations, team collaboration, setup process, pricing, and support.',
+    'og_image' => 'https://heydoot.com/public/images/m1.png',
+    'og_url' => 'https://heydoot.com/faq.php',
+
+    'twitter_title' => 'Frequently Asked Questions | HeyDoot',
+    'twitter_description' => 'Get answers to common HeyDoot questions about WhatsApp integrations, automation, CRM connectivity, and team collaboration.',
+    'twitter_image' => 'https://heydoot.com/public/images/m1.png',
+
+    'canonical' => 'https://heydoot.com/faq.php'
+];
+
+$page_json_ld = [
+    "@context" => "https://schema.org",
+    "@type" => "FAQPage",
+    "mainEntity" => [
+        [
+            "@type" => "Question",
+            "name" => "What is HeyDoot?",
+            "acceptedAnswer" => [
+                "@type" => "Answer",
+                "text" => "HeyDoot is a WhatsApp communication and automation platform that helps businesses manage chats, automate workflows, integrate CRMs, and collaborate with teams."
+            ]
+        ],
+        [
+            "@type" => "Question",
+            "name" => "Can I integrate WhatsApp with my CRM using HeyDoot?",
+            "acceptedAnswer" => [
+                "@type" => "Answer",
+                "text" => "Yes, HeyDoot supports integrations with CRMs and tools like HubSpot, Odoo, Zapier, and other business platforms."
+            ]
+        ],
+        [
+            "@type" => "Question",
+            "name" => "Does HeyDoot support multi-agent access?",
+            "acceptedAnswer" => [
+                "@type" => "Answer",
+                "text" => "Yes, HeyDoot allows multiple team members to manage WhatsApp conversations collaboratively with role-based access."
+            ]
+        ],
+        [
+            "@type" => "Question",
+            "name" => "Can I automate notifications and reminders?",
+            "acceptedAnswer" => [
+                "@type" => "Answer",
+                "text" => "Yes, you can automate reminders, notifications, customer updates, lead alerts, and workflow messages through HeyDoot."
+            ]
+        ]
+    ]
+];
+
+$page_gtag_id = 'G-Q64SDSY0Y4';
+
+include 'components/header.php';
+include 'components/navbar.php';
 ?>
 
 <!-- Page Content -->
@@ -76,4 +133,4 @@ include ROOT_PATH . '/components/navbar.php';
 </main>
 <!-- Page Content Ends here -->
 
-<?php include ROOT_PATH . '/components/footer.php'; ?>
+<?php include 'components/footer.php'; ?>

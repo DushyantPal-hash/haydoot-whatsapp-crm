@@ -1,0 +1,22 @@
+body {
+    font-family: 'Satoshi', sans-serif;
+    background-color: #f7faff;
+    color: #121826;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section {
+    margin: 0 auto;
+    padding: 70px 0px;
+}
+
+.container-fluid {
+    width: 85%;
+    margin: 0 auto;
+}

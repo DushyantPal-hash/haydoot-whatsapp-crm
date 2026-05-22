@@ -1,6 +1,100 @@
 <?php
 // Get current page for active highlighting
 $current_page = basename($_SERVER['PHP_SELF']);
+// NAVBAR DATA
+$navbar = [
+
+    [
+        'title' => 'Features',
+        'link' => BASE_URL . '/features.php',
+        'icon' => 'fas fa-th-large',
+
+        'submenu' => [
+
+            [
+                'title' => 'Multi-Number Inbox',
+                'link' => 'javascript:void(0)',
+                'icon' => 'fas fa-inbox'
+            ],
+
+            [
+                'title' => 'Tickets & Tasks',
+                'link' => 'javascript:void(0)',
+                'icon' => 'fas fa-ticket-alt'
+            ],
+
+            [
+                'title' => 'Group Management',
+                'link' => 'javascript:void(0)',
+                'icon' => 'fas fa-users'
+            ],
+
+            [
+                'title' => 'AI Automations',
+                'link' => 'javascript:void(0)',
+                'icon' => 'fas fa-robot'
+            ]
+
+        ]
+    ],
+
+    [
+        'title' => 'Integrations',
+        'link' => BASE_URL . '/integrations.php',
+        'icon' => 'fas fa-plug',
+
+        'submenu' => [
+
+            [
+                'title' => 'HubSpot CRM Integration',
+                'link' => BASE_URL . '/integrations/hubspot.php',
+                'icon' => 'fab fa-hubspot'
+            ],
+
+            [
+                'title' => 'Zapier & Make Integration',
+                'link' => BASE_URL . '/integrations/zapier.php',
+                'icon' => 'fas fa-bolt'
+            ],
+
+            [
+                'title' => 'Odoo WhatsApp Integration',
+                'link' => BASE_URL . '/integrations/odoo.php',
+                'icon' => 'fab fa-slack'
+            ]
+
+        ]
+    ],
+
+    [
+        'title' => 'Services',
+        'link' => BASE_URL . '/services.php',
+        'icon' => 'fas fa-briefcase'
+    ],
+    [
+        'title' => 'Pricing',
+        'link' => BASE_URL . '/pricing.php',
+        'icon' => 'fas fa-tag'
+    ],
+
+    [
+        'title' => 'Why Us',
+        'link' => BASE_URL . '/whyus.php',
+        'icon' => 'fas fa-star'
+    ],
+
+    [
+        'title' => 'About Us',
+        'link' => BASE_URL . '/about.php',
+        'icon' => 'fas fa-info-circle'
+    ],
+
+    [
+        'title' => 'Contact Us',
+        'link' => BASE_URL . '/contact.php',
+        'icon' => 'fas fa-question-circle'
+    ]
+];
 ?>
 
 <!-- Add these CSS styles for mobile dropdowns -->
@@ -91,42 +185,40 @@ $current_page = basename($_SERVER['PHP_SELF']);
 
         <!-- Desktop Navigation -->
         <div class="nav-pill">
-            <div class="nav-item">
-                <a href="<?php echo BASE_URL; ?>/features.php" class="nav-link">Features</a>
-                <div class="dropdown-menu">
-                    <a href="javascript:void(0)"><i class="fas fa-inbox"></i> Multi-Number
-                        Inbox</a>
-                    <a href="javascript:void(0)"><i class="fas fa-ticket-alt"></i> Tickets &
-                        Tasks</a>
-                    <a href="javascript:void(0)"><i class="fas fa-users"></i> Group
-                        Management</a>
-                    <a href="javascript:void(0)"><i class="fas fa-robot"></i> AI
-                        Automations</a>
-                    <!-- <a href="<?php echo BASE_URL; ?>/multi-inbox.php"><i class="fas fa-inbox"></i> Multi-Number
-                        Inbox</a>
-                    <a href="<?php echo BASE_URL; ?>/tickets.php"><i class="fas fa-ticket-alt"></i> Tickets &
-                        Tasks</a>
-                    <a href="<?php echo BASE_URL; ?>/group-management.php"><i class="fas fa-users"></i> Group
-                        Management</a>
-                    <a href="<?php echo BASE_URL; ?>/automation.php"><i class="fas fa-robot"></i> AI
-                        Automations</a> -->
-                </div>
-            </div>
-            <div class="nav-item">
-                <a href="<?php echo BASE_URL; ?>/integrations.php" class="nav-link">Integrations</a>
-                <div class="dropdown-menu">
-                    <a href="<?php echo BASE_URL; ?>/integrations/hubspot.php"><i class="fab fa-hubspot"></i>
-                        HubSpot CRM Integration</a>
-                    <a href="<?php echo BASE_URL; ?>/integrations/zapier.php"><i class="fas fa-bolt"></i>
-                        Zapier & Make Integration</a>
-                    <a href="<?php echo BASE_URL; ?>/integrations/odoo.php"><i class="fab fa-slack"></i>
-                        Odoo WhatsApp Integration</a>
-                </div>
-            </div>
-            <a href="<?php echo BASE_URL; ?>/pricing.php" class="nav-link">Pricing</a>
-            <a href="<?php echo BASE_URL; ?>/whyus.php" class="nav-link">Why Us</a>
-            <a href="<?php echo BASE_URL; ?>/about.php" class="nav-link">About Us</a>
-            <a href="<?php echo BASE_URL; ?>/contact.php" class="nav-link">Contact Us</a>
+            <?php foreach ($navbar as $item): ?>
+
+                <?php if (isset($item['submenu'])): ?>
+
+                    <div class="nav-item">
+
+                        <a href="<?= $item['link']; ?>" class="nav-link">
+                            <?= $item['title']; ?>
+                        </a>
+
+                        <div class="dropdown-menu">
+
+                            <?php foreach ($item['submenu'] as $sub): ?>
+
+                                <a href="<?= $sub['link']; ?>">
+                                    <i class="<?= $sub['icon']; ?>"></i>
+                                    <?= $sub['title']; ?>
+                                </a>
+
+                            <?php endforeach; ?>
+
+                        </div>
+
+                    </div>
+
+                <?php else: ?>
+
+                    <a href="<?= $item['link']; ?>" class="nav-link">
+                        <?= $item['title']; ?>
+                    </a>
+
+                <?php endif; ?>
+
+            <?php endforeach; ?>
         </div>
 
         <a href="tel:<?php echo str_replace(' ', '', CALL_NUMBER); ?>"
@@ -155,44 +247,52 @@ $current_page = basename($_SERVER['PHP_SELF']);
         </div>
 
         <!-- Mobile Navigation with Dropdowns -->
-        <div class="mobile-nav-item">
-            <div class="mobile-nav-link mobile-dropdown-trigger" data-dropdown="features-dropdown">
-                <i class="fas fa-th-large"></i> Features
-                <i class="fas fa-chevron-down dropdown-arrow"></i>
-            </div>
-            <div class="mobile-dropdown-menu" id="features-dropdown">
-                <a href="<?php echo BASE_URL; ?>/multi-inbox.php"><i class="fas fa-inbox"></i> Multi-Number
-                    Inbox</a>
-                <a href="<?php echo BASE_URL; ?>/tickets.php"><i class="fas fa-ticket-alt"></i> Tickets &
-                    Tasks</a>
-                <a href="<?php echo BASE_URL; ?>/group-management.php"><i class="fas fa-users"></i> Group
-                    Management</a>
-                <a href="<?php echo BASE_URL; ?>/automation.php"><i class="fas fa-robot"></i> AI Automations</a>
-            </div>
-        </div>
+        <?php foreach ($navbar as $key => $item): ?>
 
-        <div class="mobile-nav-item">
-            <div class="mobile-nav-link mobile-dropdown-trigger" data-dropdown="integrations-dropdown">
-                <i class="fas fa-plug"></i> Integrations
-                <i class="fas fa-chevron-down dropdown-arrow"></i>
-            </div>
-            <div class="mobile-dropdown-menu" id="integrations-dropdown">
-                <a href="<?php echo BASE_URL; ?>/integrations/hubspot.php"><i class="fab fa-hubspot"></i> HubSpot
-                    CRM</a>
-                <a href="<?php echo BASE_URL; ?>/integrations/zapier.php"><i class="fas fa-bolt"></i> Zapier &
-                    Make</a>
-                <a href="<?php echo BASE_URL; ?>/integrations/odoo.php"><i class="fab fa-slack"></i> Odoo
-                    Integration</a>
-            </div>
-        </div>
+            <?php if (isset($item['submenu'])): ?>
 
-        <a href="<?php echo BASE_URL; ?>/pricing.php" class="mobile-nav-link"><i class="fas fa-tag"></i>
-            Pricing</a>
-        <a href="<?php echo BASE_URL; ?>/whyus.php" class="mobile-nav-link"><i class="fas fa-star"></i> Why Us</a>
-        <a href="<?php echo BASE_URL; ?>/about.php" class="mobile-nav-link"><i class="fas fa-info-circle"></i>
-            About Us</a>
-        <a href="<?php echo BASE_URL; ?>/contact.php" class="mobile-nav-link"><i class="fas fa-question-circle"></i>
-            Contact Us</a>
+                <div class="mobile-nav-item">
+
+                    <div class="mobile-nav-link mobile-dropdown-trigger" data-dropdown="dropdown-<?= $key; ?>">
+
+                        <div>
+                            <i class="<?= $item['icon']; ?>"></i>
+                            <?= $item['title']; ?>
+                        </div>
+
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+
+                    </div>
+
+                    <div class="mobile-dropdown-menu" id="dropdown-<?= $key; ?>">
+
+                        <?php foreach ($item['submenu'] as $sub): ?>
+
+                            <a href="<?= $sub['link']; ?>">
+
+                                <i class="<?= $sub['icon']; ?>"></i>
+                                <?= $sub['title']; ?>
+
+                            </a>
+
+                        <?php endforeach; ?>
+
+                    </div>
+
+                </div>
+
+            <?php else: ?>
+
+                <a href="<?= $item['link']; ?>" class="mobile-nav-link">
+
+                    <i class="<?= $item['icon']; ?>"></i>
+                    <?= $item['title']; ?>
+
+                </a>
+
+            <?php endif; ?>
+
+        <?php endforeach; ?>
 
 
         <div class="mobile-menu-cta">

@@ -1,0 +1,114 @@
+/* automation.css */
+.automation-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 30px;
+}
+
+.automation-card {
+    flex: 1;
+    min-width: 335px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    border-radius: 48px;
+    padding: 36px 28px;
+    transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    box-shadow: 0 30px 40px -20px rgba(0, 0, 0, 0.12);
+    position: relative;
+    overflow: hidden;
+}
+
+.automation-card::before {
+    content: '';
+    position: absolute;
+    top: -20%;
+    left: -20%;
+    width: 140%;
+    height: 140%;
+    background: radial-gradient(circle at 30% 20%, rgba(37, 211, 102, 0.08), transparent 70%);
+    transition: opacity 0.4s;
+    opacity: 0;
+    z-index: 0;
+}
+
+.automation-card:hover::before {
+    opacity: 1;
+}
+
+.automation-card:hover {
+    transform: translateY(-10px);
+    background: white;
+    border-color: rgba(37, 211, 102, 0.2);
+    box-shadow: 0 35px 45px -15px rgba(0, 0, 0, 0.2);
+}
+
+.automation-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(145deg, #e6f5e9, #ffffff);
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    color: var(--wa-teal);
+    margin-bottom: 28px;
+    box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s;
+}
+
+.automation-card:hover .automation-icon {
+    background: var(--wa-teal);
+    color: white;
+    transform: scale(0.98);
+}
+
+.automation-card h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+    background: linear-gradient(125deg, #1a3d34, #277e4a);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.automation-card p {
+    color: #3c5a54;
+    line-height: 1.45;
+    margin-bottom: 24px;
+}
+
+.automation-tag {
+    display: inline-block;
+    background: #effbf2;
+    padding: 5px 14px;
+    border-radius: 40px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #0f6e3a;
+    letter-spacing: 0.3px;
+}
+
+.automation-feature-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.automation-feature-list li {
+    font-size: 0.9rem;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.automation-feature-list li i {
+    color: var(--wa-teal);
+    font-size: 0.9rem;
+}

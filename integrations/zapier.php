@@ -1,18 +1,71 @@
 <?php
 require_once dirname(__DIR__) . '/config.php';
-$page_title = "Features - HeyDoot";
+
+$page_meta = [
+    'title' => 'Zapier WhatsApp Integration | HeyDoot',
+    'meta_title' => 'Zapier WhatsApp Integration – Connect Apps with WhatsApp Using HeyDoot',
+    'description' => 'Connect Zapier with WhatsApp using HeyDoot and automate notifications, alerts, lead updates, customer communication, and workflows across thousands of apps without coding.',
+
+    'og_title' => 'Zapier WhatsApp Integration | HeyDoot',
+    'og_description' => 'Integrate Zapier with WhatsApp using HeyDoot. Automate workflows, app notifications, lead alerts, customer updates, and business communication instantly.',
+    'og_image' => 'https://heydoot.com/public/images/m1.png',
+    'og_url' => 'https://heydoot.com/integrations/zapier.php',
+
+    'twitter_title' => 'Zapier WhatsApp Integration | HeyDoot',
+    'twitter_description' => 'Automate WhatsApp notifications and workflows with Zapier + HeyDoot. Connect thousands of apps and streamline customer communication.',
+    'twitter_image' => 'https://heydoot.com/public/images/m1.png',
+
+    'canonical' => 'https://heydoot.com/integrations/zapier.php'
+];
+
+$page_json_ld = [
+    "@context" => "https://schema.org",
+    "@type" => "Service",
+    "name" => "Zapier WhatsApp Integration",
+    "serviceType" => "WhatsApp Integration Service",
+    "provider" => [
+        "@type" => "Organization",
+        "name" => "HeyDoot",
+        "url" => "https://heydoot.com/"
+    ],
+    "description" => "Integrate Zapier with WhatsApp using HeyDoot to automate notifications, app workflows, customer communication, lead alerts, and business messaging across multiple platforms.",
+    "areaServed" => "Worldwide",
+    "url" => "https://heydoot.com/integrations/zapier.php",
+    "offers" => [
+        "@type" => "Offer",
+        "price" => "0",
+        "priceCurrency" => "USD"
+    ]
+];
+
+$page_gtag_id = 'G-Q64SDSY0Y4';
+
 include ROOT_PATH . '/components/header.php';
 include ROOT_PATH . '/components/navbar.php';
 ?>
 
 <main>
+    <style>
+        .orange-icon {
+            background: #ffece3;
+            color: #FF4A00;
+        }
+
+        .automation-card:hover .orange-icon {
+            background: #FF4A00;
+            color: white;
+            transform: scale(0.98);
+        }
+    </style>
+
     <!-- Hero Section with Zapier flavor -->
     <section class="hero" style="background: linear-gradient(135deg, #0a1c1a 0%, #2d2a1f 100%);">
         <div class="floating-dots"></div>
         <div style="max-width: 900px; margin: 0 auto; position: relative; z-index: 2;">
             <div
                 style="display: inline-block; background: rgba(255,255,255,0.12); backdrop-filter: blur(8px); padding: 6px 18px; border-radius: 60px; margin-bottom: 24px;">
-                <span style="color: #FF4A00; font-weight: 700;">⚡ Official Zapier Partner</span>
+                <span style="color: #FF4A00; font-weight: 700;"><i class="fas fa-bolt"></i> Official Zapier
+                    Partner</span>
             </div>
             <h1 style="color: white;">Connect <span style="color: #FF4A00;">HeyDoot</span> <br>to 6,000+ apps via
                 <span style="color: #FF4A00;">Zapier</span>
@@ -20,7 +73,7 @@ include ROOT_PATH . '/components/navbar.php';
             <p class="hero-desc">Automate WhatsApp messages, create leads, sync conversations — no code. Trigger actions
                 across your entire stack.</p>
             <div class="cta-group">
-                <a href="#" class="btn btn-zapier btn-lg" style="background: #FF4A00;"><i class="fab fa-zapier"></i>
+                <a href="#" class="btn btn-zapier btn-lg" style="background: #FF4A00;"><i class="fas fa-bolt"></i>
                     Connect to Zapier</a>
                 <a href="#" class="btn btn-secondary btn-lg"><i class="fas fa-play-circle"></i> Watch Demo</a>
             </div>
@@ -35,7 +88,9 @@ include ROOT_PATH . '/components/navbar.php';
                 style="width: 65%; margin: 0 auto; background: #1e1e2a; border-radius: 48px; padding: 8px;">
                 <div style="background: #2a2a35; border-radius: 40px; padding: 30px 20px; text-align: center;">
                     <div style=" display: flex; justify-content: center; align-items: center;">
-                        <i class="fas fa-bolt" style="font-size: 48px; color: #FF4A00;"></i>
+                        <!-- <i class="fas fa-bolt" style="font-size: 48px; color: #FF4A00;"></i> -->
+                        <img src="<?php echo BASE_URL; ?>/assets/icons/zapier-orange.svg" alt="Zapier"
+                            style="width: 10%;">
                         <i class="fas fa-plus" style="margin: 0 20px; color: white;"></i>
                         <i class="fab fa-whatsapp" style="font-size: 48px; color: #25D366;"></i>
                     </div>
@@ -140,30 +195,26 @@ include ROOT_PATH . '/components/navbar.php';
                             <h2 style="font-size: 1.8rem; font-weight: 700;">Steps to connect HeyDoot with Zapier
                             </h2>
                         </div>
-                        <div class="automation-grid"
-                            style="grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); display: grid; gap: 20px;">
-                            <div class="automation-card" style="padding: 24px;">
-                                <div class="automation-icon" style="background: #FF4A00; color: white;">
+                        <div class="automation-grid">
+                            <div class="automation-card">
+                                <div class="automation-icon orange-icon">
                                     <i class="fas fa-bolt"></i>
                                 </div>
                                 <h3>1. Find HeyDoot</h3>
                                 <p>In Zapier, search "HeyDoot" under Apps → Click Connect.</p>
                             </div>
-                            <div class="automation-card" style="padding: 24px;">
-                                <div class="automation-icon" style="background: #FF4A00; color: white;"><i
-                                        class="fas fa-key"></i></div>
+                            <div class="automation-card">
+                                <div class="automation-icon orange-icon"><i class="fas fa-key"></i></div>
                                 <h3>2. Authenticate</h3>
                                 <p>Use your HeyDoot API key or OAuth login (popup).</p>
                             </div>
-                            <div class="automation-card" style="padding: 24px;">
-                                <div class="automation-icon" style="background: #FF4A00; color: white;"><i
-                                        class="fas fa-bullseye"></i></div>
+                            <div class="automation-card">
+                                <div class="automation-icon orange-icon"><i class="fas fa-bullseye"></i></div>
                                 <h3>3. Pick Trigger/Action</h3>
                                 <p>Choose from events: New Inbound Message, Send Message, etc.</p>
                             </div>
-                            <div class="automation-card" style="padding: 24px;">
-                                <div class="automation-icon" style="background: #FF4A00; color: white;"><i
-                                        class="fas fa-laptop-code"></i></div>
+                            <div class="automation-card">
+                                <div class="automation-icon orange-icon"><i class="fas fa-laptop-code"></i></div>
                                 <h3>4. Test & Publish</h3>
                                 <p>Test your zap, turn it on — automation live</p>
                             </div>
@@ -264,7 +315,7 @@ include ROOT_PATH . '/components/navbar.php';
                     <div id="done-zapier"
                         style="background: linear-gradient(115deg, #fef6e8, #fff2e5); border-radius: 32px; padding: 32px; text-align: center; margin: 40px 0 32px;">
                         <i class="fas fa-check-circle" style="font-size: 52px; color: #FF4A00;"></i>
-                        <h2 style="font-size: 2rem; font-weight: 800; margin-top: 12px;">Done 🥳</h2>
+                        <h2 style="font-size: 2rem; font-weight: 800; margin-top: 12px;">Done</h2>
                         <p style="margin-top: 8px;">Your HeyDoot + Zapier connection is ready. Start building powerful
                             cross-app workflows.</p>
                         <a href="#" class="btn"

@@ -77,26 +77,30 @@ include 'components/navbar.php';
                 </div>
             </div>
             <div class="main-overlay-card">
-                <div class="overlay-item">
-                    <div style="display:flex; gap:14px;">
-                        <div class="icon-circle"><i class="fas fa-inbox"></i></div>
-                        <div>
-                            <div style="font-weight:800;">Multi-Number Inbox</div>
-                            <div style="font-size:0.7rem;">Active: 3 Regions (US, UK, IN)</div>
+                <a href="<?php echo BASE_URL; ?>/features.php">
+                    <div class="overlay-item">
+                        <div style="display:flex; gap:14px; align-items: center;">
+                            <div class="icon-circle"><i class="fas fa-inbox"></i></div>
+                            <div>
+                                <div style="font-weight:800;">Multi-Number Inbox</div>
+                                <div style="font-size:0.7rem;">Active: 3 Regions (US, UK, IN)</div>
+                            </div>
                         </div>
+                        <i class="fas fa-chevron-right"></i>
                     </div>
-                    <i class="fas fa-chevron-right"></i>
-                </div>
-                <div class="overlay-item" style="border-bottom:none;">
-                    <div style="display:flex; gap:14px;">
-                        <div class="icon-circle"><i class="fas fa-robot"></i></div>
-                        <div>
-                            <div style="font-weight:800;">AI Analysis</div>
-                            <div style="font-size:0.7rem;">Auto-Response + Routing</div>
+                </a>
+                <a href="javascript:void(0)">
+                    <div class="overlay-item" style="border-bottom:none;">
+                        <div style="display:flex; gap:14px; align-items: center;">
+                            <div class="icon-circle"><i class="fas fa-robot"></i></div>
+                            <div>
+                                <div style="font-weight:800;">AI Analysis</div>
+                                <div style="font-size:0.7rem;">Auto-Response + Routing</div>
+                            </div>
                         </div>
+                        <i class="fas fa-chevron-right"></i>
                     </div>
-                    <i class="fas fa-chevron-right"></i>
-                </div>
+                </a>
             </div>
         </div>
     </div>
@@ -233,7 +237,7 @@ include 'components/navbar.php';
             </div>
         </div>
         <div style="margin-top: 48px; text-align: center;">
-            <a href="tel:+91 9500069296" class="btn btn-ghost-dark btn-md demo-btn"><i class="fas fa-cogs"></i>
+            <a href="javascript:void(0)" class="btn btn-ghost-dark btn-md demo-btn"><i class="fas fa-cogs"></i>
                 Explore all triggers <i class="fas fa-arrow-right"></i></a>
         </div>
     </div>

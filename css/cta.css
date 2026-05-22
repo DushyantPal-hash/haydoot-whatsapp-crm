@@ -1,0 +1,27 @@
+/* cta.css */
+.cta-section {
+    background: linear-gradient(105deg, #0a2b2c 0%, #1d4b2c 100%);
+    border-radius: 64px;
+    padding: 64px 48px;
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.cta-section h2 {
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.cta-section p {
+    font-size: 1.1rem;
+    margin-bottom: 32px;
+    opacity: 0.9;
+}

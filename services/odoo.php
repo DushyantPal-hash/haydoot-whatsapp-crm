@@ -1,7 +1,7 @@
 <?php
 require_once dirname(__DIR__) . '/config.php';
 $page_meta = [
-    'title' => 'Odoo WhatsApp Integration | HeyDoot',
+    'title' => 'Odoo WhatsApp Integration Service | HeyDoot',
     'meta_title' => 'Odoo WhatsApp Integration – Automate Odoo Notifications with HeyDoot',
     'description' => 'Connect Odoo with WhatsApp using HeyDoot and automate order confirmations, invoices, delivery updates, payment reminders, and customer notifications without WhatsApp API complexity.',
 
@@ -42,10 +42,6 @@ $page_gtag_id = 'G-Q64SDSY0Y4';
 include ROOT_PATH . '/components/header.php';
 include ROOT_PATH . '/components/navbar.php';
 ?>
-
-<!-- Font Awesome Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@v11/font/simple-icons.min.css">
 
 <style>
     .btn-odoo {
@@ -393,7 +389,7 @@ include ROOT_PATH . '/components/navbar.php';
                                 </div>
                                 <div class="feature-pair-image">
                                     <img src="<?php echo BASE_URL; ?>/assets/images/logo/heydoot.webp"
-                                        alt="API Integration Dashboard">
+                                        alt="Why Choose HeyDoot">
                                 </div>
                             </div>
                         </div>
