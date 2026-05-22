@@ -1,0 +1,124 @@
+/* why-choose.css */
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    align-items: center;
+}
+
+.why-list {
+    list-style: none;
+}
+
+.why-list li {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.why-list li i {
+    font-size: 24px;
+    color: var(--wa-teal);
+    background: #e6f7ec;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, #0a2b2c, #1d4b2c);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.section-sub {
+    text-align: center;
+    color: #4a5568;
+    max-width: 700px;
+    margin: 0 auto 56px auto;
+    font-size: 1.1rem;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+}
+
+.feature-card {
+    background: white;
+    border-radius: 32px;
+    padding: 32px 24px;
+    box-shadow: var(--card-shadow);
+    transition: all 0.25s ease;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    position: relative;
+}
+
+.feature-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 0%;
+    width: 4px;
+    background: var(--bg-gradient-green);
+    border-radius: 20px;
+    transition: all 0.4s ease;
+}
+
+.feature-card:hover::before {
+    height: 80%;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px) scale(1.03);
+}
+
+.feature-icon {
+    width: 56px;
+    height: 56px;
+    background: #e6f7ec;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    font-size: 28px;
+    color: var(--wa-teal);
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+    transform: rotate(5deg) scale(1.1);
+}
+
+.stats-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 40px;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 40px;
+    padding: 32px;
+    text-align: center;
+    flex: 1;
+    min-width: 180px;
+    box-shadow: var(--card-shadow);
+}
+
+.stat-number {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--wa-teal);
+}

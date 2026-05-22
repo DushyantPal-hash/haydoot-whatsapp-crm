@@ -620,8 +620,7 @@ include 'components/navbar.php';
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
                 <div style="background: #F8FAFE; border-radius: 24px; padding: 24px; text-align: center;">
-                    <i class="fas fa-phone-alt"
-                        style="font-size: 40px; color: var( --wa-teal); margin-bottom: 16px;"></i>
+                    <i class="fas fa-headset" style="font-size: 40px; color: var( --wa-teal); margin-bottom: 16px;"></i>
                     <h3>Extra WhatsApp Number</h3>
                     <p style="font-size: 1.5rem; font-weight: 700; color: var( --wa-teal);">$10<span
                             style="font-size: 0.9rem;">/month</span></p>

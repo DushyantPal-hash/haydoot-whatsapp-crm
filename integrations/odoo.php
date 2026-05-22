@@ -1,12 +1,48 @@
 <?php
 require_once dirname(__DIR__) . '/config.php';
-$page_title = "Features - HeyDoot";
+$page_meta = [
+    'title' => 'Odoo WhatsApp Integration | HeyDoot',
+    'meta_title' => 'Odoo WhatsApp Integration – Automate Odoo Notifications with HeyDoot',
+    'description' => 'Connect Odoo with WhatsApp using HeyDoot and automate order confirmations, invoices, delivery updates, payment reminders, and customer notifications without WhatsApp API complexity.',
+
+    'og_title' => 'Odoo WhatsApp Integration | HeyDoot',
+    'og_description' => 'Automate Odoo notifications on WhatsApp with HeyDoot. Send order updates, invoices, shipping alerts, and customer notifications directly from Odoo.',
+    'og_image' => 'https://heydoot.com/public/images/m1.png',
+    'og_url' => 'https://heydoot.com/integrations/odoo.php',
+
+    'twitter_title' => 'Odoo WhatsApp Integration | HeyDoot',
+    'twitter_description' => 'Integrate Odoo with WhatsApp using HeyDoot and automate business notifications, invoices, reminders, and customer communication.',
+    'twitter_image' => 'https://heydoot.com/public/images/m1.png',
+
+    'canonical' => 'https://heydoot.com/integrations/odoo.php'
+];
+
+$page_json_ld = [
+    "@context" => "https://schema.org",
+    "@type" => "Service",
+    "name" => "Odoo WhatsApp Integration",
+    "serviceType" => "WhatsApp Integration Service",
+    "provider" => [
+        "@type" => "Organization",
+        "name" => "HeyDoot",
+        "url" => "https://heydoot.com/"
+    ],
+    "description" => "Integrate Odoo ERP with WhatsApp using HeyDoot to automate order updates, invoice notifications, delivery alerts, payment reminders, and customer communication workflows.",
+    "areaServed" => "Worldwide",
+    "url" => "https://heydoot.com/integrations/odoo.php",
+    "offers" => [
+        "@type" => "Offer",
+        "price" => "0",
+        "priceCurrency" => "USD"
+    ]
+];
+
+$page_gtag_id = 'G-Q64SDSY0Y4';
+
 include ROOT_PATH . '/components/header.php';
 include ROOT_PATH . '/components/navbar.php';
 ?>
-<!-- Font Awesome Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@v11/font/simple-icons.min.css">
+
 <style>
     /* Odoo accent colors */
     .btn-odoo {

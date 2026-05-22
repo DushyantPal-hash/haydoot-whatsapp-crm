@@ -60,8 +60,8 @@ $extra_scripts = $page_extra_scripts ?? [];
     <?php if ($json_ld): ?>
         <!-- JSON-LD Structured Data -->
         <script type="application/ld+json">
-            <?php echo json_encode($json_ld, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT); ?>
-            </script>
+                                        <?php echo json_encode($json_ld, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT); ?>
+                                        </script>
     <?php endif; ?>
 
     <!-- Google tag (gtag.js) -->
@@ -80,7 +80,23 @@ $extra_scripts = $page_extra_scripts ?? [];
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@v11/font/simple-icons.min.css">
-    <link rel="stylesheet" href="<?php echo BASE_URL; ?>/style.css">
+    <!-- All Css -->
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/reset.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/variables.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/base.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/navbar.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/mobile-menu.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/buttons.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/hero.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/features.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/why-choose.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/faq.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/security.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/automation.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/cta.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/footer.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/utility.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/responsive.css">
 
     <!-- Page-specific extra scripts/styles -->
     <?php foreach ($extra_scripts as $script): ?>

@@ -38,7 +38,8 @@ include 'components/navbar.php';
 
 <!-- Terms of Service Hero Section -->
 <section class="terms-hero" style="background: var(--bg-gradient-green); padding: 80px 0 60px;">
-    <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">
+    <div class="floating-dots"></div>
+    <div class="container-fluid">
         <div style="text-align: center;">
             <span class="security-badge"
                 style="background: rgba(37, 211, 102, 0.1); color: var(--wa-green); margin-bottom: 20px; display: inline-block;">
@@ -74,59 +75,59 @@ include 'components/navbar.php';
                     <ul style="list-style: none; padding: 0; margin: 0;">
                         <li style="margin-bottom: 12px;"><a href="#agreement"
                                 style="color: #2c3e50; text-decoration: none;"><i class="fas fa-chevron-right"
-                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-green);"></i>
+                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-teal);"></i>
                                 Agreement</a></li>
                         <li style="margin-bottom: 12px;"><a href="#definitions"
                                 style="color: #2c3e50; text-decoration: none;"><i class="fas fa-chevron-right"
-                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-green);"></i>
+                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-teal);"></i>
                                 Definitions</a></li>
                         <li style="margin-bottom: 12px;"><a href="#account"
                                 style="color: #2c3e50; text-decoration: none;"><i class="fas fa-chevron-right"
-                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-green);"></i> Account
+                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-teal);"></i> Account
                                 Terms</a></li>
                         <li style="margin-bottom: 12px;"><a href="#acceptable-use"
                                 style="color: #2c3e50; text-decoration: none;"><i class="fas fa-chevron-right"
-                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-green);"></i> Acceptable
+                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-teal);"></i> Acceptable
                                 Use</a></li>
                         <li style="margin-bottom: 12px;"><a href="#subscription"
                                 style="color: #2c3e50; text-decoration: none;"><i class="fas fa-chevron-right"
-                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-green);"></i>
+                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-teal);"></i>
                                 Subscription & Billing</a></li>
                         <li style="margin-bottom: 12px;"><a href="#cancellation"
                                 style="color: #2c3e50; text-decoration: none;"><i class="fas fa-chevron-right"
-                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-green);"></i>
+                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-teal);"></i>
                                 Cancellation & Refunds</a></li>
                         <li style="margin-bottom: 12px;"><a href="#data-ownership"
                                 style="color: #2c3e50; text-decoration: none;"><i class="fas fa-chevron-right"
-                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-green);"></i> Data
+                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-teal);"></i> Data
                                 Ownership</a></li>
                         <li style="margin-bottom: 12px;"><a href="#service-level"
                                 style="color: #2c3e50; text-decoration: none;"><i class="fas fa-chevron-right"
-                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-green);"></i> Service
+                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-teal);"></i> Service
                                 Level</a></li>
                         <li style="margin-bottom: 12px;"><a href="#limitations"
                                 style="color: #2c3e50; text-decoration: none;"><i class="fas fa-chevron-right"
-                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-green);"></i> Limitations
+                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-teal);"></i> Limitations
                                 of Liability</a></li>
                         <li style="margin-bottom: 12px;"><a href="#indemnification"
                                 style="color: #2c3e50; text-decoration: none;"><i class="fas fa-chevron-right"
-                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-green);"></i>
+                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-teal);"></i>
                                 Indemnification</a></li>
                         <li style="margin-bottom: 12px;"><a href="#termination"
                                 style="color: #2c3e50; text-decoration: none;"><i class="fas fa-chevron-right"
-                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-green);"></i>
+                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-teal);"></i>
                                 Termination</a></li>
                         <li style="margin-bottom: 12px;"><a href="#governing-law"
                                 style="color: #2c3e50; text-decoration: none;"><i class="fas fa-chevron-right"
-                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-green);"></i> Governing
+                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-teal);"></i> Governing
                                 Law</a></li>
                         <li style="margin-bottom: 12px;"><a href="#modifications"
                                 style="color: #2c3e50; text-decoration: none;"><i class="fas fa-chevron-right"
-                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-green);"></i>
+                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-teal);"></i>
                                 Modifications</a></li>
                         <li style="margin-bottom: 12px;"><a href="#contact"
                                 style="color: #2c3e50; text-decoration: none;"><i class="fas fa-chevron-right"
-                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-green);"></i> Contact
+                                    style="font-size: 10px; margin-right: 8px; color: var(--wa-teal);"></i> Contact
                                 Us</a></li>
                     </ul>
                 </div>
@@ -253,7 +254,7 @@ include 'components/navbar.php';
                         law.</p>
 
                     <div style="background: #F0F8FF; padding: 15px 20px; border-radius: 12px; margin-top: 20px;">
-                        <i class="fas fa-tag" style="color: var(--wa-green); margin-right: 10px;"></i>
+                        <i class="fas fa-tag" style="color: var(--wa-teal); margin-right: 10px;"></i>
                         <strong>Special Offer:</strong> Annual subscriptions receive a 20% discount compared to monthly
                         billing.
                     </div>
@@ -302,7 +303,7 @@ include 'components/navbar.php';
                         contacts, and settings in a standard format (JSON/CSV) upon request within 30 days.</p>
 
                     <div style="background: #F8FAFE; padding: 15px 20px; border-radius: 12px; margin-top: 20px;">
-                        <i class="fas fa-database" style="color: var(--wa-green); margin-right: 10px;"></i>
+                        <i class="fas fa-database" style="color: var(--wa-teal); margin-right: 10px;"></i>
                         <strong>Data Retention:</strong> We retain your data for 90 days after account termination.
                         After this period, data is permanently deleted from our systems.
                     </div>
@@ -402,7 +403,7 @@ include 'components/navbar.php';
                         any class, collective, or representative action or proceeding.</p>
 
                     <div style="background: #F0F8FF; padding: 15px 20px; border-radius: 12px; margin-top: 20px;">
-                        <i class="fas fa-gavel" style="color: var(--wa-green); margin-right: 10px;"></i>
+                        <i class="fas fa-gavel" style="color: var(--wa-teal); margin-right: 10px;"></i>
                         <strong>Jurisdiction:</strong> These Terms are governed by Indian law. For users outside India,
                         you consent to the exclusive jurisdiction of courts in Chandigarh, India.
                     </div>
@@ -427,28 +428,38 @@ include 'components/navbar.php';
                 <!-- Contact -->
                 <div id="contact" class="terms-section" style="margin-bottom: 48px; scroll-margin-top: 80px;">
                     <h2 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 20px; color: #1a2a3a;">14. Contact
-                        Information</h2>
+                        Information
+                    </h2>
                     <p>If you have questions, concerns, or requests regarding these Terms:</p>
                     <div style="background: #F8FAFE; padding: 24px; border-radius: 20px; margin-top: 20px;">
                         <p style="margin-bottom: 12px;"><i class="fas fa-envelope"
-                                style="width: 30px; color: var(--wa-green);"></i> <strong>Email:</strong> <a
-                                href="mailto:legal@heydoot.com" style="color: var(--wa-green);">legal@heydoot.com</a>
-                        </p>
-                        <p style="margin-bottom: 12px;"><i class="fas fa-phone-alt"
-                                style="width: 30px; color: var(--wa-green);"></i> <strong>Phone:</strong> <a
-                                href="tel:+919718517228" style="color: var(--wa-green);">+91 97185 17228</a></p>
+                                style="width: 30px; color: var(--wa-teal);"></i> <strong>Email:</strong> <a
+                                href="mailto:<?php echo SITE_EMAIL; ?>" style="color: var(--wa-teal);">
+                                <?php echo SITE_EMAIL; ?>
+                            </a></p>
+                        <p style="margin-bottom: 12px;"><i class="fas fa-headset"
+                                style="width: 30px; color: var(--wa-teal);"></i> <strong>Phone:</strong> <a
+                                href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>"
+                                style="color: var(--wa-teal);">
+                                <?php echo PHONE_NUMBER; ?>
+                            </a></p>
                         <p style="margin-bottom: 12px;"><i class="fas fa-map-marker-alt"
-                                style="width: 30px; color: var(--wa-green);"></i> <strong>Address:</strong> HashStudioz
-                            Technologies, SCO 90-92, 4th Floor, Sector 34A, Chandigarh, India - 160022</p>
-                        <p><i class="fab fa-whatsapp" style="width: 30px; color: #25D366;"></i> <strong>WhatsApp
-                                Support:</strong> <a href="https://wa.me/919718517228"
-                                style="color: var(--wa-green);">+91 97185 17228</a></p>
+                                style="width: 30px; color: var(--wa-teal);"></i> <strong>Address:</strong> HashStudioz
+                            Technologies, PEGASUS TOWER
+                            Block A, Sector 68, Noida, Uttar Pradesh 201309, India</p>
+                        <p><i class="fab fa-whatsapp" style="width: 30px; color: var(--wa-teal);"></i>
+                            <strong>WhatsApp:</strong> <a
+                                href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20HeyDoot%20features"
+                                style="color: var(--wa-teal);">
+                                <?php echo CALL_NUMBER; ?>
+                            </a>
+                        </p>
                     </div>
                 </div>
 
                 <!-- Complete Agreement -->
                 <div
-                    style="background: var(--bg-gradient-green); color: white; padding: 30px; border-radius: 24px; margin-top: 20px;">
+                    style="background: var(--bg-gradient-teal); color: white; padding: 30px; border-radius: 24px; margin-top: 20px;">
                     <h3 style="color: white; margin-bottom: 16px;"><i class="fas fa-file-signature"></i> Entire
                         Agreement</h3>
                     <p style="margin-bottom: 0;">These Terms, together with our Privacy Policy, constitute the entire
