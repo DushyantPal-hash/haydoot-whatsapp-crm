@@ -1,5 +1,4 @@
 <?php
-// pages/integrations.php
 $page_meta = [
     'title' => 'Integrations - HeyDoot WhatsApp CRM',
     'meta_title' => 'Integrations | HeyDoot - Connect WhatsApp with Your Favorite Tools',

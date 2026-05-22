@@ -1,5 +1,4 @@
 <?php
-// pages/terms-of-service.php
 $page_meta = [
     'title' => 'Terms of Service - HeyDoot WhatsApp CRM',
     'meta_title' => 'Terms of Service | HeyDoot - WhatsApp CRM for Teams',
