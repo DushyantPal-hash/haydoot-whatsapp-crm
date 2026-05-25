@@ -9,7 +9,7 @@ if ($is_local) {
     define('ROOT_PATH', $_SERVER['DOCUMENT_ROOT'] . '/heydoot');
 } else {
     // cPanel production settings
-    define('BASE_URL', 'https://heydoot.com/');
+    define('BASE_URL', 'https://heydoot.com');
     define('ROOT_PATH', $_SERVER['DOCUMENT_ROOT']);
 }
 

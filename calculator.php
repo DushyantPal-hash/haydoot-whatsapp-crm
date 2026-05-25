@@ -242,10 +242,216 @@ include 'components/navbar.php';
 </style>
 
 <main>
+    <!-- Hero Section -->
+    <style>
+        .card-1 {
+            top: 4%;
+            left: 0%;
+        }
+
+        .card-2 {
+            top: 38%;
+            right: 0%;
+        }
+
+        .card-3 {
+            bottom: 4%;
+            left: -3%;
+        }
+
+        .top-head-mockup {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .bottom-head-mockup {
+            margin-top: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        @media (max-width: 850px) {
+
+            .top-head-mockup,
+            .bottom-head-mockup {
+                justify-content: center;
+            }
+        }
+    </style>
+    <section class="hero" style="background: linear-gradient(135deg, #0a2b2c 0%, #1d4b2c 100%);">
+        <div class="floating-dots"></div>
+        <div style="max-width: 950px; margin: 0 auto; position: relative; z-index: 2; text-align:center;">
+            <div
+                style="display: inline-flex; align-items:center; gap:10px; background: rgba(255,255,255,0.08); backdrop-filter: blur(10px); padding: 8px 18px; border-radius: 60px; margin-bottom: 26px; border:1px solid rgba(255,255,255,0.08);">
+
+                <span
+                    style="width:10px; height:10px; background:#25D366; border-radius:50%; display:inline-block; animation:pulse 1.5s infinite;"></span>
+
+                <span style="color: #25D366; font-weight: 700; letter-spacing: .3px;">
+                    <i class="fa fa-calculator" aria-hidden="true"></i>
+                    Live WhatsApp API Pricing Calculator
+                </span>
+            </div>
+            <h1
+                style="color: white; font-size: clamp(2.8rem, 6vw, 5rem); line-height:1.1; font-weight:900; margin-bottom:20px;">
+                Estimate Your
+                <span
+                    style="background: linear-gradient(90deg,#25D366,#86efac); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">
+                    WhatsApp API
+                </span>
+                Costs Instantly
+            </h1>
+            <p class="hero-desc"
+                style="max-width:760px; margin:0 auto 30px; color:rgba(255,255,255,0.75); font-size:1.1rem;">
+                Calculate marketing, utility, and authentication conversation pricing in real-time.
+                Compare plans, estimate monthly usage, and launch your WhatsApp operations with HeyDoot.
+            </p>
+            <div class="cta-group" style="justify-content:center;">
+
+                <a href="#calculator" class="btn btn-primary btn-lg"
+                    style="background: linear-gradient(135deg,#25D366,#128C7E); border:none; box-shadow: 0 10px 30px rgba(37,211,102,0.25);">
+
+                    <i class="fas fa-bolt"></i>
+                    Start Calculating
+                </a>
+
+                <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20a%20pricing%20consultation%20for%20HeyDoot"
+                    target="_blank" class="btn btn-secondary btn-lg" style="border:1px solid rgba(255,255,255,0.1);">
+
+                    <i class="fab fa-whatsapp"></i>
+                    Talk to Sales
+                </a>
+            </div>
+        </div>
+        <div class="visual-stage" style="margin-top: 50px; position:relative; z-index:2;">
+            <!-- Floating Cards -->
+            <div class="float-card card-1">
+                <i class="fas fa-chart-line" style="color:#25D366; font-size:20px;"></i>
+                <span>Live pricing updates</span>
+            </div>
+            <div class="float-card card-2">
+                <i class="fas fa-bolt" style="color:#facc15;"></i>
+                <span>Real-time cost estimates</span>
+            </div>
+            <div class="float-card card-3">
+                <i class="fas fa-layer-group" style="color:#60a5fa;"></i>
+                <span>Tier-based pricing</span>
+            </div>
+            <!-- Main Calculator Mockup -->
+            <div class="mockup-phone"
+                style="width: min(90%, 850px); margin: 0 auto; background: #1e1e2a; border-radius: 42px; padding: 10px; border:1px solid rgba(255,255,255,0.08); box-shadow:0 30px 80px rgba(0,0,0,0.45);">
+
+                <div style="background: #2a2a35; border-radius: 34px; padding: 30px; overflow:hidden;">
+
+                    <!-- Top -->
+                    <div class="top-head-mockup">
+                        <div>
+                            <div style="color:#25D366; font-size:13px; font-weight:700; letter-spacing:1px;">
+                                HEYDOOT CALCULATOR
+                            </div>
+
+                            <h3 style="color:white; margin:6px 0 0; font-size:28px; font-weight:800;">
+                                Monthly Estimate
+                            </h3>
+                        </div>
+                        <div
+                            style="background:rgba(37,211,102,0.12); border:1px solid rgba(37,211,102,0.2); padding:12px 18px; border-radius:18px;">
+
+                            <div style="font-size:12px; color:#86efac; margin-bottom:2px;">
+                                Estimated Total
+                            </div>
+
+                            <div style="font-size:30px; font-weight:900; color:white;">
+                                ₹18,420
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Analytics -->
+                    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:18px;">
+
+                        <div
+                            style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.06); border-radius:22px; padding:20px;">
+
+                            <div style="font-size:13px; color:#94a3b8; margin-bottom:10px;">
+                                Marketing
+                            </div>
+
+                            <div style="font-size:26px; font-weight:800; color:white;">
+                                12,000
+                            </div>
+
+                            <div style="color:#25D366; margin-top:8px; font-size:13px;">
+                                ₹0.88 / conversation
+                            </div>
+                        </div>
+
+                        <div
+                            style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.06); border-radius:22px; padding:20px;">
+
+                            <div style="font-size:13px; color:#94a3b8; margin-bottom:10px;">
+                                Utility
+                            </div>
+
+                            <div style="font-size:26px; font-weight:800; color:white;">
+                                4,500
+                            </div>
+
+                            <div style="color:#60a5fa; margin-top:8px; font-size:13px;">
+                                ₹0.14 / conversation
+                            </div>
+                        </div>
+
+                        <div
+                            style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.06); border-radius:22px; padding:20px;">
+
+                            <div style="font-size:13px; color:#94a3b8; margin-bottom:10px;">
+                                Authentication
+                            </div>
+
+                            <div style="font-size:26px; font-weight:800; color:white;">
+                                8,000
+                            </div>
+                            <div style="color:#c084fc; margin-top:8px; font-size:13px;">
+                                ₹0.14 / conversation
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Bottom -->
+                    <div class="bottom-head-mockup">
+                        <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content: center;">
+
+                            <span
+                                style="background:rgba(37,211,102,0.12); color:#86efac; padding:8px 14px; border-radius:50px; font-size:12px; font-weight:700;">
+                                Live INR Pricing
+                            </span>
+
+                            <span
+                                style="background:rgba(59,130,246,0.12); color:#93c5fd; padding:8px 14px; border-radius:50px; font-size:12px; font-weight:700;">
+                                Tier Optimized
+                            </span>
+
+                        </div>
+                        <div style="color:#94a3b8; font-size:13px;">
+                            Avg cost per message:
+                            <strong style="color:white;">₹0.52</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="calculator-section">
         <div class="container-fluid">
             <div>
-
                 <!-- Header -->
                 <header
                     style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; margin-bottom: 32px; padding-bottom: 16px; border-bottom: 2px solid #e2e8f0; gap: 16px;">
@@ -257,6 +463,7 @@ include 'components/navbar.php';
                         <div>
                             <span
                                 style="background: rgba(37, 211, 102, 0.15); color: var(--wa-teal); border-radius: 40px; padding: 4px 16px; font-size: 0.75rem; font-weight: 600; display: inline-block; margin-bottom: 8px;">
+                                <i class="fa fa-comments" aria-hidden="true"></i>
                                 Official API Partner
                             </span>
                             <h1 style="font-size: 2rem; font-weight: 800; margin-bottom: 0; color: #1a2a3a;">HeyDoot
@@ -271,8 +478,8 @@ include 'components/navbar.php';
                 </header>
 
                 <!-- Main Calculator Grid -->
-                <div class="calculator-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 28px;">
-
+                <div class="calculator-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 28px;"
+                    id="calculator">
                     <!-- LEFT PANEL -->
                     <div style="display: flex; flex-direction: column; gap: 24px;">
 
@@ -315,8 +522,10 @@ include 'components/navbar.php';
                                         style="display: block; font-size: 0.7rem; text-transform: uppercase; color: #5a6b7e; font-weight: 600; margin-bottom: 4px;">Basic</span>
                                     <span class="plan-title"
                                         style="display: block; font-size: 1.3rem; font-weight: 700; color: #1a2a3a; margin-bottom: 4px;">Tier
-                                        2</span>
-                                    <span style="font-size: 0.75rem; color: #5a6b7e;">Growing brands & scale.</span>
+                                        2
+                                    </span>
+                                    <span style="font-size: 0.75rem; color: #5a6b7e;">Growing brands & scale.
+                                    </span>
                                 </button>
                                 <!-- Enterprise Plan -->
                                 <button type="button" onclick="selectPlan('enterprise')" id="btn-enterprise"
@@ -369,10 +578,12 @@ include 'components/navbar.php';
                                             launches</small>
                                     </div>
                                     <input type="number" id="marketing" value="1000" min="0" step="100"
-                                        class="calc-number-input" oninput="syncInputs('marketing')">
+                                        class="calc-number-input" oninput="syncInputs('marketing')"
+                                        style="background :#25d36652">
                                 </div>
                                 <input type="range" id="marketing_slider" min="0" max="100000" step="500" value="1000"
-                                    class="range-slider-calc" oninput="syncSliders('marketing')">
+                                    class="range-slider-calc" oninput="syncSliders('marketing')"
+                                    style="background :#25d36652">
                             </div>
 
                             <!-- Utility -->
@@ -385,10 +596,12 @@ include 'components/navbar.php';
                                             alerts</small>
                                     </div>
                                     <input type="number" id="utility" value="500" min="0" step="100"
-                                        class="calc-number-input" oninput="syncInputs('utility')">
+                                        class="calc-number-input" oninput="syncInputs('utility')"
+                                        style="background :#136eff38">
                                 </div>
                                 <input type="range" id="utility_slider" min="0" max="100000" step="500" value="500"
-                                    class="range-slider-calc" oninput="syncSliders('utility')">
+                                    class="range-slider-calc" oninput="syncSliders('utility')"
+                                    style="background :#136eff38">
                             </div>
 
                             <!-- Authentication -->
@@ -400,10 +613,12 @@ include 'components/navbar.php';
                                         <small style="color: #5a6b7e; font-size: 0.75rem;">OTPs & secure logins</small>
                                     </div>
                                     <input type="number" id="authentication" value="300" min="0" step="100"
-                                        class="calc-number-input" oninput="syncInputs('authentication')">
+                                        class="calc-number-input" oninput="syncInputs('authentication')"
+                                        style="background :#3135f142">
                                 </div>
                                 <input type="range" id="authentication_slider" min="0" max="100000" step="500"
-                                    value="300" class="range-slider-calc" oninput="syncSliders('authentication')">
+                                    value="300" class="range-slider-calc" oninput="syncSliders('authentication')"
+                                    style="background :#3135f142">
                             </div>
                         </div>
 
@@ -420,8 +635,6 @@ include 'components/navbar.php';
 
                     <!-- RIGHT PANEL -->
                     <div style="display: flex; flex-direction: column; gap: 24px;">
-
-                        <!-- Total Cost Card -->
                         <div class="glass-card-calc" style="padding: 15px; position: relative; overflow: hidden;">
                             <div
                                 style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: rgba(37, 211, 102, 0.06); border-radius: 50%;">
@@ -429,10 +642,10 @@ include 'components/navbar.php';
                             <div
                                 style="position: absolute; bottom: -30px; left: -30px; width: 150px; height: 150px; background: rgba(37, 211, 102, 0.04); border-radius: 50%;">
                             </div>
-
                             <h2
                                 style="text-transform: uppercase; font-size: 0.7rem; font-weight: 700; margin-bottom: 8px; color: #5a6b7e; position: relative; z-index: 1;">
-                                Total Monthly Cost Estimate</h2>
+                                Total Monthly Cost Estimate
+                            </h2>
                             <div
                                 style="display: flex; align-items: baseline; gap: 8px; margin-bottom: 10px; position: relative; z-index: 1;">
                                 <span style="font-size: 3.2rem; font-weight: 800; color: #1a2a3a;"
@@ -454,7 +667,6 @@ include 'components/navbar.php';
                                 </div>
                             </div>
                         </div>
-
                         <!-- Cost Distribution Card -->
                         <div class="glass-card-calc" style="padding: 15px;">
                             <h3
@@ -462,13 +674,11 @@ include 'components/navbar.php';
                                 <i class="fa-solid fa-chart-pie" style="color: var(--wa-teal); margin-right: 8px;"></i>
                                 Cost Distribution
                             </h3>
-
                             <!-- Chart Container -->
                             <div style="max-width: 150px; margin: 0 auto 24px;">
                                 <canvas id="distributionChart" width="120" height="120"
                                     style="width: 100%; height: auto;"></canvas>
                             </div>
-
                             <!-- Breakdown Items -->
                             <div style="display: flex; flex-direction: column; gap: 12px;">
                                 <div class="breakdown-item"
@@ -476,7 +686,7 @@ include 'components/navbar.php';
                                     <div>
                                         <div style="font-weight: 600;">
                                             <span
-                                                style="background: var(--wa-teal); display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 10px;"></span>
+                                                style="background: var(--wa-green); display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 10px;"></span>
                                             Marketing (<span id="m_perc">0%</span>)
                                         </div>
                                     </div>
@@ -518,7 +728,6 @@ include 'components/navbar.php';
                                 </div>
                             </div>
                         </div>
-
                         <!-- Action Buttons -->
                         <div style="display: flex; flex-direction: column; gap: 12px;">
                             <button onclick="copyToClipboard()"
@@ -530,11 +739,12 @@ include 'components/navbar.php';
                                 <i class="fab fa-whatsapp"></i> Get Started with HeyDoot
                             </a>
                         </div>
-                        <p style="font-size: 0.7rem; color: #5a6b7e; text-align: center;">Rates are optimized based on
-                            selected volume tiers. Taxes excluded.</p>
+                        <p style="font-size: 0.7rem; color: #5a6b7e; text-align: center;">
+                            Rates are optimized based on
+                            selected volume tiers. Taxes excluded.
+                        </p>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -553,6 +763,276 @@ include 'components/navbar.php';
             </div>
         </div>
     </div>
+
+    <!-- Comparison Table Section -->
+    <style>
+        /* Comparison Table */
+        .comparison-card {
+            background: linear-gradient(145deg, #ffffff, #f9fbff);
+            border-radius: 24px;
+            overflow: hidden;
+            border: 1px solid #e5ecf5;
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, 0.04),
+                0 2px 10px rgba(0, 0, 0, 0.03);
+            position: relative;
+        }
+
+        /* Header */
+        .comparison-header {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            /* background: linear-gradient(90deg, #00A1E0, #0f172a); */
+            background: var(--bg-gradient-green);
+            color: #fff;
+            padding: 22px 28px;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        .comparison-header div:nth-child(2),
+        .comparison-header div:nth-child(3),
+        .comparison-header div:nth-child(4) {
+            text-align: center;
+        }
+
+        /* Rows */
+        .comparison-item {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            align-items: center;
+            padding: 22px 28px;
+            border-bottom: 1px solid #eef2f7;
+            transition: all 0.25s ease;
+        }
+
+        .comparison-item:hover {
+            background: #f8fbff;
+            transform: scale(1.01);
+        }
+
+        .comparison-item:last-child {
+            border-bottom: none;
+        }
+
+        /* Alternate Rows */
+        .comparison-item:nth-child(even) {
+            background: #fcfdff;
+        }
+
+        /* Feature */
+        .comparison-feature {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #1e293b;
+        }
+
+        /* HeyDoot */
+        .comparison-heydoot {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-weight: 700;
+            color: #00A1E0;
+        }
+
+        .comparison-heydoot i {
+            color: #10b981;
+        }
+
+        /* Others */
+        .comparison-others {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-weight: 600;
+            color: #64748b;
+        }
+
+        .comparison-others .fa-times-circle {
+            color: #ef4444;
+        }
+
+        .comparison-others .fa-check-circle {
+            color: #f59e0b;
+        }
+    </style>
+    <section style="padding: 60px 0; background: #F8FDF9;">
+        <div class="container-fluid">
+            <div style="text-align: center; margin-bottom: 48px;">
+                <span class="feature-pair-badge">
+                    <i class="fa fa-pie-chart" aria-hidden="true"></i> Compare Plans
+                </span>
+
+                <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 12px;">
+                    Find the Perfect Plan for Your Business
+                </h2>
+
+                <p style="color: #5a6b7e;">
+                    Compare features, pricing, and support levels across all tiers.
+                </p>
+            </div>
+
+            <div class="comparison-card">
+                <!-- Header -->
+                <div class="comparison-header">
+                    <div>Features</div>
+                    <div>Starter</div>
+                    <div>Basic</div>
+                    <div>Enterprise</div>
+                </div>
+
+                <!-- Rows -->
+                <div class="comparison-item">
+                    <div class="comparison-feature">Marketing Rate</div>
+                    <div class="comparison-others">
+                        ₹0.88
+                    </div>
+                    <div class="comparison-others">
+                        ₹0.81
+                    </div>
+                    <div class="comparison-heydoot">
+                        ₹0.71
+                    </div>
+                </div>
+
+                <div class="comparison-item">
+                    <div class="comparison-feature">Utility Rate</div>
+                    <div class="comparison-others">
+                        ₹0.14
+                    </div>
+                    <div class="comparison-others">
+                        ₹0.13
+                    </div>
+                    <div class="comparison-heydoot">
+                        ₹0.12
+                    </div>
+                </div>
+
+                <div class="comparison-item">
+                    <div class="comparison-feature">Authentication Rate</div>
+                    <div class="comparison-others">
+                        ₹0.14
+                    </div>
+                    <div class="comparison-others">
+                        ₹0.13
+                    </div>
+                    <div class="comparison-heydoot">
+                        ₹0.12
+                    </div>
+                </div>
+
+                <div class="comparison-item">
+                    <div class="comparison-feature">API Access</div>
+                    <div class="comparison-others">
+                        <i class="fas fa-check-circle"></i> Basic
+                    </div>
+                    <div class="comparison-others">
+                        <i class="fas fa-check-circle"></i> Full REST
+                    </div>
+                    <div class="comparison-heydoot">
+                        <i class="fas fa-check-circle"></i> Priority + Webhooks
+                    </div>
+                </div>
+
+                <div class="comparison-item">
+                    <div class="comparison-feature">Support</div>
+                    <div class="comparison-others">
+                        Email
+                    </div>
+                    <div class="comparison-others">
+                        Email + Chat
+                    </div>
+                    <div class="comparison-heydoot">
+                        24/7 Dedicated
+                    </div>
+                </div>
+
+                <div class="comparison-item">
+                    <div class="comparison-feature">SLAs</div>
+                    <div class="comparison-others">
+                        -
+                    </div>
+                    <div class="comparison-others">
+                        99.5%
+                    </div>
+                    <div class="comparison-heydoot">
+                        99.9%
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="background: linear-gradient(135deg, #1a2a3a 0%, #2c3e50 100%); padding: 80px 0;">
+        <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto; text-align: center;">
+            <h2 style="color: white; font-size: 2.2rem; margin-bottom: 20px;">Ready to scale with WhatsApp?</h2>
+            <p style="color: #e0e0e0; font-size: 1.1rem; max-width: 750px; margin: 0 auto 32px;">
+                Join 5000+ businesses already using HeyDoot. Get started in minutes, pay only for what you use.
+            </p>
+            <div class="cta-buttons" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20start%20a%20free%20trial%20of%20HeyDoot"
+                    class="btn btn-outline-light btn-lg"
+                    style="border: 2px solid white; color: white; background: transparent;" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Start Free Trial
+                </a>
+                <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>" class="btn btn-cta-white btn-lg"
+                    style="background: white; color: #1a2a3a;">
+                    <i class="fas fa-headset"></i> Talk to Sales
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-container" style="background: #F0F8FF; padding: 60px 0;">
+        <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 48px;">
+                <span class="feature-pair-badge">
+                    <i class="fas fa-question-circle"></i> Frequently Asked Questions
+                </span>
+                <h2 class="section-title" style="margin-bottom: 12px;">Questions About WhatsApp API pricing?</h2>
+                <p class="section-sub">Everything you need to know about WhatsApp API pricing./p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">What is a WhatsApp Business conversation? <i
+                            class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">
+                        A conversation is a 24-hour message thread initiated by either a business or
+                        user. Meta charges per conversation, not per message. Marketing, Utility, and Authentication
+                        conversations have different rates.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Are there any hidden fees? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">
+                        No. HeyDoot charges only the conversation rates shown. GST as applicable may
+                        be added. No setup fees, monthly minimums, or termination charges.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How do I upgrade my plan? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">
+                        You can upgrade anytime from your HeyDoot dashboard. Higher tiers apply
+                        instantly for subsequent conversations and your first billing cycle.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Do you offer a free trial? <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes. We offer a 14-day trial with 500 free conversations. No credit card
+                        required. Get full API access and sandbox testing.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
