@@ -363,7 +363,7 @@ include 'components/navbar.php';
 
     <!-- Comparison Table -->
     <section style="background: #fff; padding: 60px 0;">
-        <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">
+        <div class="container-fluid">
 
             <div style="text-align: center; margin-bottom: 48px;">
                 <span class="feature-pair-badge">
