@@ -61,6 +61,11 @@ $navbar = [
                 'title' => 'Odoo WhatsApp Integration',
                 'link' => BASE_URL . '/integrations/odoo.php',
                 'icon' => 'fab fa-slack'
+            ],
+            [
+                'title' => 'Smoobu WhatsApp Integration',
+                'link' => BASE_URL . '/integrations/smoobu.php',
+                'icon' => 'fas fa-building'
             ]
 
         ]
