@@ -123,8 +123,8 @@ include ROOT_PATH . '/components/navbar.php';
     .step-card {
         background: white;
         border-radius: 28px;
-        padding: 28px 20px;
-        box-shadow: var(--card-shadow);
+        padding: 15px;
+        /* box-shadow: var(--card-shadow); */
         border: var(--border-light);
     }
 
@@ -218,7 +218,7 @@ include ROOT_PATH . '/components/navbar.php';
                     <i class="fab fa-whatsapp"></i> <i class="fas fa-exchange-alt"></i> <i class="fas fa-building"></i>
                     Official Smoobu Partner</span>
             </div>
-            <h1>HeyDoot API for <br><span style="color: #F59E0B;">Smoobu + WhatsApp</span></h1>
+            <h1><span style="color: #F59E0B;">Smoobu</span><br>WhatsApp Integration</h1>
             <p class="hero-desc">HeyDoot provides the API bridge that connects Smoobu PMS to WhatsApp Business. Use our
                 reliable endpoints to send automated messages, manage templates, and enable two-way communication — no
                 complex infrastructure required.</p>
@@ -338,21 +338,21 @@ include ROOT_PATH . '/components/navbar.php';
                             <div class="icon-circle"><i class="fas fa-plug"></i></div>
                             <h2>API Endpoints</h2>
                         </div>
-                        <div class="api-endpoint">
+                        <div class="api-endpoint automation-card">
                             <strong>POST /api/v1/whatsapp/send</strong> — Send template-based or free-form WhatsApp
                             messages
                         </div>
-                        <div class="api-endpoint">
+                        <div class="api-endpoint automation-card">
                             <strong>POST /api/v1/whatsapp/templates</strong> — Manage WhatsApp message templates
                         </div>
-                        <div class="api-endpoint">
+                        <div class="api-endpoint automation-card">
                             <strong>GET /api/v1/messages/{id}/status</strong> — Check delivery and read status
                         </div>
-                        <div class="api-endpoint">
+                        <div class="api-endpoint automation-card">
                             <strong>POST /api/v1/webhooks/register</strong> — Register your endpoint to receive incoming
                             messages
                         </div>
-                        <div class="api-endpoint">
+                        <div class="api-endpoint automation-card">
                             <strong>GET /api/v1/contacts/verify</strong> — Validate phone numbers for WhatsApp
                             compatibility
                         </div>
@@ -363,7 +363,7 @@ include ROOT_PATH . '/components/navbar.php';
                     <!-- Integration Steps -->
                     <div id="integration-steps" class="section-block">
                         <div class="section-header">
-                            <div class="icon-circle"><i class="fas fa-rocket"></i></div>
+                            <div class="icon-circle"><i class="fas fa-umbrella-beach"></i></div>
                             <h2>Integration Steps for Developers</h2>
                         </div>
                         <div class="feature-grid" style="display: grid; gap: 20px;">
@@ -414,20 +414,27 @@ include ROOT_PATH . '/components/navbar.php';
                         </div>
                         <div class="feature-grid" style="display: grid; gap: 20px;">
                             <div class="use-case-item feature-card">
-                                <h3>📘 <strong>Booking Confirmation API Call</strong></h3>
+                                <h3><i class="fas fa-address-book" style="color: #1E3A5F; font-size: 30px;"></i>
+                                    <strong>Booking
+                                        Confirmation API Call</strong>
+                                </h3>
                                 <p>Trigger from Smoobu webhook → Send WhatsApp confirmation with guest name + dates</p>
                             </div>
                             <div class="use-case-item feature-card">
-                                <h3>❌ <strong>Booking Cancellation Alerts</strong></h3>
+                                <h3><i class="fas fa-cancel"
+                                        style="color: #ce1414; font-size: 30px;"></i><strong>Booking
+                                        Cancellation Alerts</strong></h3>
                                 <p>Instant WhatsApp notification when a reservation is cancelled → Update staff, release
                                     calendar blocks, or offer rebooking incentives</p>
                             </div>
                             <div class="use-case-item feature-card">
-                                <h3>🔄 <strong>Modification & Date Change Alerts</strong></h3>
+                                <h3><i class="fas fa-sync" style="color: #1E3A5F; font-size: 30px;"></i>
+                                    <strong>Modification & Date Change Alerts</strong>
+                                </h3>
                                 <p>API trigger when booking dates change → Notify housekeeping and update automated
                                     reminder schedules</p>
                             </div>
-                            <div class="use-case-item feature-card">
+                            <!-- <div class="use-case-item feature-card">
                                 <h3>🗝️ <strong>Pre-Arrival Instructions</strong></h3>
                                 <p>Schedule API call 7 days before check-in → Send door codes, WiFi, directions</p>
                             </div>
@@ -438,7 +445,7 @@ include ROOT_PATH . '/components/navbar.php';
                             <div class="use-case-item feature-card">
                                 <h3>⭐ <strong>Review Requests</strong></h3>
                                 <p>Trigger API call after checkout → Send Google/TripAdvisor review links</p>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
 

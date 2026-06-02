@@ -8,7 +8,6 @@
 
 .automation-card {
     flex: 1;
-    min-width: 335px;
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(8px);
     border-radius: 48px;

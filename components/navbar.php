@@ -46,7 +46,7 @@ $navbar = [
         'submenu' => [
 
             [
-                'title' => 'HubSpot CRM Integration',
+                'title' => 'HubSpot Integration',
                 'link' => BASE_URL . '/integrations/hubspot.php',
                 'icon' => 'fab fa-hubspot'
             ],

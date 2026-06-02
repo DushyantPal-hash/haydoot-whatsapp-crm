@@ -54,7 +54,7 @@ include ROOT_PATH . '/components/navbar.php';
                 <span style="color: #25D366; font-weight: 600;"><i class="fab fa-hubspot"></i> HubSpot Native
                     Integration</span>
             </div>
-            <h1 style="color: white;">Connect HeyDoot <br>with <span style="color: #FF7A59;">HubSpot</span></h1>
+            <h1 style="color: white;"><span style="color: #FF7A59;">HubSpot</span><br>WhatsApp Integration</h1>
             <p class="hero-desc">Sync WhatsApp conversations, automatically create contacts, and trigger workflows — all
                 within your HubSpot CRM.</p>
             <div class="cta-group">
