@@ -591,8 +591,8 @@ include ROOT_PATH . '/components/navbar.php';
                             class="fas fa-code"></i> API Documentation</a>
                     <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>"><i class="fas fa-headset"></i>
                         Support</a>
-                    <a href="javascript:void(0)" class="btn btn-sm" style="background: #714B67; color: white;"><i
-                            class="fas fa-tachometer-alt"></i> Dashboard</a>
+                    <a href="<?php echo BASE_URL; ?>/404.php" class="btn btn-sm"
+                        style="background: #714B67; color: white;"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
                 </div>
             </div>
         </div>

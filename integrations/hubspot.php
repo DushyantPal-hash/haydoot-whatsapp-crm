@@ -62,7 +62,8 @@ include ROOT_PATH . '/components/navbar.php';
                     class="btn btn-primary btn-lg"
                     style="background: #FF7A59; box-shadow: 0 4px 12px rgba(255,122,89,0.3);"><i
                         class="fab fa-hubspot"></i> Connect HubSpot</a>
-                <a href="javascript:void(0)" class="btn btn-secondary btn-lg"><i class="fas fa-book-open"></i> View
+                <a href="<?php echo BASE_URL; ?>/404.php" class="btn btn-secondary btn-lg"><i
+                        class="fas fa-book-open"></i> View
                     Docs</a>
             </div>
         </div>
@@ -321,7 +322,7 @@ include ROOT_PATH . '/components/navbar.php';
                         <p style="margin-top: 8px;">Your HubSpot + WhatsApp integration is live. Start engaging
                             customers
                             smarter.</p>
-                        <a href="javascript:void(0)" class="btn btn-primary"
+                        <a href="<?php echo BASE_URL; ?>/404.php" class="btn btn-primary"
                             style="background: #0d6a2e; margin-top: 20px; padding: 10px;"><i
                                 class="fas fa-chart-line"></i> View Dashboard</a>
                     </div>
@@ -392,7 +393,8 @@ include ROOT_PATH . '/components/navbar.php';
 
                     <span class="shortcut-key">Ctrl K</span>
 
-                    <a href="javascript:void(0)" class="utility-item utility-link" style="color: var(--wa-teal);">
+                    <a href="<?php echo BASE_URL; ?>/404.php" class="utility-item utility-link"
+                        style="color: var(--wa-teal);">
                         <i class="fas fa-code"></i>
                         Postman API collection
                     </a>
@@ -402,7 +404,8 @@ include ROOT_PATH . '/components/navbar.php';
                         Support
                     </a>
 
-                    <a href="javascript:void(0)" class="dashboard-btn" style="background: #0d6a2e; color: white;">
+                    <a href="<?php echo BASE_URL; ?>/404.php" class="dashboard-btn"
+                        style="background: #0d6a2e; color: white;">
                         <i class="fas fa-tachometer-alt"></i>
                         Dashboard
                     </a>

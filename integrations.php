@@ -49,7 +49,7 @@ include 'components/navbar.php';
             <p class="hero-desc" style="font-size: 1.2rem; color: #cdddef; max-width: 700px; margin: 0 auto;">Connect
                 HeyDoot with your favorite tools and supercharge your WhatsApp workflow. No coding required.</p>
             <div class="cta-group" style="margin-top: 32px;">
-                <a href="javascript:void(0)" class="btn btn-primary btn-lg"
+                <a href="<?php echo BASE_URL; ?>/404.php" class="btn btn-primary btn-lg"
                     style="background: var( --wa-green); border-color: var( --wa-green);">
                     <i class="fas fa-search"></i> Explore All Integrations
                 </a>
@@ -447,7 +447,7 @@ include 'components/navbar.php';
             </div>
         </div>
         <div style="text-align: center; margin-top: 40px;">
-            <a href="javascript:void(0)" class="btn btn-primary btn-lg"
+            <a href="<?php echo BASE_URL; ?>/404.php" class="btn btn-primary btn-lg"
                 style="background: var( --wa-teal); border-color: var( --wa-teal);">
                 <i class="fas fa-book-open"></i> View API Documentation
             </a>
