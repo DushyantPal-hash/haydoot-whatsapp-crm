@@ -399,6 +399,11 @@ include 'components/navbar.php';
 </section>
 
 <!-- API Section -->
+<style>
+    .automation-card {
+        min-width: 335px;
+    }
+</style>
 <section id="api" class="section-container" style="background: #FDF7F0; padding: 60px 0;">
     <div class="container-fluid">
         <div style="text-align: center; margin-bottom: 48px;">

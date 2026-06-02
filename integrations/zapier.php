@@ -67,8 +67,7 @@ include ROOT_PATH . '/components/navbar.php';
                 <span style="color: #FF4A00; font-weight: 700;"><i class="fas fa-bolt"></i> Official Zapier
                     Partner</span>
             </div>
-            <h1 style="color: white;">Connect <span style="color: #FF4A00;">HeyDoot</span> <br>to 6,000+ apps via
-                <span style="color: #FF4A00;">Zapier</span>
+            <h1 style="color: white;"><span style="color: #FF4A00;">Zapier</span> <br> WhatsApp Integration
             </h1>
             <p class="hero-desc">Automate WhatsApp messages, create leads, sync conversations — no code. Trigger actions
                 across your entire stack.</p>
@@ -190,6 +189,11 @@ include ROOT_PATH . '/components/navbar.php';
                     </div>
 
                     <!-- Steps to Connect -->
+                    <style>
+                        .automation-card {
+                            min-width: 335px;
+                        }
+                    </style>
                     <div id="steps-zapier" style="margin-bottom: 56px;">
                         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
                             <div

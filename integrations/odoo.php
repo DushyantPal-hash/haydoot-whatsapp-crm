@@ -132,8 +132,7 @@ include ROOT_PATH . '/components/navbar.php';
                         class="si si-odoo"></i> Official Odoo Ready
                     Partner</span>
             </div>
-            <h1 style="color: white;">Connect <span style="color: #ffffff;">HeyDoot</span> <br>with <span
-                    style="color: #ffffff;">Odoo ERP</span></h1>
+            <h1 style="color: white;">Odoo<br> <span style="color: var(--wa-green);">WhatsApp</span> Integration</h1>
             <p class="hero-desc">Automate WhatsApp notifications for Sales Orders, Invoices, Purchase Orders, and Stock
                 updates — directly from your Odoo instance.</p>
             <div class="cta-group">
