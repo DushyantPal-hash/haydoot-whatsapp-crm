@@ -49,8 +49,7 @@ include 'components/navbar.php';
             <p class="hero-desc" style="font-size: 1.2rem; color: #cdddef; max-width: 700px; margin: 0 auto;">Connect
                 HeyDoot with your favorite tools and supercharge your WhatsApp workflow. No coding required.</p>
             <div class="cta-group" style="margin-top: 32px;">
-                <a href="<?php echo BASE_URL; ?>/404.php" class="btn btn-primary btn-lg"
-                    style="background: var( --wa-green); border-color: var( --wa-green);">
+                <a href="<?php echo BASE_URL; ?>/404.php" class="btn btn-primary btn-lg">
                     <i class="fas fa-search"></i> Explore All Integrations
                 </a>
                 <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27m%20interested%20in%20custom%20integrations%20for%20HeyDoot"
@@ -452,8 +451,7 @@ include 'components/navbar.php';
             </div>
         </div>
         <div style="text-align: center; margin-top: 40px;">
-            <a href="<?php echo BASE_URL; ?>/404.php" class="btn btn-primary btn-lg"
-                style="background: var( --wa-teal); border-color: var( --wa-teal);">
+            <a href="<?php echo BASE_URL; ?>/404.php" class="btn btn-secondary btn-lg">
                 <i class="fas fa-book-open"></i> View API Documentation
             </a>
         </div>
@@ -468,8 +466,7 @@ include 'components/navbar.php';
             Our team can build a custom integration for your specific needs.</p>
         <div class="cta-buttons" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
             <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%20need%20a%20custom%20integration%20for%20HeyDoot"
-                class="btn btn-outline-light btn-lg"
-                style="border: 2px solid white; color: white; background: transparent;" target="_blank">
+                class="btn btn-outline-light btn-lg" target="_blank">
                 <i class="fab fa-whatsapp"></i> Request Custom Integration
             </a>
             <!-- <a href="mailto:sales@heydoot.com" class="btn btn-cta-white btn-lg"

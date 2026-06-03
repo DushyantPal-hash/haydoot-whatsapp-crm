@@ -88,8 +88,7 @@ include 'components/navbar.php';
                 <p style="font-size: 1.2rem; color: #cdddef; max-width: 700px; margin: 0 auto;">Powerful WhatsApp tools
                     that help your team collaborate, automate, and scale.</p>
                 <div class="cta-group" style="margin-top: 32px;">
-                    <a href="<?php echo BASE_URL; ?>/404.php" class="btn btn-primary btn-lg"
-                        style="background: var(--wa-green); border-color: var(--wa-green);">
+                    <a href="<?php echo BASE_URL; ?>/404.php" class="btn btn-primary btn-lg">
                         <i class="fas fa-arrow-down"></i> Explore All Features
                     </a>
                     <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20HeyDoot%20features"
@@ -379,11 +378,10 @@ include 'components/navbar.php';
                 trial today and see why hundreds of teams trust HeyDoot.</p>
             <div class="cta-buttons" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
                 <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20start%20a%20free%20trial%20of%20HeyDoot"
-                    class="btn btn-outline-light btn-lg"
-                    style="border: 2px solid white; color: white; background: transparent;" target="_blank">
+                    class="btn btn-outline-light btn-lg" target="_blank">
                     <i class="fab fa-whatsapp"></i> Start Free Trial
                 </a>
-                <a href="/pricing" class="btn btn-cta-white btn-lg" style="background: white; color: #1a2a3a;">
+                <a href="/pricing" class="btn btn-cta-white btn-lg">
                     <i class="fas fa-tag"></i> View Pricing
                 </a>
             </div>

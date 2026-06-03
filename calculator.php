@@ -178,7 +178,7 @@ include 'components/navbar.php';
         position: fixed;
         bottom: 30px;
         right: 30px;
-        z-index: 1000;
+        z-index: 90;
         transition: all 0.3s ease;
         transform: translateX(120%);
         opacity: 0;

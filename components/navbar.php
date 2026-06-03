@@ -306,11 +306,123 @@ $navbar = [
                 <i class="fas fa-calendar-alt"></i> Book a Demo
             </a>
             <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>"
-                class="btn btn-secondary btn-mobile-full trial-btn" style="border-radius: 14px;">
+                class="btn btn-secondary btn-mobile-full trial-btn">
                 <i class="fas fa-play-circle"></i> Start Free Trial
             </a>
         </div>
     </div>
 </div>
+
+
+<!-- Floating WhatsApp and Contact Button for Mobile -->
+<style>
+    /* Floating Buttons Container */
+    .floating-buttons {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: flex;
+        gap: 12px;
+        z-index: 90;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: 96%;
+    }
+
+    /* Default Button Style */
+    .floating-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 58px;
+        height: 58px;
+        border-radius: 50px;
+        text-decoration: none;
+        overflow: hidden;
+        white-space: nowrap;
+        transition: all 0.35s ease;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        position: relative;
+    }
+
+    /* Icons */
+    .floating-btn i {
+        font-size: 24px !important;
+        min-width: 58px;
+        text-align: center;
+    }
+
+    /* Hidden Text */
+    .btn-label {
+        opacity: 0;
+        max-width: 0;
+        transition: all 0.3s ease;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    /* Expand ONLY hovered button */
+    .floating-btn:hover {
+        width: 180px;
+        justify-content: flex-start;
+    }
+
+    /* Show text only on hovered button */
+    .floating-btn:hover .btn-label {
+        opacity: 1;
+        max-width: 120px;
+    }
+
+    /* WhatsApp */
+    .whatsapp-btn-float {
+        background: #25D366;
+        color: white;
+        border: 2px solid #25D366;
+        border-radius: 13px;
+    }
+
+    /* Call */
+    .contact-btn {
+        background: var(--primary);
+        color: white;
+    }
+
+    /* Optional hover effects */
+    .whatsapp-btn-float:hover {
+        /* background: #128C7E; */
+        /* border-color: #128C7E; */
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+    }
+
+    .contact-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(10, 115, 156, 0.58);
+    }
+
+    /* Mobile Only */
+    @media (max-width: 769px) {
+        .floating-buttons {
+            flex-direction: column;
+        }
+    }
+</style>
+<div class="container-fluid">
+    <div class="floating-buttons">
+        <a href="https://wa.me/<?php echo str_replace([' ', '+', '-', '(', ')'], '', WHATSAPP_NUMBER); ?>"
+            class="floating-btn whatsapp-btn-float" target="_blank" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span class="btn-label">WhatsApp</span>
+        </a>
+
+        <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>" class="floating-btn contact-btn"
+            aria-label="Call us">
+            <i class="fas fa-headset"></i>
+            <span class="btn-label">97185 17228</span>
+        </a>
+    </div>
+</div>
+
+
 
 <!-- NavBar Ends here -->

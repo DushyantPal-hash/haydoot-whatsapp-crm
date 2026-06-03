@@ -21,9 +21,11 @@
         <div class="footer-grid">
             <div class="footer-brand">
                 <div class="logo" style="margin-bottom: 16px;">
-                    <div class="logo-icon">
-                        <img src="<?php echo BASE_URL; ?>/assets/images/logo/logo-white.png" alt="Logo">
-                    </div>
+                    <a href="<?php echo BASE_URL; ?>/" class="logo">
+                        <div class="logo-icon">
+                            <img src="<?php echo BASE_URL; ?>/assets/images/logo/logo-white.png" alt="Logo">
+                        </div>
+                    </a>
                 </div>
                 <p>Manage WhatsApp Groups at Scale for Modern Businesses</p>
                 <div class="social-links">

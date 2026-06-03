@@ -178,7 +178,7 @@ include 'components/navbar.php';
         position: fixed;
         bottom: 30px;
         right: 30px;
-        z-index: 1000;
+        z-index: 90;
         transition: all 0.3s ease;
         transform: translateX(120%);
         opacity: 0;
@@ -1078,7 +1078,8 @@ include 'components/navbar.php';
         <div class="glass-card-calc" style="padding: 14px 20px; display: flex; align-items: center; gap: 14px;">
             <div
                 style="background: rgba(37, 211, 102, 0.15); color: var(--wa-teal); border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
-                <i class="fa-solid fa-check-circle"></i></div>
+                <i class="fa-solid fa-check-circle"></i>
+            </div>
             <div>
                 <div style="text-transform: uppercase; font-size: 0.7rem; font-weight: 700; color: #5a6b7e;"
                     id="toastTitle">Alert</div>

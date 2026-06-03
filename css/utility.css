@@ -12,7 +12,7 @@
     gap: 10px;
     font-weight: 500;
     box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2);
-    z-index: 9999;
+    z-index: 900;
     backdrop-filter: blur(8px);
     font-size: 0.9rem;
     white-space: nowrap;

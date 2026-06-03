@@ -284,10 +284,12 @@ include ROOT_PATH . '/components/navbar.php';
                                     Endpoints</a></li>
                             <li><a href="#integration-steps" style="color: #2c3e2f;"><i class="fas fa-rocket"></i>
                                     Integration Steps</a></li>
-                            <li><a href="#use-cases" style="color: #2c3e2f;"><i class="fas fa-briefcase"></i> Use
-                                    Cases</a></li>
+                            <li><a href="#features" style="color: #2c3e2f;"><i class="fas fa-umbrella-beach"></i>
+                                    Key Features</a></li>
                             <li><a href="#why-heydoot" style="color: #2c3e2f;"><i class="fas fa-star"></i> Why HeyDoot
                                     API</a></li>
+                            <li><a href="#use-cases" style="color: #2c3e2f;"><i class="fas fa-briefcase"></i> Use
+                                    Cases</a></li>
                             <li><a href="#faqs" style="color: #2c3e2f;"><i class="fas fa-question-circle"></i> FAQs</a>
                             </li>
                         </ul>
@@ -363,7 +365,7 @@ include ROOT_PATH . '/components/navbar.php';
                     <!-- Integration Steps -->
                     <div id="integration-steps" class="section-block">
                         <div class="section-header">
-                            <div class="icon-circle"><i class="fas fa-umbrella-beach"></i></div>
+                            <div class="icon-circle"><i class="fas fa-rocket"></i></div>
                             <h2>Integration Steps for Developers</h2>
                         </div>
                         <div class="feature-grid" style="display: grid; gap: 20px;">
@@ -402,6 +404,86 @@ include ROOT_PATH . '/components/navbar.php';
                                     <h3>Handle Incoming Replies</h3>
                                 </div>
                                 <p>Set up a webhook URL to receive guest responses and forward them to your system.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Key Features Section -->
+                    <div id="features" class="section-block">
+                        <div class="section-header">
+                            <div class="icon-circle">
+                                <i class="fas fa-umbrella-beach"></i>
+                            </div>
+                            <h2>Key Features</h2>
+                        </div>
+                        <div
+                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+                            <div class="use-case-card feature-card">
+                                <i class="fas fa-bell"
+                                    style="font-size: 32px; color: #1E3A5F; margin-bottom: 16px;"></i>
+                                <h3 style="font-weight: 700; margin-bottom: 12px;">Instant New Reservation Alerts</h3>
+                                <p>Receive WhatsApp notifications whenever a new booking is received through Smoobu.</p>
+                            </div>
+                            <div class="use-case-card feature-card">
+                                <i class="fas fa-ban" style="font-size: 32px; color: #e74c3c; margin-bottom: 16px;"></i>
+                                <h3 style="font-weight: 700; margin-bottom: 12px;">Cancellation Notifications</h3>
+                                <p>Get immediate alerts when a guest cancels a reservation, allowing you to update
+                                    availability quickly.</p>
+                            </div>
+                            <div class="use-case-card feature-card">
+                                <i class="fas fa-clock"
+                                    style="font-size: 32px; color: #1E3A5F; margin-bottom: 16px;"></i>
+                                <h3 style="font-weight: 700; margin-bottom: 12px;">Real-Time WhatsApp Delivery</h3>
+                                <p>Notifications are delivered instantly to your preferred WhatsApp number.</p>
+                            </div>
+                            <div class="use-case-card feature-card">
+                                <i class="fas fa-eye-slash"
+                                    style="font-size: 32px; color: #1E3A5F; margin-bottom: 16px;"></i>
+                                <h3 style="font-weight: 700; margin-bottom: 12px;">No Manual Monitoring</h3>
+                                <p>Reduce the need to constantly check your Smoobu dashboard or email inbox.</p>
+                            </div>
+                            <div class="use-case-card feature-card">
+                                <i class="fas fa-plug"
+                                    style="font-size: 32px; color: #1E3A5F; margin-bottom: 16px;"></i>
+                                <h3 style="font-weight: 700; margin-bottom: 12px;">Easy Setup</h3>
+                                <p>Connect your Smoobu account with Heydoot in just a few minutes — no coding required.
+                                </p>
+                            </div>
+                            <div class="use-case-card feature-card">
+                                <i class="fas fa-building"
+                                    style="font-size: 32px; color: #1E3A5F; margin-bottom: 16px;"></i>
+                                <h3 style="font-weight: 700; margin-bottom: 12px;">Multi-Property Support</h3>
+                                <p>Perfect for vacation rental managers handling multiple listings and properties.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Why HeyDoot API -->
+                    <div id="why-heydoot" class="section-block">
+                        <div class="section-header">
+                            <div class="icon-circle"><i class="fas fa-star"></i></div>
+                            <h2>Why Choose HeyDoot as Your API Provider</h2>
+                        </div>
+                        <div class="feature-grid" style="display: grid; gap: 20px;">
+                            <div class="benefit-item automation-card">
+                                <h3><i class="fas fa-code"></i> Developer-First Design</h3>
+                                <p>Clean REST API, detailed documentation, and sandbox environment for testing.</p>
+                            </div>
+                            <div class="benefit-item automation-card">
+                                <h3><i class="fas fa-charging-station"></i> Scalable Infrastructure</h3>
+                                <p>Handle thousands of messages per minute without performance degradation.</p>
+                            </div>
+                            <div class="benefit-item automation-card">
+                                <h3><i class="fas fa-shield-alt"></i> Enterprise Security</h3>
+                                <p>API key authentication, IP whitelisting, and end-to-end encryption support.</p>
+                            </div>
+                            <div class="benefit-item automation-card">
+                                <h3><i class="fas fa-chart-line"></i> Delivery Analytics</h3>
+                                <p>Track sent, delivered, read, and failed messages through our API.</p>
+                            </div>
+                            <div class="benefit-item automation-card">
+                                <h3><i class="fas fa-headset"></i> Technical Support</h3>
+                                <p>Direct support for integration engineers with SLAs for business plans.</p>
                             </div>
                         </div>
                     </div>
@@ -446,36 +528,6 @@ include ROOT_PATH . '/components/navbar.php';
                                 <h3>⭐ <strong>Review Requests</strong></h3>
                                 <p>Trigger API call after checkout → Send Google/TripAdvisor review links</p>
                             </div> -->
-                        </div>
-                    </div>
-
-                    <!-- Why HeyDoot API -->
-                    <div id="why-heydoot" class="section-block">
-                        <div class="section-header">
-                            <div class="icon-circle"><i class="fas fa-star"></i></div>
-                            <h2>Why Choose HeyDoot as Your API Provider</h2>
-                        </div>
-                        <div class="feature-grid" style="display: grid; gap: 20px;">
-                            <div class="benefit-item automation-card">
-                                <h3><i class="fas fa-code"></i> Developer-First Design</h3>
-                                <p>Clean REST API, detailed documentation, and sandbox environment for testing.</p>
-                            </div>
-                            <div class="benefit-item automation-card">
-                                <h3><i class="fas fa-charging-station"></i> Scalable Infrastructure</h3>
-                                <p>Handle thousands of messages per minute without performance degradation.</p>
-                            </div>
-                            <div class="benefit-item automation-card">
-                                <h3><i class="fas fa-shield-alt"></i> Enterprise Security</h3>
-                                <p>API key authentication, IP whitelisting, and end-to-end encryption support.</p>
-                            </div>
-                            <div class="benefit-item automation-card">
-                                <h3><i class="fas fa-chart-line"></i> Delivery Analytics</h3>
-                                <p>Track sent, delivered, read, and failed messages through our API.</p>
-                            </div>
-                            <div class="benefit-item automation-card">
-                                <h3><i class="fas fa-headset"></i> Technical Support</h3>
-                                <p>Direct support for integration engineers with SLAs for business plans.</p>
-                            </div>
                         </div>
                     </div>
 
