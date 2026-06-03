@@ -272,7 +272,7 @@ include ROOT_PATH . '/components/navbar.php';
             </div>
 
             <div style="display: flex; gap: 48px; flex-wrap: wrap;">
-                <aside style="flex: 0.8; min-width: 240px;">
+                <aside class="sidebar-card">
                     <div
                         style="position: sticky; top: 100px; background: white; border-radius: 28px; padding: 24px; box-shadow: var(--card-shadow); border: 1px solid rgba(0,0,0,0.04);">
                         <h4 style="font-weight: 700; margin-bottom: 20px; font-size: 1.1rem;"><i class="fas fa-bookmark"
@@ -293,6 +293,15 @@ include ROOT_PATH . '/components/navbar.php';
                             <li><a href="#faqs" style="color: #2c3e2f;"><i class="fas fa-question-circle"></i> FAQs</a>
                             </li>
                         </ul>
+                        <!-- cross-link to integration page -->
+                        <div style="margin-top:24px;padding-top:20px;border-top:1px solid #f0f0f0;">
+                            <p style="font-size:.85rem;color:#6b7280;margin-bottom:10px;">Need API / technical docs?</p>
+                            <a href="<?php echo BASE_URL; ?>/services/smoobu.php"
+                                style="display:flex;align-items:center;gap:10px;background:#eef2ff;border-radius:14px;padding:12px 16px;color:#1E3A5F;font-weight:600;font-size:.9rem;text-decoration:none;">
+                                <i class="fas fa-code"></i>
+                                Services Page →
+                            </a>
+                        </div>
                     </div>
                 </aside>
 

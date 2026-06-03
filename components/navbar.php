@@ -318,7 +318,7 @@ $navbar = [
     /* Floating Buttons Container */
     .floating-buttons {
         position: fixed;
-        bottom: 20px;
+        bottom: 10%;
         right: 20px;
         display: flex;
         gap: 12px;
@@ -403,6 +403,8 @@ $navbar = [
     @media (max-width: 769px) {
         .floating-buttons {
             flex-direction: column;
+            width: 10px;
+            bottom: 20px;
         }
     }
 </style>

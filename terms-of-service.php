@@ -67,7 +67,7 @@ include 'components/navbar.php';
     <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">
         <div class="terms-grid" style="display: flex; gap: 48px; flex-wrap: wrap;">
             <!-- Sidebar Navigation -->
-            <aside style="flex: 1; min-width: 250px;">
+            <aside class="sidebar-card">
                 <div
                     style="position: sticky; top: 100px; background: #F8FAFE; border-radius: 24px; padding: 24px; border: 1px solid #eef2f6;">
                     <h4 style="margin-bottom: 20px; font-weight: 700;">Contents</h4>

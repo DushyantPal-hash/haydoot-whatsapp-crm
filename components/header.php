@@ -60,8 +60,8 @@ $extra_scripts = $page_extra_scripts ?? [];
     <?php if ($json_ld): ?>
         <!-- JSON-LD Structured Data -->
         <script type="application/ld+json">
-                                        <?php echo json_encode($json_ld, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT); ?>
-                                        </script>
+                                                <?php echo json_encode($json_ld, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT); ?>
+                                                </script>
     <?php endif; ?>
 
     <!-- Google tag (gtag.js) -->
@@ -85,6 +85,7 @@ $extra_scripts = $page_extra_scripts ?? [];
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/variables.css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/base.css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/navbar.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/sidebar.css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/mobile-menu.css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/buttons.css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/hero.css">
