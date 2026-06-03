@@ -404,8 +404,7 @@ include ROOT_PATH . '/components/navbar.php';
                         Support
                     </a>
 
-                    <a href="<?php echo BASE_URL; ?>/404.php" class="dashboard-btn"
-                        style="background: #0d6a2e; color: white;">
+                    <a href="<?php echo BASE_URL; ?>/404.php" class="btn btn-secondary">
                         <i class="fas fa-tachometer-alt"></i>
                         Dashboard
                     </a>

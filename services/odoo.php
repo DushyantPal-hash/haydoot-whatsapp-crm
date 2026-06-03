@@ -383,7 +383,7 @@ include ROOT_PATH . '/components/navbar.php';
                                         <li><i class="fas fa-check-circle"></i> Delivery Status Tracking with
                                             analytics</li>
                                     </ul>
-                                    <a href="<?php echo defined('BASE_URL') ? BASE_URL : '/'; ?>integrations/odoo.php"
+                                    <a href="<?php echo defined('BASE_URL') ? BASE_URL : '/'; ?>/integrations/odoo.php"
                                         class="btn btn-ghost-dark" style="margin-top: 20px; padding: 8px 15px;">Read
                                         API Docs <i class="fas fa-arrow-right"></i></a>
                                 </div>
