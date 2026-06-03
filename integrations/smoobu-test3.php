@@ -204,7 +204,7 @@ include ROOT_PATH . '/components/navbar.php';
 
             <div style="display: flex; gap: 48px; flex-wrap: wrap;">
                 <!-- Sidebar on this page -->
-                <aside style="flex: 0.8; min-width: 240px;">
+                <aside class="sidebar-card">
                     <div
                         style="position: sticky; top: 100px; background: white; border-radius: 28px; padding: 24px; box-shadow: var(--card-shadow); border: 1px solid rgba(0,0,0,0.04);">
                         <h4 style="font-weight: 700; margin-bottom: 20px; font-size: 1.1rem;"><i class="fas fa-bookmark"

@@ -69,6 +69,22 @@ include 'components/navbar.php';
                 </div>
             </a>
 
+            <!-- Smoobu Notifications -->
+            <a href="<?php echo BASE_URL; ?>/services/smoobu.php">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+
+                    <h3>Smoobu WhatsApp Automation</h3>
+
+                    <p>
+                        Automate guest communications, send booking confirmations,
+                        and manage reservations directly from your WhatsApp.
+                    </p>
+                </div>
+            </a>
+
             <!-- Shared Inbox -->
             <div class="feature-card">
                 <div class="feature-icon">
@@ -154,7 +170,7 @@ include 'components/navbar.php';
             </div>
 
             <!-- Broadcast Campaigns -->
-            <div class="feature-card">
+            <!-- <div class="feature-card">
                 <div class="feature-icon">
                     <i class="fas fa-bullhorn"></i>
                 </div>
@@ -165,7 +181,7 @@ include 'components/navbar.php';
                     Send personalized WhatsApp campaigns,
                     announcements, and marketing broadcasts at scale.
                 </p>
-            </div>
+            </div> -->
 
         </div>
     </div>
