@@ -313,7 +313,6 @@ $navbar = [
     </div>
 </div>
 
-
 <!-- Floating WhatsApp and Contact Button for Mobile -->
 <style>
     /* Floating Buttons Container */
@@ -407,22 +406,18 @@ $navbar = [
         }
     }
 </style>
-<div class="container-fluid">
-    <div class="floating-buttons">
-        <a href="https://wa.me/<?php echo str_replace([' ', '+', '-', '(', ')'], '', WHATSAPP_NUMBER); ?>"
-            class="floating-btn whatsapp-btn-float" target="_blank" aria-label="Chat on WhatsApp">
-            <i class="fab fa-whatsapp"></i>
-            <span class="btn-label">WhatsApp</span>
-        </a>
+<div class="floating-buttons">
+    <a href="https://wa.me/<?php echo str_replace([' ', '+', '-', '(', ')'], '', WHATSAPP_NUMBER); ?>"
+        class="floating-btn whatsapp-btn-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="btn-label">WhatsApp</span>
+    </a>
 
-        <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>" class="floating-btn contact-btn"
-            aria-label="Call us">
-            <i class="fas fa-headset"></i>
-            <span class="btn-label">97185 17228</span>
-        </a>
-    </div>
+    <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>" class="floating-btn contact-btn"
+        aria-label="Call us">
+        <i class="fas fa-headset"></i>
+        <span class="btn-label">97185 17228</span>
+    </a>
 </div>
-
-
 
 <!-- NavBar Ends here -->

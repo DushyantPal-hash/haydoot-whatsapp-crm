@@ -1,8 +1,6 @@
 <?php
-// under-construction.php - Custom "Coming Soon" page with HeyDoot branding
 require_once 'config.php';
 
-// Check if a custom page name was requested (for dynamic "under construction" messages)
 $requested_page = isset($_GET['page']) ? htmlspecialchars($_GET['page']) : 'this page';
 
 $page_meta = [

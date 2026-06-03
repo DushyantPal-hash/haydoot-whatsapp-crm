@@ -622,7 +622,7 @@ include ROOT_PATH . '/components/navbar.php';
                         Developer support
                     </a>
 
-                    <a href="<?php echo BASE_URL; ?>/404.php" class="dashboard-btn"
+                    <a href="<?php echo BASE_URL; ?>/integrations/dashboard.php" class="dashboard-btn"
                         style="background: #1E3A5F; color: white;">
                         <i class="fas fa-tachometer-alt"></i>
                         API Dashboard

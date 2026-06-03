@@ -493,7 +493,7 @@ include ROOT_PATH . '/components/navbar.php';
                         Support
                     </a>
 
-                    <a href="<?php echo BASE_URL; ?>/404.php" class="dashboard-btn">
+                    <a href="<?php echo BASE_URL; ?>/integrations/dashboard.php" class="dashboard-btn">
                         <i class="fas fa-tachometer-alt"></i>
                         Dashboard
                     </a>
