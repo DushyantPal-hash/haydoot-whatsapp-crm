@@ -289,7 +289,7 @@
 }
 
 /* Small mobile: 400px */
-@media (max-width: 400px) {
+@media (max-width: 330px) {
     h1 {
         font-size: 1.6rem;
     }
