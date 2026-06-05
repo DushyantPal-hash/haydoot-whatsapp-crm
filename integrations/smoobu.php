@@ -620,7 +620,7 @@ include ROOT_PATH . '/components/navbar.php';
 
                     <span class="shortcut-key">Ctrl K</span>
 
-                    <a href="<?php echo BASE_URL; ?>/404.php" class="utility-item utility-link"
+                    <a href="<?php echo BASE_URL; ?>/smoobu-api.php" class="utility-item utility-link"
                         style="color: var(--wa-teal);">
                         <i class="fas fa-code"></i>
                         API reference

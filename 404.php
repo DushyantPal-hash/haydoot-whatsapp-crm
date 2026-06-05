@@ -1,7 +1,10 @@
 <?php
 require_once 'config.php';
 
-$requested_page = isset($_GET['page']) ? htmlspecialchars($_GET['page']) : 'this page';
+$requested_page = isset($_GET['page']) ? htmlspecialchars($_GET['page']) : 'this';
+
+// Remove .php extension if present
+$requested_page = preg_replace('/\.php$/i', '', $requested_page);
 
 $page_meta = [
     'title' => 'Page Under Construction | HeyDoot WhatsApp CRM',
@@ -28,13 +31,21 @@ $page_json_ld = [
 $page_gtag_id = 'G-Q64SDSY0Y4';
 
 include 'components/header.php';
+include 'components/navbar.php';
 ?>
-<?php include 'components/navbar.php'; ?>
 
 <style>
     /* ========== Under Construction Specific Styles ========== */
+    .error-section {
+        position: relative;
+        background: linear-gradient(135deg, #0b1120 0%, #1a2332 50%, #0f172a 100%);
+        overflow: hidden;
+        padding: 30px 0;
+    }
+
     .under-construction-container {
         min-height: 70vh;
+        padding: 0px 10px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -349,98 +360,95 @@ include 'components/header.php';
 
 <main>
     <!-- Hero Section with Animated Background -->
-    <section
-        style="position: relative; background: linear-gradient(135deg, #0b1120 0%, #1a2332 50%, #0f172a 100%); overflow: hidden;">
-        <div class="particle-container" id="particleContainer"></div>
+    <section class="error-section">
+        <div class="particle-container" id="particleContainer">
 
-        <div class="under-construction-container">
-            <div class="construction-content">
-                <!-- Badge -->
-                <div class="construction-badge">
-                    <span><i class="fas fa-code-branch"></i> UNDER CONSTRUCTION</span>
-                </div>
+        </div>
 
-                <!-- Title -->
-                <h1 class="construction-title">Something Amazing<br>is Coming Soon</h1>
-
-                <!-- Message -->
-                <p class="construction-message">
-                    We're working hard to bring you
-                    <span class="page-name-highlight">
-                        <?php echo ucfirst(str_replace('-', ' ', $requested_page)); ?>
-                    </span>
-                </p>
-
-                <!-- Progress Bar -->
-                <div class="progress-wrapper">
-                    <div class="progress-label">
-                        <span><i class="fas fa-tachometer-alt"></i> Development Progress</span>
-                        <span>68%</span>
+        <div class="container-fluid">
+            <div class="under-construction-container">
+                <div class="construction-content">
+                    <!-- Badge -->
+                    <div class="construction-badge">
+                        <span><i class="fas fa-code-branch"></i> UNDER CONSTRUCTION</span>
                     </div>
-                    <div class="progress-track">
-                        <div class="progress-fill"></div>
+                    <!-- Title -->
+                    <h1 class="construction-title">Something Amazing<br>is Coming Soon</h1>
+                    <!-- Message -->
+                    <p class="construction-message">
+                        We're working hard to bring you
+                        <span class="page-name-highlight">
+                            <?php echo ucfirst(str_replace('-', ' ', $requested_page)); ?>
+                        </span> page. Stay tuned for updates and exciting features that will enhance your experience
+                        with HeyDoot !
+                    </p>
+                    <!-- Progress Bar -->
+                    <div class="progress-wrapper">
+                        <div class="progress-label">
+                            <span><i class="fas fa-tachometer-alt"></i> Development Progress</span>
+                            <span>68%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill"></div>
+                        </div>
                     </div>
-                </div>
-
-                <!-- Feature Teasers -->
-                <div class="teaser-grid">
-                    <div class="teaser-card">
-                        <div class="teaser-icon">🚀</div>
-                        <div class="teaser-title">Lightning Fast</div>
-                        <div class="teaser-desc">Optimized performance</div>
+                    <!-- Feature Teasers -->
+                    <div class="teaser-grid">
+                        <div class="teaser-card">
+                            <div class="teaser-icon">🚀</div>
+                            <div class="teaser-title">Lightning Fast</div>
+                            <div class="teaser-desc">Optimized performance</div>
+                        </div>
+                        <div class="teaser-card">
+                            <div class="teaser-icon">🔒</div>
+                            <div class="teaser-title">Secure</div>
+                            <div class="teaser-desc">Enterprise-grade security</div>
+                        </div>
+                        <div class="teaser-card">
+                            <div class="teaser-icon">⚡</div>
+                            <div class="teaser-title">Real-time</div>
+                            <div class="teaser-desc">Instant notifications</div>
+                        </div>
+                        <div class="teaser-card">
+                            <div class="teaser-icon">🎨</div>
+                            <div class="teaser-title">Modern UI</div>
+                            <div class="teaser-desc">Beautiful interface</div>
+                        </div>
                     </div>
-                    <div class="teaser-card">
-                        <div class="teaser-icon">🔒</div>
-                        <div class="teaser-title">Secure</div>
-                        <div class="teaser-desc">Enterprise-grade security</div>
+                    <!-- CTA Buttons -->
+                    <div class="construction-actions">
+                        <a href="<?php echo BASE_URL; ?>/" class="notify-btn"
+                            style="background: linear-gradient(135deg, #25D366, #128C7E);">
+                            <i class="fas fa-home"></i> Back to Home
+                        </a>
+                        <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I'm%20interested%20in%20HeyDoot%20and%20would%20like%20to%20know%20more"
+                            class="btn-outline-light-custom" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Contact Support
+                        </a>
                     </div>
-                    <div class="teaser-card">
-                        <div class="teaser-icon">⚡</div>
-                        <div class="teaser-title">Real-time</div>
-                        <div class="teaser-desc">Instant notifications</div>
+                    <!-- Notify Me Form -->
+                    <div class="notify-card">
+                        <div class="notify-title">
+                            <i class="fas fa-bell"></i> Get notified when we launch
+                        </div>
+                        <form id="notifyForm" class="notify-form" onsubmit="return false;">
+                            <input type="email" id="notifyEmail" class="notify-input"
+                                placeholder="Enter your email address" required>
+                            <button type="submit" class="notify-btn">
+                                <i class="fas fa-envelope"></i> Notify Me
+                            </button>
+                        </form>
+                        <div id="successMessage" class="success-message">
+                            <i class="fas fa-check-circle"></i> Thanks! We'll notify you when we launch.
+                        </div>
                     </div>
-                    <div class="teaser-card">
-                        <div class="teaser-icon">🎨</div>
-                        <div class="teaser-title">Modern UI</div>
-                        <div class="teaser-desc">Beautiful interface</div>
+                    <!-- Footer Links -->
+                    <div class="construction-footer">
+                        <a href="<?php echo BASE_URL; ?>/">Home</a>
+                        <a href="<?php echo BASE_URL; ?>/features.php">Features</a>
+                        <a href="<?php echo BASE_URL; ?>/pricing.php">Pricing</a>
+                        <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>">Support</a>
                     </div>
-                </div>
-
-                <!-- CTA Buttons -->
-                <div class="construction-actions">
-                    <a href="<?php echo BASE_URL; ?>/" class="notify-btn"
-                        style="background: linear-gradient(135deg, #25D366, #128C7E);">
-                        <i class="fas fa-home"></i> Back to Home
-                    </a>
-                    <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I'm%20interested%20in%20HeyDoot%20and%20would%20like%20to%20know%20more"
-                        class="btn-outline-light-custom" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Contact Support
-                    </a>
-                </div>
-
-                <!-- Notify Me Form -->
-                <div class="notify-card">
-                    <div class="notify-title">
-                        <i class="fas fa-bell"></i> Get notified when we launch
-                    </div>
-                    <form id="notifyForm" class="notify-form" onsubmit="return false;">
-                        <input type="email" id="notifyEmail" class="notify-input" placeholder="Enter your email address"
-                            required>
-                        <button type="submit" class="notify-btn">
-                            <i class="fas fa-envelope"></i> Notify Me
-                        </button>
-                    </form>
-                    <div id="successMessage" class="success-message">
-                        <i class="fas fa-check-circle"></i> Thanks! We'll notify you when we launch.
-                    </div>
-                </div>
-
-                <!-- Footer Links -->
-                <div class="construction-footer">
-                    <a href="<?php echo BASE_URL; ?>/">Home</a>
-                    <a href="<?php echo BASE_URL; ?>/features.php">Features</a>
-                    <a href="<?php echo BASE_URL; ?>/pricing.php">Pricing</a>
-                    <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>">Support</a>
                 </div>
             </div>
         </div>

@@ -62,7 +62,7 @@ include ROOT_PATH . '/components/navbar.php';
                     class="btn btn-primary btn-lg"
                     style="background: #FF7A59; box-shadow: 0 4px 12px rgba(255,122,89,0.3);"><i
                         class="fab fa-hubspot"></i> Connect HubSpot</a>
-                <a href="<?php echo BASE_URL; ?>/404.php" class="btn btn-secondary btn-lg"><i
+                <a href="<?php echo BASE_URL; ?>/services/hubspot.php" class="btn btn-secondary btn-lg"><i
                         class="fas fa-book-open"></i> View
                     Docs</a>
             </div>
@@ -99,11 +99,12 @@ include ROOT_PATH . '/components/navbar.php';
                     <strong>HeyDoot integration for HubSpot is currently under review.</strong>
                     <span style="color: #4b5563;">In order to use HeyDoot integration with HubSpot, you can connect with
                         HubSpot from</span>
-                    <a href="javascript:void(0)" style="color: var(--wa-teal); font-weight: 600;"> HeyDoot HubSpot
+                    <a href="<?php echo BASE_URL; ?>/integrations/hubspot-settings.php"
+                        style="color: var(--wa-teal); font-weight: 600;"> HeyDoot HubSpot
                         settings →</a>
                 </div>
                 <div>
-                    <a href="javascript:void(0)"
+                    <a href="<?php echo BASE_URL; ?>/integrations/hubspot-troubleshooting.php"
                         style="background: #f3f4f6; padding: 8px 18px; border-radius: 40px; font-size: 0.85rem;"><i
                             class="fas fa-bug"></i> Troubleshooting: Not receiving notifications</a>
                 </div>
@@ -331,7 +332,7 @@ include ROOT_PATH . '/components/navbar.php';
                         <p style="margin-top: 8px;">Your HubSpot + WhatsApp integration is live. Start engaging
                             customers
                             smarter.</p>
-                        <a href="<?php echo BASE_URL; ?>/404.php" class="btn btn-primary"
+                        <a href="<?php echo BASE_URL; ?>/dashboard.php" class="btn btn-primary"
                             style="background: #0d6a2e; margin-top: 20px; padding: 10px;"><i
                                 class="fas fa-chart-line"></i> View Dashboard</a>
                     </div>
@@ -402,7 +403,7 @@ include ROOT_PATH . '/components/navbar.php';
 
                     <span class="shortcut-key">Ctrl K</span>
 
-                    <a href="<?php echo BASE_URL; ?>/404.php" class="utility-item utility-link"
+                    <a href="<?php echo BASE_URL; ?>/postman-api.php" class="utility-item utility-link"
                         style="color: var(--wa-teal);">
                         <i class="fas fa-code"></i>
                         Postman API collection

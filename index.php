@@ -89,7 +89,7 @@ include 'components/navbar.php';
                         <i class="fas fa-chevron-right"></i>
                     </div>
                 </a>
-                <a href="javascript:void(0)">
+                <a href="<?php echo BASE_URL; ?>/ai-analysis.php">
                     <div class="overlay-item" style="border-bottom:none;">
                         <div style="display:flex; gap:14px; align-items: center;">
                             <div class="icon-circle"><i class="fas fa-robot"></i></div>

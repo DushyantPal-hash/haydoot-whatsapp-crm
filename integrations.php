@@ -466,14 +466,14 @@ include 'components/navbar.php';
             Our team can build a custom integration for your specific needs.</p>
         <div class="cta-buttons" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
             <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%20need%20a%20custom%20integration%20for%20HeyDoot"
-                class="btn btn-outline-light btn-lg" target="_blank">
+                class="btn btn-secondary btn-lg" target="_blank">
                 <i class="fab fa-whatsapp"></i> Request Custom Integration
             </a>
             <!-- <a href="mailto:sales@heydoot.com" class="btn btn-cta-white btn-lg"
                 style="background: white; color: #1a2a3a;">
                 <i class="fas fa-envelope"></i> Email Sales Team
             </a> -->
-            <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>" class=" btn btn-cta-white btn-lg
+            <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>" class=" btn btn-primary btn-lg
                 trial-btn"><i class="fas fa-calendar-alt"></i>
                 Book Demo <i class="fas fa-arrow-right"></i></a>
         </div>

@@ -174,11 +174,12 @@ include ROOT_PATH . '/components/navbar.php';
                     <strong>HeyDoot Odoo WhatsApp Notifier is fully certified.</strong>
                     <span style="color: #4b5563;"> Connect your Odoo instance with HeyDoot to enable automated WhatsApp
                         messaging.</span>
-                    <a href="<?php echo BASE_URL; ?>/404.php" style="color: #714B67; font-weight: 600;"> Start
+                    <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20HeyDoot%20features"
+                        style="color: #714B67; font-weight: 600;"> Start
                         Integration →</a>
                 </div>
                 <div>
-                    <a href="<?php echo BASE_URL; ?>/404.php"
+                    <a href="<?php echo BASE_URL; ?>/odoo-troubleshooting.php"
                         style="background: #f3f4f6; padding: 8px 18px; border-radius: 40px; font-size: 0.85rem;"><i
                             class="fas fa-headset"></i> Troubleshooting: Messages not sending?</a>
                 </div>
@@ -492,7 +493,7 @@ include ROOT_PATH . '/components/navbar.php';
 
                     <span class="shortcut-key">Ctrl K</span>
 
-                    <a href="<?php echo BASE_URL; ?>/404.php" class="utility-item utility-link">
+                    <a href="<?php echo BASE_URL; ?>/odoo-api.php" class="utility-item utility-link">
                         <i class="fas fa-code"></i>
                         Odoo API Docs
                     </a>

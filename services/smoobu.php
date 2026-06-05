@@ -975,10 +975,10 @@ include ROOT_PATH . '/components/navbar.php';
                         <div
                             style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 24px;">
                             <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20start%20my%20free%20trial%20for%20Smoobu%20WhatsApp%20automation"
-                                class="btn btn-primary" style="padding: 14px 32px;">
+                                class="btn btn-secondary" style="padding: 14px 32px;">
                                 <i class="fab fa-whatsapp"></i> Start Free Trial
                             </a>
-                            <a href="<?php echo BASE_URL; ?>/integrations/smoobu.php" class="btn btn-secondary"
+                            <a href="<?php echo BASE_URL; ?>/integrations/smoobu.php" class="btn btn-primary"
                                 style="padding: 14px 32px;">
                                 <i class="fas fa-code"></i> I'm a Developer
                             </a>
@@ -995,7 +995,7 @@ include ROOT_PATH . '/components/navbar.php';
                         <span>Search...</span>
                     </div>
                     <span class="shortcut-key">Ctrl K</span>
-                    <a href="<?php echo BASE_URL; ?>/integrations/smoobu.php" class="utility-item utility-link"
+                    <a href="<?php echo BASE_URL; ?>/smoobu-api.php" class="utility-item utility-link"
                         style="color: var(--wa-teal);">
                         <i class="fas fa-code"></i>
                         Developer API
