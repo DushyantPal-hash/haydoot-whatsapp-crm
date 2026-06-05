@@ -124,32 +124,6 @@ include ROOT_PATH . '/components/navbar.php';
         color: #714B67;
     }
 
-    .btn-secondary {
-        background: rgba(255, 255, 255, 0.15);
-        backdrop-filter: blur(10px);
-        color: white;
-        border: 1px solid rgba(255, 255, 255, 0.3);
-    }
-
-    .btn-secondary:hover {
-        background: rgba(255, 255, 255, 0.25);
-        transform: translateY(-3px);
-    }
-
-    .btn-ghost-dark {
-        background: transparent;
-        border: 2px solid #714B67;
-        ;
-        color: #714B67;
-        ;
-    }
-
-    .btn-ghost-dark:hover {
-        background: #714B67;
-        ;
-        color: white;
-    }
-
     .badge-auto {
         background: #e3f2fd;
         color: #0d6efd;
@@ -542,8 +516,7 @@ include ROOT_PATH . '/components/navbar.php';
                             Odoo with WhatsApp in minutes. No WhatsApp Business API approval required.</p>
                         <div style="margin-top: 32px;">
                             <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%20Doot%20team%2C%20I%27d%20like%20a%20price%20quote%20for%20the%20Doot%20License."
-                                class="btn btn-lg" style="background: white; color: #714B67; font-weight: 700;"><i
-                                    class="fab fa-whatsapp"></i> Get Started Today</a>
+                                class="btn btn-secondary btn-lg"><i class="fab fa-whatsapp"></i> Get Started Today</a>
                             <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>"
                                 class="btn btn-outline-light btn-lg" style="margin-left: 16px;"><i
                                     class="fas fa-calendar-alt"></i> Book a Demo</a>
@@ -600,7 +573,7 @@ include ROOT_PATH . '/components/navbar.php';
                             class="fas fa-code"></i> API Documentation</a>
                     <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>"><i class="fas fa-headset"></i>
                         Support</a>
-                    <a href="<?php echo BASE_URL; ?>/404.php" class="btn btn-sm"
+                    <a href="<?php echo BASE_URL; ?>/integrations/odoo-dashboard.php" class="btn btn-sm"
                         style="background: #714B67; color: white;"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
                 </div>
             </div>

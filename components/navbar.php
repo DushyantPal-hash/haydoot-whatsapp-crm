@@ -305,8 +305,8 @@ $navbar = [
                 class="btn btn-primary btn-mobile-full demo-btn">
                 <i class="fas fa-calendar-alt"></i> Book a Demo
             </a>
-            <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>"
-                class="btn btn-secondary btn-mobile-full trial-btn">
+            <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%20Doot%20team%2C%20I%27d%20like%20a%20price%20quote%20for%20the%20Doot%20License."
+                class="btn btn-secondary btn-mobile-full trial-btn" target="_blank">
                 <i class="fas fa-play-circle"></i> Start Free Trial
             </a>
         </div>
@@ -318,7 +318,7 @@ $navbar = [
     /* Floating Buttons Container */
     .floating-buttons {
         position: fixed;
-        bottom: 10%;
+        bottom: 9%;
         right: 20px;
         display: flex;
         gap: 12px;

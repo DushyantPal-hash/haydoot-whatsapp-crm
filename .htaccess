@@ -5,8 +5,14 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^(.*)$ $1.php [NC,L]
 
-# Custom error pages
-ErrorDocument 404 /404.php
+# Custom error pages - FIXED PATH
+ErrorDocument 404 /heydoot/404.php
+ErrorDocument 403 /heydoot/404.php
+
+# Redirect all non-existent files/directories to 404.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /heydoot/404.php?page=$1 [L]
 
 # Cache control
 <FilesMatch "\.(css|js|jpg|jpeg|png|gif|ico)$">

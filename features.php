@@ -378,10 +378,10 @@ include 'components/navbar.php';
                 trial today and see why hundreds of teams trust HeyDoot.</p>
             <div class="cta-buttons" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
                 <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20start%20a%20free%20trial%20of%20HeyDoot"
-                    class="btn btn-outline-light btn-lg" target="_blank">
+                    class="btn btn-secondary btn-lg" target="_blank">
                     <i class="fab fa-whatsapp"></i> Start Free Trial
                 </a>
-                <a href="/pricing" class="btn btn-cta-white btn-lg">
+                <a href="/pricing" class="btn btn-primary btn-lg">
                     <i class="fas fa-tag"></i> View Pricing
                 </a>
             </div>

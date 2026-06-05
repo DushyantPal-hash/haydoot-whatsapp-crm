@@ -285,9 +285,7 @@ include 'components/navbar.php';
                         HeyDoot to handle millions of conversations. And we're just getting started.</p>
                     <div style="margin-top: 32px;;">
                         <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20HeyDoot"
-                            class="btn btn-primary"
-                            style="background: var( --wa-teal); border-color: var( --wa-teal); padding: 10px"
-                            target="_blank">
+                            class="btn btn-secondary btn-md" target="_blank">
                             <i class="fab fa-whatsapp"></i> Join Our Journey
                         </a>
                     </div>
@@ -510,8 +508,7 @@ include 'components/navbar.php';
                     consulting firm specializing in AI, IoT, and enterprise software solutions. With offices in India,
                     USA, and UK, we've helped 500+ businesses achieve digital transformation.</p>
                 <div style="margin-top: 32px;">
-                    <a href="https://www.hashstudioz.com/" target="_blank" class="btn btn-outline-light"
-                        style="border: 2px solid white; color: white; background: transparent; padding: 12px 32px; border-radius: 40px; text-decoration: none;">
+                    <a href="https://www.hashstudioz.com/" target="_blank" class="btn btn-secondary btn-md">
                         Visit HashStudioz <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -538,7 +535,7 @@ include 'components/navbar.php';
                             style="background: var( --wa-green); border-color: var( --wa-teal);" target="_blank">
                             <i class="fab fa-whatsapp"></i> Start Free Trial
                         </a>
-                        <a href="<?php echo BASE_URL; ?>/contact.php" class="btn btn-secondary btn-lg">
+                        <a href="<?php echo BASE_URL; ?>/contact.php" class="btn btn-primary btn-lg">
                             <i class="fas fa-envelope"></i> Contact Us
                         </a>
                     </div>

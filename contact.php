@@ -497,7 +497,7 @@ include 'components/navbar.php';
             </div>
             <div class="map-container">
                 <iframe
-                    src="https://www.google.com/maps?q=Office+No.+902,+9th+Floor,+Pegasus+Tower,+A-10,+Block+A,+Sector+68,+Noida,+Uttar+Pradesh+201309&output=embed"
+                    src="https://www.google.com/maps?q=HashStudioz+Technologies+PVT.+LTD.+Product+Development+Company,+Noida,+Uttar+Pradesh&output=embed"
                     width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
@@ -513,12 +513,10 @@ include 'components/navbar.php';
                 today — no credit card required.</p>
             <div class="cta-buttons" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
                 <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20start%20a%20free%20trial"
-                    class="btn btn-outline-light btn-lg"
-                    style="border: 2px solid white; color: white; background: transparent;" target="_blank">
+                    class="btn btn-secondary btn-lg" target="_blank">
                     <i class="fab fa-whatsapp"></i> Start Free Trial
                 </a>
-                <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>" class="btn btn-cta-white btn-lg"
-                    style="background: white; color: #1a2a3a;">
+                <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>" class="btn btn-primary btn-lg">
                     <i class="fas fa-volume-control-phone"></i> Call Now
                 </a>
             </div>
