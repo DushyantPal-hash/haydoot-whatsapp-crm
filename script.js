@@ -193,11 +193,35 @@ function initSmoothScroll() {
 
 function initFaq() {
   document.querySelectorAll(".faq-item").forEach(function (faq) {
-    faq.removeEventListener("click", faq._clickHandler);
+    // Remove existing listener to prevent duplicates
+    if (faq._clickHandler) {
+      faq.removeEventListener("click", faq._clickHandler);
+    }
+
     var handler = function (e) {
+      // Don't toggle if clicking on nested interactive elements
+      if (e.target.closest("a, button, input")) return;
+
       faq.classList.toggle("active");
+
+      // Optional: Close other FAQs (accordion behavior)
+      if (faq.classList.contains("active")) {
+        document.querySelectorAll(".faq-item").forEach(function (otherFaq) {
+          if (otherFaq !== faq && otherFaq.classList.contains("active")) {
+            otherFaq.classList.remove("active");
+          }
+        });
+      }
     };
+
     faq._clickHandler = handler;
     faq.addEventListener("click", handler);
   });
+}
+
+// Initialize when DOM is ready
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initFaq);
+} else {
+  initFaq();
 }

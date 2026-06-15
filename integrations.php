@@ -141,7 +141,7 @@ include 'components/navbar.php';
                 <div class="feature-card" style="background: #F8FAFE; border-radius: 20px; padding: 24px;">
                     <div class="feature-icon"
                         style="background: #fff; width: 60px; height: 60px; border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-                        <i class="fas fa-cloud" style="font-size: 32px; color: #F44336;"></i>
+                        <i class="si si-zoho" style="font-size: 32px; color: #F44336;"></i>
                     </div>
                     <h3>Zoho CRM</h3>
                     <p>Seamless integration with Zoho. Sync contacts, log activities, and manage customer relationships
@@ -210,6 +210,7 @@ include 'components/navbar.php';
                         to Google Sheets, create Trello cards, and more.</p>
                     <span class="integration-badge">Native Integration</span>
                 </div>
+
                 <div class="feature-card" style="background: #F8FAFE; border-radius: 20px; padding: 24px;">
                     <div class="feature-icon"><i class="fas fa-code-branch"
                             style="font-size: 32px; color: #FF6C37;"></i></div>
@@ -245,7 +246,7 @@ include 'components/navbar.php';
             <div class="feature-grid"
                 style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px;">
                 <div class="feature-card" style="background: #F8FAFE; border-radius: 20px; padding: 24px;">
-                    <div class="feature-icon"><i class="fas fa-ticket-alt" style="font-size: 32px; color: #F79F1F;"></i>
+                    <div class="feature-icon"><i class="si si-zendesk" style="font-size: 32px; color: #0B3C43;"></i>
                     </div>
                     <h3>Zendesk</h3>
                     <p>Convert WhatsApp messages to Zendesk tickets. Two-way sync for seamless customer support across
@@ -253,7 +254,8 @@ include 'components/navbar.php';
                     <span class="integration-badge">Native Integration</span>
                 </div>
                 <div class="feature-card" style="background: #F8FAFE; border-radius: 20px; padding: 24px;">
-                    <div class="feature-icon"><i class="fas fa-life-ring" style="font-size: 32px; color: #1E88E5;"></i>
+                    <div class="feature-icon" style="background: #34A85A;"><i class="fas fa-headset"
+                            style="font-size: 32px; color: #fff;"></i>
                     </div>
                     <h3>Freshdesk</h3>
                     <p>WhatsApp to Freshdesk integration. Automate ticket creation, updates, and resolution tracking.
@@ -261,14 +263,14 @@ include 'components/navbar.php';
                     <span class="integration-badge">Native Integration</span>
                 </div>
                 <div class="feature-card" style="background: #F8FAFE; border-radius: 20px; padding: 24px;">
-                    <div class="feature-icon"><i class="fas fa-comment-dots"
-                            style="font-size: 32px; color: #006B5E;"></i></div>
+                    <div class="feature-icon"><i class="si si-intercom" style="font-size: 32px; color: #000;"></i>
+                    </div>
                     <h3>Intercom</h3>
                     <p>Connect WhatsApp to Intercom. Manage all customer conversations from one unified inbox.</p>
                     <span class="integration-badge">Coming Soon</span>
                 </div>
                 <div class="feature-card" style="background: #F8FAFE; border-radius: 20px; padding: 24px;">
-                    <div class="feature-icon"><i class="fas fa-headset" style="font-size: 32px; color: #4F46E5;"></i>
+                    <div class="feature-icon"><i class="si si-helpscout" style="font-size: 32px; color: #4F46E5;"></i>
                     </div>
                     <h3>Help Scout</h3>
                     <p>Sync WhatsApp conversations to Help Scout. Provide exceptional support across channels.</p>
@@ -308,8 +310,8 @@ include 'components/navbar.php';
                     <span class="integration-badge">Available</span>
                 </div>
                 <div class="feature-card" style="background: #F8FAFE; border-radius: 20px; padding: 24px;">
-                    <div class="feature-icon"><i class="fas fa-credit-card"
-                            style="font-size: 32px; color: #00457E;"></i></div>
+                    <div class="feature-icon"><i class="si si-razorpay" style="font-size: 32px; color: #00457E;"></i>
+                    </div>
                     <h3>Razorpay</h3>
                     <p>Indian payment gateway integration. Collect payments, send invoices, and automate reminders.</p>
                     <span class="integration-badge">Native Integration</span>
@@ -333,14 +335,16 @@ include 'components/navbar.php';
                     <span class="integration-badge">Available</span>
                 </div>
                 <div class="feature-card" style="background: #F8FAFE; border-radius: 20px; padding: 24px;">
-                    <div class="feature-icon"><i class="fas fa-table" style="font-size: 32px; color: #4285F4;"></i>
+                    <div class="feature-icon"><i class="si si-googlesheets"
+                            style="font-size: 32px; color: #23A566;"></i>
                     </div>
                     <h3>Google Sheets</h3>
                     <p>Log conversations, export analytics, and build custom reports directly to Google Sheets.</p>
                     <span class="integration-badge">Native Integration</span>
                 </div>
                 <div class="feature-card" style="background: #F8FAFE; border-radius: 20px; padding: 24px;">
-                    <div class="feature-icon"><i class="fab fa-google" style="font-size: 32px; color: #4285F4;"></i>
+                    <div class="feature-icon"><i class="si si-googleanalytics"
+                            style="font-size: 32px; color: #F9AE08;"></i>
                     </div>
                     <h3>Google Analytics</h3>
                     <p>Track WhatsApp campaign performance, click-through rates, and conversion metrics.</p>

@@ -53,10 +53,21 @@ include 'components/navbar.php';
 
     .contact-method {
         display: flex;
-        align-items: flex-start;
+        /* align-items: flex-start; */
         gap: 20px;
-        padding: 20px 0;
+        padding: 20px 10px;
         border-bottom: 1px solid #eef2f6;
+        /* box-shadow: 0 30px 40px -20px rgba(0, 0, 0, 0.12); */
+        transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+    }
+
+    .contact-method:hover {
+        transform: translateY(-10px);
+        background: white;
+        border-color: rgba(37, 211, 102, 0.2);
+        box-shadow: 0 35px 45px -15px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        background: radial-gradient(circle at 30% 20%, rgba(37, 211, 102, 0.08), transparent 70%);
     }
 
     .contact-method:last-child {
@@ -303,9 +314,10 @@ include 'components/navbar.php';
 <main>
     <!-- Hero Section -->
     <section style="background: var(--bg-gradient-green); padding: 80px 0 60px;">
-        <div class="floating-dots"></div>
+        <div class="floating-dots" style="height: 55%;"></div>
         <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto; text-align: center;">
-            <span class="feature-pair-badge" style="color: var(--wa-green);"><i class=" fas fa-envelope"></i> Get in
+            <span class="feature-pair-badge" style="color: var(--wa-green);">
+                <i class=" fas fa-envelope"></i> Get in
                 Touch</span>
             <h1 style="font-size: 3rem; font-weight: 800; margin-bottom: 16px;">We'd Love to <span
                     style="color: var(--wa-green);">Hear From You</span></h1>
@@ -323,121 +335,55 @@ include 'components/navbar.php';
                     <h2 style="font-size: 1.6rem; font-weight: 700; margin-bottom: 8px;">Contact Information</h2>
                     <p style="color: #5a6b7e; margin-bottom: 24px;">Reach out through any of these channels</p>
 
-                    <div class="contact-method">
-                        <div class="contact-icon">
-                            <i class="fab fa-whatsapp"></i>
+                    <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20start%20a%20free%20trial"
+                        target="_blank" style="text-decoration: none;">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>WhatsApp</h3>
+                                <p>Chat with our sales team instantly</p>
+                                <span>
+                                    <?php echo WHATSAPP_NUMBER; ?>
+                                </span>
+                            </div>
                         </div>
-                        <div class="contact-details">
-                            <h3>WhatsApp</h3>
-                            <p>Chat with our sales team instantly</p>
-                            <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20start%20a%20free%20trial"
-                                target="_blank">
-                                <?php echo WHATSAPP_NUMBER; ?>
-                            </a>
-                            <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20start%20a%20free%20trial"
-                                target="_blank">
+                    </a>
 
-                            </a>
+                    <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>" style="text-decoration: none;">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Phone</h3>
+                                <p>Talk directly to our team</p>
+                                <span>
+                                    <?php echo PHONE_NUMBER; ?>
+                                </span>
+                            </div>
                         </div>
-                    </div>
+                    </a>
 
-                    <div class="contact-method">
-                        <div class="contact-icon">
-                            <i class="fas fa-volume-control-phone"></i>
+                    <a href="mailto:info@heydoot.com" style="text-decoration: none;">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>For general inquiries</p>
+                                <span>info@heydoot.com</span>
+                            </div>
                         </div>
-                        <div class="contact-details">
-                            <h3>Phone</h3>
-                            <p>Talk directly to our team</p>
-                            <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>">
-                                <?php echo PHONE_NUMBER; ?>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="contact-method">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Email</h3>
-                            <p>For general inquiries</p>
-                            <a href="mailto:info@heydoot.com">info@heydoot.com</a>
-                        </div>
-                    </div>
-
-                    <!-- <div class="contact-method">
-                        <div class="contact-icon">
-                            <i class="fas fa-headset"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Support</h3>
-                            <p>Technical support 24/7</p>
-                            <a href="mailto:support@heydoot.com">support@heydoot.com</a>
-                        </div>
-                    </div>
-
-                    <div class="contact-method">
-                        <div class="contact-icon">
-                            <i class="fas fa-file-invoice-dollar"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Sales & Billing</h3>
-                            <p>For pricing and invoice questions</p>
-                            <a href="mailto:sales@heydoot.com">sales@heydoot.com</a>
-                        </div>
-                    </div> -->
+                    </a>
                 </div>
-
-                <!-- Contact Form -->
+                <!-- Contact Form Image -->
                 <div class="contact-form-img">
-                    <img src="<?php echo BASE_URL; ?>/assets/images/office.webp" alt="Office"
-                        style="border-radius: 32px; box-shadow: 0 20px 30px -10px rgba(0,0,0,0.1);">
+                    <img src="<?php echo BASE_URL; ?>/assets/images/office.webp" alt="HeyDoot Office"
+                        style="width: 100%; border-radius: 32px; box-shadow: 0 20px 30px -10px rgba(0,0,0,0.1);">
                 </div>
-                <!-- <div class="contact-form">
-                    <h2 style="font-size: 1.6rem; font-weight: 700; margin-bottom: 8px;">Send us a Message</h2>
-                    <p style="color: #5a6b7e; margin-bottom: 24px;">We'll get back to you within 24 hours</p>
-
-                    <div id="successMessage" class="success-message">
-                        <i class="fas fa-check-circle"></i> Thank you! Your message has been sent. We'll contact you
-                        soon.
-                    </div>
-                    <div id="errorMessage" class="error-message">
-                        <i class="fas fa-exclamation-triangle"></i> Oops! Something went wrong. Please try again.
-                    </div>
-
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label>Full Name *</label>
-                            <input type="text" name="name" required placeholder="John Doe">
-                        </div>
-                        <div class="form-group">
-                            <label>Email Address *</label>
-                            <input type="email" name="email" required placeholder="john@example.com">
-                        </div>
-                        <div class="form-group">
-                            <label>Phone Number</label>
-                            <input type="tel" name="phone" placeholder="+1 234 567 8900">
-                        </div>
-                        <div class="form-group">
-                            <label>Subject *</label>
-                            <select name="subject" required>
-                                <option value="">Select a subject</option>
-                                <option value="sales">Sales Inquiry</option>
-                                <option value="support">Technical Support</option>
-                                <option value="pricing">Pricing Question</option>
-                                <option value="partnership">Partnership Opportunity</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Message *</label>
-                            <textarea name="message" required placeholder="Tell us how we can help..."></textarea>
-                        </div>
-                        <button type="submit" class="btn-submit">
-                            <i class="fas fa-paper-plane"></i> Send Message
-                        </button>
-                    </form>
-                </div> -->
             </div>
         </div>
     </section>

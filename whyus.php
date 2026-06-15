@@ -44,12 +44,39 @@ include 'components/navbar.php';
     }
 
     .value-card {
-        background: white;
+        flex: 1;
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(8px);
+        overflow: hidden;
         border-radius: 32px;
         padding: 40px 32px;
         text-align: center;
-        box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.08);
-        transition: transform 0.3s;
+        box-shadow: 0 30px 40px -20px rgba(0, 0, 0, 0.12);
+        transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+    }
+
+    .value-card::before {
+        content: '';
+        position: absolute;
+        top: -20%;
+        left: -20%;
+        width: 140%;
+        height: 140%;
+        background: radial-gradient(circle at 30% 20%, rgba(37, 211, 102, 0.08), transparent 70%);
+        transition: opacity 0.4s;
+        opacity: 0;
+        z-index: 0;
+    }
+
+    .value-card:hover::before {
+        opacity: 1;
+    }
+
+    .value-card:hover {
+        transform: translateY(-10px);
+        background: white;
+        border-color: rgba(37, 211, 102, 0.2);
+        box-shadow: 0 35px 45px -15px rgba(0, 0, 0, 0.2);
     }
 
     .value-icon {
