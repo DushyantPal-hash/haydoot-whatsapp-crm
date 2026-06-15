@@ -75,6 +75,12 @@ include 'components/navbar.php';
         margin: 16px 0 8px;
     }
 
+    .price-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
     .price span {
         font-size: 1rem;
         font-weight: 400;
@@ -250,10 +256,10 @@ include 'components/navbar.php';
 
     <!-- Pricing Cards -->
     <section class="section-container" style="padding: 60px 0; background: #fff;">
-        <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">
+        <div class="container-fluid">
             <div class="feature-grid">
                 <!-- Starter Plan -->
-                <div class="feature-card">
+                <div class="feature-card price-card">
                     <h3>Growth</h3>
                     <div class="price">
                         $39<span>/month</span>
@@ -311,7 +317,7 @@ include 'components/navbar.php';
                 </div>
 
                 <!-- Professional Plan (Most Popular) -->
-                <div class="feature-card popular">
+                <div class="feature-card popular price-card">
                     <div class="popular-badge">⚡ Best Value</div>
                     <h3>Scale</h3>
                     <div class="price">
@@ -381,7 +387,7 @@ include 'components/navbar.php';
                 </div>
 
                 <!-- Enterprise Plan -->
-                <div class="feature-card">
+                <div class="feature-card price-card">
                     <h3>Enterprise</h3>
                     <div class="price">
                         Custom
