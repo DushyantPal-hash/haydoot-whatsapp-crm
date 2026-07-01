@@ -46,7 +46,7 @@ include ROOT_PATH . '/components/navbar.php';
 <style>
     .card-1 {
         top: 8%;
-        left: 14%;
+        left: -2%;
     }
 
     .card-2 {
@@ -379,6 +379,15 @@ include ROOT_PATH . '/components/navbar.php';
         .stat-number {
             font-size: 2.1rem;
         }
+
+        .bar-mob {
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .icon-rotate {
+            rotate: 90deg;
+        }
     }
 </style>
 
@@ -395,7 +404,8 @@ include ROOT_PATH . '/components/navbar.php';
             <h1>Automate Guest Messaging<br>with <span style="color: #F59E0B;">Smoobu</span> & WhatsApp</h1>
             <p class="hero-desc">HeyDoot connects your Smoobu property management system with WhatsApp Business —
                 automatically. Send booking confirmations, check-in instructions, and support messages to guests without
-                lifting a finger. No coding. No plugins. Just results.</p>
+                lifting a finger. No coding. No plugins. Just results.
+            </p>
             <div class="cta-group">
                 <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20set%20up%20Smoobu%20WhatsApp%20automation"
                     class="btn btn-smoobu btn-lg"><i class="fab fa-whatsapp"></i> Get Started Free</a>
@@ -412,16 +422,19 @@ include ROOT_PATH . '/components/navbar.php';
                     <span>Auto Check-in Codes</span>
                 </div>
                 <div class="float-card card-3"><i class="fas fa-reply" style="color:#25D366; font-size: 22px;"></i>
-                    Guest Replies Handled</div>
-                <div class="float-card card-4"><i class="fas fa-moon" style="color:#a78bfa;"></i> 24/7 Automated</div>
+                    Guest Replies Handled
+                </div>
+                <div class="float-card card-4"><i class="fas fa-moon" style="color:#a78bfa;"></i>
+                    24/7 Automated
+                </div>
                 <div class="mockup-phone"
                     style="width: 65%; margin: 0 auto; background: #1e1e2a; border-radius: 48px; padding: 8px;">
                     <div style="background: #2a2a35; border-radius: 40px; padding: 30px 20px; text-align: center;">
-                        <div style=" display: flex; justify-content: center; align-items: center;">
+                        <div class="bar-mob" style=" display: flex; justify-content: center; align-items: center;">
                             <i class="fas fa-building" style="font-size: 48px; color: #1E3A5F;"></i>
-                            <i class="fas fa-arrow-right" style="margin: 0 20px; color: white;"></i>
+                            <i class="fas fa-arrow-right icon-rotate" style="margin: 0 20px; color: white;"></i>
                             <i class="fas fa-magic" style="font-size: 36px; color: #F59E0B;"></i>
-                            <i class="fas fa-arrow-right" style="margin: 0 20px; color: white;"></i>
+                            <i class="fas fa-arrow-right icon-rotate" style="margin: 0 20px; color: white;"></i>
                             <i class="fab fa-whatsapp" style="font-size: 48px; color: #25D366;"></i>
                         </div>
                         <p style="color: #aaa; margin-top: 16px;">Smoobu → HeyDoot Automation → Guest WhatsApp</p>

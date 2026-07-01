@@ -53,3 +53,25 @@
     align-items: center;
     justify-content: center;
 }
+
+.threads:hover {
+    background: linear-gradient(to right, #71717a, #57534e, #18181b);
+}
+
+.twitter:hover {
+    background: linear-gradient(to right, #a5f3fc, #60a5fa, #4f46e5);
+    color: black;
+}
+
+.instagram:hover {
+    background: linear-gradient(to bottom, #ec4899, #ef4444, #f97316);
+    color: black;
+}
+
+.youtube:hover {
+    background: linear-gradient(to right, #ee0000, #b11b1b, #f40000);
+}
+
+.pinterest:hover {
+    background: linear-gradient(to bottom right, #b30303, #eb0000da, #fd0202);
+}

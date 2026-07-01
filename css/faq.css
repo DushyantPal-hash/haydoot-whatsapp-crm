@@ -5,27 +5,32 @@
     margin-bottom: 16px;
     padding: 0 24px;
     border: 1px solid #eef2f6;
+    overflow: hidden;
 }
 
 .faq-item .faq-answer {
-    display: none;
-    padding: 10px 0px 20px;
-    border-top: 1px solid #eef2f6;
-}
-
-.faq-answer {
-    padding: 0 0 20px 0;
+    max-height: 0;
+    opacity: 0;
+    padding: 0 0px;
+    border-top: 0px solid #eef2f6;
+    transition: max-height 0.6s ease-in-out,
+        opacity 0.5s ease-in-out,
+        padding 0.5s ease-in-out,
+        border-top-width 0.5s ease-in-out;
+    overflow: hidden;
     color: #5a6b7e;
     line-height: 1.6;
-
 }
 
 .faq-item.active .faq-answer {
-    display: block;
+    max-height: max-content !important;
+    opacity: 1;
+    padding: 10px 0px 20px;
+    border-top-width: 1px;
 }
 
 .faq-item .faq-question i {
-    transition: transform 0.3s;
+    transition: transform 0.3s ease;
     color: var(--wa-teal);
 }
 
@@ -51,4 +56,9 @@
 .faq-question a,
 .faq-question button {
     pointer-events: auto;
+}
+
+/* For very long content, you might need a larger max-height */
+.faq-item.long-content.active .faq-answer {
+    max-height: 1000px;
 }
