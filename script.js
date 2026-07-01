@@ -193,22 +193,52 @@ function initSmoothScroll() {
 
 function initFaq() {
   document.querySelectorAll(".faq-item").forEach(function (faq) {
-    // Remove existing listener to prevent duplicates
     if (faq._clickHandler) {
       faq.removeEventListener("click", faq._clickHandler);
     }
 
+    // Store the answer element
+    const answer = faq.querySelector(".faq-answer");
+
+    // Set initial height for animation
+    if (!faq.classList.contains("active")) {
+      answer.style.maxHeight = "0";
+      answer.style.opacity = "0";
+    } else {
+      answer.style.maxHeight = answer.scrollHeight + "px";
+      answer.style.opacity = "1";
+    }
+
     var handler = function (e) {
-      // Don't toggle if clicking on nested interactive elements
       if (e.target.closest("a, button, input")) return;
 
-      faq.classList.toggle("active");
+      const isActive = faq.classList.contains("active");
 
-      // Optional: Close other FAQs (accordion behavior)
-      if (faq.classList.contains("active")) {
+      if (isActive) {
+        // Closing
+        faq.classList.remove("active");
+        answer.style.maxHeight = "0";
+        answer.style.opacity = "0";
+        answer.style.padding = "0 0px";
+        answer.style.borderTopWidth = "0";
+      } else {
+        // Opening - first set to auto height for calculation
+        faq.classList.add("active");
+        answer.style.display = "block";
+        answer.style.maxHeight = answer.scrollHeight + "px";
+        answer.style.opacity = "1";
+        answer.style.padding = "10px 0px 20px";
+        answer.style.borderTopWidth = "1px";
+
+        // Close others
         document.querySelectorAll(".faq-item").forEach(function (otherFaq) {
           if (otherFaq !== faq && otherFaq.classList.contains("active")) {
             otherFaq.classList.remove("active");
+            const otherAnswer = otherFaq.querySelector(".faq-answer");
+            otherAnswer.style.maxHeight = "0";
+            otherAnswer.style.opacity = "0";
+            otherAnswer.style.padding = "0 0px";
+            otherAnswer.style.borderTopWidth = "0";
           }
         });
       }

@@ -29,11 +29,17 @@
                 </div>
                 <p>Manage WhatsApp Groups at Scale for Modern Businesses</p>
                 <div class="social-links">
-                    <a href="https://www.threads.com/@heydootofficial"><i class="si si-threads"></i></a>
-                    <a href="https://x.com/HeyDoot"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/heydootofficial/"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/@HeyDootOfficial"><i class="fab fa-youtube"></i></a>
-                    <a href="https://in.pinterest.com/heydootcom/"><i class="fab fa-pinterest"></i></a>
+                    <a href="https://www.threads.com/@heydootofficial" class="threads"><i class="si si-threads"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@HeyDootOfficial" class="youtube"><i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://x.com/HeyDoot" class="twitter"><i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/heydootofficial/" class="instagram"><i
+                            class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://in.pinterest.com/heydootcom/" class="pinterest"><i class="fab fa-pinterest"></i>
+                    </a>
                 </div>
             </div>
             <div class="footer-links">

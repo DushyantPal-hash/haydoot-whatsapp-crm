@@ -206,6 +206,17 @@ include ROOT_PATH . '/components/navbar.php';
         font-size: 20px;
         gap: 10px;
     }
+
+    @media (max-width: 768px) {
+        .bar-mob {
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .icon-rotate {
+            rotate: 90deg;
+        }
+    }
 </style>
 
 <main>
@@ -244,11 +255,11 @@ include ROOT_PATH . '/components/navbar.php';
                 <div class="mockup-phone"
                     style="width: 65%; margin: 0 auto; background: #1e1e2a; border-radius: 48px; padding: 8px;">
                     <div style="background: #2a2a35; border-radius: 40px; padding: 30px 20px; text-align: center;">
-                        <div style=" display: flex; justify-content: center; align-items: center;">
+                        <div class="bar-mob" style=" display: flex; justify-content: center; align-items: center;">
                             <i class="fas fa-building" style="font-size: 48px; color: #1E3A5F;"></i>
-                            <i class="fas fa-plus" style="margin: 0 20px; color: white;"></i>
-                            <i class="fas fa-code" style="font-size: 36px; color: #F59E0B;"></i>
-                            <i class="fas fa-plus" style="margin: 0 20px; color: white;"></i>
+                            <i class="fas fa-arrow-right icon-rotate" style="margin: 0 20px; color: white;"></i>
+                            <i class="fas fa-magic" style="font-size: 36px; color: #F59E0B;"></i>
+                            <i class="fas fa-arrow-right icon-rotate" style="margin: 0 20px; color: white;"></i>
                             <i class="fab fa-whatsapp" style="font-size: 48px; color: #25D366;"></i>
                         </div>
                         <p style="color: #aaa; margin-top: 16px;">Your application → HeyDoot API → WhatsApp</p>
