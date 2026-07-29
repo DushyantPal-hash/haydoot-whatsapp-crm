@@ -465,7 +465,7 @@ include 'components/navbar.php';
 
                 <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>" class=" btn btn-cta-white btn-lg">
 
-                    <i class="fas fa-phone"></i>
+                    <i class="fas fa-mobile-alt"></i>
                     Talk to Expert
                 </a>
 

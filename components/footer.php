@@ -57,8 +57,7 @@
             </div>
             <div class="footer-links">
                 <h4>Contact</h4>
-                <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>"><i
-                        class="fas fa-volume-control-phone"></i>
+                <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>"><i class="fas fa-mobile-alt"></i>
                     <?php echo PHONE_NUMBER; ?>
                 </a>
                 <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20HeyDoot%20features"
