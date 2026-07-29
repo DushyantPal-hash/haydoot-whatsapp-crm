@@ -354,7 +354,7 @@ include 'components/navbar.php';
                     <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>" style="text-decoration: none;">
                         <div class="contact-method">
                             <div class="contact-icon">
-                                <i class="fas fa-phone-alt"></i>
+                                <i class="fas fa-mobile-alt"></i>
                             </div>
                             <div class="contact-details">
                                 <h3>Phone</h3>

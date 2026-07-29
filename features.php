@@ -381,7 +381,7 @@ include 'components/navbar.php';
                     class="btn btn-secondary btn-lg" target="_blank">
                     <i class="fab fa-whatsapp"></i> Start Free Trial
                 </a>
-                <a href="/pricing" class="btn btn-primary btn-lg">
+                <a href="<?php echo BASE_URL; ?>/pricing.php" class="btn btn-primary btn-lg">
                     <i class="fas fa-tag"></i> View Pricing
                 </a>
             </div>
