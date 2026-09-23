@@ -31,7 +31,7 @@ include 'components/navbar.php';
                     style="background: var( --wa-green); border-color: var( --wa-green);">
                     <i class="fas fa-search"></i> Explore All Integrations
                 </a>
-                <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27m%20interested%20in%20custom%20integrations%20for%20HeyDoot"
+                <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20learn%20more%20about%20HeyDoot%27s%20business%20automation%20services"
                     class="btn btn-secondary btn-lg" target="_blank">
                     <i class="fab fa-whatsapp"></i> Request Custom Integration
                 </a>
@@ -456,7 +456,7 @@ include 'components/navbar.php';
             </p>
             <div class="cta-buttons">
 
-                <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20HeyDoot%20features"
+                <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20discuss%20which%20HeyDoot%20service%20is%20right%20for%20my%20business"
                     class="btn btn-outline-light btn-lg">
 
                     <i class="fab fa-whatsapp"></i>

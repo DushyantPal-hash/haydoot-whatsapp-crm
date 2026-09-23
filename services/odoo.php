@@ -164,7 +164,7 @@ include ROOT_PATH . '/components/navbar.php';
             <p class="hero-desc" style="font-size: 1rem;">No WhatsApp Business API approval complexity. Fast setup with
                 customizable templates and manual or automated triggers.</p>
             <div class="cta-group">
-                <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20HeyDoot%20features"
+                <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20get%20API%20keys%20for%20the%20HeyDoot%20Odoo%20WhatsApp%20integration"
                     class="btn btn-odoo btn-lg"><i class="fab fa-whatsapp"></i> Start Integration</a>
                 <a href="<?php echo BASE_URL; ?>/integrations/odoo.php" class="btn btn-secondary btn-lg"><i
                         class="fas fa-book-open"></i>
@@ -244,7 +244,7 @@ include ROOT_PATH . '/components/navbar.php';
                 <div>
                     <i class="fas fa-check-circle" style="color: #714B67; margin-right: 12px;"></i>
                     <strong>Ready to integrate?</strong> Connect Odoo with WhatsApp in under 10 minutes.
-                    <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20HeyDoot%20features"
+                    <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20start%20an%20Odoo%20WhatsApp%20integration%20with%20HeyDoot"
                         style="color: #714B67; font-weight: 600; margin-left: 12px;">Get API Keys →</a>
                 </div>
                 <div>
@@ -515,7 +515,7 @@ include ROOT_PATH . '/components/navbar.php';
                         <p style="margin-top: 16px; max-width: 600px; margin-left: auto; margin-right: auto;">Connect
                             Odoo with WhatsApp in minutes. No WhatsApp Business API approval required.</p>
                         <div style="margin-top: 32px;">
-                            <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%20Doot%20team%2C%20I%27d%20like%20a%20price%20quote%20for%20the%20Doot%20License."
+                            <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%20HeyDoot%20team%2C%20I%27d%20like%20a%20price%20quote%20for%20the%20Odoo%20WhatsApp%20integration."
                                 class="btn btn-secondary btn-lg"><i class="fab fa-whatsapp"></i> Get Started Today</a>
                             <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>"
                                 class="btn btn-outline-light btn-lg" style="margin-left: 16px;"><i

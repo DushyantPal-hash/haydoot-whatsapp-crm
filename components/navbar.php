@@ -305,7 +305,7 @@ $navbar = [
                 class="btn btn-primary btn-mobile-full demo-btn">
                 <i class="fas fa-calendar-alt"></i> Book a Demo
             </a>
-            <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%20Doot%20team%2C%20I%27d%20like%20a%20price%20quote%20for%20the%20Doot%20License."
+            <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%20HeyDoot%20team%2C%20I%27d%20like%20to%20learn%20more%20about%20your%20WhatsApp%20automation%20solutions."
                 class="btn btn-secondary btn-mobile-full trial-btn" target="_blank">
                 <i class="fas fa-play-circle"></i> Start Free Trial
             </a>
@@ -409,7 +409,7 @@ $navbar = [
     }
 </style>
 <div class="floating-buttons">
-    <a href="https://wa.me/<?php echo str_replace([' ', '+', '-', '(', ')'], '', WHATSAPP_NUMBER); ?>"
+    <a href="https://wa.me/<?php echo str_replace([' ', '+', '-', '(', ')'], '', WHATSAPP_NUMBER); ?>?text=Hi%20HeyDoot%20team%2C%20I%27d%20like%20to%20learn%20more%20about%20your%20WhatsApp%20automation%20solutions."
         class="floating-btn whatsapp-btn-float" target="_blank" aria-label="Chat on WhatsApp">
         <i class="fab fa-whatsapp"></i>
         <span class="btn-label">WhatsApp</span>

@@ -72,7 +72,7 @@ include ROOT_PATH . '/components/navbar.php';
             <p class="hero-desc">Automate WhatsApp messages, create leads, sync conversations — no code. Trigger actions
                 across your entire stack.</p>
             <div class="cta-group">
-                <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20HeyDoot%20features"
+                <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20help%20connecting%20HeyDoot%20with%20Zapier"
                     class="btn btn-zapier btn-lg" style="background: #FF4A00;"><i class="fas fa-bolt"></i>
                     Connect to Zapier</a>
                 <a href="<?php echo BASE_URL; ?>/Demo.php" class="btn btn-secondary btn-lg"><i
@@ -114,7 +114,7 @@ include ROOT_PATH . '/components/navbar.php';
                     <strong>HeyDoot + Zapier integration is live and fully certified.</strong>
                     <span style="color: #4b5563;"> Connect your HeyDoot account with Zapier to unlock 6000+
                         automations.</span>
-                    <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20HeyDoot%20features"
+                    <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20start%20building%20Zapier%20automations%20with%20HeyDoot"
                         style="color: #FF4A00; font-weight: 600;"> Start building
                         Zaps →</a>
                 </div>

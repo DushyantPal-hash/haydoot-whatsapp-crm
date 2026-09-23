@@ -58,7 +58,7 @@ include ROOT_PATH . '/components/navbar.php';
             <p class="hero-desc">Sync WhatsApp conversations, automatically create contacts, and trigger workflows — all
                 within your HubSpot CRM.</p>
             <div class="cta-group">
-                <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20HeyDoot%20features"
+                <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20connect%20HubSpot%20with%20HeyDoot%20for%20WhatsApp%20automation"
                     class="btn btn-primary btn-lg"
                     style="background: #FF7A59; box-shadow: 0 4px 12px rgba(255,122,89,0.3);"><i
                         class="fab fa-hubspot"></i> Connect HubSpot</a>
