@@ -91,7 +91,7 @@ include 'components/navbar.php';
                     <a href="<?php echo BASE_URL; ?>/404.php" class="btn btn-primary btn-lg">
                         <i class="fas fa-arrow-down"></i> Explore All Features
                     </a>
-                    <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20HeyDoot%20features"
+                    <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20learn%20more%20about%20HeyDoot%27s%20WhatsApp%20automation%20features"
                         class="btn btn-outline-light btn-lg" target="_blank">
                         <i class="fab fa-whatsapp"></i> Chat with Sales
                     </a>

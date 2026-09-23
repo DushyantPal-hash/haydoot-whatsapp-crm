@@ -75,3 +75,7 @@
 .pinterest:hover {
     background: linear-gradient(to bottom right, #b30303, #eb0000da, #fd0202);
 }
+
+.linkedin:hover {
+    background: linear-gradient(to right, #0071f2, #2570b2, #0a69d5);
+}

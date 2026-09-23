@@ -284,7 +284,7 @@ include 'components/navbar.php';
                         unified inbox for WhatsApp — no API headaches, no limitations. Today, hundreds of teams trust
                         HeyDoot to handle millions of conversations. And we're just getting started.</p>
                     <div style="margin-top: 32px;;">
-                        <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20HeyDoot"
+                        <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20learn%20more%20about%20the%20HeyDoot%20team%20and%20company"
                             class="btn btn-secondary btn-md" target="_blank">
                             <i class="fab fa-whatsapp"></i> Join Our Journey
                         </a>

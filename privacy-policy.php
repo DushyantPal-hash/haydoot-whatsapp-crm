@@ -399,7 +399,7 @@ include 'components/navbar.php';
                             Block A, Sector 68, Noida, Uttar Pradesh 201309, India</p>
                         <p><i class="fab fa-whatsapp" style="width: 30px; color: var(--wa-teal);"></i>
                             <strong>WhatsApp:</strong> <a
-                                href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20HeyDoot%20features"
+                                href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%20have%20a%20privacy%20question%20about%20HeyDoot"
                                 style="color: var(--wa-teal);"><?php echo CALL_NUMBER; ?></a>
                         </p>
                     </div>

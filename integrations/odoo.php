@@ -136,7 +136,7 @@ include ROOT_PATH . '/components/navbar.php';
             <p class="hero-desc">Automate WhatsApp notifications for Sales Orders, Invoices, Purchase Orders, and Stock
                 updates — directly from your Odoo instance.</p>
             <div class="cta-group">
-                <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20HeyDoot%20features"
+                <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20connect%20my%20Odoo%20instance%20with%20HeyDoot"
                     class="btn btn-odoo btn-lg"><i class="si si-odoo"></i> Connect Odoo</a>
                 <a href="<?php echo BASE_URL; ?>/services/odoo.php" class="btn btn-secondary btn-lg"><i
                         class="fas fa-file-alt"></i> View Services</a>
@@ -174,7 +174,7 @@ include ROOT_PATH . '/components/navbar.php';
                     <strong>HeyDoot Odoo WhatsApp Notifier is fully certified.</strong>
                     <span style="color: #4b5563;"> Connect your Odoo instance with HeyDoot to enable automated WhatsApp
                         messaging.</span>
-                    <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20HeyDoot%20features"
+                    <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20help%20setting%20up%20the%20HeyDoot%20Odoo%20WhatsApp%20integration"
                         style="color: #714B67; font-weight: 600;"> Start
                         Integration →</a>
                 </div>
@@ -473,7 +473,7 @@ include ROOT_PATH . '/components/navbar.php';
                                     class="fas fa-bolt"></i> Real-Time Notifications</span>
                         </div>
                         <div style="margin-top: 36px;">
-                            <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20HeyDoot%20features"
+                            <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20start%20the%20HeyDoot%20Odoo%20WhatsApp%20integration"
                                 class="btn btn-lg" style="background: white; color: #714B67; font-weight: 700;"><i
                                     class="fab fa-whatsapp"></i> Get Started Today</a>
                         </div>

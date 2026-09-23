@@ -56,7 +56,7 @@ include 'components/navbar.php';
         <p class="hero-desc">Connect multiple WhatsApp numbers to one shared inbox. Enable your team to respond
             without direct access. <strong>No Business API required.</strong></p>
         <div class="cta-group">
-            <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%20Doot%20team%2C%20I%27d%20like%20a%20price%20quote%20for%20the%20Doot%20License."
+            <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%20HeyDoot%20team%2C%20I%27d%20like%20to%20learn%20more%20about%20your%20WhatsApp%20automation%20solutions."
                 class="btn btn-primary btn-lg" target="_blank">
                 <i class="fab fa-whatsapp"></i> Book a demo on WhatsApp
             </a>
@@ -510,7 +510,7 @@ include 'components/navbar.php';
             <h2>Ready to scale your WhatsApp communication?</h2>
             <p>Join hundreds of teams who’ve upgraded to HeyDoot — start your free trial today.</p>
             <div class="cta-buttons">
-                <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20HeyDoot%20features"
+                <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20learn%20more%20about%20HeyDoot%20and%20how%20it%20can%20help%20my%20business"
                     class="btn btn-outline-light btn-lg"><i class="fab fa-whatsapp"></i> Chat with
                     sales</a>
 

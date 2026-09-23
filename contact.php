@@ -335,7 +335,7 @@ include 'components/navbar.php';
                     <h2 style="font-size: 1.6rem; font-weight: 700; margin-bottom: 8px;">Contact Information</h2>
                     <p style="color: #5a6b7e; margin-bottom: 24px;">Reach out through any of these channels</p>
 
-                    <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20start%20a%20free%20trial"
+                    <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20contact%20the%20HeyDoot%20team%20about%20my%20requirements"
                         target="_blank" style="text-decoration: none;">
                         <div class="contact-method">
                             <div class="contact-icon">
@@ -458,7 +458,7 @@ include 'components/navbar.php';
             <p style="color: #e0e0e0; font-size: 1.1rem; max-width: 600px; margin: 0 auto 32px;">Begin your free trial
                 today — no credit card required.</p>
             <div class="cta-buttons" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-                <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20start%20a%20free%20trial"
+                <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20speak%20with%20the%20HeyDoot%20support%20team"
                     class="btn btn-secondary btn-lg" target="_blank">
                     <i class="fab fa-whatsapp"></i> Start Free Trial
                 </a>

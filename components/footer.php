@@ -29,6 +29,9 @@
                 </div>
                 <p>Manage WhatsApp Groups at Scale for Modern Businesses</p>
                 <div class="social-links">
+                    <a href="https://www.linkedin.com/company/heydoot/" class="linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
                     <a href="https://www.threads.com/@heydootofficial" class="threads"><i class="si si-threads"></i>
                     </a>
                     <a href="https://www.youtube.com/@HeyDootOfficial" class="youtube"><i class="fab fa-youtube"></i>
@@ -60,7 +63,7 @@
                 <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>"><i class="fas fa-mobile-alt"></i>
                     <?php echo PHONE_NUMBER; ?>
                 </a>
-                <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20HeyDoot%20features"
+                <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20speak%20with%20the%20HeyDoot%20team%20about%20WhatsApp%20automation"
                     target="_blank">
                     <i class="si si-whatsapp" style="font-size: 15px; color: #25D366;"></i> Chat on WhatsApp
                 </a>
