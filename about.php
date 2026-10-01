@@ -58,10 +58,14 @@ include 'components/navbar.php';
         box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.08);
         transition: transform 0.3s;
         border: 1px solid #eef2f6;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .team-card:hover {
         transform: translateY(-8px);
+        background: radial-gradient(circle at 30% 20%, rgba(37, 211, 101, 0.21), transparent 70%);
     }
 
     .team-avatar {
@@ -75,6 +79,13 @@ include 'components/navbar.php';
         justify-content: center;
         font-size: 48px;
         color: white;
+    }
+
+    .team-avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
     }
 
     .timeline {
@@ -187,6 +198,15 @@ include 'components/navbar.php';
     .stat-item-modern {
         flex: 1;
         min-width: 150px;
+        background: white;
+        padding: 20px;
+        border-radius: 30px;
+        transition: transform 0.3s;
+    }
+
+    .stat-item-modern:hover {
+        transform: translateY(-8px);
+        background: radial-gradient(circle at 30% 20%, rgba(37, 211, 101, 0.21), transparent 70%);
     }
 
     .stat-number-modern {
@@ -268,7 +288,6 @@ include 'components/navbar.php';
                 simplify WhatsApp communication for businesses worldwide.</p>
         </div>
     </section>
-
     <!-- Mission Section -->
     <section class="section-container" style="padding: 60px 0; background: #fff;">
         <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">
@@ -301,7 +320,6 @@ include 'components/navbar.php';
             </div>
         </div>
     </section>
-
     <!-- Stats Section -->
     <section style="background: #F8FAFE; padding: 60px 0;">
         <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">
@@ -330,7 +348,6 @@ include 'components/navbar.php';
             </div>
         </div>
     </section>
-
     <!-- Our Values Section -->
     <section style="padding: 60px 0; background: #fff;">
         <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">
@@ -375,7 +392,6 @@ include 'components/navbar.php';
             </div>
         </div>
     </section>
-
     <!-- Our Journey Timeline -->
     <section style="background: #F8FAFE; padding: 60px 0;">
         <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">
@@ -433,9 +449,8 @@ include 'components/navbar.php';
             </div>
         </div>
     </section>
-
     <!-- Leadership Team Section -->
-    <!-- <section style="padding: 60px 0; background: #fff;">
+    <section style="padding: 60px 0; background: #fff;">
         <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">
             <div style="text-align: center; margin-bottom: 48px;">
                 <span class="feature-pair-badge"><i class="fas fa-user-tie"></i> Leadership</span>
@@ -443,67 +458,90 @@ include 'components/navbar.php';
                 <p style="color: #5a6b7e;">The passionate people behind HeyDoot</p>
             </div>
             <div class="team-grid">
+                <!-- Jitender Malik -->
                 <div class="team-card">
                     <div class="team-avatar">
-                        <i class="fas fa-user-circle"></i>
+                        <!-- <i class="fas fa-user-circle"></i> -->
+                        <img src="<?php echo BASE_URL; ?>/assets/images/team/jitender_sir.png" alt="Jitender Malik">
                     </div>
-                    <h3>Vikram Singh</h3>
-                    <p style="color: var( --wa-teal); font-weight: 500;">CEO & Founder</p>
-                    <p style="color: #5a6b7e; font-size: 0.9rem;">15+ years in SaaS and enterprise software. Visionary
-                        behind HeyDoot.</p>
+                    <h3>Jitender Malik</h3>
+                    <p style="color: var( --wa-teal); font-weight: 700;">Founder &amp; CEO</p>
+                    <p style="color: #5a6b7e; font-size: 0.9rem;">15+ years in Leading IoT, Salesforce, AI & Blockchain
+                        Innovation.</p>
                     <div style="margin-top: 16px;">
-                        <a href="#" style="color: #1a2a3a; margin: 0 8px;"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" style="color: #1a2a3a; margin: 0 8px;"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/jitender-malik-a5aa324/" target="_blank"
+                            style="color: #1a2a3a; margin: 0 8px;">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" style="color: #1a2a3a; margin: 0 8px;">
+                            <i class="fab fa-twitter"></i>
+                        </a>
                     </div>
                 </div>
+                <!-- Deepankur Chawla -->
                 <div class="team-card">
                     <div class="team-avatar">
-                        <i class="fas fa-user-circle"></i>
+                        <img src="<?php echo BASE_URL; ?>/assets/images/team/deepankur_sir.png" alt="Deepankur Chawla">
                     </div>
-                    <h3>Priya Mehta</h3>
-                    <p style="color: var( --wa-teal); font-weight: 500;">CTO</p>
-                    <p style="color: #5a6b7e; font-size: 0.9rem;">10+ years in full-stack development and AI systems.
-                    </p>
-                    <div style="margin-top: 16px;">
-                        <a href="#" style="color: #1a2a3a; margin: 0 8px;"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" style="color: #1a2a3a; margin: 0 8px;"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                <div class="team-card">
-                    <div class="team-avatar">
-                        <i class="fas fa-user-circle"></i>
-                    </div>
-                    <h3>Ankit Sharma</h3>
-                    <p style="color: var( --wa-teal); font-weight: 500;">Head of Sales</p>
-                    <p style="color: #5a6b7e; font-size: 0.9rem;">Former sales leader at multiple SaaS startups.</p>
-                    <div style="margin-top: 16px;">
-                        <a href="#" style="color: #1a2a3a; margin: 0 8px;"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" style="color: #1a2a3a; margin: 0 8px;"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-                <div class="team-card">
-                    <div class="team-avatar">
-                        <i class="fas fa-user-circle"></i>
-                    </div>
-                    <h3>Neha Gupta</h3>
-                    <p style="color: var( --wa-teal); font-weight: 500;">Customer Success</p>
+                    <h3>Deepankur Chawla (DC)</h3>
+                    <p style="color: var( --wa-teal); font-weight: 700;">CEO (Maxify Digital)</p>
                     <p style="color: #5a6b7e; font-size: 0.9rem;">Dedicated to ensuring every customer succeeds.</p>
                     <div style="margin-top: 16px;">
-                        <a href="#" style="color: #1a2a3a; margin: 0 8px;"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/deepankurchawla/" target="_blank"
+                            style="color: #1a2a3a; margin: 0 8px;">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Vishal Singhani -->
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="<?php echo BASE_URL; ?>/assets/images/team/vishal_sir.png" alt="Vishal Singhani">
+                    </div>
+                    <h3>Vishal Singhani</h3>
+                    <p style="color: var( --wa-teal); font-weight: 700;">CTO</p>
+                    <p style="color: #5a6b7e; font-size: 0.9rem;">15+ years in AI & Data Analytics Strategist.
+                    </p>
+                    <div style="margin-top: 16px;">
+                        <a href="https://www.linkedin.com/in/vishal-singhani-92786026/" target="_blank"
+                            style="color: #1a2a3a; margin: 0 8px;"><i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" style="color: #1a2a3a; margin: 0 8px;">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Vivek Sanghi -->
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="<?php echo BASE_URL; ?>/assets/images/team/vivek_sir.png" alt="Vivek Sanghi">
+                    </div>
+                    <h3>Vivek Sanghi</h3>
+                    <p style="color: var( --wa-teal); font-weight: 700;">Founder & COO</p>
+                    <p style="color: #5a6b7e; font-size: 0.9rem;">Co-Founder & Technology Enabler at HashStudioz &
+                        REZOFY</p>
+                    <div style="margin-top: 16px;">
+                        <a href="https://www.linkedin.com/in/sanghivivek/?originalSubdomain=in" target="_blank"
+                            style="color: #1a2a3a; margin: 0 8px;"><i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" style="color: #1a2a3a; margin: 0 8px;">
+                            <i class="fab fa-twitter"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </section> -->
-
+    </section>
     <!-- Built by HashStudioz Section -->
     <section style="background: linear-gradient(135deg, #1a2a3a 0%, #2c3e50 100%); padding: 60px 0;">
         <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto; text-align: center;">
             <div style="max-width: 800px; margin: 0 auto;">
                 <i class="fas fa-code-branch"
                     style="font-size: 48px; color: var( --wa-green); margin-bottom: 24px;"></i>
-                <h2 style="color: white; font-size: 2rem; margin-bottom: 16px;">Built with ❤️ by <span
-                        style="color: var( --wa-green);">HashStudioz Technologies</span></h2>
+                <h2 style="color: white; font-size: 2rem; margin-bottom: 16px;">Built with ❤️ by <a
+                        href="https://www.hashstudioz.com/" target="_blank" style="text-decoration: none;">
+                        <span style="color: var( --wa-green);">HashStudioz Technologies</span>
+                    </a></h2>
                 <p style="color: #e0e0e0; font-size: 1rem; line-height: 1.6;">HashStudioz is a global technology
                     consulting firm specializing in AI, IoT, and enterprise software solutions. With offices in India,
                     USA, and UK, we've helped 500+ businesses achieve digital transformation.</p>
@@ -515,7 +553,6 @@ include 'components/navbar.php';
             </div>
         </div>
     </section>
-
     <!-- CTA Section -->
     <section style="background: #F0F8FF; padding: 70px 0;">
         <div class="container-fluid">

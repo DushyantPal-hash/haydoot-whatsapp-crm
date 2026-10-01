@@ -60,7 +60,6 @@ include 'components/navbar.php';
         </div>
     </div>
 </section>
-
 <!-- Stats Bar -->
 <section style="background: #fff; border-bottom: 1px solid #eef2f6;">
     <div class="container-fluid">
@@ -85,7 +84,6 @@ include 'components/navbar.php';
         </div>
     </div>
 </section>
-
 <!-- All Integrations Section -->
 <section id="all-integrations" class="section-container" style="padding: 60px 0; background: #fff;">
     <div class="container-fluid">
@@ -400,7 +398,6 @@ include 'components/navbar.php';
         </div>
     </div>
 </section>
-
 <!-- API Section -->
 <style>
     .automation-card {
@@ -461,7 +458,6 @@ include 'components/navbar.php';
         </div>
     </div>
 </section>
-
 <!-- Custom Integration CTA -->
 <section style="background: linear-gradient(115deg, #2d1b28, #4a2c42); padding: 80px 0;">
     <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto; text-align: center;">
@@ -483,7 +479,6 @@ include 'components/navbar.php';
         </div>
     </div>
 </section>
-
 <!-- Integration Benefits -->
 <section style="padding: 60px 0; background: #fff;">
     <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">
@@ -517,7 +512,6 @@ include 'components/navbar.php';
         </div>
     </div>
 </section>
-
 <!-- FAQ Section -->
 <section class="section-container" style="background: #F0F8FF; padding: 60px 0;">
     <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">

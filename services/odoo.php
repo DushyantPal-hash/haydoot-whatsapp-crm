@@ -161,21 +161,29 @@ include ROOT_PATH . '/components/navbar.php';
             <!-- <p class="hero-desc">Connect your Odoo ERP with WhatsApp using the HeyDoot API and automatically send order
                 updates, purchase notifications, delivery alerts, invoices, and custom messages to customers and admins.
             </p> -->
-            <p class="hero-desc" style="font-size: 1rem;">No WhatsApp Business API approval complexity. Fast setup with
-                customizable templates and manual or automated triggers.</p>
+            <p class="hero-desc" style="font-size: 1rem;">
+                No WhatsApp Business API approval complexity. Fast setup with
+                customizable templates and manual or automated triggers.
+            </p>
             <div class="cta-group">
                 <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20get%20API%20keys%20for%20the%20HeyDoot%20Odoo%20WhatsApp%20integration"
-                    class="btn btn-odoo btn-lg"><i class="fab fa-whatsapp"></i> Start Integration</a>
-                <a href="<?php echo BASE_URL; ?>/integrations/odoo.php" class="btn btn-secondary btn-lg"><i
-                        class="fas fa-book-open"></i>
-                    View Documentation</a>
+                    class="btn btn-odoo btn-lg">
+                    <i class="fab fa-whatsapp"></i> Start Integration
+                </a>
+                <a href="<?php echo BASE_URL; ?>/integrations/odoo.php" class="btn btn-secondary btn-lg">
+                    <i class="fas fa-book-open"></i> View Documentation
+                </a>
             </div>
         </div>
         <div class="visual-stage" style="margin-top: 20px;">
-            <div class="float-card card-1"><i class="fab fa-whatsapp" style="color:#25D366;"></i> <span>Order Confirmed
-                    → WhatsApp</span></div>
-            <div class="float-card card-2"><i class="fas fa-file-invoice" style="color:#714B67;"></i> <span>Invoice
-                    Updates</span></div>
+            <div class="float-card card-1">
+                <i class="fab fa-whatsapp" style="color:#25D366;"></i>
+                <span>Order Confirmed → WhatsApp</span>
+            </div>
+            <div class="float-card card-2">
+                <i class="fas fa-file-invoice" style="color:#714B67;"></i>
+                <span>Invoice Updates</span>
+            </div>
             <div class="mockup-phone"
                 style="width: 65%; margin: 0 auto; background: #1e1e2a; border-radius: 48px; padding: 8px;">
                 <div style="background: #2a2a35; border-radius: 40px; padding: 30px 20px; text-align: center;">
@@ -189,14 +197,10 @@ include ROOT_PATH . '/components/navbar.php';
             </div>
         </div>
     </section>
-
     <!-- Trusted Section -->
     <section style="padding: 30px 0; background: #fff; border-bottom: 1px solid #edf2f7;">
-
         <div class="container-fluid">
-
             <div style="display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; align-items:center;">
-
                 <div style="display:flex; align-items:center; gap:12px;">
                     <i class="fas fa-check-circle" style="color:#714B67; font-size:22px;"></i>
                     <div>
@@ -204,7 +208,6 @@ include ROOT_PATH . '/components/navbar.php';
                         <p style="margin:0; color:#64748b;">Integration in under 10 minutes</p>
                     </div>
                 </div>
-
                 <div style="display:flex; align-items:center; gap:12px;">
                     <i class="fas fa-shield-alt" style="color:#714B67; font-size:22px;"></i>
                     <div>
@@ -212,7 +215,6 @@ include ROOT_PATH . '/components/navbar.php';
                         <p style="margin:0; color:#64748b;">Encrypted WhatsApp communication</p>
                     </div>
                 </div>
-
                 <div style="display:flex; align-items:center; gap:12px;">
                     <i class="fas fa-bolt" style="color:#714B67; font-size:22px;"></i>
                     <div>
@@ -220,7 +222,6 @@ include ROOT_PATH . '/components/navbar.php';
                         <p style="margin:0; color:#64748b;">Trigger notifications instantly</p>
                     </div>
                 </div>
-
                 <div style="display:flex; align-items:center; gap:12px;">
                     <i class="fab fa-whatsapp" style="color:#25D366; font-size:22px;"></i>
                     <div>
@@ -228,16 +229,12 @@ include ROOT_PATH . '/components/navbar.php';
                         <p style="margin:0; color:#64748b;">Managed by HeyDoot</p>
                     </div>
                 </div>
-
             </div>
-
         </div>
     </section>
-
     <!-- Main Content -->
     <section style="padding: 60px 0;">
         <div class="container-fluid">
-
             <!-- Status Banner -->
             <div
                 style="background: linear-gradient(105deg, #f3eef2 0%, #faf5f8 100%); border-left: 5px solid #714B67; border-radius: 20px; padding: 20px 28px; margin-bottom: 48px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
@@ -245,15 +242,16 @@ include ROOT_PATH . '/components/navbar.php';
                     <i class="fas fa-check-circle" style="color: #714B67; margin-right: 12px;"></i>
                     <strong>Ready to integrate?</strong> Connect Odoo with WhatsApp in under 10 minutes.
                     <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20start%20an%20Odoo%20WhatsApp%20integration%20with%20HeyDoot"
-                        style="color: #714B67; font-weight: 600; margin-left: 12px;">Get API Keys →</a>
+                        style="color: #714B67; font-weight: 600; margin-left: 12px;">Get API Keys →
+                    </a>
                 </div>
                 <div>
                     <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>"
-                        style="background: #f3f4f6; padding: 8px 18px; border-radius: 40px; font-size: 0.85rem;"><i
-                            class="fas fa-headset"></i> Need help? Contact Support</a>
+                        style="background: #f3f4f6; padding: 8px 18px; border-radius: 40px; font-size: 0.85rem;">
+                        <i class="fas fa-headset"></i> Need help? Contact Support
+                    </a>
                 </div>
             </div>
-
             <!-- Two-column layout -->
             <div style="display: flex; gap: 48px; flex-wrap: wrap;">
                 <!-- Sidebar -->
@@ -293,10 +291,8 @@ include ROOT_PATH . '/components/navbar.php';
                         </div>
                     </div>
                 </aside>
-
                 <!-- Main Content -->
                 <main style="flex: 2.5; min-width: 280px;">
-
                     <!-- Key Features -->
                     <div id="key-features" style="margin-bottom: 56px;">
                         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
@@ -337,7 +333,6 @@ include ROOT_PATH . '/components/navbar.php';
                             </div>
                         </div>
                     </div>
-
                     <!-- HeyDoot API Integration -->
                     <div id="api-integration" style="margin-bottom: 56px;">
                         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
@@ -377,7 +372,6 @@ include ROOT_PATH . '/components/navbar.php';
                             </div>
                         </div>
                     </div>
-
                     <!-- WhatsApp Templates for Admin & Customers -->
                     <div id="whatsapp-templates" style="margin-bottom: 56px;">
                         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
@@ -410,7 +404,6 @@ include ROOT_PATH . '/components/navbar.php';
                             </div>
                         </div>
                     </div>
-
                     <!-- Custom WhatsApp Templates -->
                     <div id="custom-templates" style="margin-bottom: 56px;">
                         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
@@ -443,7 +436,6 @@ include ROOT_PATH . '/components/navbar.php';
                             </div>
                         </div>
                     </div>
-
                     <!-- Manual & Automatic Trigger Options -->
                     <div id="trigger-options" style="margin-bottom: 56px;">
                         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
@@ -465,7 +457,6 @@ include ROOT_PATH . '/components/navbar.php';
                                 </div>
                             </div>
                         </div>
-
                         <div>
                             <h3 style="font-size: 1.3rem; margin-bottom: 16px;"><span
                                     class="badge-trigger badge-manual">📝 Manual Triggers</span></h3>
@@ -480,7 +471,6 @@ include ROOT_PATH . '/components/navbar.php';
                             </div>
                         </div>
                     </div>
-
                     <!-- Business Events Automation -->
                     <div id="business-events" style="margin-bottom: 56px;">
                         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
@@ -506,7 +496,6 @@ include ROOT_PATH . '/components/navbar.php';
                             <div class="feature-card-odoo"><i class="fas fa-boxes"></i> Inventory Notifications</div>
                         </div>
                     </div>
-
                     <!-- CTA Section -->
                     <div
                         style="background: linear-gradient(115deg, #2d1b28, #4a2c42); border-radius: 32px; padding: 48px; text-align: center; margin: 56px 0 32px; color: white;">
@@ -516,65 +505,78 @@ include ROOT_PATH . '/components/navbar.php';
                             Odoo with WhatsApp in minutes. No WhatsApp Business API approval required.</p>
                         <div style="margin-top: 32px;">
                             <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%20HeyDoot%20team%2C%20I%27d%20like%20a%20price%20quote%20for%20the%20Odoo%20WhatsApp%20integration."
-                                class="btn btn-secondary btn-lg"><i class="fab fa-whatsapp"></i> Get Started Today</a>
+                                class="btn btn-secondary btn-lg">
+                                <i class="fab fa-whatsapp"></i> Get Started Today
+                            </a>
                             <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>"
-                                class="btn btn-outline-light btn-lg" style="margin-left: 16px;"><i
-                                    class="fas fa-calendar-alt"></i> Book a Demo</a>
+                                class="btn btn-outline-light btn-lg" style="margin-left: 16px;">
+                                <i class="fas fa-calendar-alt"></i> Book a Demo
+                            </a>
                         </div>
                     </div>
-
                     <!-- FAQ Section -->
                     <div id="faq-odoo-service" style="margin-top: 48px;">
                         <h3 style="font-size: 1.6rem; font-weight: 700; margin-bottom: 24px;"><i
                                 class="fas fa-question-circle" style="color: #714B67;"></i> Frequently Asked Questions
                         </h3>
-
                         <div class="faq-item">
-                            <div class="faq-question">Do I need WhatsApp Business API approval? <i
-                                    class="fas fa-chevron-down"></i></div>
-                            <div class="faq-answer">No! HeyDoot handles all WhatsApp Business API complexities. You just
-                                need a WhatsApp Business number connected via HeyDoot.</div>
+                            <div class="faq-question">Do I need WhatsApp Business API approval?
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                No! HeyDoot handles all WhatsApp Business API complexities. You just
+                                need a WhatsApp Business number connected via HeyDoot.
+                            </div>
                         </div>
-
                         <div class="faq-item">
-                            <div class="faq-question">How long does integration take? <i
-                                    class="fas fa-chevron-down"></i></div>
-                            <div class="faq-answer">Most businesses complete the setup in under 10 minutes using our API
-                                configuration guide.</div>
+                            <div class="faq-question">How long does integration take?
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                Most businesses complete the setup in under 10 minutes using our API
+                                configuration guide.
+                            </div>
                         </div>
-
                         <div class="faq-item">
-                            <div class="faq-question">Can I send bulk WhatsApp messages from Odoo? <i
-                                    class="fas fa-chevron-down"></i></div>
-                            <div class="faq-answer">Yes, you can send bulk notifications using our queue management
-                                system with retry handling.</div>
+                            <div class="faq-question">Can I send bulk WhatsApp messages from Odoo?
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                Yes, you can send bulk notifications using our queue management
+                                system with retry handling.
+                            </div>
                         </div>
-
                         <div class="faq-item">
-                            <div class="faq-question">Is there a free trial available? <i
-                                    class="fas fa-chevron-down"></i></div>
-                            <div class="faq-answer">Yes, we offer a 14-day free trial with full Odoo integration
-                                features.</div>
+                            <div class="faq-question">Is there a free trial available?
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                Yes, we offer a 14-day free trial with full Odoo integration
+                                features.
+                            </div>
                         </div>
                     </div>
-
                 </main>
             </div>
-
             <!-- Utility bar -->
             <div
                 style="display: flex; justify-content: flex-end; gap: 28px; margin-top: 56px; padding-top: 24px; border-top: 1px solid #e2e8f0; flex-wrap: wrap;">
                 <div style="display: flex; gap: 16px; align-items: center;">
                     <span><i class="fas fa-search"></i> Search...</span>
-                    <span
-                        style="background: #f1f5f9; padding: 6px 12px; border-radius: 12px; font-family: monospace;">Ctrl
-                        K</span>
-                    <a href="<?php echo BASE_URL; ?>/integrations/odoo.php" style="color: #714B67;"><i
-                            class="fas fa-code"></i> API Documentation</a>
-                    <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>"><i class="fas fa-headset"></i>
-                        Support</a>
+                    <span style="background: #f1f5f9; padding: 6px 12px; border-radius: 12px; font-family: monospace;">
+                        Ctrl K
+                    </span>
+                    <a href="<?php echo BASE_URL; ?>/integrations/odoo.php" style="color: #714B67;">
+                        <i class="fas fa-code"></i> API Documentation
+                    </a>
+                    <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>">
+                        <i class="fas fa-headset"></i>
+                        Support
+                    </a>
                     <a href="<?php echo BASE_URL; ?>/integrations/odoo-dashboard.php" class="btn btn-sm"
-                        style="background: #714B67; color: white;"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                        style="background: #714B67; color: white;">
+                        <i class="fas fa-tachometer-alt"></i> Dashboard
+                    </a>
                 </div>
             </div>
         </div>

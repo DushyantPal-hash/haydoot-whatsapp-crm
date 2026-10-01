@@ -72,7 +72,7 @@ include 'components/navbar.php';
         font-size: 3.2rem;
         font-weight: 800;
         color: var(--wa-teal);
-        margin: 16px 0 8px;
+        /* margin: 16px 0 8px; */
     }
 
     .price-card {
@@ -108,13 +108,13 @@ include 'components/navbar.php';
 
     .feature-list {
         list-style: none;
-        margin: 28px 0;
+        margin: 15px 0;
         padding: 0;
         text-align: left;
     }
 
     .feature-list li {
-        margin-bottom: 14px;
+        margin-bottom: 5px;
         display: flex;
         align-items: center;
         gap: 12px;
@@ -133,8 +133,8 @@ include 'components/navbar.php';
     }
 
     .feature-category {
-        margin-top: 20px;
-        margin-bottom: 12px;
+        /* margin-top: 20px;
+        margin-bottom: 12px; */
         font-weight: 700;
         color: #1a2a3a;
         font-size: 1rem;
@@ -198,12 +198,17 @@ include 'components/navbar.php';
         padding: 16px;
         text-align: left;
         border-bottom: 1px solid #eef2f6;
+        transition: all 0.3s ease;
+    }
+
+    .comparison-table td:hover {
+        transform: translateX(8px);
     }
 
     .comparison-table th {
-        background: #F8FAFE;
+        background: #0d6a2e;
         font-weight: 700;
-        color: #1a2a3a;
+        color: #f5f5f5;
     }
 
     .comparison-table td:first-child {
@@ -253,7 +258,6 @@ include 'components/navbar.php';
             </div>
         </div>
     </section>
-
     <!-- Pricing Cards -->
     <section class="section-container" style="padding: 60px 0; background: #fff;">
         <div class="container-fluid">
@@ -467,7 +471,6 @@ include 'components/navbar.php';
             </div>
         </div>
     </section>
-
     <!-- Features Comparison Table -->
     <section style="background: #F8FAFE; padding: 60px 0;">
         <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">
@@ -613,7 +616,6 @@ include 'components/navbar.php';
             </div>
         </div>
     </section>
-
     <!-- Add-ons Section -->
     <section style="background: #fff; padding: 60px 0;">
         <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">
@@ -658,7 +660,6 @@ include 'components/navbar.php';
             </div>
         </div>
     </section>
-
     <!-- CTA Section -->
     <section style="background: linear-gradient(135deg, #1a2a3a 0%, #2c3e50 100%); padding: 80px 0;">
         <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto; text-align: center;">
@@ -679,7 +680,6 @@ include 'components/navbar.php';
             </div>
         </div>
     </section>
-
     <!-- FAQ Section -->
     <section class="section-container" style="background: #F0F8FF; padding: 60px 0;">
         <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">

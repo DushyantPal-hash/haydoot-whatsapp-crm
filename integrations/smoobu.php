@@ -226,18 +226,28 @@ include ROOT_PATH . '/components/navbar.php';
             <div
                 style="display: inline-block; background: rgba(255,255,255,0.12); backdrop-filter: blur(8px); padding: 6px 18px; border-radius: 60px; margin-bottom: 24px;">
                 <span style="color: #ffffff; font-weight: 700; display: flex; align-items: center; gap: 10px;">
-                    <i class="fab fa-whatsapp"></i> <i class="fas fa-exchange-alt"></i> <i class="fas fa-building"></i>
-                    Official Smoobu Partner</span>
+                    <i class="fab fa-whatsapp"></i>
+                    <i class="fas fa-exchange-alt"></i>
+                    <i class="fas fa-building"></i>
+                    Official Smoobu Partner
+                </span>
             </div>
-            <h1><span style="color: #F59E0B;">Smoobu</span><br>WhatsApp Integration</h1>
-            <p class="hero-desc">HeyDoot provides the API bridge that connects Smoobu PMS to WhatsApp Business. Use our
+            <h1>
+                <span style="color: #F59E0B;">Smoobu</span><br>WhatsApp Integration
+            </h1>
+            <p class="hero-desc">
+                HeyDoot provides the API bridge that connects Smoobu PMS to WhatsApp Business. Use our
                 reliable endpoints to send automated messages, manage templates, and enable two-way communication — no
-                complex infrastructure required.</p>
+                complex infrastructure required.
+            </p>
             <div class="cta-group">
                 <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20integrate%20Smoobu%20with%20WhatsApp%20using%20HeyDoot%20API"
-                    class="btn btn-smoobu btn-lg"><i class="fab fa-whatsapp"></i> Contact Sales</a>
-                <a href="<?php echo BASE_URL; ?>/services/smoobu.php" class="btn btn-secondary btn-lg"><i
-                        class="fas fa-code"></i> API Documentation</a>
+                    class="btn btn-smoobu btn-lg">
+                    <i class="fab fa-whatsapp"></i> Contact Sales
+                </a>
+                <a href="<?php echo BASE_URL; ?>/services/smoobu.php" class="btn btn-secondary btn-lg">
+                    <i class="fas fa-code"></i> API Documentation
+                </a>
             </div>
             <div class="visual-stage" style="margin-top: 20px;">
                 <div class="float-card card-1">
@@ -248,10 +258,13 @@ include ROOT_PATH . '/components/navbar.php';
                     <i class="fas fa-exchange-alt" style="color:#25D366;"></i>
                     <span>Smoobu → HeyDoot API → WhatsApp</span>
                 </div>
-                <div class="float-card card-3"><i class="fab fa-whatsapp" style="color:#25D366; font-size: 22px;"></i>
-                    New Booking → WhatsApp</div>
-                <div class="float-card card-4"><i class="fas fa-times-circle" style="color:#e74c3c;"></i> Cancellation
-                    Alerts</div>
+                <div class="float-card card-3">
+                    <i class="fab fa-whatsapp" style="color:#25D366; font-size: 22px;"></i>
+                    New Booking → WhatsApp
+                </div>
+                <div class="float-card card-4">
+                    <i class="fas fa-times-circle" style="color:#e74c3c;"></i> Cancellation Alerts
+                </div>
                 <div class="mockup-phone"
                     style="width: 65%; margin: 0 auto; background: #1e1e2a; border-radius: 48px; padding: 8px;">
                     <div style="background: #2a2a35; border-radius: 40px; padding: 30px 20px; text-align: center;">
@@ -277,31 +290,62 @@ include ROOT_PATH . '/components/navbar.php';
                 <div>
                     <i class="fas fa-cloud-upload-alt" style="color: #1E3A5F; margin-right: 12px;"></i>
                     <strong>API Service Status:</strong>
-                    <span style="color: #4b5563;">HeyDoot provides the WhatsApp API layer. Your Smoobu instance or
-                        custom app connects to our endpoints to send/receive messages.</span>
+                    <span style="color: #4b5563;">
+                        HeyDoot provides the WhatsApp API layer. Your Smoobu instance or
+                        custom app connects to our endpoints to send/receive messages.
+                    </span>
                 </div>
             </div>
-
             <div style="display: flex; gap: 48px; flex-wrap: wrap;">
                 <aside class="sidebar-card">
                     <div
                         style="position: sticky; top: 100px; background: white; border-radius: 28px; padding: 24px; box-shadow: var(--card-shadow); border: 1px solid rgba(0,0,0,0.04);">
-                        <h4 style="font-weight: 700; margin-bottom: 20px; font-size: 1.1rem;"><i class="fas fa-bookmark"
-                                style="color: var(--wa-teal); margin-right: 8px;"></i> On this page</h4>
+                        <h4 style="font-weight: 700; margin-bottom: 20px; font-size: 1.1rem;">
+                            <i class="fas fa-bookmark" style="color: var(--wa-teal); margin-right: 8px;"></i> On this
+                            page
+                        </h4>
                         <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px;">
-                            <li><a href="#how-it-works" style="color: #2c3e2f;"><i class="fas fa-cogs"></i> How the API
-                                    Works</a></li>
-                            <li><a href="#api-endpoints" style="color: #2c3e2f;"><i class="fas fa-plug"></i> API
-                                    Endpoints</a></li>
-                            <li><a href="#integration-steps" style="color: #2c3e2f;"><i class="fas fa-rocket"></i>
-                                    Integration Steps</a></li>
-                            <li><a href="#features" style="color: #2c3e2f;"><i class="fas fa-umbrella-beach"></i>
-                                    Key Features</a></li>
-                            <li><a href="#why-heydoot" style="color: #2c3e2f;"><i class="fas fa-star"></i> Why HeyDoot
-                                    API</a></li>
-                            <li><a href="#use-cases" style="color: #2c3e2f;"><i class="fas fa-briefcase"></i> Use
-                                    Cases</a></li>
-                            <li><a href="#faqs" style="color: #2c3e2f;"><i class="fas fa-question-circle"></i> FAQs</a>
+                            <li>
+                                <a href="#how-it-works" style="color: #2c3e2f;">
+                                    <i class="fas fa-cogs"></i>
+                                    How the API Works
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#api-endpoints" style="color: #2c3e2f;">
+                                    <i class="fas fa-plug"></i>
+                                    API Endpoints
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#integration-steps" style="color: #2c3e2f;">
+                                    <i class="fas fa-rocket"></i>
+                                    Integration Steps
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#features" style="color: #2c3e2f;">
+                                    <i class="fas fa-umbrella-beach"></i>
+                                    Key Features
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#why-heydoot" style="color: #2c3e2f;">
+                                    <i class="fas fa-star"></i>
+                                    Why HeyDoot API
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#use-cases" style="color: #2c3e2f;">
+                                    <i class="fas fa-briefcase"></i>
+                                    Use Cases
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#faqs" style="color: #2c3e2f;">
+                                    <i class="fas fa-question-circle"></i>
+                                    FAQs
+                                </a>
                             </li>
                         </ul>
                         <!-- cross-link to integration page -->
@@ -315,7 +359,6 @@ include ROOT_PATH . '/components/navbar.php';
                         </div>
                     </div>
                 </aside>
-
                 <main style="flex: 2.5; min-width: 280px;">
                     <!-- How the API Works -->
                     <div id="how-it-works" class="section-block">
@@ -323,9 +366,11 @@ include ROOT_PATH . '/components/navbar.php';
                             <div class="icon-circle"><i class="fas fa-cogs"></i></div>
                             <h2>How the HeyDoot API Works</h2>
                         </div>
-                        <p style="margin-bottom: 24px;">HeyDoot is a pure API service provider. We don't offer a direct
+                        <p style="margin-bottom: 24px;">
+                            HeyDoot is a pure API service provider. We don't offer a direct
                             Smoobu plugin — instead, we give you the API endpoints to connect <strong>your</strong>
-                            Smoobu integration or custom application to WhatsApp Business.</p>
+                            Smoobu integration or custom application to WhatsApp Business.
+                        </p>
                         <div style="background: #f4f9f5; border-radius: 32px; padding: 28px; text-align: center;">
                             <div
                                 style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; align-items: center;">
@@ -353,7 +398,6 @@ include ROOT_PATH . '/components/navbar.php';
                             }
                         </div>
                     </div>
-
                     <!-- API Endpoints -->
                     <div id="api-endpoints" class="section-block">
                         <div class="section-header">
@@ -381,7 +425,6 @@ include ROOT_PATH . '/components/navbar.php';
                         <p class="api-badge" style="margin-top: 16px;">All endpoints require API key authentication
                             (Bearer token)</p>
                     </div>
-
                     <!-- Integration Steps -->
                     <div id="integration-steps" class="section-block">
                         <div class="section-header">
@@ -427,7 +470,6 @@ include ROOT_PATH . '/components/navbar.php';
                             </div>
                         </div>
                     </div>
-
                     <!-- Key Features Section -->
                     <div id="features" class="section-block">
                         <div class="section-header">
@@ -477,7 +519,6 @@ include ROOT_PATH . '/components/navbar.php';
                             </div>
                         </div>
                     </div>
-
                     <!-- Why HeyDoot API -->
                     <div id="why-heydoot" class="section-block">
                         <div class="section-header">
@@ -507,7 +548,6 @@ include ROOT_PATH . '/components/navbar.php';
                             </div>
                         </div>
                     </div>
-
                     <!-- Use Cases -->
                     <div id="use-cases" class="section-block">
                         <div class="section-header">
@@ -517,8 +557,7 @@ include ROOT_PATH . '/components/navbar.php';
                         <div class="feature-grid" style="display: grid; gap: 20px;">
                             <div class="use-case-item feature-card">
                                 <h3><i class="fas fa-address-book" style="color: #1E3A5F; font-size: 30px;"></i>
-                                    <strong>Booking
-                                        Confirmation API Call</strong>
+                                    <strong>Booking Confirmation API Call</strong>
                                 </h3>
                                 <p>Trigger from Smoobu webhook → Send WhatsApp confirmation with guest name + dates</p>
                             </div>
@@ -526,15 +565,19 @@ include ROOT_PATH . '/components/navbar.php';
                                 <h3><i class="fas fa-cancel"
                                         style="color: #ce1414; font-size: 30px;"></i><strong>Booking
                                         Cancellation Alerts</strong></h3>
-                                <p>Instant WhatsApp notification when a reservation is cancelled → Update staff, release
-                                    calendar blocks, or offer rebooking incentives</p>
+                                <p>
+                                    Instant WhatsApp notification when a reservation is cancelled → Update staff,
+                                    release calendar blocks, or offer rebooking incentives
+                                </p>
                             </div>
                             <div class="use-case-item feature-card">
                                 <h3><i class="fas fa-sync" style="color: #1E3A5F; font-size: 30px;"></i>
                                     <strong>Modification & Date Change Alerts</strong>
                                 </h3>
-                                <p>API trigger when booking dates change → Notify housekeeping and update automated
-                                    reminder schedules</p>
+                                <p>
+                                    API trigger when booking dates change → Notify housekeeping and update automated
+                                    reminder schedules
+                                </p>
                             </div>
                             <!-- <div class="use-case-item feature-card">
                                 <h3>🗝️ <strong>Pre-Arrival Instructions</strong></h3>
@@ -550,7 +593,6 @@ include ROOT_PATH . '/components/navbar.php';
                             </div> -->
                         </div>
                     </div>
-
                     <!-- FAQs -->
                     <div id="faqs" class="section-block">
                         <div class="section-header">
@@ -559,43 +601,62 @@ include ROOT_PATH . '/components/navbar.php';
                         </div>
                         <div class="faq-list">
                             <div class="faq-item">
-                                <div class="faq-question">Does HeyDoot have a direct Smoobu plugin? <i
-                                        class="fas fa-chevron-down"></i></div>
-                                <div class="faq-answer">No, HeyDoot is a pure API service provider. You (or your
+                                <div class="faq-question">
+                                    Does HeyDoot have a direct Smoobu plugin?
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    No, HeyDoot is a pure API service provider. You (or your
                                     developer) build the connection between Smoobu and our API. We provide all the
-                                    endpoints you need.</div>
+                                    endpoints you need.
+                                </div>
                             </div>
                             <div class="faq-item">
-                                <div class="faq-question">How do I get my WhatsApp Business API access? <i
-                                        class="fas fa-chevron-down"></i></div>
+                                <div class="faq-question">
+                                    How do I get my WhatsApp Business API access?
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
                                 <div class="faq-answer">HeyDoot provides the WhatsApp Business API connectivity. We
                                     handle the Meta provider setup — you just need a Facebook Business Manager account.
                                 </div>
                             </div>
                             <div class="faq-item">
-                                <div class="faq-question">Can I use Smoobu webhooks with HeyDoot API? <i
-                                        class="fas fa-chevron-down"></i></div>
-                                <div class="faq-answer">Absolutely. Smoobu can send webhooks for new reservations,
+                                <div class="faq-question">
+                                    Can I use Smoobu webhooks with HeyDoot API?
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    Absolutely. Smoobu can send webhooks for new reservations,
                                     cancellations, and modifications. Your server then calls HeyDoot's API to send
-                                    messages.</div>
+                                    messages.
+                                </div>
                             </div>
                             <div class="faq-item">
-                                <div class="faq-question">What programming languages are supported? <i
-                                        class="fas fa-chevron-down"></i></div>
-                                <div class="faq-answer">Our API works with any language that can make HTTP requests
+                                <div class="faq-question">
+                                    What programming languages are supported?
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    Our API works with any language that can make HTTP requests
                                     (PHP, Python, Node.js, Java, Ruby, Go, etc.). We provide SDKs for popular languages.
                                 </div>
                             </div>
                             <div class="faq-item">
-                                <div class="faq-question">Do you offer a sandbox environment? <i
-                                        class="fas fa-chevron-down"></i></div>
-                                <div class="faq-answer">Yes, we provide a complete sandbox environment with test phone
-                                    numbers for integration testing before going live.</div>
+                                <div class="faq-question">
+                                    Do you offer a sandbox environment?
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    Yes, we provide a complete sandbox environment with test phone
+                                    numbers for integration testing before going live.
+                                </div>
                             </div>
                             <div class="faq-item">
-                                <div class="faq-question">What's the pricing model? <i class="fas fa-chevron-down"></i>
+                                <div class="faq-question">What's the pricing model?
+                                    <i class="fas fa-chevron-down"></i>
                                 </div>
-                                <div class="faq-answer">We charge per successful message sent, with volume discounts.
+                                <div class="faq-answer">
+                                    We charge per successful message sent, with volume discounts.
                                     Contact sales for detailed
                                     <span style=" color: #1E3A5F !important;">
                                         <a href="<?php echo BASE_URL; ?>/pricing.php"><strong>pricing</strong></a>
@@ -604,14 +665,15 @@ include ROOT_PATH . '/components/navbar.php';
                             </div>
                         </div>
                     </div>
-
                     <!-- Final CTA -->
                     <div
                         style="background: linear-gradient(105deg, #eef2ff, #e0e7ff); border-radius: 36px; padding: 36px 28px; text-align: center; margin: 32px 0 24px;">
                         <i class="fas fa-code" style="font-size: 48px; color: #1E3A5F;"></i>
                         <h2 style="font-size: 2rem; font-weight: 800;">Ready to Build Your Integration?</h2>
-                        <p style="margin-top: 12px;">Get API credentials, read our documentation, and connect Smoobu to
-                            WhatsApp in hours, not weeks.</p>
+                        <p style="margin-top: 12px;">
+                            Get API credentials, read our documentation, and connect Smoobu to
+                            WhatsApp in hours, not weeks.
+                        </p>
                         <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20API%20access%20for%20Smoobu%20WhatsApp%20integration"
                             class="btn btn-primary" style="background: #1E3A5F; margin-top: 20px; padding: 12px 28px;">
                             <i class="fas fa-key"></i> Request API Access
@@ -619,29 +681,23 @@ include ROOT_PATH . '/components/navbar.php';
                     </div>
                 </main>
             </div>
-
             <!-- Utility Bar -->
             <div class="utility-bar">
                 <div class="utility-bar-inner">
-
                     <div class="utility-item">
                         <i class="fas fa-search"></i>
                         <span>Search...</span>
                     </div>
-
                     <span class="shortcut-key">Ctrl K</span>
-
                     <a href="<?php echo BASE_URL; ?>/smoobu-api.php" class="utility-item utility-link"
                         style="color: var(--wa-teal);">
                         <i class="fas fa-code"></i>
                         API reference
                     </a>
-
                     <a href="tel:+919718517228" class="utility-item utility-link">
                         <i class="fas fa-headset"></i>
                         Developer support
                     </a>
-
                     <a href="<?php echo BASE_URL; ?>/integrations/dashboard.php" class="dashboard-btn"
                         style="background: #1E3A5F; color: white;">
                         <i class="fas fa-tachometer-alt"></i>

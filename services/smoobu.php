@@ -399,7 +399,8 @@ include ROOT_PATH . '/components/navbar.php';
                 style="display: inline-block; background: rgba(255,255,255,0.12); backdrop-filter: blur(8px); padding: 6px 18px; border-radius: 60px; margin-bottom: 24px;">
                 <span style="color: #ffffff; font-weight: 700; display: flex; align-items: center; gap: 10px;">
                     <i class="fab fa-whatsapp"></i> <i class="fas fa-building"></i>
-                    Smoobu + WhatsApp Made Simple</span>
+                    Smoobu + WhatsApp Made Simple
+                </span>
             </div>
             <h1>Automate Guest Messaging<br>with <span style="color: #F59E0B;">Smoobu</span> & WhatsApp</h1>
             <p class="hero-desc">HeyDoot connects your Smoobu property management system with WhatsApp Business —
@@ -408,9 +409,12 @@ include ROOT_PATH . '/components/navbar.php';
             </p>
             <div class="cta-group">
                 <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20set%20up%20Smoobu%20WhatsApp%20automation"
-                    class="btn btn-smoobu btn-lg"><i class="fab fa-whatsapp"></i> Get Started Free</a>
-                <a href="<?php echo BASE_URL; ?>/integrations/smoobu.php" class="btn btn-secondary btn-lg"><i
-                        class="fas fa-code"></i> Developer API</a>
+                    class="btn btn-smoobu btn-lg">
+                    <i class="fab fa-whatsapp"></i> Get Started Free
+                </a>
+                <a href="<?php echo BASE_URL; ?>/integrations/smoobu.php" class="btn btn-secondary btn-lg">
+                    <i class="fas fa-code"></i> Developer API
+                </a>
             </div>
             <div class="visual-stage" style="margin-top: 20px;">
                 <div class="float-card card-1">
@@ -421,10 +425,12 @@ include ROOT_PATH . '/components/navbar.php';
                     <i class="fas fa-key" style="color:#25D366;"></i>
                     <span>Auto Check-in Codes</span>
                 </div>
-                <div class="float-card card-3"><i class="fas fa-reply" style="color:#25D366; font-size: 22px;"></i>
+                <div class="float-card card-3">
+                    <i class="fas fa-reply" style="color:#25D366; font-size: 22px;"></i>
                     Guest Replies Handled
                 </div>
-                <div class="float-card card-4"><i class="fas fa-moon" style="color:#a78bfa;"></i>
+                <div class="float-card card-4">
+                    <i class="fas fa-moon" style="color:#a78bfa;"></i>
                     24/7 Automated
                 </div>
                 <div class="mockup-phone"
@@ -443,7 +449,6 @@ include ROOT_PATH . '/components/navbar.php';
             </div>
         </div>
     </section>
-
     <section>
         <div class="container-fluid">
             <!-- Trust Stats -->
@@ -468,7 +473,6 @@ include ROOT_PATH . '/components/navbar.php';
                     </div>
                 </div>
             </div>
-
             <div style="display: flex; gap: 48px; flex-wrap: wrap;">
                 <aside class="sidebar-card">
                     <div
@@ -476,22 +480,32 @@ include ROOT_PATH . '/components/navbar.php';
                         <h4 style="font-weight: 700; margin-bottom: 20px; font-size: 1.1rem;"><i class="fas fa-bookmark"
                                 style="color: var(--wa-teal); margin-right: 8px;"></i> On this page</h4>
                         <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px;">
-                            <li><a href="#how-it-works" style="color: #2c3e2f;"><i class="fas fa-cogs"></i> How It
-                                    Works</a></li>
-                            <li><a href="#automated-messages" style="color: #2c3e2f;"><i class="fas fa-paper-plane"></i>
-                                    Automated Messages</a></li>
+                            <li>
+                                <a href="#how-it-works" style="color: #2c3e2f;"><i class="fas fa-cogs"></i> How It
+                                    Works</a>
+                            </li>
+                            <li>
+                                <a href="#automated-messages" style="color: #2c3e2f;"><i class="fas fa-paper-plane"></i>
+                                    Automated Messages</a>
+                            </li>
                             <!-- <li><a href="#setup-steps" style="color: #2c3e2f;"><i class="fas fa-rocket"></i> Setup in 3
                                     Steps</a></li> -->
-                            <li><a href="#features" style="color: #2c3e2f;"><i class="fas fa-star"></i> Key Features</a>
+                            <li>
+                                <a href="#features" style="color: #2c3e2f;"><i class="fas fa-star"></i> Key Features</a>
                             </li>
-                            <li><a href="#benefits" style="color: #2c3e2f;"><i class="fas fa-chart-line"></i> Why Choose
-                                    HeyDoot</a></li>
+                            <li>
+                                <a href="#benefits" style="color: #2c3e2f;"><i class="fas fa-chart-line"></i> Why Choose
+                                    HeyDoot</a>
+                            </li>
                             <!-- <li><a href="#pricing" style="color: #2c3e2f;"><i class="fas fa-tag"></i> Pricing</a></li>
                             <li><a href="#testimonials" style="color: #2c3e2f;"><i class="fas fa-comments"></i>
                                     Reviews</a></li> -->
-                            <li><a href="#comparison" style="color: #2c3e2f;"><i class="fas fa-balance-scale"></i> vs
-                                    Manual</a></li>
-                            <li><a href="#faqs" style="color: #2c3e2f;"><i class="fas fa-question-circle"></i> FAQs</a>
+                            <li>
+                                <a href="#comparison" style="color: #2c3e2f;"><i class="fas fa-balance-scale"></i> vs
+                                    Manual</a>
+                            </li>
+                            <li>
+                                <a href="#faqs" style="color: #2c3e2f;"><i class="fas fa-question-circle"></i> FAQs</a>
                             </li>
                         </ul>
                         <!-- cross-link to integration page -->
@@ -513,10 +527,11 @@ include ROOT_PATH . '/components/navbar.php';
                             <div class="icon-circle"><i class="fas fa-cogs"></i></div>
                             <h2>How HeyDoot Works with Smoobu</h2>
                         </div>
-                        <p style="margin-bottom: 24px;">We bridge the gap between your Smoobu dashboard and your guests'
+                        <p style="margin-bottom: 24px;">
+                            We bridge the gap between your Smoobu dashboard and your guests'
                             WhatsApp. Once connected, every booking event in Smoobu triggers an automatic WhatsApp
-                            message — personalized, timely, and professional.</p>
-
+                            message — personalized, timely, and professional.
+                        </p>
                         <div
                             style="background: white; border-radius: 32px; padding: 32px; border: var(--border-light);">
                             <div class="workflow-step">
@@ -530,7 +545,8 @@ include ROOT_PATH . '/components/navbar.php';
                                 <div class="workflow-icon"><i class="fas fa-bolt"></i></div>
                                 <div class="workflow-content">
                                     <h4>HeyDoot Detects the Change</h4>
-                                    <p>Our system monitors your Smoobu account in real-time via secure API connection.
+                                    <p>
+                                        Our system monitors your Smoobu account in real-time via secure API connection.
                                     </p>
                                 </div>
                             </div>
@@ -538,29 +554,34 @@ include ROOT_PATH . '/components/navbar.php';
                                 <div class="workflow-icon"><i class="fas fa-envelope-open-text"></i></div>
                                 <div class="workflow-content">
                                     <h4>Personalized Message Generated</h4>
-                                    <p>We pull guest details (name, dates, property) and insert them into your message
-                                        templates.</p>
+                                    <p>
+                                        We pull guest details (name, dates, property) and insert them into your message
+                                        templates.
+                                    </p>
                                 </div>
                             </div>
                             <div class="workflow-step">
                                 <div class="workflow-icon"><i class="fab fa-whatsapp"></i></div>
                                 <div class="workflow-content">
                                     <h4>WhatsApp Delivered Instantly</h4>
-                                    <p>The message is sent to the guest's WhatsApp number within seconds — no manual
-                                        action needed.</p>
+                                    <p>
+                                        The message is sent to the guest's WhatsApp number within seconds — no manual
+                                        action needed.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                     <!-- Automated Messages -->
                     <div id="automated-messages" class="section-block">
                         <div class="section-header">
                             <div class="icon-circle"><i class="fas fa-paper-plane"></i></div>
                             <h2>Messages That Automate Themselves</h2>
                         </div>
-                        <p style="margin-bottom: 24px;">Configure once, run forever. HeyDoot handles the entire guest
-                            journey from booking to checkout.</p>
+                        <p style="margin-bottom: 24px;">
+                            Configure once, run forever. HeyDoot handles the entire guest
+                            journey from booking to checkout.
+                        </p>
                         <div
                             style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
                             <div class="use-case-card feature-card">
@@ -568,31 +589,41 @@ include ROOT_PATH . '/components/navbar.php';
                                     style="font-size: 28px; color: var(--wa-teal); margin-bottom: 12px;"></i>
                                 <h3 style="font-weight: 700; margin-bottom: 8px; font-size: 1.1rem;">Booking
                                     Confirmation</h3>
-                                <p>Sent immediately after reservation. Includes guest name, property details, dates, and
-                                    a warm welcome.</p>
+                                <p>
+                                    Sent immediately after reservation. Includes guest name, property details, dates,
+                                    and
+                                    a warm welcome.
+                                </p>
                             </div>
                             <div class="use-case-card feature-card">
                                 <i class="fas fa-times-circle"
                                     style="font-size: 28px; color: #e74c3c; margin-bottom: 12px;"></i>
                                 <h3 style="font-weight: 700; margin-bottom: 8px; font-size: 1.1rem;">Cancellation Alerts
                                 </h3>
-                                <p>Instant notification to you and the guest when a booking is cancelled. Keeps everyone
-                                    in the loop.</p>
+                                <p>
+                                    Instant notification to you and the guest when a booking is cancelled. Keeps
+                                    everyone
+                                    in the loop.
+                                </p>
                             </div>
                             <div class="use-case-card feature-card">
                                 <i class="fas fa-edit"
                                     style="font-size: 28px; color: #F59E0B; margin-bottom: 12px;"></i>
                                 <h3 style="font-weight: 700; margin-bottom: 8px; font-size: 1.1rem;">Modification
                                     Updates</h3>
-                                <p>Date changes, guest count updates, or property switches — automatically communicated
-                                    via WhatsApp.</p>
+                                <p>
+                                    Date changes, guest count updates, or property switches — automatically communicated
+                                    via WhatsApp.
+                                </p>
                             </div>
                             <div class="use-case-card feature-card">
                                 <i class="fas fa-key" style="font-size: 28px; color: #1E3A5F; margin-bottom: 12px;"></i>
                                 <h3 style="font-weight: 700; margin-bottom: 8px; font-size: 1.1rem;">Pre-Arrival
                                     Instructions</h3>
-                                <p>Sent 24-48 hours before check-in. Door codes, WiFi passwords, directions, and house
-                                    rules.</p>
+                                <p>
+                                    Sent 24-48 hours before check-in. Door codes, WiFi passwords, directions, and house
+                                    rules.
+                                </p>
                             </div>
                             <div class="use-case-card feature-card">
                                 <i class="fas fa-door-open"
@@ -606,12 +637,13 @@ include ROOT_PATH . '/components/navbar.php';
                                     style="font-size: 28px; color: #1E3A5F; margin-bottom: 12px;"></i>
                                 <h3 style="font-weight: 700; margin-bottom: 8px; font-size: 1.1rem;">Two-Way Guest
                                     Support</h3>
-                                <p>Guests reply on WhatsApp → messages are routed to your inbox or CRM so you can
-                                    respond in real time.</p>
+                                <p>
+                                    Guests reply on WhatsApp → messages are routed to your inbox or CRM so you can
+                                    respond in real time.
+                                </p>
                             </div>
                         </div>
                     </div>
-
                     <!-- Setup Steps -->
                     <!-- <div id="setup-steps" class="section-block">
                         <div class="section-header">
@@ -649,7 +681,6 @@ include ROOT_PATH . '/components/navbar.php';
                             </div>
                         </div>
                     </div> -->
-
                     <!-- Key Features -->
                     <div id="features" class="section-block">
                         <div class="section-header">
@@ -668,40 +699,48 @@ include ROOT_PATH . '/components/navbar.php';
                                 <i class="fas fa-language"
                                     style="font-size: 32px; color: #1E3A5F; margin-bottom: 16px;"></i>
                                 <h3 style="font-weight: 700; margin-bottom: 12px;">Multi-Language Support</h3>
-                                <p>Send messages in the guest's preferred language. Auto-detect or manually set per
-                                    property.</p>
+                                <p>
+                                    Send messages in the guest's preferred language. Auto-detect or manually set per
+                                    property.
+                                </p>
                             </div>
                             <div class="use-case-card feature-card">
                                 <i class="fas fa-building"
                                     style="font-size: 32px; color: #1E3A5F; margin-bottom: 16px;"></i>
                                 <h3 style="font-weight: 700; margin-bottom: 12px;">Multi-Property Dashboard</h3>
-                                <p>Manage messaging for all your Smoobu properties from one central HeyDoot dashboard.
+                                <p>
+                                    Manage messaging for all your Smoobu properties from one central HeyDoot dashboard.
                                 </p>
                             </div>
                             <div class="use-case-card feature-card">
                                 <i class="fas fa-comments"
                                     style="font-size: 32px; color: #1E3A5F; margin-bottom: 16px;"></i>
                                 <h3 style="font-weight: 700; margin-bottom: 12px;">Two-Way Messaging</h3>
-                                <p>Guests can reply to your automated messages. Replies land in your HeyDoot inbox or
-                                    forward to your personal WhatsApp.</p>
+                                <p>
+                                    Guests can reply to your automated messages. Replies land in your HeyDoot inbox or
+                                    forward to your personal WhatsApp.
+                                </p>
                             </div>
                             <div class="use-case-card feature-card">
                                 <i class="fas fa-clock"
                                     style="font-size: 32px; color: #1E3A5F; margin-bottom: 16px;"></i>
                                 <h3 style="font-weight: 700; margin-bottom: 12px;">Smart Scheduling</h3>
-                                <p>Schedule messages for specific times (e.g., pre-arrival info 24h before check-in)
-                                    rather than immediate send.</p>
+                                <p>
+                                    Schedule messages for specific times (e.g., pre-arrival info 24h before check-in)
+                                    rather than immediate send.
+                                </p>
                             </div>
                             <div class="use-case-card feature-card">
                                 <i class="fas fa-chart-bar"
                                     style="font-size: 32px; color: #1E3A5F; margin-bottom: 16px;"></i>
                                 <h3 style="font-weight: 700; margin-bottom: 12px;">Delivery Analytics</h3>
-                                <p>Track sent, delivered, read, and failed messages. Know exactly which guests received
-                                    what.</p>
+                                <p>
+                                    Track sent, delivered, read, and failed messages. Know exactly which guests received
+                                    what.
+                                </p>
                             </div>
                         </div>
                     </div>
-
                     <!-- Benefits / Why HeyDoot -->
                     <div id="benefits" class="section-block">
                         <div class="section-header">
@@ -712,32 +751,42 @@ include ROOT_PATH . '/components/navbar.php';
                             <div class="benefit-item automation-card">
                                 <h3><i class="fas fa-hourglass-half" style="color: #F59E0B;"></i> Save 10+ Hours Per
                                     Week</h3>
-                                <p>Stop copy-pasting booking details into WhatsApp. Automation handles confirmations,
-                                    reminders, and follow-ups while you focus on growing your business.</p>
+                                <p>
+                                    Stop copy-pasting booking details into WhatsApp. Automation handles confirmations,
+                                    reminders, and follow-ups while you focus on growing your business.
+                                </p>
                             </div>
                             <div class="benefit-item automation-card">
                                 <h3><i class="fas fa-smile" style="color: var(--wa-teal);"></i> Happier Guests</h3>
-                                <p>Guests receive instant confirmations and clear instructions. No more "Did my booking
-                                    go through?" messages at midnight.</p>
+                                <p>
+                                    Guests receive instant confirmations and clear instructions. No more "Did my booking
+                                    go through?" messages at midnight.
+                                </p>
                             </div>
                             <div class="benefit-item automation-card">
                                 <h3><i class="fas fa-shield-alt" style="color: #1E3A5F;"></i> Never Miss a Booking</h3>
-                                <p>Cancellation alerts, modification updates, and overbooking warnings reach you
-                                    immediately — not when you next check your email.</p>
+                                <p>
+                                    Cancellation alerts, modification updates, and overbooking warnings reach you
+                                    immediately — not when you next check your email.
+                                </p>
                             </div>
                             <div class="benefit-item automation-card">
                                 <h3><i class="fas fa-hand-holding-usd" style="color: #1E3A5F;"></i> Reduce No-Shows</h3>
-                                <p>Pre-arrival reminders and check-in instructions dramatically reduce no-shows and late
-                                    arrivals.</p>
+                                <p>
+                                    Pre-arrival reminders and check-in instructions dramatically reduce no-shows and
+                                    late
+                                    arrivals.
+                                </p>
                             </div>
                             <div class="benefit-item automation-card">
                                 <h3><i class="fas fa-headset" style="color: #1E3A5F;"></i> White-Glove Support</h3>
-                                <p>Our team helps you set up, customize templates, and troubleshoot. You're never alone.
+                                <p>
+                                    Our team helps you set up, customize templates, and troubleshoot. You're never
+                                    alone.
                                 </p>
                             </div>
                         </div>
                     </div>
-
                     <!-- Pricing -->
                     <!-- <div id="pricing" class="section-block">
                         <div class="section-header">
@@ -802,7 +851,6 @@ include ROOT_PATH . '/components/navbar.php';
                             required.
                         </p>
                     </div> -->
-
                     <!-- Testimonials -->
                     <!-- <div id="testimonials" class="section-block">
                         <div class="section-header">
@@ -860,7 +908,6 @@ include ROOT_PATH . '/components/navbar.php';
                             </div>
                         </div>
                     </div> -->
-
                     <!-- Comparison Table -->
                     <div id="comparison" class="section-block">
                         <div class="section-header">
@@ -916,7 +963,6 @@ include ROOT_PATH . '/components/navbar.php';
                             </table>
                         </div>
                     </div>
-
                     <!-- FAQs -->
                     <div id="faqs" class="section-block">
                         <div class="section-header">
@@ -925,57 +971,74 @@ include ROOT_PATH . '/components/navbar.php';
                         </div>
                         <div class="faq-list">
                             <div class="faq-item">
-                                <div class="faq-question">Do I need to know how to code? <i
-                                        class="fas fa-chevron-down"></i></div>
-                                <div class="faq-answer">Not at all. HeyDoot is a fully managed service. Our team handles
+                                <div class="faq-question">Do I need to know how to code?
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    Not at all. HeyDoot is a fully managed service. Our team handles
                                     the technical connection between Smoobu and WhatsApp. You just tell us what messages
-                                    you want to send and when.</div>
+                                    you want to send and when.
+                                </div>
                             </div>
                             <div class="faq-item">
-                                <div class="faq-question">Is this an official Smoobu integration? <i
-                                        class="fas fa-chevron-down"></i></div>
-                                <div class="faq-answer">HeyDoot connects to Smoobu via their public API. While not an
+                                <div class="faq-question">Is this an official Smoobu integration?
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    HeyDoot connects to Smoobu via their public API. While not an
                                     official plugin, it's a secure, read-only connection that millions of property
-                                    managers trust. We only access booking and guest data needed for messaging.</div>
+                                    managers trust. We only access booking and guest data needed for messaging.
+                                </div>
                             </div>
                             <div class="faq-item">
-                                <div class="faq-question">Can guests reply to automated messages? <i
-                                        class="fas fa-chevron-down"></i></div>
-                                <div class="faq-answer">Yes! Guests can reply directly on WhatsApp. Their messages
+                                <div class="faq-question">Can guests reply to automated messages?
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    Yes! Guests can reply directly on WhatsApp. Their messages
                                     appear in your HeyDoot inbox, and you can respond from there or have replies
-                                    forwarded to your personal WhatsApp number.</div>
+                                    forwarded to your personal WhatsApp number.
+                                </div>
                             </div>
                             <div class="faq-item">
                                 <div class="faq-question">What happens if Smoobu is down? <i
                                         class="fas fa-chevron-down"></i></div>
-                                <div class="faq-answer">HeyDoot queues messages and retries delivery. Once Smoobu is
+                                <div class="faq-answer">
+                                    HeyDoot queues messages and retries delivery. Once Smoobu is
                                     back online, any missed events are processed automatically. Your guests never know
-                                    there was an issue.</div>
+                                    there was an issue.
+                                </div>
                             </div>
                             <div class="faq-item">
                                 <div class="faq-question">Can I customize the message templates? <i
                                         class="fas fa-chevron-down"></i></div>
-                                <div class="faq-answer">Absolutely. You have full control over message content, tone,
+                                <div class="faq-answer">
+                                    Absolutely. You have full control over message content, tone,
                                     and branding. Use variables like guest name, dates, and property details to make
-                                    every message feel personal.</div>
+                                    every message feel personal.
+                                </div>
                             </div>
                             <div class="faq-item">
                                 <div class="faq-question">Is there a free trial? <i class="fas fa-chevron-down"></i>
                                 </div>
-                                <div class="faq-answer">Yes — every plan includes a 14-day free trial with full
-                                    features. No credit card required. Cancel anytime if it's not for you.</div>
+                                <div class="faq-answer">
+                                    Yes — every plan includes a 14-day free trial with full
+                                    features. No credit card required. Cancel anytime if it's not for you.
+                                </div>
                             </div>
                             <div class="faq-item">
-                                <div class="faq-question">Do you also offer API access for developers? <i
-                                        class="fas fa-chevron-down"></i></div>
-                                <div class="faq-answer">Yes! If you have a development team and want to build a custom
+                                <div class="faq-question">Do you also offer API access for developers?
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    Yes! If you have a development team and want to build a custom
                                     integration, check out our <a href="<?php echo BASE_URL; ?>/integrations/smoobu.php"
                                         style="color: #1E3A5F; font-weight: 700;">Smoobu API Integration</a> page for
-                                    developer documentation and endpoints.</div>
+                                    developer documentation and endpoints.
+                                </div>
                             </div>
                         </div>
                     </div>
-
                     <!-- Final CTA -->
                     <div
                         style="background: linear-gradient(105deg, #eef2ff, #e0e7ff); border-radius: 36px; padding: 48px 32px; text-align: center; margin: 32px 0 24px;">
@@ -984,7 +1047,8 @@ include ROOT_PATH . '/components/navbar.php';
                             Communication?</h2>
                         <p style="margin-top: 12px; max-width: 600px; margin-left: auto; margin-right: auto;">Join 500+
                             property managers who save hours every week with HeyDoot. Start your 14-day free trial today
-                            — no credit card required.</p>
+                            — no credit card required.
+                        </p>
                         <div
                             style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 24px;">
                             <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20start%20my%20free%20trial%20for%20Smoobu%20WhatsApp%20automation"
@@ -999,7 +1063,6 @@ include ROOT_PATH . '/components/navbar.php';
                     </div>
                 </main>
             </div>
-
             <!-- Utility Bar -->
             <div class="utility-bar">
                 <div class="utility-bar-inner">

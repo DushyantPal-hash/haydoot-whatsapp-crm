@@ -1,40 +1,32 @@
 <?php
-// Get current page for active highlighting
 $current_page = basename($_SERVER['PHP_SELF']);
 // NAVBAR DATA
 $navbar = [
-
     [
         'title' => 'Features',
         'link' => BASE_URL . '/features.php',
         'icon' => 'fas fa-th-large',
-
         'submenu' => [
-
             [
                 'title' => 'Multi-Number Inbox',
                 'link' => 'javascript:void(0)',
                 'icon' => 'fas fa-inbox'
             ],
-
             [
                 'title' => 'Tickets & Tasks',
                 'link' => 'javascript:void(0)',
                 'icon' => 'fas fa-ticket-alt'
             ],
-
             [
                 'title' => 'Group Management',
                 'link' => 'javascript:void(0)',
                 'icon' => 'fas fa-users'
             ],
-
             [
                 'title' => 'AI Automations',
                 'link' => 'javascript:void(0)',
                 'icon' => 'fas fa-robot'
             ]
-
         ]
     ],
 
@@ -42,21 +34,17 @@ $navbar = [
         'title' => 'Integrations',
         'link' => BASE_URL . '/integrations.php',
         'icon' => 'fas fa-plug',
-
         'submenu' => [
-
             [
                 'title' => 'HubSpot Integration',
                 'link' => BASE_URL . '/integrations/hubspot.php',
                 'icon' => 'fab fa-hubspot'
             ],
-
             [
                 'title' => 'Zapier & Make Integration',
                 'link' => BASE_URL . '/integrations/zapier.php',
                 'icon' => 'fas fa-bolt'
             ],
-
             [
                 'title' => 'Odoo WhatsApp Integration',
                 'link' => BASE_URL . '/integrations/odoo.php',
@@ -67,7 +55,6 @@ $navbar = [
                 'link' => BASE_URL . '/integrations/smoobu.php',
                 'icon' => 'fas fa-building'
             ]
-
         ]
     ],
 
@@ -101,10 +88,8 @@ $navbar = [
     ]
 ];
 ?>
-
 <!-- Add these CSS styles for mobile dropdowns -->
 <style>
-    /* Mobile Menu Dropdown Styles */
     .mobile-nav-item {
         width: 100%;
     }
@@ -178,7 +163,6 @@ $navbar = [
         width: 24px;
     }
 </style>
-
 <!-- NavBar -->
 <div class="sticky-nav-wrapper" id="stickyNavWrapper">
     <nav class="navbar">
@@ -187,55 +171,41 @@ $navbar = [
                 <img src="<?php echo BASE_URL; ?>/assets/images/logo/logo.png" alt="HeyDoot Logo">
             </div>
         </a>
-
         <!-- Desktop Navigation -->
         <div class="nav-pill">
             <?php foreach ($navbar as $item): ?>
-
                 <?php if (isset($item['submenu'])): ?>
-
                     <div class="nav-item">
-
                         <a href="<?= $item['link']; ?>" class="nav-link">
                             <?= $item['title']; ?>
                         </a>
-
                         <div class="dropdown-menu">
-
                             <?php foreach ($item['submenu'] as $sub): ?>
-
                                 <a href="<?= $sub['link']; ?>">
                                     <i class="<?= $sub['icon']; ?>"></i>
                                     <?= $sub['title']; ?>
                                 </a>
-
                             <?php endforeach; ?>
-
                         </div>
-
                     </div>
-
                 <?php else: ?>
-
                     <a href="<?= $item['link']; ?>" class="nav-link">
                         <?= $item['title']; ?>
                     </a>
-
                 <?php endif; ?>
-
             <?php endforeach; ?>
         </div>
-
         <a href="tel:<?php echo str_replace(' ', '', CALL_NUMBER); ?>"
             class="btn btn-primary btn-sm demo-btn desktop-only">
             <i class="fas fa-calendar-alt"></i> Book a demo
         </a>
         <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
-            <span></span><span></span><span></span>
+            <span></span>
+            <span></span>
+            <span></span>
         </button>
     </nav>
 </div>
-
 <!-- Mobile Menu -->
 <div class="mobile-menu" id="mobileMenu">
     <div class="mobile-menu-overlay" id="menuOverlay"></div>
@@ -246,60 +216,41 @@ $navbar = [
                     <img src="<?php echo BASE_URL; ?>/assets/icons/favicon.png" alt="Logo"
                         style="width: 22px; height: 22px;">
                 </div>
-                <span>Hey<span style="color: var(--primary);">Doot</span></span>
+                <span>
+                    Hey<span style="color: var(--primary);">Doot</span>
+                </span>
             </a>
-            <button class="mobile-menu-close" id="menuClose"><i class="fas fa-times"></i></button>
+            <button class="mobile-menu-close" id="menuClose">
+                <i class="fas fa-times"></i>
+            </button>
         </div>
-
         <!-- Mobile Navigation with Dropdowns -->
         <?php foreach ($navbar as $key => $item): ?>
-
             <?php if (isset($item['submenu'])): ?>
-
                 <div class="mobile-nav-item">
-
                     <div class="mobile-nav-link mobile-dropdown-trigger" data-dropdown="dropdown-<?= $key; ?>">
-
                         <div>
                             <i class="<?= $item['icon']; ?>"></i>
                             <?= $item['title']; ?>
                         </div>
-
                         <i class="fas fa-chevron-down dropdown-arrow"></i>
-
                     </div>
-
                     <div class="mobile-dropdown-menu" id="dropdown-<?= $key; ?>">
-
                         <?php foreach ($item['submenu'] as $sub): ?>
-
                             <a href="<?= $sub['link']; ?>">
-
                                 <i class="<?= $sub['icon']; ?>"></i>
                                 <?= $sub['title']; ?>
-
                             </a>
-
                         <?php endforeach; ?>
-
                     </div>
-
                 </div>
-
             <?php else: ?>
-
                 <a href="<?= $item['link']; ?>" class="mobile-nav-link">
-
                     <i class="<?= $item['icon']; ?>"></i>
                     <?= $item['title']; ?>
-
                 </a>
-
             <?php endif; ?>
-
         <?php endforeach; ?>
-
-
         <div class="mobile-menu-cta">
             <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>"
                 class="btn btn-primary btn-mobile-full demo-btn">

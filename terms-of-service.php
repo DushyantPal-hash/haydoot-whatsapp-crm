@@ -50,7 +50,6 @@ include 'components/navbar.php';
         </div>
     </div>
 </section>
-
 <!-- Last Updated Banner -->
 <section style="background: #fff; border-bottom: 1px solid #eef2f6;">
     <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto; padding: 20px 0;">
@@ -61,7 +60,6 @@ include 'components/navbar.php';
         </div>
     </div>
 </section>
-
 <!-- Main Content -->
 <section style="padding: 60px 0; background: #fff;">
     <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">
@@ -131,7 +129,6 @@ include 'components/navbar.php';
                     </ul>
                 </div>
             </aside>
-
             <!-- Main Terms Content -->
             <main style="flex: 3; min-width: 300px;">
                 <!-- Agreement -->
@@ -151,7 +148,6 @@ include 'components/navbar.php';
                         waiver. Please read them carefully as they affect your legal rights.
                     </div>
                 </div>
-
                 <!-- Definitions -->
                 <div id="definitions" class="terms-section" style="margin-bottom: 48px; scroll-margin-top: 80px;">
                     <h2 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 20px; color: #1a2a3a;">2. Definitions
@@ -171,7 +167,6 @@ include 'components/navbar.php';
                             provided by HashStudioz Technologies.</li>
                     </ul>
                 </div>
-
                 <!-- Account Terms -->
                 <div id="account" class="terms-section" style="margin-bottom: 48px; scroll-margin-top: 80px;">
                     <h2 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 20px; color: #1a2a3a;">3. Account
@@ -193,7 +188,6 @@ include 'components/navbar.php';
                         Content is posted by others who have access to your Account. We reserve the right to suspend or
                         terminate accounts that violate these Terms.</p>
                 </div>
-
                 <!-- Acceptable Use -->
                 <div id="acceptable-use" class="terms-section" style="margin-bottom: 48px; scroll-margin-top: 80px;">
                     <h2 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 20px; color: #1a2a3a;">4. Acceptable
@@ -227,7 +221,6 @@ include 'components/navbar.php';
                     <p>We reserve the right to investigate and take appropriate legal action against anyone who violates
                         this policy, including suspending or terminating your Account.</p>
                 </div>
-
                 <!-- Subscription & Billing -->
                 <div id="subscription" class="terms-section" style="margin-bottom: 48px; scroll-margin-top: 80px;">
                     <h2 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 20px; color: #1a2a3a;">5.
@@ -258,7 +251,6 @@ include 'components/navbar.php';
                         billing.
                     </div>
                 </div>
-
                 <!-- Cancellation & Refunds -->
                 <div id="cancellation" class="terms-section" style="margin-bottom: 48px; scroll-margin-top: 80px;">
                     <h2 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 20px; color: #1a2a3a;">6.
@@ -279,7 +271,6 @@ include 'components/navbar.php';
                         subscribe before the trial ends, your account will be suspended. You will not be charged
                         automatically after the trial.</p>
                 </div>
-
                 <!-- Data Ownership -->
                 <div id="data-ownership" class="terms-section" style="margin-bottom: 48px; scroll-margin-top: 80px;">
                     <h2 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 20px; color: #1a2a3a;">7. Data
@@ -307,7 +298,6 @@ include 'components/navbar.php';
                         After this period, data is permanently deleted from our systems.
                     </div>
                 </div>
-
                 <!-- Service Level -->
                 <div id="service-level" class="terms-section" style="margin-bottom: 48px; scroll-margin-top: 80px;">
                     <h2 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 20px; color: #1a2a3a;">8. Service
@@ -323,7 +313,6 @@ include 'components/navbar.php';
                     <p><strong>Target Uptime:</strong> 99.9% excluding scheduled maintenance and force majeure events.
                     </p>
                 </div>
-
                 <!-- Limitations of Liability -->
                 <div id="limitations" class="terms-section" style="margin-bottom: 48px; scroll-margin-top: 80px;">
                     <h2 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 20px; color: #1a2a3a;">9. Limitations
@@ -346,7 +335,6 @@ include 'components/navbar.php';
                     <p>Some jurisdictions do not allow the exclusion of certain warranties or limitations of liability,
                         so these limitations may not apply to you.</p>
                 </div>
-
                 <!-- Indemnification -->
                 <div id="indemnification" class="terms-section" style="margin-bottom: 48px; scroll-margin-top: 80px;">
                     <h2 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 20px; color: #1a2a3a;">10.
@@ -362,7 +350,6 @@ include 'components/navbar.php';
                         <li style="margin-bottom: 8px;">Your Content or any data transmitted through the Service</li>
                     </ul>
                 </div>
-
                 <!-- Termination -->
                 <div id="termination" class="terms-section" style="margin-bottom: 48px; scroll-margin-top: 80px;">
                     <h2 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 20px; color: #1a2a3a;">11.
@@ -380,7 +367,6 @@ include 'components/navbar.php';
                         nature should survive termination (including data ownership, limitations of liability,
                         indemnification) will survive.</p>
                 </div>
-
                 <!-- Governing Law -->
                 <div id="governing-law" class="terms-section" style="margin-bottom: 48px; scroll-margin-top: 80px;">
                     <h2 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 20px; color: #1a2a3a;">12. Governing
@@ -407,7 +393,6 @@ include 'components/navbar.php';
                         you consent to the exclusive jurisdiction of courts in Chandigarh, India.
                     </div>
                 </div>
-
                 <!-- Modifications -->
                 <div id="modifications" class="terms-section" style="margin-bottom: 48px; scroll-margin-top: 80px;">
                     <h2 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 20px; color: #1a2a3a;">13.
@@ -423,7 +408,6 @@ include 'components/navbar.php';
                         If you do not agree to the changes, you must stop using the Service and cancel your
                         subscription.</p>
                 </div>
-
                 <!-- Contact -->
                 <div id="contact" class="terms-section" style="margin-bottom: 48px; scroll-margin-top: 80px;">
                     <h2 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 20px; color: #1a2a3a;">14. Contact
@@ -455,7 +439,6 @@ include 'components/navbar.php';
                         </p>
                     </div>
                 </div>
-
                 <!-- Complete Agreement -->
                 <div
                     style="background: var(--bg-gradient-green); color: white; padding: 30px; border-radius: 24px; margin-top: 20px;">
@@ -469,7 +452,6 @@ include 'components/navbar.php';
         </div>
     </div>
 </section>
-
 <!-- CTA Section -->
 <section style="background: #F0F8FF; padding: 80px 0;">
     <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">

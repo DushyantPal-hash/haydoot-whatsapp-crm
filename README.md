@@ -1,12 +1,11 @@
 # HeyDoot WhatsApp CRM
 
-An AI-powered WhatsApp CRM platform designed to help businesses manage customer conversations, automate workflows, improve team collaboration, and boost sales productivity — all from a single dashboard.
-
----
+## An AI-powered WhatsApp CRM platform designed to help businesses manage customer conversations, automate workflows, improve team collaboration, and boost sales productivity — all from a single dashboard.
 
 ## 🚀 Features
 
 ### 💬 Shared Team Inbox
+
 - Manage multiple WhatsApp numbers
 - Multi-agent support
 - Internal team collaboration
@@ -14,6 +13,7 @@ An AI-powered WhatsApp CRM platform designed to help businesses manage customer 
 - Real-time messaging
 
 ### 🤖 AI Automation
+
 - Auto-replies
 - AI-generated responses
 - Smart ticket creation
@@ -21,6 +21,7 @@ An AI-powered WhatsApp CRM platform designed to help businesses manage customer 
 - Rule-based triggers
 
 ### 📊 Analytics & Reports
+
 - Agent performance tracking
 - Response time analytics
 - Chat activity insights
@@ -28,6 +29,7 @@ An AI-powered WhatsApp CRM platform designed to help businesses manage customer 
 - Export reports
 
 ### 🎫 Ticketing System
+
 - Auto-ticket generation
 - SLA tracking
 - Priority management
@@ -35,12 +37,14 @@ An AI-powered WhatsApp CRM platform designed to help businesses manage customer 
 - Customer query management
 
 ### 📢 Broadcast Campaigns
+
 - Bulk messaging
 - Scheduled campaigns
 - Audience segmentation
 - Template messaging
 
 ### 🔒 Security & Access
+
 - Role-based permissions
 - Secure authentication
 - Session management
@@ -51,6 +55,7 @@ An AI-powered WhatsApp CRM platform designed to help businesses manage customer 
 # 🛠 Tech Stack
 
 ## Frontend
+
 - HTML5
 - CSS3
 - Bootstrap
@@ -58,12 +63,15 @@ An AI-powered WhatsApp CRM platform designed to help businesses manage customer 
 - jQuery
 
 ## Backend
+
 - PHP
 
 ## Database
+
 - MySQL
 
 ## Integrations
+
 - WhatsApp API
 - CRM APIs
 - Webhooks
@@ -72,7 +80,7 @@ An AI-powered WhatsApp CRM platform designed to help businesses manage customer 
 
 # 📂 Project Structure
 
-```bash
+````bash
 haydoot-whatsapp-crm/
 │
 ├── assets/
@@ -95,17 +103,12 @@ haydoot-whatsapp-crm/
 ├── terms-of-service.php
 ├── whyus.php
 └── README.md
-```
-
 ---
-
 # ⚙️ Installation
-
 ## 1️⃣ Clone Repository
-
 ```bash
 git clone https://github.com/DushyantPal-hash/haydoot-whatsapp-crm.git
-```
+````
 
 ## 2️⃣ Move Into Project
 
@@ -162,43 +165,30 @@ http://localhost/haydoot-whatsapp-crm
 # 📸 Screenshots
 
 ## Home
+
 <img width="1902" height="889" alt="image" src="https://github.com/user-attachments/assets/7d8dd8cf-e581-4749-898a-794cbcb0e2a7" />
-
-
 ## About Us
 <img width="1326" height="828" alt="image" src="https://github.com/user-attachments/assets/f03433c8-5dd1-4eac-958d-1862da6da74a" />
-
-
 ## Contact Us
 <img width="1244" height="920" alt="image" src="https://github.com/user-attachments/assets/7c1486b1-b48f-4c35-9431-59d774f125b9" />
-
-
 ## Features
 <img width="1743" height="914" alt="image" src="https://github.com/user-attachments/assets/82aa1d16-9dd2-4b2a-8c73-8aaa4e5d4554" />
-
-
 ---
-
 # 🔥 Key Benefits
-
 - Improve customer response time
 - Centralized communication
 - Team collaboration
 - Automated workflows
 - Better customer engagement
 - Sales pipeline management
-
 ---
-
 # 🌍 Use Cases
-
 - Customer Support
 - Sales Teams
 - Marketing Campaigns
 - WhatsApp Automation
 - Lead Management
 - E-commerce Support
-
 ---
 
 # 🧠 Future Enhancements
@@ -244,9 +234,7 @@ git push origin feature/AmazingFeature
 
 # 📜 License
 
-This project is licensed under the MIT License and the HashStudioz's .
-
----
+## This project is licensed under the MIT License and the HashStudioz's .
 
 # 👨‍💻 Author
 
@@ -258,9 +246,7 @@ This project is licensed under the MIT License and the HashStudioz's .
 
 # ⭐ Support
 
-If you like this project, please give it a ⭐ on GitHub!
-
----
+## If you like this project, please give it a ⭐ on GitHub!
 
 # 📞 Contact
 

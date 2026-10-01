@@ -105,7 +105,6 @@ include 'components/navbar.php';
         </div>
     </div>
 </section>
-
 <!-- 1) Features Section -->
 <section id="features-core" class="feature-showcase">
     <div class="container-fluid" style="width: 90%; max-width: 1280px;">
@@ -191,7 +190,6 @@ include 'components/navbar.php';
         </div>
     </div>
 </section>
-
 <!-- 2) Smart Automation Section -->
 <section id="automation" class="section-container" style="background: #FDF7F0;">
     <div class="container-fluid">
@@ -242,7 +240,6 @@ include 'components/navbar.php';
         </div>
     </div>
 </section>
-
 <!-- 3) Seamless Integrations Section -->
 <section id="integrations" class="section-container" style="background: #F0F8FF;">
     <div class="container-fluid">
@@ -267,7 +264,6 @@ include 'components/navbar.php';
         </div>
     </div>
 </section>
-
 <!-- 4) Enterprise-Grade Security Section -->
 <section id="security" class="section-container" style="background: #FDF7F0;">
     <div class="container-fluid">
@@ -365,7 +361,6 @@ include 'components/navbar.php';
         </div>
     </div>
 </section>
-
 <!-- 5) Actionable Analytics Section -->
 <section id="analytics" class="section-container" style="background: #F0F8FF;">
     <div class="container-fluid">
@@ -402,7 +397,6 @@ include 'components/navbar.php';
         </div>
     </div>
 </section>
-
 <!-- 6) Why Choose HeyDoot? -->
 <section id="why" class="section-container" style="background: #FDF7F0;">
     <div class="container-fluid">
@@ -436,7 +430,6 @@ include 'components/navbar.php';
         </div>
     </div>
 </section>
-
 <!-- 7) FAQ Section -->
 <section id="faq" class="section-container" style="background: #F0F8FF;">
     <div class="container-fluid">
@@ -495,14 +488,12 @@ include 'components/navbar.php';
             </div>
         </div>
 </section>
-
 <!-- 8) Image -->
 <section class="section-container" style="background: #FDF7F0;">
     <div class="container-fluid"><img src="<?php echo BASE_URL; ?>/assets/images/m4.webp"
             style="border-radius: 48px; width:100%;" alt="footer visual"
             onerror="this.src='https://placehold.co/1200x300/ffffff/128C7E?text=HeyDoot+Trusted+by+Teams';"></div>
 </section>
-
 <!-- 9) CTA Section -->
 <section class="section-container" style="background: #F0F8FF;">
     <div class="container-fluid">
