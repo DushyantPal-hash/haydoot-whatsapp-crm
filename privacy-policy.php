@@ -50,7 +50,6 @@ include 'components/navbar.php';
         </div>
     </div>
 </section>
-
 <!-- Last Updated Banner -->
 <section style="background: #fff; border-bottom: 1px solid #eef2f6;">
     <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto; padding: 20px 0;">
@@ -61,7 +60,6 @@ include 'components/navbar.php';
         </div>
     </div>
 </section>
-
 <!-- Main Content -->
 <section style="padding: 60px 0; background: #fff;">
     <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">
@@ -431,7 +429,6 @@ include 'components/navbar.php';
         </div>
     </div>
 </section>
-
 <!-- CTA Section - Same style as main page -->
 <section style="background: #f0fff4; padding: 80px 0;">
     <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">
@@ -453,9 +450,7 @@ include 'components/navbar.php';
         </div>
     </div>
 </section>
-
 <?php include 'components/footer.php'; ?>
-
 <!-- Add smooth scroll for anchor links -->
 <script>
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

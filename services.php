@@ -39,20 +39,15 @@ include 'components/navbar.php';
         </div>
     </div>
 </section>
-
 <!-- SERVICES -->
 <section class="section-container" style="background:#F8FDF9;">
     <div class="container-fluid">
-
         <h2 class="section-title">Explore HeyDoot Services</h2>
-
         <p class="section-sub">
             From shared inboxes to AI automation and Odoo integrations —
             HeyDoot helps your team collaborate faster and smarter.
         </p>
-
         <div class="feature-grid">
-
             <!-- Odoo Notifications -->
             <a href="<?php echo BASE_URL; ?>/services/odoo.php">
                 <div class="feature-card">
@@ -68,7 +63,6 @@ include 'components/navbar.php';
                     </p>
                 </div>
             </a>
-
             <!-- Smoobu Notifications -->
             <a href="<?php echo BASE_URL; ?>/services/smoobu.php">
                 <div class="feature-card">
@@ -84,7 +78,6 @@ include 'components/navbar.php';
                     </p>
                 </div>
             </a>
-
             <!-- Shared Inbox -->
             <div class="feature-card">
                 <div class="feature-icon">
@@ -98,7 +91,6 @@ include 'components/navbar.php';
                     with real-time team collaboration.
                 </p>
             </div>
-
             <!-- Ticketing -->
             <div class="feature-card">
                 <div class="feature-icon">
@@ -112,7 +104,6 @@ include 'components/navbar.php';
                     assign teams, and track conversations efficiently.
                 </p>
             </div>
-
             <!-- Group Management -->
             <div class="feature-card">
                 <div class="feature-icon">
@@ -126,7 +117,6 @@ include 'components/navbar.php';
                     and scale communities effortlessly.
                 </p>
             </div>
-
             <!-- AI Automation -->
             <div class="feature-card">
                 <div class="feature-icon">
@@ -140,7 +130,6 @@ include 'components/navbar.php';
                     and streamline repetitive tasks with smart workflows.
                 </p>
             </div>
-
             <!-- Analytics -->
             <div class="feature-card">
                 <div class="feature-icon">
@@ -154,7 +143,6 @@ include 'components/navbar.php';
                     response times, and conversation trends.
                 </p>
             </div>
-
             <!-- CRM Integrations -->
             <div class="feature-card">
                 <div class="feature-icon">
@@ -168,25 +156,20 @@ include 'components/navbar.php';
                     Pipedrive, Slack, Zapier, and more.
                 </p>
             </div>
-
             <!-- Broadcast Campaigns -->
             <!-- <div class="feature-card">
                 <div class="feature-icon">
                     <i class="fas fa-bullhorn"></i>
                 </div>
-
                 <h3>Broadcast Campaigns</h3>
-
                 <p>
                     Send personalized WhatsApp campaigns,
                     announcements, and marketing broadcasts at scale.
                 </p>
             </div> -->
-
         </div>
     </div>
 </section>
-
 <!-- WHY SERVICES SECTION -->
 <section class="section-container" style="background:#ffffff;">
     <div class="container-fluid">
@@ -225,7 +208,6 @@ include 'components/navbar.php';
 
     </div>
 </section>
-
 <!-- HOW IT WORKS -->
 <section class="section-container" style="background:#FDF7F0;">
     <div class="container-fluid">
@@ -287,7 +269,6 @@ include 'components/navbar.php';
 
     </div>
 </section>
-
 <!-- INDUSTRIES -->
 <section class="section-container" style="background:#F0F8FF;">
     <div class="container-fluid">
@@ -362,7 +343,6 @@ include 'components/navbar.php';
 
     </div>
 </section>
-
 <!-- ADVANCED FEATURES -->
 <section class="section-container" style="background:#ffffff;">
     <div class="container-fluid">
@@ -442,7 +422,6 @@ include 'components/navbar.php';
 
     </div>
 </section>
-
 <!-- CTA -->
 <section class="section-container" style="background:#FDF7F0;">
     <div class="container-fluid">
@@ -455,20 +434,16 @@ include 'components/navbar.php';
                 manage teams, and grow your business with HeyDoot.
             </p>
             <div class="cta-buttons">
-
                 <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20discuss%20which%20HeyDoot%20service%20is%20right%20for%20my%20business"
                     class="btn btn-outline-light btn-lg">
 
                     <i class="fab fa-whatsapp"></i>
                     Start Free Trial
                 </a>
-
                 <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>" class=" btn btn-cta-white btn-lg">
-
                     <i class="fas fa-mobile-alt"></i>
                     Talk to Expert
                 </a>
-
             </div>
         </div>
     </div>

@@ -362,9 +362,7 @@ include 'components/navbar.php';
     <!-- Hero Section with Animated Background -->
     <section class="error-section">
         <div class="particle-container" id="particleContainer">
-
         </div>
-
         <div class="container-fluid">
             <div class="under-construction-container">
                 <div class="construction-content">

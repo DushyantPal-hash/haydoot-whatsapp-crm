@@ -241,15 +241,17 @@ include 'components/navbar.php';
     <section style="background: var(--bg-gradient-green); padding: 80px 0 60px;">
         <div class="floating-dots"></div>
         <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto; text-align: center;">
-            <span class="feature-pair-badge" style="color: var(--wa-green);"><i class="fas fa-star"></i> Why Businesses
-                Choose Us</span>
-            <h1 style="font-size: 3rem; font-weight: 800; margin-bottom: 16px;">We're <span
-                    style="color: var(--wa-green);">Redefining</span> WhatsApp Communication</h1>
-            <p style="font-size: 1.2rem; color: #cdddef; max-width: 700px; margin: 0 auto;">Trusted by hundreds of teams
-                worldwide to manage high-volume WhatsApp conversations without chaos.</p>
+            <span class="feature-pair-badge" style="color: var(--wa-green);">
+                <i class="fas fa-star"></i> Why Businesses Choose Us
+            </span>
+            <h1 style="font-size: 3rem; font-weight: 800; margin-bottom: 16px;">We're
+                <span style="color: var(--wa-green);">Redefining</span> WhatsApp Communication
+            </h1>
+            <p style="font-size: 1.2rem; color: #cdddef; max-width: 700px; margin: 0 auto;">
+                Trusted by hundreds of teams worldwide to manage high-volume WhatsApp conversations without chaos.
+            </p>
         </div>
     </section>
-
     <!-- Stats Bar -->
     <section style="background: #fff; border-bottom: 1px solid #eef2f6;">
         <div class="container-fluid">
@@ -274,8 +276,6 @@ include 'components/navbar.php';
             </div>
         </div>
     </section>
-
-
     <!-- Core Values Section -->
     <section class="section-container" style="padding: 60px 0; background: #fff;">
         <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">
@@ -284,36 +284,42 @@ include 'components/navbar.php';
                 <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 12px;">What Makes HeyDoot Different?</h2>
                 <p style="color: #5a6b7e;">We've built a platform that puts your team first</p>
             </div>
-
             <div class="value-grid">
                 <div class="value-card">
                     <div class="value-icon"><i class="fas fa-bolt"></i></div>
                     <h3>No API Needed</h3>
-                    <p>Use your personal or business WhatsApp numbers without restrictions. No paperwork, no template
-                        approvals, no per-conversation pricing. Plug & play setup in minutes.</p>
+                    <p>
+                        Use your personal or business WhatsApp numbers without restrictions. No paperwork, no template
+                        approvals, no per-conversation pricing. Plug & play setup in minutes.
+                    </p>
                 </div>
                 <div class="value-card">
                     <div class="value-icon"><i class="fas fa-globe"></i></div>
                     <h3>Global Scale</h3>
-                    <p>Manage 30+ numbers from one dashboard. Perfect for international brands, distributed teams, and
-                        multi-region operations. Add numbers as you grow.</p>
+                    <p>
+                        Manage 30+ numbers from one dashboard. Perfect for international brands, distributed teams, and
+                        multi-region operations. Add numbers as you grow.
+                    </p>
                 </div>
                 <div class="value-card">
                     <div class="value-icon"><i class="fas fa-headset"></i></div>
                     <h3>24/7 Support</h3>
-                    <p>Dedicated support team available around the clock. Enterprise plans include personalized
-                        onboarding, training sessions, and a dedicated account manager.</p>
+                    <p>
+                        Dedicated support team available around the clock. Enterprise plans include personalized
+                        onboarding, training sessions, and a dedicated account manager.
+                    </p>
                 </div>
                 <div class="value-card">
                     <div class="value-icon"><i class="fas fa-gem"></i></div>
                     <h3>Future-proof</h3>
-                    <p>From 5 to 500+ agents, HeyDoot grows with your business. We're constantly adding new features
-                        based on customer feedback. No lock-in, exit anytime.</p>
+                    <p>
+                        From 5 to 500+ agents, HeyDoot grows with your business. We're constantly adding new features
+                        based on customer feedback. No lock-in, exit anytime.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- Features Section -->
     <section id="all-features" class="feature-showcase">
         <div class="container-fluid" style="width: 90%; max-width: 1280px;">
@@ -327,94 +333,99 @@ include 'components/navbar.php';
                 <div class="feature-pair-content">
                     <div class="feature-pair-badge"><i class="fas fa-inbox"></i> Unified Workspace</div>
                     <h3>Multi-Number Inbox</h3>
-                    <p>Connect 10, 20, or 50 WhatsApp numbers into one powerful dashboard. Seamlessly switch between
-                        regions, brands, or departments without logging in and out.</p>
+                    <p>
+                        Connect 10, 20, or 50 WhatsApp numbers into one powerful dashboard. Seamlessly switch between
+                        regions, brands, or departments without logging in and out.
+                    </p>
                     <ul class="feature-list-check">
                         <li><i class="fas fa-check-circle"></i> Centralized conversation hub</li>
                         <li><i class="fas fa-check-circle"></i> Real-time sync across devices</li>
                         <li><i class="fas fa-check-circle"></i> Assign & tag messages with zero friction</li>
                     </ul>
                 </div>
-                <div class="feature-pair-image"><img src="<?php echo BASE_URL; ?>/assets/images//f1.webp"
-                        alt="Multi Number Inbox Dashboard"
-                        style="border-radius: 32px; box-shadow: 0 20px 30px -10px rgba(0,0,0,0.1);"></div>
+                <div class="feature-pair-image">
+                    <img src="<?php echo BASE_URL; ?>/assets/images//f1.webp" alt="Multi Number Inbox Dashboard"
+                        style="border-radius: 32px; box-shadow: 0 20px 30px -10px rgba(0,0,0,0.1);">
+                </div>
             </div>
             <div class="feature-pair">
                 <div class="feature-pair-content">
                     <div class="feature-pair-badge"><i class="fas fa-ticket-alt"></i> Workflow Ops</div>
                     <h3>Create Tickets & Tasks</h3>
-                    <p>Turn every WhatsApp message into an actionable ticket. Assign priority, set due dates, and
-                        convert group discussions into trackable tasks.</p>
+                    <p>
+                        Turn every WhatsApp message into an actionable ticket. Assign priority, set due dates, and
+                        convert group discussions into trackable tasks.
+                    </p>
                     <ul class="feature-list-check">
                         <li><i class="fas fa-check-circle"></i> One-click ticket creation</li>
                         <li><i class="fas fa-check-circle"></i> Internal notes & @mentions</li>
                         <li><i class="fas fa-check-circle"></i> Automate follow-ups based on status</li>
                     </ul>
                 </div>
-                <div class="feature-pair-image"><img src="<?php echo BASE_URL; ?>/assets/images//f2.webp"
-                        alt="Tickets and Tasks inside HeyDoot"></div>
+                <div class="feature-pair-image">
+                    <img src="<?php echo BASE_URL; ?>/assets/images//f2.webp" alt="Tickets and Tasks inside HeyDoot">
+                </div>
             </div>
             <div class="feature-pair">
                 <div class="feature-pair-content">
                     <div class="feature-pair-badge"><i class="fas fa-users"></i> Community Hub</div>
                     <h3>Manage Groups at Scale</h3>
-                    <p>Supercharge your WhatsApp group management: broadcast announcements, moderate members, assign
-                        group admins, and auto-respond to FAQs.</p>
+                    <p>
+                        Supercharge your WhatsApp group management: broadcast announcements, moderate members, assign
+                        group admins, and auto-respond to FAQs.
+                    </p>
                     <ul class="feature-list-check">
                         <li><i class="fas fa-check-circle"></i> Group analytics & member insights</li>
                         <li><i class="fas fa-check-circle"></i> Scheduled broadcasts to multiple groups</li>
                         <li><i class="fas fa-check-circle"></i> Spam & moderation filters</li>
                     </ul>
                 </div>
-                <div class="feature-pair-image"><img src="<?php echo BASE_URL; ?>/assets/images//f3.webp"
-                        alt="WhatsApp Groups Management Dashboard"></div>
+                <div class="feature-pair-image">
+                    <img src="<?php echo BASE_URL; ?>/assets/images//f3.webp"
+                        alt="WhatsApp Groups Management Dashboard">
+                </div>
             </div>
             <div class="feature-pair">
                 <div class="feature-pair-content">
                     <div class="feature-pair-badge"><i class="fas fa-robot"></i> AI + Workflow</div>
                     <h3>Automate Actions</h3>
-                    <p>Design smart automation rules: auto-reply to common queries, route messages to the right
-                        teammate, trigger webhooks, and create sequences.</p>
+                    <p>
+                        Design smart automation rules: auto-reply to common queries, route messages to the right
+                        teammate, trigger webhooks, and create sequences.
+                    </p>
                     <ul class="feature-list-check">
                         <li><i class="fas fa-check-circle"></i> Keyword + AI intent detection</li>
                         <li><i class="fas fa-check-circle"></i> Auto-assign labels & priorities</li>
                         <li><i class="fas fa-check-circle"></i> Schedule sequences & drip campaigns</li>
                     </ul>
                 </div>
-                <div class="feature-pair-image"><img src="<?php echo BASE_URL; ?>/assets/images//f4.webp"
-                        alt="Automation actions workflow">
+                <div class="feature-pair-image">
+                    <img src="<?php echo BASE_URL; ?>/assets/images//f4.webp" alt="Automation actions workflow">
                 </div>
             </div>
         </div>
     </section>
-
     <!-- Comparison Table -->
     <section style="background: #fff; padding: 60px 0;">
         <div class="container-fluid">
-
             <div style="text-align: center; margin-bottom: 48px;">
                 <span class="feature-pair-badge">
                     <i class="fas fa-chart-simple"></i> Why We're Better
                 </span>
-
                 <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 12px;">
                     HeyDoot vs. The Competition
                 </h2>
-
                 <p style="color: #5a6b7e;">
                     See how we stack up against other WhatsApp solutions
                 </p>
             </div>
-
             <div class="comparison-card">
-
                 <!-- Header -->
                 <div class="comparison-header">
                     <div>Features</div>
                     <div>HeyDoot</div>
                     <div>Others</div>
                 </div>
-
                 <!-- Rows -->
                 <div class="comparison-item">
                     <div class="comparison-feature">WhatsApp Business API Required?</div>
@@ -425,7 +436,6 @@ include 'components/navbar.php';
                         <i class="fas fa-times-circle"></i> Yes (Most)
                     </div>
                 </div>
-
                 <div class="comparison-item">
                     <div class="comparison-feature">Multiple Numbers in One Inbox</div>
                     <div class="comparison-heydoot">
@@ -435,7 +445,6 @@ include 'components/navbar.php';
                         <i class="fas fa-times-circle"></i> Limited
                     </div>
                 </div>
-
                 <div class="comparison-item">
                     <div class="comparison-feature">Team Collaboration Features</div>
                     <div class="comparison-heydoot">
@@ -445,7 +454,6 @@ include 'components/navbar.php';
                         <i class="fas fa-times-circle"></i> Basic
                     </div>
                 </div>
-
                 <div class="comparison-item">
                     <div class="comparison-feature">AI Automation</div>
                     <div class="comparison-heydoot">
@@ -455,7 +463,6 @@ include 'components/navbar.php';
                         <i class="fas fa-times-circle"></i> Limited
                     </div>
                 </div>
-
                 <div class="comparison-item">
                     <div class="comparison-feature">Ticket Management</div>
                     <div class="comparison-heydoot">
@@ -465,7 +472,6 @@ include 'components/navbar.php';
                         <i class="fas fa-times-circle"></i> No
                     </div>
                 </div>
-
                 <div class="comparison-item">
                     <div class="comparison-feature">Group Management</div>
                     <div class="comparison-heydoot">
@@ -475,7 +481,6 @@ include 'components/navbar.php';
                         <i class="fas fa-times-circle"></i> Basic
                     </div>
                 </div>
-
                 <div class="comparison-item">
                     <div class="comparison-feature">API Access</div>
                     <div class="comparison-heydoot">
@@ -485,7 +490,6 @@ include 'components/navbar.php';
                         <i class="fas fa-check-circle"></i> Yes
                     </div>
                 </div>
-
                 <div class="comparison-item">
                     <div class="comparison-feature">24/7 Support</div>
                     <div class="comparison-heydoot">
@@ -495,7 +499,6 @@ include 'components/navbar.php';
                         <i class="fas fa-times-circle"></i> Limited
                     </div>
                 </div>
-
                 <div class="comparison-item">
                     <div class="comparison-feature">Unlimited Agents</div>
                     <div class="comparison-heydoot">
@@ -505,11 +508,9 @@ include 'components/navbar.php';
                         <i class="fas fa-times-circle"></i> Per-Seat Pricing
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
-
     <!-- Testimonials Section -->
     <section style="background: #F0F8FF; padding: 60px 0;">
         <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">
@@ -518,7 +519,6 @@ include 'components/navbar.php';
                 <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 12px;">Trusted by Teams Worldwide</h2>
                 <p style="color: #5a6b7e;">Don't just take our word for it</p>
             </div>
-
             <div class="feature-grid">
                 <div class="feature-card">
                     <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
@@ -562,14 +562,14 @@ include 'components/navbar.php';
             </div>
         </div>
     </section>
-
     <!-- CTA Section -->
     <section style="background: linear-gradient(135deg, #1a2a3a 0%, #2c3e50 100%); padding: 80px 0;">
         <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto; text-align: center;">
             <h2 style="color: white; font-size: 2.2rem; margin-bottom: 20px;">Ready to transform your WhatsApp
                 communication?</h2>
-            <p style="color: #e0e0e0; font-size: 1.1rem; max-width: 600px; margin: 0 auto 32px;">Join hundreds of teams
-                who've upgraded to HeyDoot — start your free trial today.</p>
+            <p style="color: #e0e0e0; font-size: 1.1rem; max-width: 600px; margin: 0 auto 32px;">
+                Join hundreds of teams who've upgraded to HeyDoot — start your free trial today.
+            </p>
             <div class="cta-buttons" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
                 <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20start%20a%20free%20trial%20of%20HeyDoot"
                     class="btn btn-secondary btn-lg" target="_blank">
@@ -579,11 +579,11 @@ include 'components/navbar.php';
                     <i class="fas fa-mobile-alt"></i> Talk to Sales
                 </a>
             </div>
-            <p style="color: #a0b0c0; margin-top: 24px; font-size: 0.85rem;">No credit card required. 14-day free trial.
+            <p style="color: #a0b0c0; margin-top: 24px; font-size: 0.85rem;">
+                No credit card required. 14-day free trial.
             </p>
         </div>
     </section>
-
     <!-- FAQ Section -->
     <section class="section-container" style="background: #F0F8FF; padding: 60px 0;">
         <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">
@@ -591,18 +591,14 @@ include 'components/navbar.php';
                 <span class="feature-pair-badge">
                     <i class="fas fa-question-circle"></i> Common Questions
                 </span>
-
                 <h2 class="section-title" style="margin-bottom: 12px;">
                     Frequently Asked Questions
                 </h2>
-
                 <p class="section-sub">
                     Everything you need to know about HeyDoot
                 </p>
             </div>
-
             <div class="faq-container">
-
                 <div class="faq-item">
                     <div class="faq-question">
                         What does "unlimited" actually mean?
@@ -615,7 +611,6 @@ include 'components/navbar.php';
                         If you add ten new numbers next month, the price doesn't change.
                     </div>
                 </div>
-
                 <div class="faq-item">
                     <div class="faq-question">
                         Do I need the WhatsApp Business API?
@@ -628,7 +623,6 @@ include 'components/navbar.php';
                         the official Business API.
                     </div>
                 </div>
-
                 <div class="faq-item">
                     <div class="faq-question">
                         How quickly can we go live?
@@ -640,7 +634,6 @@ include 'components/navbar.php';
                         and help onboard your first batch of agents the same day.
                     </div>
                 </div>
-
                 <div class="faq-item">
                     <div class="faq-question">
                         Can I migrate away later?
@@ -652,11 +645,9 @@ include 'components/navbar.php';
                         No proprietary formats, no exit fees, and no unnecessary barriers.
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
-
 </main>
 
 

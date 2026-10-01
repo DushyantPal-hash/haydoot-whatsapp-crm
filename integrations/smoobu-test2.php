@@ -156,26 +156,37 @@ include ROOT_PATH . '/components/navbar.php';
         <div style="max-width: 900px; margin: 0 auto; position: relative; z-index: 2;">
             <div
                 style="display: inline-block; background: rgba(255,255,255,0.12); backdrop-filter: blur(8px); padding: 6px 18px; border-radius: 60px; margin-bottom: 24px;">
-                <span style="color: #ffffff; font-weight: 700; display: flex; align-items: center; gap: 10px;"><i
-                        class="fas fa-home"></i> Official Smoobu Partner</span>
+                <span style="color: #ffffff; font-weight: 700; display: flex; align-items: center; gap: 10px;">
+                    <i class="fas fa-home"></i> Official Smoobu Partner
+                </span>
             </div>
-            <h1 style="color: white;">Connect <span style="color: #ffffff;">HeyDoot</span> <br>with <span
-                    style="color: #ffffff;">Smoobu</span></h1>
-            <p class="hero-desc">Automate WhatsApp notifications for new reservations and cancellations — directly from
-                your Smoobu account. Never miss a booking update again.</p>
+            <h1 style="color: white;">Connect
+                <span style="color: #ffffff;">HeyDoot</span> <br>with
+                <span style="color: #ffffff;">Smoobu</span>
+            </h1>
+            <p class="hero-desc">
+                Automate WhatsApp notifications for new reservations and cancellations — directly from
+                your Smoobu account. Never miss a booking update again.
+            </p>
             <div class="cta-group">
                 <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20integrate%20Smoobu%20with%20WhatsApp%20using%20HeyDoot"
-                    class="btn btn-smoobu btn-lg"><i class="fab fa-whatsapp"></i> Connect Smoobu</a>
-                <a href="<?php echo BASE_URL; ?>/services/smoobu.php" class="btn btn-secondary btn-lg"><i
-                        class="fas fa-calendar-alt"></i> View Services</a>
+                    class="btn btn-smoobu btn-lg">
+                    <i class="fab fa-whatsapp"></i> Connect Smoobu
+                </a>
+                <a href="<?php echo BASE_URL; ?>/services/smoobu.php" class="btn btn-secondary btn-lg">
+                    <i class="fas fa-calendar-alt"></i> View Services
+                </a>
             </div>
         </div>
         <div class="visual-stage" style="margin-top: 20px;">
-            <div class="float-card card-1"><i class="fab fa-whatsapp" style="color:#25D366; font-size: 22px;"></i>
+            <div class="float-card card-1">
+                <i class="fab fa-whatsapp" style="color:#25D366; font-size: 22px;"></i>
                 <span>New Booking → WhatsApp</span>
             </div>
-            <div class="float-card card-2"><i class="fas fa-times-circle" style="color:#e74c3c;"></i> <span>Cancellation
-                    Alerts</span></div>
+            <div class="float-card card-2">
+                <i class="fas fa-times-circle" style="color:#e74c3c;"></i>
+                <span>Cancellation Alerts</span>
+            </div>
             <div class="mockup-phone"
                 style="width: 65%; margin: 0 auto; background: #1e1e2a; border-radius: 48px; padding: 8px;">
                 <div style="background: #2a2a35; border-radius: 40px; padding: 30px 20px; text-align: center;">
@@ -189,60 +200,81 @@ include ROOT_PATH . '/components/navbar.php';
             </div>
         </div>
     </section>
-
     <!-- Main Integration Container -->
     <section style="padding: 40px 0;">
         <div class="container-fluid">
-
             <!-- Status Banner -->
             <div
                 style="background: linear-gradient(105deg, #eef2f7 0%, #e8edf3 100%); border-left: 5px solid #1E3A5F; border-radius: 20px; padding: 20px 28px; margin-bottom: 48px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
                 <div>
                     <i class="fas fa-check-circle" style="color: #1E3A5F; margin-right: 12px;"></i>
                     <strong>HeyDoot Smoobu WhatsApp Notifier is fully certified.</strong>
-                    <span style="color: #4b5563;"> Connect your Smoobu account with HeyDoot to enable automated
-                        WhatsApp messaging for reservations.</span>
-                    <a href="<?php echo BASE_URL; ?>/404.php" style="color: #1E3A5F; font-weight: 600;"> Start
-                        Integration →</a>
+                    <span style="color: #4b5563;">
+                        Connect your Smoobu account with HeyDoot to enable automated
+                        WhatsApp messaging for reservations.
+                    </span>
+                    <a href="<?php echo BASE_URL; ?>/404.php" style="color: #1E3A5F; font-weight: 600;">
+                        Start Integration →
+                    </a>
                 </div>
                 <div>
                     <a href="<?php echo BASE_URL; ?>/404.php"
-                        style="background: #f3f4f6; padding: 8px 18px; border-radius: 40px; font-size: 0.85rem;"><i
-                            class="fas fa-headset"></i> Troubleshooting: Not receiving alerts?</a>
+                        style="background: #f3f4f6; padding: 8px 18px; border-radius: 40px; font-size: 0.85rem;">
+                        <i class="fas fa-headset"></i> Troubleshooting: Not receiving alerts?
+                    </a>
                 </div>
             </div>
-
             <!-- Two-column layout -->
             <div style="display: flex; gap: 48px; flex-wrap: wrap;">
                 <!-- Sidebar -->
                 <aside class="sidebar-card">
                     <div
                         style="position: sticky; top: 100px; background: white; border-radius: 28px; padding: 24px; box-shadow: var(--card-shadow); border: 1px solid rgba(0,0,0,0.04);">
-                        <h4 style="font-weight: 700; margin-bottom: 20px; font-size: 1.1rem;"><i class="fas fa-cog"
-                                style="color: #1E3A5F; margin-right: 8px;"></i> On this page</h4>
+                        <h4 style="font-weight: 700; margin-bottom: 20px; font-size: 1.1rem;">
+                            <i class="fas fa-cog" style="color: #1E3A5F; margin-right: 8px;"></i> On this page
+                        </h4>
                         <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px;">
-                            <li><a href="#prerequisites" style="color: #2c3e2f; font-size: 0.9rem;"><i
-                                        class="fas fa-check-circle" style="color: #1E3A5F;"></i> Prerequisites</a></li>
-                            <li><a href="#setup-guide" style="color: #2c3e2f; font-size: 0.9rem;"><i
-                                        class="fas fa-list-ol" style="color: #1E3A5F;"></i> Step-by-Step Setup Guide</a>
+                            <li>
+                                <a href="#prerequisites" style="color: #2c3e2f; font-size: 0.9rem;">
+                                    <i class="fas fa-check-circle" style="color: #1E3A5F;"></i> Prerequisites
+                                </a>
                             </li>
-                            <li><a href="#features" style="color: #2c3e2f; font-size: 0.9rem;"><i class="fas fa-star"
-                                        style="color: #1E3A5F;"></i> Key Features</a></li>
-                            <li><a href="#use-cases" style="color: #2c3e2f; font-size: 0.9rem;"><i
-                                        class="fas fa-briefcase" style="color: #1E3A5F;"></i> Use Cases</a></li>
-                            <li><a href="#benefits" style="color: #2c3e2f; font-size: 0.9rem;"><i
-                                        class="fas fa-chart-line" style="color: #1E3A5F;"></i> Benefits</a></li>
-                            <li><a href="#faq-smoobu" style="color: #2c3e2f;"><i class="fas fa-question-circle"
-                                        style="color: #1E3A5F;"></i> FAQs</a></li>
-                            <li><a href="#cta" style="color: #2c3e2f;"><i class="fas fa-rocket"
-                                        style="color: #1E3A5F;"></i> Get Started</a></li>
+                            <li>
+                                <a href="#setup-guide" style="color: #2c3e2f; font-size: 0.9rem;">
+                                    <i class="fas fa-list-ol" style="color: #1E3A5F;"></i> Step-by-Step Setup Guide
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#features" style="color: #2c3e2f; font-size: 0.9rem;">
+                                    <i class="fas fa-star" style="color: #1E3A5F;"></i> Key Features
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#use-cases" style="color: #2c3e2f; font-size: 0.9rem;">
+                                    <i class="fas fa-briefcase" style="color: #1E3A5F;"></i> Use Cases
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#benefits" style="color: #2c3e2f; font-size: 0.9rem;">
+                                    <i class="fas fa-chart-line" style="color: #1E3A5F;"></i> Benefits
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#faq-smoobu" style="color: #2c3e2f;">
+                                    <i class="fas fa-question-circle" style="color: #1E3A5F;"></i> FAQs
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#cta" style="color: #2c3e2f;">
+                                    <i class="fas fa-rocket" style="color: #1E3A5F;"></i> Get Started
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </aside>
 
                 <!-- Main Content -->
                 <main style="flex: 2.5; min-width: 280px;">
-
                     <!-- Prerequisites -->
                     <div id="prerequisites" style="margin-bottom: 56px;">
                         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
@@ -254,21 +286,25 @@ include ROOT_PATH . '/components/navbar.php';
                         </div>
                         <div class="feature-card" style="background: white; border-radius: 28px; padding: 24px 28px;">
                             <ul style="list-style: none;">
-                                <li style="margin-bottom: 14px; display: flex; gap: 12px;"><i
-                                        class="fas fa-check-circle" style="color: #1E3A5F;"></i> Active HeyDoot account
-                                    (any paid plan or trial)</li>
-                                <li style="margin-bottom: 14px; display: flex; gap: 12px;"><i
-                                        class="fas fa-check-circle" style="color: #1E3A5F;"></i> Active Smoobu account
-                                    (any plan with API access)</li>
-                                <li style="margin-bottom: 14px; display: flex; gap: 12px;"><i
-                                        class="fas fa-check-circle" style="color: #1E3A5F;"></i> WhatsApp Business
-                                    number connected via HeyDoot</li>
-                                <li style="display: flex; gap: 12px;"><i class="fas fa-check-circle"
-                                        style="color: #1E3A5F;"></i> Smoobu API credentials (API Key)</li>
+                                <li style="margin-bottom: 14px; display: flex; gap: 12px;">
+                                    <i class="fas fa-check-circle" style="color: #1E3A5F;"></i>
+                                    Active HeyDoot account (any paid plan or trial)
+                                </li>
+                                <li style="margin-bottom: 14px; display: flex; gap: 12px;">
+                                    <i class="fas fa-check-circle" style="color: #1E3A5F;"></i>
+                                    Active Smoobu account (any plan with API access)
+                                </li>
+                                <li style="margin-bottom: 14px; display: flex; gap: 12px;">
+                                    <i class="fas fa-check-circle" style="color: #1E3A5F;"></i>
+                                    WhatsApp Business number connected via HeyDoot
+                                </li>
+                                <li style="display: flex; gap: 12px;">
+                                    <i class="fas fa-check-circle" style="color: #1E3A5F;"></i>
+                                    Smoobu API credentials (API Key)
+                                </li>
                             </ul>
                         </div>
                     </div>
-
                     <!-- Step-by-Step Setup Guide -->
                     <div id="setup-guide" style="margin-bottom: 56px;">
                         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
@@ -278,7 +314,6 @@ include ROOT_PATH . '/components/navbar.php';
                             </div>
                             <h2 style="font-size: 1.8rem; font-weight: 700;">Step-by-Step Setup Guide</h2>
                         </div>
-
                         <!-- Image Placeholder 1 -->
                         <div style="margin-bottom: 32px;">
                             <img src="<?php echo BASE_URL; ?>/assets/images/integrations/smoobu/smoobu-dashboard.webp"
@@ -288,7 +323,6 @@ include ROOT_PATH . '/components/navbar.php';
                                 <p style="font-size: 14px; color: #5a6a7a;">Smoobu Integration Dashboard Preview</p>
                             </div>
                         </div>
-
                         <!-- Step 1 -->
                         <div class="setup-step">
                             <div style="display: flex; align-items: center; margin-bottom: 16px;">
@@ -302,17 +336,18 @@ include ROOT_PATH . '/components/navbar.php';
                                 key. Save it securely.</p>
                             <div style="background: #f8f9fa; padding: 12px; border-radius: 12px; margin-top: 12px;">
                                 <i class="fas fa-info-circle" style="color: #1E3A5F;"></i>
-                                <span style="font-size: 0.85rem;">Smoobu API documentation: <a href="#"
-                                        style="color: #1E3A5F;">docs.smoobu.com/api</a></span>
+                                <span style="font-size: 0.85rem;">Smoobu API documentation:
+                                    <a href="#" style="color: #1E3A5F;">docs.smoobu.com/api</a>
+                                </span>
                             </div>
                         </div>
-
                         <!-- Step 2 -->
                         <div class="setup-step">
                             <div style="display: flex; align-items: center; margin-bottom: 16px;">
                                 <span class="step-number">2</span>
-                                <h3 style="font-size: 1.3rem; font-weight: 700; margin: 0;">Configure Webhook in
-                                    Smoobu</h3>
+                                <h3 style="font-size: 1.3rem; font-weight: 700; margin: 0;">
+                                    Configure Webhook in Smoobu
+                                </h3>
                             </div>
                             <p>Navigate to: <strong>Settings → API → Webhooks</strong></p>
                             <p>Add a new webhook with the following details:</p>
@@ -324,7 +359,6 @@ include ROOT_PATH . '/components/navbar.php';
                             </ul>
                             <p style="margin-top: 12px;">Click <strong>Save Webhook</strong></p>
                         </div>
-
                         <!-- Image Placeholder 2 -->
                         <div style="margin-bottom: 32px;">
                             <img src="<?php echo BASE_URL; ?>/assets/images/integrations/smoobu/smoobu-webhook.webp"
@@ -334,12 +368,12 @@ include ROOT_PATH . '/components/navbar.php';
                                 <p style="font-size: 14px; color: #5a6a7a;">Smoobu Webhook Configuration Screen</p>
                             </div>
                         </div>
-
                         <!-- Step 3 -->
                         <div class="setup-step">
                             <div style="display: flex; align-items: center; margin-bottom: 16px;">
                                 <span class="step-number">3</span>
-                                <h3 style="font-size: 1.3rem; font-weight: 700; margin: 0;">Connect Smoobu in HeyDoot
+                                <h3 style="font-size: 1.3rem; font-weight: 700; margin: 0;">
+                                    Connect Smoobu in HeyDoot
                                 </h3>
                             </div>
                             <p>Log in to your HeyDoot dashboard and navigate to:</p>
@@ -347,7 +381,6 @@ include ROOT_PATH . '/components/navbar.php';
                             <p>Enter your Smoobu API Key and select the WhatsApp number for notifications.</p>
                             <p>Click <strong>Test Connection</strong> to verify the integration.</p>
                         </div>
-
                         <!-- Image Placeholder 3 -->
                         <div style="margin-bottom: 32px;">
                             <img src="<?php echo BASE_URL; ?>/assets/images/integrations/smoobu/smoobu-connect.webp"
@@ -357,13 +390,13 @@ include ROOT_PATH . '/components/navbar.php';
                                 <p style="font-size: 14px; color: #5a6a7a;">HeyDoot Smoobu Connection UI</p>
                             </div>
                         </div>
-
                         <!-- Step 4 -->
                         <div class="setup-step">
                             <div style="display: flex; align-items: center; margin-bottom: 16px;">
                                 <span class="step-number">4</span>
-                                <h3 style="font-size: 1.3rem; font-weight: 700; margin: 0;">Customize Notification
-                                    Templates</h3>
+                                <h3 style="font-size: 1.3rem; font-weight: 700; margin: 0;">
+                                    Customize Notification Templates
+                                </h3>
                             </div>
                             <p>Navigate to: <strong>Integrations → Smoobu → Notification Templates</strong></p>
                             <p>Customize message templates for:</p>
@@ -371,11 +404,14 @@ include ROOT_PATH . '/components/navbar.php';
                                 <li>New Reservation Alert</li>
                                 <li>Reservation Cancellation Alert</li>
                             </ul>
-                            <p>Use dynamic variables like <code>{guest_name}</code>, <code>{property}</code>,
-                                <code>{check_in}</code>, <code>{check_out}</code>, <code>{total_price}</code>
+                            <p>Use dynamic variables like
+                                <code>{guest_name}</code>,
+                                <code>{property}</code>,
+                                <code>{check_in}</code>,
+                                <code>{check_out}</code>,
+                                <code>{total_price}</code>
                             </p>
                         </div>
-
                         <!-- Image Placeholder 4 -->
                         <div style="margin-bottom: 32px;">
                             <img src="<?php echo BASE_URL; ?>/assets/images/integrations/smoobu/smoobu-templates.webp"
@@ -385,7 +421,6 @@ include ROOT_PATH . '/components/navbar.php';
                                 <p style="font-size: 14px; color: #5a6a7a;">WhatsApp Notification Template Editor</p>
                             </div>
                         </div>
-
                         <!-- Step 5 -->
                         <div class="setup-step">
                             <div style="display: flex; align-items: center; margin-bottom: 16px;">
@@ -393,13 +428,16 @@ include ROOT_PATH . '/components/navbar.php';
                                 <h3 style="font-size: 1.3rem; font-weight: 700; margin: 0;">Enable & Test</h3>
                             </div>
                             <p>Toggle the integration to <strong>Active</strong> status.</p>
-                            <p>Create a test reservation in Smoobu to verify that WhatsApp notifications are being sent
-                                correctly.</p>
-                            <p>Check <strong>Notification Logs</strong> in your HeyDoot dashboard to monitor delivery
-                                status.</p>
+                            <p>
+                                Create a test reservation in Smoobu to verify that WhatsApp notifications are being sent
+                                correctly.
+                            </p>
+                            <p>
+                                Check <strong>Notification Logs</strong> in your HeyDoot dashboard to monitor delivery
+                                status.
+                            </p>
                         </div>
                     </div>
-
                     <!-- Key Features Section -->
                     <div id="features" style="margin-bottom: 56px;">
                         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
@@ -439,7 +477,8 @@ include ROOT_PATH . '/components/navbar.php';
                                 <i class="fas fa-plug"
                                     style="font-size: 32px; color: #1E3A5F; margin-bottom: 16px;"></i>
                                 <h3 style="font-weight: 700; margin-bottom: 12px;">Easy Setup</h3>
-                                <p>Connect your Smoobu account with Heydoot in just a few minutes — no coding required.
+                                <p>
+                                    Connect your Smoobu account with Heydoot in just a few minutes — no coding required.
                                 </p>
                             </div>
                             <div class="use-case-card">
@@ -450,21 +489,25 @@ include ROOT_PATH . '/components/navbar.php';
                             </div>
                         </div>
                     </div>
-
                     <!-- Supported Events -->
                     <div style="margin-bottom: 56px; background: #f8f9fa; border-radius: 28px; padding: 32px;">
                         <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 20px;"><i class="fas fa-bolt"
                                 style="color: #1E3A5F;"></i> Supported Events</h3>
                         <div style="display: flex; flex-wrap: wrap; gap: 16px;">
-                            <span class="event-badge"><i class="fas fa-plus-circle" style="color: #27ae60;"></i> New
-                                Reservation Created</span>
-                            <span class="event-badge"><i class="fas fa-minus-circle" style="color: #e74c3c;"></i>
-                                Reservation Cancelled</span>
+                            <span class="event-badge">
+                                <i class="fas fa-plus-circle" style="color: #27ae60;"></i>
+                                New Reservation Created
+                            </span>
+                            <span class="event-badge">
+                                <i class="fas fa-minus-circle" style="color: #e74c3c;"></i>
+                                Reservation Cancelled
+                            </span>
                         </div>
-                        <p style="margin-top: 20px; font-size: 0.9rem; color: #6c757d;">Additional booking-related
-                            events can be added based on business requirements.</p>
+                        <p style="margin-top: 20px; font-size: 0.9rem; color: #6c757d;">
+                            Additional booking-related
+                            events can be added based on business requirements.
+                        </p>
                     </div>
-
                     <!-- Benefits Section -->
                     <div id="benefits" style="margin-bottom: 56px;">
                         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
@@ -503,7 +546,6 @@ include ROOT_PATH . '/components/navbar.php';
                             </div>
                         </div>
                     </div>
-
                     <!-- Use Cases Section -->
                     <div id="use-cases" style="margin-bottom: 56px;">
                         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
@@ -537,7 +579,6 @@ include ROOT_PATH . '/components/navbar.php';
                             </div>
                         </div>
                     </div>
-
                     <!-- How It Works -->
                     <div
                         style="margin-bottom: 56px; background: linear-gradient(115deg, #f0f4f9, #e8edf3); border-radius: 28px; padding: 32px;">
@@ -576,104 +617,118 @@ include ROOT_PATH . '/components/navbar.php';
                             </div>
                         </div>
                     </div>
-
                     <!-- FAQ Section -->
                     <div id="faq-smoobu" style="margin-top: 48px;">
-                        <h3 style="font-size: 1.6rem; font-weight: 700; margin-bottom: 24px;"><i
-                                class="fas fa-question-circle" style="color: #1E3A5F;"></i> FAQs</h3>
-
+                        <h3 style="font-size: 1.6rem; font-weight: 700; margin-bottom: 24px;">
+                            <i class="fas fa-question-circle" style="color: #1E3A5F;"></i> FAQs
+                        </h3>
                         <div class="faq-item">
-                            <div class="faq-question">Does HeyDoot support all Smoobu plans? <i
-                                    class="fas fa-chevron-down"></i></div>
-                            <div class="faq-answer">Yes, the integration works with all Smoobu plans that include API
-                                access (Professional and above).</div>
+                            <div class="faq-question">
+                                Does HeyDoot support all Smoobu plans?
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                Yes, the integration works with all Smoobu plans that include API
+                                access (Professional and above).
+                            </div>
                         </div>
-
                         <div class="faq-item">
-                            <div class="faq-question">Can I send notifications to multiple WhatsApp numbers? <i
-                                    class="fas fa-chevron-down"></i></div>
-                            <div class="faq-answer">Yes, you can configure multiple recipients for different properties
-                                or team members.</div>
+                            <div class="faq-question">
+                                Can I send notifications to multiple WhatsApp numbers?
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                Yes, you can configure multiple recipients for different properties
+                                or team members.
+                            </div>
                         </div>
-
                         <div class="faq-item">
-                            <div class="faq-question">How long does it take to set up the integration? <i
-                                    class="fas fa-chevron-down"></i></div>
-                            <div class="faq-answer">Most users complete the setup in under 10 minutes using our
-                                step-by-step guide.</div>
+                            <div class="faq-question">
+                                How long does it take to set up the integration?
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                Most users complete the setup in under 10 minutes using our
+                                step-by-step guide.
+                            </div>
                         </div>
-
                         <div class="faq-item">
-                            <div class="faq-question">Is there a free trial available? <i
-                                    class="fas fa-chevron-down"></i></div>
-                            <div class="faq-answer">Yes, we offer a 14-day free trial with full Smoobu integration
-                                features.</div>
+                            <div class="faq-question">
+                                Is there a free trial available?
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                Yes, we offer a 14-day free trial with full Smoobu integration
+                                features.
+                            </div>
                         </div>
-
                         <div class="faq-item">
-                            <div class="faq-question">Can I customize the WhatsApp message content? <i
-                                    class="fas fa-chevron-down"></i></div>
-                            <div class="faq-answer">Absolutely. You can fully customize both new booking and
-                                cancellation notification templates.</div>
+                            <div class="faq-question">
+                                Can I customize the WhatsApp message content?
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                Absolutely. You can fully customize both new booking and
+                                cancellation notification templates.
+                            </div>
                         </div>
                     </div>
-
                     <!-- CTA Section -->
                     <div id="cta"
                         style="background: linear-gradient(115deg, #0f2b3d, #1E3A5F); border-radius: 32px; padding: 48px; text-align: center; margin: 56px 0 32px; color: white;">
                         <i class="fab fa-whatsapp" style="font-size: 56px; color: #25D366; margin-bottom: 16px;"></i>
                         <h2 style="font-size: 2rem; font-weight: 800;">Connect Smoobu with WhatsApp Today</h2>
-                        <p style="margin-top: 16px; opacity: 0.9;">Get instant reservation alerts and cancellation
-                            notifications directly on WhatsApp.</p>
+                        <p style="margin-top: 16px; opacity: 0.9;">
+                            Get instant reservation alerts and cancellation
+                            notifications directly on WhatsApp.
+                        </p>
                         <div
                             style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; margin-top: 32px;">
-                            <span style="background: rgba(255,255,255,0.15); padding: 6px 16px; border-radius: 40px;"><i
-                                    class="fas fa-code"></i> Webhook-Based</span>
-                            <span style="background: rgba(255,255,255,0.15); padding: 6px 16px; border-radius: 40px;"><i
-                                    class="fas fa-bell"></i> Real-Time Alerts</span>
-                            <span style="background: rgba(255,255,255,0.15); padding: 6px 16px; border-radius: 40px;"><i
-                                    class="fas fa-pen"></i> Custom Templates</span>
-                            <span style="background: rgba(255,255,255,0.15); padding: 6px 16px; border-radius: 40px;"><i
-                                    class="fas fa-building"></i> Multi-Property</span>
+                            <span style="background: rgba(255,255,255,0.15); padding: 6px 16px; border-radius: 40px;">
+                                <i class="fas fa-code"></i> Webhook-Based
+                            </span>
+                            <span style="background: rgba(255,255,255,0.15); padding: 6px 16px; border-radius: 40px;">
+                                <i class="fas fa-bell"></i> Real-Time Alerts
+                            </span>
+                            <span style="background: rgba(255,255,255,0.15); padding: 6px 16px; border-radius: 40px;">
+                                <i class="fas fa-pen"></i> Custom Templates
+                            </span>
+                            <span style="background: rgba(255,255,255,0.15); padding: 6px 16px; border-radius: 40px;">
+                                <i class="fas fa-building"></i> Multi-Property
+                            </span>
                         </div>
                         <div style="margin-top: 36px;">
                             <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20integrate%20Smoobu%20with%20WhatsApp%20using%20HeyDoot"
-                                class="btn btn-lg" style="background: white; color: #1E3A5F; font-weight: 700;"><i
-                                    class="fab fa-whatsapp"></i> Get Started Today</a>
+                                class="btn btn-lg" style="background: white; color: #1E3A5F; font-weight: 700;">
+                                <i class="fab fa-whatsapp"></i> Get Started Today
+                            </a>
                         </div>
-                        <p style="margin-top: 24px; font-size: 0.85rem; opacity: 0.7;">No coding required. Simple setup.
-                            Real-time notifications.</p>
+                        <p style="margin-top: 24px; font-size: 0.85rem; opacity: 0.7;">
+                            No coding required. Simple setup. Real-time notifications.
+                        </p>
                     </div>
-
                 </main>
             </div>
-
             <!-- Utility bar -->
             <div class="utility-bar">
                 <div class="utility-bar-inner">
-
                     <div class="utility-item">
                         <i class="fas fa-search"></i>
                         <span>Search...</span>
                     </div>
-
                     <span class="shortcut-key">Ctrl K</span>
-
                     <a href="<?php echo BASE_URL; ?>/404.php" class="utility-item utility-link">
                         <i class="fas fa-code"></i>
                         Smoobu API Docs
                     </a>
-
                     <a href="tel:+919718517228" class="utility-item utility-link">
                         <i class="fas fa-headset"></i>
                         Support
                     </a>
-
                     <a href="<?php echo BASE_URL; ?>/404.php" class="dashboard-btn">
                         <i class="fas fa-tachometer-alt"></i>
                         Dashboard
                     </a>
-
                 </div>
             </div>
         </div>

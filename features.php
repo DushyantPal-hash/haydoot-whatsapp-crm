@@ -99,7 +99,6 @@ include 'components/navbar.php';
             </div>
         </div>
     </section>
-
     <section id="all-features" class="feature-showcase">
         <div class="container-fluid" style="width: 90%; max-width: 1280px;">
             <div style="text-align: center; margin-bottom: 48px;">
@@ -111,8 +110,10 @@ include 'components/navbar.php';
                 <div class="feature-pair-content">
                     <div class="feature-pair-badge"><i class="fas fa-inbox"></i> Unified Workspace</div>
                     <h3>Multi-Number Inbox</h3>
-                    <p>Connect 10, 20, or 50 WhatsApp numbers into one powerful dashboard. Seamlessly switch between
-                        regions, brands, or departments without logging in and out.</p>
+                    <p>
+                        Connect 10, 20, or 50 WhatsApp numbers into one powerful dashboard. Seamlessly switch between
+                        regions, brands, or departments without logging in and out.
+                    </p>
                     <ul class="feature-list-check">
                         <li><i class="fas fa-check-circle"></i> Centralized conversation hub</li>
                         <li><i class="fas fa-check-circle"></i> Real-time sync across devices</li>
@@ -127,8 +128,10 @@ include 'components/navbar.php';
                 <div class="feature-pair-content">
                     <div class="feature-pair-badge"><i class="fas fa-ticket-alt"></i> Workflow Ops</div>
                     <h3>Create Tickets & Tasks</h3>
-                    <p>Turn every WhatsApp message into an actionable ticket. Assign priority, set due dates, and
-                        convert group discussions into trackable tasks.</p>
+                    <p>
+                        Turn every WhatsApp message into an actionable ticket. Assign priority, set due dates, and
+                        convert group discussions into trackable tasks.
+                    </p>
                     <ul class="feature-list-check">
                         <li><i class="fas fa-check-circle"></i> One-click ticket creation</li>
                         <li><i class="fas fa-check-circle"></i> Internal notes & @mentions</li>
@@ -142,8 +145,10 @@ include 'components/navbar.php';
                 <div class="feature-pair-content">
                     <div class="feature-pair-badge"><i class="fas fa-users"></i> Community Hub</div>
                     <h3>Manage Groups at Scale</h3>
-                    <p>Supercharge your WhatsApp group management: broadcast announcements, moderate members, assign
-                        group admins, and auto-respond to FAQs.</p>
+                    <p>
+                        Supercharge your WhatsApp group management: broadcast announcements, moderate members, assign
+                        group admins, and auto-respond to FAQs.
+                    </p>
                     <ul class="feature-list-check">
                         <li><i class="fas fa-check-circle"></i> Group analytics & member insights</li>
                         <li><i class="fas fa-check-circle"></i> Scheduled broadcasts to multiple groups</li>
@@ -157,21 +162,22 @@ include 'components/navbar.php';
                 <div class="feature-pair-content">
                     <div class="feature-pair-badge"><i class="fas fa-robot"></i> AI + Workflow</div>
                     <h3>Automate Actions</h3>
-                    <p>Design smart automation rules: auto-reply to common queries, route messages to the right
-                        teammate, trigger webhooks, and create sequences.</p>
+                    <p>
+                        Design smart automation rules: auto-reply to common queries, route messages to the right
+                        teammate, trigger webhooks, and create sequences.
+                    </p>
                     <ul class="feature-list-check">
                         <li><i class="fas fa-check-circle"></i> Keyword + AI intent detection</li>
                         <li><i class="fas fa-check-circle"></i> Auto-assign labels & priorities</li>
                         <li><i class="fas fa-check-circle"></i> Schedule sequences & drip campaigns</li>
                     </ul>
                 </div>
-                <div class="feature-pair-image"><img src="<?php echo BASE_URL; ?>/assets/images//f4.webp"
-                        alt="Automation actions workflow">
+                <div class="feature-pair-image">
+                    <img src="<?php echo BASE_URL; ?>/assets/images//f4.webp" alt="Automation actions workflow">
                 </div>
             </div>
         </div>
     </section>
-
     <!-- Additional Features Grid -->
     <section style="background: #F8FAFE; padding: 60px 0;">
         <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">
@@ -188,8 +194,10 @@ include 'components/navbar.php';
                         <i class="fas fa-chart-line"></i>
                     </div>
                     <h3>Advanced Analytics</h3>
-                    <p>Track conversation volumes, agent performance, response times, and customer satisfaction scores
-                        with detailed dashboards and exportable reports.</p>
+                    <p>
+                        Track conversation volumes, agent performance, response times, and customer satisfaction scores
+                        with detailed dashboards and exportable reports.
+                    </p>
                 </div>
                 <div class="feature-card"
                     style="background: #F8FAFE; border-radius: 20px; padding: 24px; transition: transform 0.2s;">
@@ -197,8 +205,10 @@ include 'components/navbar.php';
                         <i class="fas fa-code"></i>
                     </div>
                     <h3>REST API Access</h3>
-                    <p>Build custom integrations with our powerful API. Send messages, manage contacts, and automate
-                        workflows programmatically.</p>
+                    <p>
+                        Build custom integrations with our powerful API. Send messages, manage contacts, and automate
+                        workflows programmatically.
+                    </p>
                 </div>
                 <div class="feature-card"
                     style="background: #F8FAFE; border-radius: 20px; padding: 24px; transition: transform 0.2s;">
@@ -206,8 +216,10 @@ include 'components/navbar.php';
                         <i class="fas fa-shield-alt"></i>
                     </div>
                     <h3>Enterprise Security</h3>
-                    <p>256-bit encryption, role-based access controls, SSO support, and compliance with GDPR and SOC2
-                        standards.</p>
+                    <p>
+                        256-bit encryption, role-based access controls, SSO support, and compliance with GDPR and SOC2
+                        standards.
+                    </p>
                 </div>
                 <div class="feature-card"
                     style="background: #F8FAFE; border-radius: 20px; padding: 24px; transition: transform 0.2s;">
@@ -215,8 +227,10 @@ include 'components/navbar.php';
                         <i class="fas fa-sliders-h"></i>
                     </div>
                     <h3>Custom Workflows</h3>
-                    <p>Build custom automation workflows with conditions, actions, and triggers tailored to your
-                        business processes.</p>
+                    <p>
+                        Build custom automation workflows with conditions, actions, and triggers tailored to your
+                        business processes.
+                    </p>
                 </div>
                 <div class="feature-card"
                     style="background: #F8FAFE; border-radius: 20px; padding: 24px; transition: transform 0.2s;">
@@ -224,8 +238,10 @@ include 'components/navbar.php';
                         <i class="fas fa-tags"></i>
                     </div>
                     <h3>Smart Labeling</h3>
-                    <p>Auto-tag conversations based on keywords, sentiment, or custom rules. Organize and filter
-                        messages effortlessly.</p>
+                    <p>
+                        Auto-tag conversations based on keywords, sentiment, or custom rules. Organize and filter
+                        messages effortlessly.
+                    </p>
                 </div>
                 <div class="feature-card"
                     style="background: #F8FAFE; border-radius: 20px; padding: 24px; transition: transform 0.2s;">
@@ -233,8 +249,10 @@ include 'components/navbar.php';
                         <i class="fas fa-clock"></i>
                     </div>
                     <h3>Canned Responses</h3>
-                    <p>Save and reuse message templates. Respond to common questions faster with keyboard shortcuts and
-                        templates.</p>
+                    <p>
+                        Save and reuse message templates. Respond to common questions faster with keyboard shortcuts and
+                        templates.
+                    </p>
                 </div>
                 <div class="feature-card"
                     style="background: #F8FAFE; border-radius: 20px; padding: 24px; transition: transform 0.2s;">
@@ -242,8 +260,10 @@ include 'components/navbar.php';
                         <i class="fas fa-database"></i>
                     </div>
                     <h3>Data Export</h3>
-                    <p>Export all your conversations, contacts, and analytics data in CSV or JSON format. No lock-in,
-                        full ownership.</p>
+                    <p>
+                        Export all your conversations, contacts, and analytics data in CSV or JSON format. No lock-in,
+                        full ownership.
+                    </p>
                 </div>
                 <div class="feature-card"
                     style="background: #F8FAFE; border-radius: 20px; padding: 24px; transition: transform 0.2s;">
@@ -251,8 +271,10 @@ include 'components/navbar.php';
                         <i class="fas fa-bell"></i>
                     </div>
                     <h3>Real-time Notifications</h3>
-                    <p>Get instant notifications for new messages, mentions, and assigned chats via browser, email, or
-                        webhooks.</p>
+                    <p>
+                        Get instant notifications for new messages, mentions, and assigned chats via browser, email, or
+                        webhooks.
+                    </p>
                 </div>
                 <div class="feature-card"
                     style="background: #F8FAFE; border-radius: 20px; padding: 24px; transition: transform 0.2s;">
@@ -260,13 +282,14 @@ include 'components/navbar.php';
                         <i class="fas fa-users-cog"></i>
                     </div>
                     <h3>Team Management</h3>
-                    <p>Set role-based permissions, track agent activity, and manage shifts with detailed team analytics.
+                    <p>
+                        Set role-based permissions, track agent activity, and manage shifts with detailed team
+                        analytics.
                     </p>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- Feature Comparison Table -->
     <section style="padding: 60px 0; background: #fff;">
         <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">
@@ -369,13 +392,13 @@ include 'components/navbar.php';
             </div>
         </div>
     </section>
-
     <!-- CTA Section -->
     <section style="background: linear-gradient(135deg, #1a2a3a 0%, #2c3e50 100%); padding: 80px 0;">
         <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto; text-align: center;">
             <h2 style="color: white; font-size: 2rem; margin-bottom: 20px;">Ready to Experience These Features?</h2>
-            <p style="color: #e0e0e0; font-size: 1.1rem; max-width: 600px; margin: 0 auto 32px;">Start your 14-day free
-                trial today and see why hundreds of teams trust HeyDoot.</p>
+            <p style="color: #e0e0e0; font-size: 1.1rem; max-width: 600px; margin: 0 auto 32px;">
+                Start your 14-day free trial today and see why hundreds of teams trust HeyDoot.
+            </p>
             <div class="cta-buttons" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
                 <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20start%20a%20free%20trial%20of%20HeyDoot"
                     class="btn btn-secondary btn-lg" target="_blank">
@@ -387,7 +410,6 @@ include 'components/navbar.php';
             </div>
         </div>
     </section>
-
     <!-- FAQ Section -->
     <section class="section-container" style="background: #F0F8FF; padding: 60px 0;">
         <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">
@@ -402,9 +424,7 @@ include 'components/navbar.php';
                     Got questions? We've got answers.
                 </p>
             </div>
-
             <div class="faq-container">
-
                 <div class="faq-item">
                     <div class="faq-question">
                         Can I connect multiple WhatsApp numbers?
@@ -415,7 +435,6 @@ include 'components/navbar.php';
                         includes up to 3 numbers, Professional up to 15, and Enterprise offers unlimited numbers.
                     </div>
                 </div>
-
                 <div class="faq-item">
                     <div class="faq-question">
                         Do I need the WhatsApp Business API?
@@ -426,7 +445,6 @@ include 'components/navbar.php';
                         reviews, and no per-conversation fees from Meta.
                     </div>
                 </div>
-
                 <div class="faq-item">
                     <div class="faq-question">
                         Can multiple agents use the same number?
@@ -437,7 +455,6 @@ include 'components/navbar.php';
                         All conversations are synced in real-time.
                     </div>
                 </div>
-
                 <div class="faq-item">
                     <div class="faq-question">
                         Is there a free trial?
@@ -448,7 +465,6 @@ include 'components/navbar.php';
                         all features of your chosen plan.
                     </div>
                 </div>
-
                 <div class="faq-item">
                     <div class="faq-question">
                         Can I upgrade or downgrade my plan?
@@ -459,11 +475,9 @@ include 'components/navbar.php';
                         apply at the next billing cycle.
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
-
 </main>
 <!-- Page Content Ends here -->
 

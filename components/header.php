@@ -60,8 +60,8 @@ $extra_scripts = $page_extra_scripts ?? [];
     <?php if ($json_ld): ?>
         <!-- JSON-LD Structured Data -->
         <script type="application/ld+json">
-                                                <?php echo json_encode($json_ld, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT); ?>
-                                                </script>
+                                                        <?php echo json_encode($json_ld, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT); ?>
+                                                        </script>
     <?php endif; ?>
 
     <!-- Google tag (gtag.js) -->
@@ -72,10 +72,8 @@ $extra_scripts = $page_extra_scripts ?? [];
         gtag('js', new Date());
         gtag('config', '<?php echo htmlspecialchars($gtag_id); ?>');
     </script>
-
     <!-- Favicon -->
     <link rel="icon" href="<?php echo BASE_URL; ?>/assets/icons/favicon.png" type="image/png">
-
     <!-- Fonts & Styles -->
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -98,14 +96,14 @@ $extra_scripts = $page_extra_scripts ?? [];
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/footer.css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/utility.css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/responsive.css">
-
     <!-- Page-specific extra scripts/styles -->
     <?php foreach ($extra_scripts as $script): ?>
         <?php if ($script['type'] === 'css'): ?>
             <link rel="stylesheet" href="<?php echo htmlspecialchars($script['src']); ?>">
         <?php elseif ($script['type'] === 'js'): ?>
             <script src="<?php echo htmlspecialchars($script['src']); ?>" <?php echo isset($script['async']) ? 'async' : ''; ?>
-                <?php echo isset($script['defer']) ? 'defer' : ''; ?>></script>
+                <?php echo isset($script['defer']) ? 'defer' : ''; ?>>
+                </script>
         <?php elseif ($script['type'] === 'inline'): ?>
             <?php echo $script['content']; ?>
         <?php endif; ?>

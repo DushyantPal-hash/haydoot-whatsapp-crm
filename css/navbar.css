@@ -149,7 +149,7 @@
     display: block;
     width: 20px;
     height: 2px;
-    background: var(--primary);
+    background: var(--wa-teal);
     border-radius: 2px;
     transition: all 0.3s ease;
 }

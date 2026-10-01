@@ -389,6 +389,20 @@ include 'components/navbar.php';
     </section>
 
     <!-- Office Locations -->
+    <style>
+        .feature-card::before {
+            background: #0ed956;
+        }
+
+        .feature-card {
+            background: linear-gradient(260deg, rgba(68, 68, 68, 0.14) 2.95%, #111e17 100%),
+                url(<?php echo BASE_URL; ?>/assets/images/background.webp)center center / cover no-repeat;
+        }
+
+        .feature-card h3 {
+            color: #0ed956;
+        }
+    </style>
     <section style="background: #F8FAFE; padding: 60px 0;">
         <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">
             <div style="text-align: center; margin-bottom: 48px;">
@@ -403,10 +417,12 @@ include 'components/navbar.php';
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
                     <h3>India (Headquarters)</h3>
-                    <p>PEGASUS TOWER Block A</p>
-                    <p>Sector 68, Noida</p>
-                    <p>Uttar Pradesh 201309</p>
-                    <p style="margin-top: 12px;"><i class="fas fa-volume-control-phone"></i> <?php echo CALL_NUMBER; ?>
+                    <p style="font-weight: 500;color: #ccdcee;font-size: 0.95rem;">PEGASUS TOWER Block A</p>
+                    <p style="font-weight: 500;color: #ccdcee;font-size: 0.95rem;">Sector 68, Noida</p>
+                    <p style="font-weight: 500;color: #ccdcee;font-size: 0.95rem;">Uttar Pradesh 201309</p>
+                    <p style="margin-top: 12px;color: #0ed956;font-weight: 700;"><i
+                            class="fas fa-volume-control-phone"></i>
+                        <?php echo CALL_NUMBER; ?>
                     </p>
                 </div>
                 <div class="feature-card">
@@ -414,20 +430,22 @@ include 'components/navbar.php';
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
                     <h3>United States</h3>
-                    <p>161 W Altadena Dr,</p>
-                    <p>Unit 501 STE Altadena,</p>
-                    <p>CA 91001-4735 ,USA</p>
-                    <p style="margin-top: 12px;"><i class="fas fa-volume-control-phone"></i> +1 (408) 757 0570 </p>
+                    <p style="font-weight: 500;color: #ccdcee;font-size: 0.95rem;">161 W Altadena Dr,</p>
+                    <p style="font-weight: 500;color: #ccdcee;font-size: 0.95rem;">Unit 501 STE Altadena,</p>
+                    <p style="font-weight: 500;color: #ccdcee;font-size: 0.95rem;">CA 91001-4735 ,USA</p>
+                    <p style="margin-top: 12px;color: #0ed956;font-weight: 700;"><i
+                            class="fas fa-volume-control-phone"></i> +1 (408) 757 0570 </p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
                     <h3>India</h3>
-                    <p>Plot No. 45B, Doon IT Park,</p>
-                    <p>Sahastradhara Road,</p>
-                    <p>Dehradun, Uttarakhand 248013</p>
-                    <p style="margin-top: 12px;"><i class="fas fa-volume-control-phone"></i> <?php echo PHONE_NUMBER; ?>
+                    <p style="font-weight: 500;color: #ccdcee;font-size: 0.95rem;">Plot No. 45B, Doon IT Park,</p>
+                    <p style="font-weight: 500;color: #ccdcee;font-size: 0.95rem;">Sahastradhara Road,</p>
+                    <p style="font-weight: 500;color: #ccdcee;font-size: 0.95rem;">Dehradun, Uttarakhand 248013</p>
+                    <p style="margin-top: 12px;color: #0ed956;font-weight: 700;"><i
+                            class="fas fa-volume-control-phone"></i> <?php echo PHONE_NUMBER; ?>
                     </p>
                 </div>
             </div>
@@ -536,7 +554,6 @@ include 'components/navbar.php';
                         we provide dedicated onboarding sessions, team training, and setup assistance.
                     </div>
                 </div>
-
             </div>
         </div>
     </section>

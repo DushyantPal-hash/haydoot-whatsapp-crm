@@ -68,7 +68,6 @@ include 'components/navbar.php';
         <h1>Frequently Asked <span style="color: var(--wa-green);">Questions</span></h1>
         <p>Everything you need to know about HeyDoot.</p>
     </div>
-
     <section class="section-container">
         <div class="container-fluid faq-container">
             <div class="faq-item">
@@ -122,10 +121,12 @@ include 'components/navbar.php';
                         history beyond your retention policy.</div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">Can multiple team members use the same number? <i
-                            class="fas fa-chevron-down"></i></div>
-                    <div class="faq-answer">Yes, the shared inbox allows unlimited agents to respond from one number
-                        simultaneously.</div>
+                    <div class="faq-question">Can multiple team members use the same number?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, the shared inbox allows unlimited agents to respond from one number simultaneously.
+                    </div>
                 </div>
             </div>
         </div>

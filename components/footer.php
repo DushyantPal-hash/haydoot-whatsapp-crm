@@ -32,16 +32,20 @@
                     <a href="https://www.linkedin.com/company/heydoot/" class="linkedin">
                         <i class="fa-brands fa-linkedin-in"></i>
                     </a>
-                    <a href="https://www.threads.com/@heydootofficial" class="threads"><i class="si si-threads"></i>
+                    <a href="https://www.threads.com/@heydootofficial" class="threads">
+                        <i class="si si-threads"></i>
                     </a>
-                    <a href="https://www.youtube.com/@HeyDootOfficial" class="youtube"><i class="fab fa-youtube"></i>
+                    <a href="https://www.youtube.com/@HeyDootOfficial" class="youtube">
+                        <i class="fab fa-youtube"></i>
                     </a>
-                    <a href="https://x.com/HeyDoot" class="twitter"><i class="fab fa-twitter"></i>
+                    <a href="https://x.com/HeyDoot" class="twitter">
+                        <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="https://www.instagram.com/heydootofficial/" class="instagram"><i
-                            class="fab fa-instagram"></i>
+                    <a href="https://www.instagram.com/heydootofficial/" class="instagram">
+                        <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="https://in.pinterest.com/heydootcom/" class="pinterest"><i class="fab fa-pinterest"></i>
+                    <a href="https://in.pinterest.com/heydootcom/" class="pinterest">
+                        <i class="fab fa-pinterest"></i>
                     </a>
                 </div>
             </div>
@@ -60,7 +64,8 @@
             </div>
             <div class="footer-links">
                 <h4>Contact</h4>
-                <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>"><i class="fas fa-mobile-alt"></i>
+                <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>">
+                    <i class="fas fa-mobile-alt"></i>
                     <?php echo PHONE_NUMBER; ?>
                 </a>
                 <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20speak%20with%20the%20HeyDoot%20team%20about%20WhatsApp%20automation"
@@ -68,7 +73,8 @@
                     <i class="si si-whatsapp" style="font-size: 15px; color: #25D366;"></i> Chat on WhatsApp
                 </a>
 
-                <a href="mailto:<?php echo SITE_EMAIL; ?>"><i class="fas fa-envelope"></i>
+                <a href="mailto:<?php echo SITE_EMAIL; ?>">
+                    <i class="fas fa-envelope"></i>
                     <?php echo SITE_EMAIL; ?>
                 </a>
             </div>
@@ -78,11 +84,12 @@
                 <span class="utility-item" style="color: whitesmoke"><i class="far fa-copyright"></i>
                     <?php echo date('Y'); ?> HeyDoot. All rights reserved.
                 </span>
-                <a href="<?php echo BASE_URL; ?>/privacy-policy.php" class="utility-link" style="color: white">Privacy
-                    Policy</a>
-                <a href="<?php echo BASE_URL; ?>/terms-of-service.php" class="utility-link" style="color: white">Terms
-                    of
-                    Service</a>
+                <a href="<?php echo BASE_URL; ?>/privacy-policy.php" class="utility-link" style="color: white">
+                    Privacy Policy
+                </a>
+                <a href="<?php echo BASE_URL; ?>/terms-of-service.php" class="utility-link" style="color: white">
+                    Terms of Service
+                </a>
             </div>
         </div>
     </div>
