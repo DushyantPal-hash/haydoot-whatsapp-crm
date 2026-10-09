@@ -2,7 +2,8 @@
 $page_meta = [
     'title' => 'About Us - HeyDoot WhatsApp CRM',
     'meta_title' => 'About Us | HeyDoot - Our Mission & Story',
-    'description' => 'Learn about HeyDoot\'s mission to simplify WhatsApp communication for businesses worldwide. Founded by HashStudioz Technologies to provide enterprise-grade WhatsApp tools for all.',
+    'description' => 'Learn about HeyDoot\'s mission to simplify WhatsApp communication for businesses worldwide. 
+    Founded by HashStudioz Technologies to provide enterprise-grade WhatsApp tools for all.',
     'og_title' => 'About Us - HeyDoot WhatsApp CRM',
     'og_description' => 'Discover the story behind HeyDoot and our mission to transform WhatsApp team collaboration.',
     'og_image' => 'https://heydoot.com/public/images/m1.png',

@@ -60,8 +60,8 @@ $extra_scripts = $page_extra_scripts ?? [];
     <?php if ($json_ld): ?>
         <!-- JSON-LD Structured Data -->
         <script type="application/ld+json">
-                                                        <?php echo json_encode($json_ld, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT); ?>
-                                                        </script>
+                <?php echo json_encode($json_ld, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT); ?>
+            </script>
     <?php endif; ?>
 
     <!-- Google tag (gtag.js) -->
