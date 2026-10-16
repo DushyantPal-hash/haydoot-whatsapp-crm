@@ -192,7 +192,7 @@ $navbar = [
     <nav class="navbar">
         <a href="<?php echo BASE_URL; ?>/" class="logo">
             <div class="logo-icon">
-                <img src="<?php echo BASE_URL; ?>/assets/images/logo/logo.png" alt="HeyDoot Logo" width="160"
+                <img src="<?php echo BASE_URL; ?>/assets/images/logo/logo-1.png" alt="HeyDoot Logo" width="160"
                     height="40">
             </div>
         </a>
