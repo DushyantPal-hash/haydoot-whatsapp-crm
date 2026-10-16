@@ -23,25 +23,31 @@
                 <div class="logo" style="margin-bottom: 16px;">
                     <a href="<?php echo BASE_URL; ?>/" class="logo">
                         <div class="logo-icon">
-                            <img src="<?php echo BASE_URL; ?>/assets/images/logo/logo-white.png" alt="HeyDoot Logo" width="160" height="40" loading="lazy">
+                            <img src="<?php echo BASE_URL; ?>/assets/images/logo/logo-1.png" alt="HeyDoot Logo"
+                                width="160" height="40" loading="lazy">
                         </div>
                     </a>
                 </div>
                 <p>Manage WhatsApp Groups at Scale for Modern Businesses</p>
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/company/heydoot/" class="linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/company/heydoot/" class="linkedin" target="_blank"
+                        rel="noopener noreferrer" aria-label="LinkedIn">
                         <i class="fa-brands fa-linkedin-in"></i>
                     </a>
-                    <a href="https://www.threads.com/@heydootofficial" class="threads" target="_blank" rel="noopener noreferrer" aria-label="Threads"><i class="si si-threads"></i>
+                    <a href="https://www.threads.com/@heydootofficial" class="threads" target="_blank"
+                        rel="noopener noreferrer" aria-label="Threads"><i class="si si-threads"></i>
                     </a>
-                    <a href="https://www.youtube.com/@HeyDootOfficial" class="youtube" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i>
+                    <a href="https://www.youtube.com/@HeyDootOfficial" class="youtube" target="_blank"
+                        rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i>
                     </a>
-                    <a href="https://x.com/HeyDoot" class="twitter" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i>
+                    <a href="https://x.com/HeyDoot" class="twitter" target="_blank" rel="noopener noreferrer"
+                        aria-label="Twitter"><i class="fab fa-twitter"></i>
                     </a>
-                    <a href="https://www.instagram.com/heydootofficial/" class="instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i
-                            class="fab fa-instagram"></i>
+                    <a href="https://www.instagram.com/heydootofficial/" class="instagram" target="_blank"
+                        rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i>
                     </a>
-                    <a href="https://in.pinterest.com/heydootcom/" class="pinterest" target="_blank" rel="noopener noreferrer" aria-label="Pinterest"><i class="fab fa-pinterest"></i>
+                    <a href="https://in.pinterest.com/heydootcom/" class="pinterest" target="_blank"
+                        rel="noopener noreferrer" aria-label="Pinterest"><i class="fab fa-pinterest"></i>
                     </a>
                 </div>
             </div>

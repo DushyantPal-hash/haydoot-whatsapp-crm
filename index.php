@@ -130,7 +130,8 @@ include 'components/navbar.php';
                 </ul>
             </div>
             <div class="feature-pair-image">
-                <img src="<?php echo BASE_URL; ?>/assets/images/f1.webp" alt="Multi Number Inbox Dashboard" width="540" height="340" loading="lazy"
+                <img src="<?php echo BASE_URL; ?>/assets/images/f1.webp" alt="Multi Number Inbox Dashboard" width="540"
+                    height="auto" loading="lazy"
                     style="border-radius: 32px; box-shadow: 0 20px 30px -10px rgba(0,0,0,0.1);">
             </div>
         </div>
@@ -149,7 +150,8 @@ include 'components/navbar.php';
                 </ul>
             </div>
             <div class="feature-pair-image">
-                <img src="<?php echo BASE_URL; ?>/assets/images/f2.webp" alt="Tickets and Tasks inside HeyDoot" width="540" height="340" loading="lazy">
+                <img src="<?php echo BASE_URL; ?>/assets/images/f2.webp" alt="Tickets and Tasks inside HeyDoot"
+                    width="540" height="auto" loading="lazy">
             </div>
         </div>
 
@@ -168,7 +170,8 @@ include 'components/navbar.php';
                 </ul>
             </div>
             <div class="feature-pair-image">
-                <img src="<?php echo BASE_URL; ?>/assets/images/f3.webp" alt="WhatsApp Groups Management Dashboard" width="540" height="340" loading="lazy">
+                <img src="<?php echo BASE_URL; ?>/assets/images/f3.webp" alt="WhatsApp Groups Management Dashboard"
+                    width="540" height="auto" loading="lazy">
             </div>
         </div>
 
@@ -186,7 +189,8 @@ include 'components/navbar.php';
                 </ul>
             </div>
             <div class="feature-pair-image">
-                <img src="<?php echo BASE_URL; ?>/assets/images/f4.webp" alt="Automation actions workflow" width="540" height="340" loading="lazy">
+                <img src="<?php echo BASE_URL; ?>/assets/images/f4.webp" alt="Automation actions workflow" width="540"
+                    height="auto" loading="lazy">
             </div>
         </div>
     </div>
@@ -308,7 +312,7 @@ include 'components/navbar.php';
             </div>
             <div class="security-visual">
                 <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop"
-                    alt="Cyber Security Shield" class="shield-image" width="600" height="400" loading="lazy">
+                    alt="Cyber Security Shield" class="shield-image" width="600" height="auto" loading="lazy">
             </div>
         </div>
 
@@ -372,7 +376,8 @@ include 'components/navbar.php';
         <h2 class="section-title">Actionable Analytics</h2>
         <p class="section-sub">Measure performance, understand trends, and optimize your WhatsApp strategy.</p>
         <div><img src="<?php echo BASE_URL; ?>/assets/images/m3.webp"
-                style="border-radius: 48px; width:100%; object-fit:cover;" alt="HeyDoot Analytics Dashboard" width="1200" height="500" loading="lazy">
+                style="border-radius: 48px; width:100%; object-fit:cover;" alt="HeyDoot Analytics Dashboard"
+                width="1200" height="auto"" loading=" lazy">
         </div>
         <div class="stats-row">
             <div class="stat-card">
@@ -410,7 +415,8 @@ include 'components/navbar.php';
         <p class="section-sub">The smarter way to handle WhatsApp at scale — without the API headaches.</p>
         <div class="why-grid">
             <div><img src="<?php echo BASE_URL; ?>/assets/images/m2.webp"
-                    style="border-radius: 48px; width:100%; object-fit:cover;" alt="Why Choose HeyDoot" width="540" height="400" loading="lazy"></div>
+                    style="border-radius: 48px; width:100%; object-fit:cover;" alt="Why Choose HeyDoot" width="540"
+                    height="auto" loading="lazy"></div>
             <ul class="why-list">
                 <li>
                     <div class="feature-icon" style="margin-bottom: 0;"><i class="fas fa-bolt"></i></div>
@@ -499,7 +505,7 @@ include 'components/navbar.php';
 <!-- 8) Image -->
 <section class="section-container" style="background: #FDF7F0;">
     <div class="container-fluid"><img src="<?php echo BASE_URL; ?>/assets/images/m4.webp"
-            style="border-radius: 48px; width:100%;" alt="HeyDoot Team Preview" width="1200" height="300" loading="lazy"
+            style="border-radius: 48px; width:100%;" alt="HeyDoot Team Preview" width="1200" loading="lazy"
             onerror="this.src='https://placehold.co/1200x300/ffffff/128C7E?text=HeyDoot+Trusted+by+Teams';"></div>
 </section>
 
