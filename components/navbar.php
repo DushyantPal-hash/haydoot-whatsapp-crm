@@ -1,32 +1,40 @@
 <?php
+// Get current page for active highlighting
 $current_page = basename($_SERVER['PHP_SELF']);
 // NAVBAR DATA
 $navbar = [
+
     [
         'title' => 'Features',
         'link' => BASE_URL . '/features.php',
         'icon' => 'fas fa-th-large',
+
         'submenu' => [
+
             [
                 'title' => 'Multi-Number Inbox',
                 'link' => 'javascript:void(0)',
                 'icon' => 'fas fa-inbox'
             ],
+
             [
                 'title' => 'Tickets & Tasks',
                 'link' => 'javascript:void(0)',
                 'icon' => 'fas fa-ticket-alt'
             ],
+
             [
                 'title' => 'Group Management',
                 'link' => 'javascript:void(0)',
                 'icon' => 'fas fa-users'
             ],
+
             [
                 'title' => 'AI Automations',
                 'link' => 'javascript:void(0)',
                 'icon' => 'fas fa-robot'
             ]
+
         ]
     ],
 
@@ -34,17 +42,21 @@ $navbar = [
         'title' => 'Integrations',
         'link' => BASE_URL . '/integrations.php',
         'icon' => 'fas fa-plug',
+
         'submenu' => [
+
             [
                 'title' => 'HubSpot Integration',
                 'link' => BASE_URL . '/integrations/hubspot.php',
                 'icon' => 'fab fa-hubspot'
             ],
+
             [
                 'title' => 'Zapier & Make Integration',
                 'link' => BASE_URL . '/integrations/zapier.php',
                 'icon' => 'fas fa-bolt'
             ],
+
             [
                 'title' => 'Odoo WhatsApp Integration',
                 'link' => BASE_URL . '/integrations/odoo.php',
@@ -54,7 +66,13 @@ $navbar = [
                 'title' => 'Smoobu WhatsApp Integration',
                 'link' => BASE_URL . '/integrations/smoobu.php',
                 'icon' => 'fas fa-building'
+            ],
+            [
+                'title' => 'API & Partner Guide',
+                'link' => BASE_URL . '/integrations/guide.php',
+                'icon' => 'fas fa-code'
             ]
+
         ]
     ],
 
@@ -88,8 +106,10 @@ $navbar = [
     ]
 ];
 ?>
+
 <!-- Add these CSS styles for mobile dropdowns -->
 <style>
+    /* Mobile Menu Dropdown Styles */
     .mobile-nav-item {
         width: 100%;
     }
@@ -163,49 +183,65 @@ $navbar = [
         width: 24px;
     }
 </style>
+
 <!-- NavBar -->
 <div class="sticky-nav-wrapper" id="stickyNavWrapper">
     <nav class="navbar">
         <a href="<?php echo BASE_URL; ?>/" class="logo">
             <div class="logo-icon">
-                <img src="<?php echo BASE_URL; ?>/assets/images/logo/logo.png" alt="HeyDoot Logo">
+                <img src="<?php echo BASE_URL; ?>/assets/images/logo/logo.png" alt="HeyDoot Logo" width="160"
+                    height="40">
             </div>
         </a>
+
         <!-- Desktop Navigation -->
         <div class="nav-pill">
             <?php foreach ($navbar as $item): ?>
+
                 <?php if (isset($item['submenu'])): ?>
+
                     <div class="nav-item">
+
                         <a href="<?= $item['link']; ?>" class="nav-link">
                             <?= $item['title']; ?>
                         </a>
+
                         <div class="dropdown-menu">
+
                             <?php foreach ($item['submenu'] as $sub): ?>
+
                                 <a href="<?= $sub['link']; ?>">
                                     <i class="<?= $sub['icon']; ?>"></i>
                                     <?= $sub['title']; ?>
                                 </a>
+
                             <?php endforeach; ?>
+
                         </div>
+
                     </div>
+
                 <?php else: ?>
+
                     <a href="<?= $item['link']; ?>" class="nav-link">
                         <?= $item['title']; ?>
                     </a>
+
                 <?php endif; ?>
+
             <?php endforeach; ?>
         </div>
+
         <a href="tel:<?php echo str_replace(' ', '', CALL_NUMBER); ?>"
             class="btn btn-primary btn-sm demo-btn desktop-only">
             <i class="fas fa-calendar-alt"></i> Book a demo
         </a>
         <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span></span><span></span><span></span>
         </button>
     </nav>
 </div>
+
 <!-- Mobile Menu -->
 <div class="mobile-menu" id="mobileMenu">
     <div class="mobile-menu-overlay" id="menuOverlay"></div>
@@ -213,51 +249,70 @@ $navbar = [
         <div class="mobile-menu-header">
             <a href="<?php echo BASE_URL; ?>/" class="logo" style="font-size: 18px;">
                 <div class="logo-icon">
-                    <img src="<?php echo BASE_URL; ?>/assets/icons/favicon.png" alt="Logo"
+                    <img src="<?php echo BASE_URL; ?>/assets/icons/favicon.png" alt="Logo" width="22" height="22"
                         style="width: 22px; height: 22px;">
                 </div>
-                <span>
-                    Hey<span style="color: var(--primary);">Doot</span>
-                </span>
+                <span>Hey<span style="color: var(--primary);">Doot</span></span>
             </a>
-            <button class="mobile-menu-close" id="menuClose">
-                <i class="fas fa-times"></i>
-            </button>
+            <button class="mobile-menu-close" id="menuClose"><i class="fas fa-times"></i></button>
         </div>
+
         <!-- Mobile Navigation with Dropdowns -->
         <?php foreach ($navbar as $key => $item): ?>
+
             <?php if (isset($item['submenu'])): ?>
+
                 <div class="mobile-nav-item">
+
                     <div class="mobile-nav-link mobile-dropdown-trigger" data-dropdown="dropdown-<?= $key; ?>">
+
                         <div>
                             <i class="<?= $item['icon']; ?>"></i>
                             <?= $item['title']; ?>
                         </div>
+
                         <i class="fas fa-chevron-down dropdown-arrow"></i>
+
                     </div>
+
                     <div class="mobile-dropdown-menu" id="dropdown-<?= $key; ?>">
+
                         <?php foreach ($item['submenu'] as $sub): ?>
+
                             <a href="<?= $sub['link']; ?>">
+
                                 <i class="<?= $sub['icon']; ?>"></i>
                                 <?= $sub['title']; ?>
+
                             </a>
+
                         <?php endforeach; ?>
+
                     </div>
+
                 </div>
+
             <?php else: ?>
+
                 <a href="<?= $item['link']; ?>" class="mobile-nav-link">
+
                     <i class="<?= $item['icon']; ?>"></i>
                     <?= $item['title']; ?>
+
                 </a>
+
             <?php endif; ?>
+
         <?php endforeach; ?>
+
+
         <div class="mobile-menu-cta">
             <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>"
                 class="btn btn-primary btn-mobile-full demo-btn">
                 <i class="fas fa-calendar-alt"></i> Book a Demo
             </a>
             <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%20HeyDoot%20team%2C%20I%27d%20like%20to%20learn%20more%20about%20your%20WhatsApp%20automation%20solutions."
-                class="btn btn-secondary btn-mobile-full trial-btn" target="_blank">
+                class="btn btn-secondary btn-mobile-full trial-btn" target="_blank" rel="noopener noreferrer">
                 <i class="fas fa-play-circle"></i> Start Free Trial
             </a>
         </div>
@@ -313,7 +368,7 @@ $navbar = [
 
     /* Expand ONLY hovered button */
     .floating-btn:hover {
-        width: 180px;
+        width: 200px;
         justify-content: flex-start;
     }
 
@@ -361,7 +416,7 @@ $navbar = [
 </style>
 <div class="floating-buttons">
     <a href="https://wa.me/<?php echo str_replace([' ', '+', '-', '(', ')'], '', WHATSAPP_NUMBER); ?>?text=Hi%20HeyDoot%20team%2C%20I%27d%20like%20to%20learn%20more%20about%20your%20WhatsApp%20automation%20solutions."
-        class="floating-btn whatsapp-btn-float" target="_blank" aria-label="Chat on WhatsApp">
+        class="floating-btn whatsapp-btn-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
         <i class="fab fa-whatsapp"></i>
         <span class="btn-label">WhatsApp</span>
     </a>
@@ -369,7 +424,7 @@ $navbar = [
     <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>" class="floating-btn contact-btn"
         aria-label="Call us">
         <i class="fas fa-headset"></i>
-        <span class="btn-label">97185 17228</span>
+        <span class="btn-label">+91 83758 11375</span>
     </a>
 </div>
 

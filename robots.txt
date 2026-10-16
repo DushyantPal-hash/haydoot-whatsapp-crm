@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# Sitemaps & LLM Context
+Sitemap: https://heydoot.com/sitemap.xml
+# LLMs index: https://heydoot.com/llms.txt
