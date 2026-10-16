@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Sitemap - HeyDoot WhatsApp CRM</title>
+    <meta name="description" content="Complete HTML Sitemap for HeyDoot. Easily navigate through all pages, features, CRM integrations, services, calculators, and legal resources.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://heydoot.com/sitemap.html">
+
+    <!-- Fonts & Icons -->
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="/assets/icons/favicon.png" type="image/png">
+
+    <style>
+        :root {
+            --wa-green: #25D366;
+            --wa-dark-green: #128C7E;
+            --wa-teal: #075E54;
+            --primary: #0F172A;
+            --text-dark: #1E293B;
+            --text-muted: #64748B;
+            --bg-light: #F8FAFC;
+            --card-border: #E2E8F0;
+            --card-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.06);
+            --radius-md: 12px;
+            --radius-lg: 16px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Satoshi', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #075E54 0%, #128C7E 100%);
+            color: #ffffff;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .header-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .header-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(8px);
+            padding: 6px 16px;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 12px;
+            letter-spacing: -0.02em;
+        }
+
+        p.subtitle {
+            font-size: 1.125rem;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: -30px auto 60px;
+            padding: 0 20px;
+        }
+
+        .search-bar-wrapper {
+            background: #ffffff;
+            border-radius: var(--radius-md);
+            padding: 8px 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto 40px;
+            border: 1px solid var(--card-border);
+        }
+
+        .search-bar-wrapper i {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        .search-bar-wrapper input {
+            border: none;
+            outline: none;
+            width: 100%;
+            font-family: inherit;
+            font-size: 1rem;
+            color: var(--text-dark);
+        }
+
+        .sitemap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+        }
+
+        .sitemap-card {
+            background: #ffffff;
+            border: 1px solid var(--card-border);
+            border-radius: var(--radius-lg);
+            padding: 28px;
+            box-shadow: var(--card-shadow);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .sitemap-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 28px -4px rgba(15, 23, 42, 0.1);
+        }
+
+        .category-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+            padding-bottom: 14px;
+            border-bottom: 2px solid #F1F5F9;
+        }
+
+        .category-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 10px;
+            background: #E8F5E9;
+            color: var(--wa-dark-green);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .category-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .links-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .links-list li a {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .links-list li a:hover {
+            color: var(--wa-dark-green);
+        }
+
+        .links-list li a i {
+            color: var(--wa-green);
+            margin-top: 4px;
+            font-size: 0.85rem;
+        }
+
+        .link-desc {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 400;
+            margin-top: 2px;
+        }
+
+        footer {
+            background: #ffffff;
+            border-top: 1px solid var(--card-border);
+            padding: 30px 20px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--wa-dark-green);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                margin-top: -20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-badge">
+                <i class="fas fa-sitemap"></i> HeyDoot Navigation Directory
+            </div>
+            <h1>Website Sitemap</h1>
+            <p class="subtitle">Discover all pages, WhatsApp CRM features, business app integrations, services, and resources on HeyDoot.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="search-bar-wrapper">
+            <i class="fas fa-search"></i>
+            <input type="text" id="sitemapSearch" placeholder="Search pages, tools, integrations..." onkeyup="filterSitemap()">
+        </div>
+
+        <div class="sitemap-grid" id="sitemapGrid">
+            <!-- Main Product & Pages -->
+            <div class="sitemap-card">
+                <div class="category-header">
+                    <div class="category-icon"><i class="fas fa-home"></i></div>
+                    <h2 class="category-title">Main Pages</h2>
+                </div>
+                <ul class="links-list">
+                    <li>
+                        <a href="https://heydoot.com/">
+                            <i class="fas fa-chevron-right"></i>
+                            <div>
+                                <span>Home</span>
+                                <span class="link-desc">HeyDoot WhatsApp CRM & Shared Inbox Platform</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://heydoot.com/features.php">
+                            <i class="fas fa-chevron-right"></i>
+                            <div>
+                                <span>Features</span>
+                                <span class="link-desc">Multi-number inbox, ticketing, and automation tools</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://heydoot.com/pricing.php">
+                            <i class="fas fa-chevron-right"></i>
+                            <div>
+                                <span>Pricing</span>
+                                <span class="link-desc">Transparent plans for teams of all sizes</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://heydoot.com/whyus.php">
+                            <i class="fas fa-chevron-right"></i>
+                            <div>
+                                <span>Why Us</span>
+                                <span class="link-desc">Why businesses choose HeyDoot for WhatsApp</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Integrations -->
+            <div class="sitemap-card">
+                <div class="category-header">
+                    <div class="category-icon"><i class="fas fa-plug"></i></div>
+                    <h2 class="category-title">Integrations</h2>
+                </div>
+                <ul class="links-list">
+                    <li>
+                        <a href="https://heydoot.com/integrations.php">
+                            <i class="fas fa-chevron-right"></i>
+                            <div>
+                                <span>All Integrations</span>
+                                <span class="link-desc">Connect WhatsApp with 5000+ business tools</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://heydoot.com/integrations/hubspot.php">
+                            <i class="fas fa-chevron-right"></i>
+                            <div>
+                                <span>HubSpot WhatsApp Integration</span>
+                                <span class="link-desc">Automate HubSpot leads and sales pipelines</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://heydoot.com/integrations/zapier.php">
+                            <i class="fas fa-chevron-right"></i>
+                            <div>
+                                <span>Zapier & Make Integration</span>
+                                <span class="link-desc">Connect multi-app workflows without writing code</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://heydoot.com/integrations/smoobu.php">
+                            <i class="fas fa-chevron-right"></i>
+                            <div>
+                                <span>Smoobu WhatsApp API Integration</span>
+                                <span class="link-desc">Automated vacation rental guest notifications</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://heydoot.com/integrations/odoo.php">
+                            <i class="fas fa-chevron-right"></i>
+                            <div>
+                                <span>Odoo WhatsApp Integration</span>
+                                <span class="link-desc">Sync ERP order updates, invoicing, and dispatch</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://heydoot.com/integrations/guide.php">
+                            <i class="fas fa-chevron-right"></i>
+                            <div>
+                                <span>Partner Integration & API Guide (v1)</span>
+                                <span class="link-desc">REST API, webhook signatures, message dispatch & documentation</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Services & Solutions -->
+            <div class="sitemap-card">
+                <div class="category-header">
+                    <div class="category-icon"><i class="fas fa-cogs"></i></div>
+                    <h2 class="category-title">Services & Solutions</h2>
+                </div>
+                <ul class="links-list">
+                    <li>
+                        <a href="https://heydoot.com/services.php">
+                            <i class="fas fa-chevron-right"></i>
+                            <div>
+                                <span>Services Overview</span>
+                                <span class="link-desc">Custom WhatsApp automation & enterprise consulting</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://heydoot.com/services/smoobu.php">
+                            <i class="fas fa-chevron-right"></i>
+                            <div>
+                                <span>Smoobu WhatsApp Guest Service</span>
+                                <span class="link-desc">Managed guest messaging for property managers</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://heydoot.com/services/odoo.php">
+                            <i class="fas fa-chevron-right"></i>
+                            <div>
+                                <span>Odoo WhatsApp Implementation Service</span>
+                                <span class="link-desc">Custom ERP workflow design and managed onboarding</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Resources & Calculators -->
+            <div class="sitemap-card">
+                <div class="category-header">
+                    <div class="category-icon"><i class="fas fa-calculator"></i></div>
+                    <h2 class="category-title">Resources & Tools</h2>
+                </div>
+                <ul class="links-list">
+                    <li>
+                        <a href="https://heydoot.com/calculator.php">
+                            <i class="fas fa-chevron-right"></i>
+                            <div>
+                                <span>WhatsApp API Cost Calculator</span>
+                                <span class="link-desc">Interactive conversation pricing estimator</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://heydoot.com/faq.php">
+                            <i class="fas fa-chevron-right"></i>
+                            <div>
+                                <span>Frequently Asked Questions</span>
+                                <span class="link-desc">Answers about CRM setup, inbox, and plans</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://heydoot.com/sitemap.xml">
+                            <i class="fas fa-chevron-right"></i>
+                            <div>
+                                <span>XML Sitemap</span>
+                                <span class="link-desc">Machine-readable sitemap for search crawlers</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://heydoot.com/llms.txt">
+                            <i class="fas fa-chevron-right"></i>
+                            <div>
+                                <span>LLMs.txt Guide</span>
+                                <span class="link-desc">Structured content overview for AI models</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Company & Contact -->
+            <div class="sitemap-card">
+                <div class="category-header">
+                    <div class="category-icon"><i class="fas fa-building"></i></div>
+                    <h2 class="category-title">Company</h2>
+                </div>
+                <ul class="links-list">
+                    <li>
+                        <a href="https://heydoot.com/about.php">
+                            <i class="fas fa-chevron-right"></i>
+                            <div>
+                                <span>About Us</span>
+                                <span class="link-desc">Our mission, team, and story behind HeyDoot</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://heydoot.com/contact.php">
+                            <i class="fas fa-chevron-right"></i>
+                            <div>
+                                <span>Contact Us</span>
+                                <span class="link-desc">Get in touch with our sales and 24/7 support team</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Legal & Compliance -->
+            <div class="sitemap-card">
+                <div class="category-header">
+                    <div class="category-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h2 class="category-title">Legal & Trust</h2>
+                </div>
+                <ul class="links-list">
+                    <li>
+                        <a href="https://heydoot.com/privacy-policy.php">
+                            <i class="fas fa-chevron-right"></i>
+                            <div>
+                                <span>Privacy Policy</span>
+                                <span class="link-desc">Data protection, security standards & GDPR</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://heydoot.com/terms-of-service.php">
+                            <i class="fas fa-chevron-right"></i>
+                            <div>
+                                <span>Terms of Service</span>
+                                <span class="link-desc">Acceptable use policy and legal agreement</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 HeyDoot by HashStudioz Technologies. All rights reserved. | <a href="https://heydoot.com/">Back to Homepage</a></p>
+    </footer>
+
+    <script>
+        function filterSitemap() {
+            const query = document.getElementById('sitemapSearch').value.toLowerCase();
+            const cards = document.querySelectorAll('.sitemap-card');
+
+            cards.forEach(card => {
+                const links = card.querySelectorAll('.links-list li');
+                let hasMatch = false;
+
+                links.forEach(link => {
+                    const text = link.innerText.toLowerCase();
+                    if (text.includes(query)) {
+                        link.style.display = 'block';
+                        hasMatch = true;
+                    } else {
+                        link.style.display = 'none';
+                    }
+                });
+
+                card.style.display = hasMatch ? 'block' : 'none';
+            });
+        }
+    </script>
+</body>
+
+</html>

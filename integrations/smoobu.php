@@ -1,34 +1,34 @@
 <?php
 require_once dirname(__DIR__) . '/config.php';
-
 $page_meta = [
-    'title' => 'Smoobu WhatsApp API Service | HeyDoot',
-    'meta_title' => 'Smoobu WhatsApp API Integration – Connect Your PMS via HeyDoot API',
-    'description' => 'HeyDoot provides the API bridge to connect Smoobu with WhatsApp Business. Automate guest messaging, booking alerts, and two-way communication without coding complex integrations.',
+    'title' => 'Smoobu WhatsApp Integration | HeyDoot',
+    'meta_title' => 'Smoobu WhatsApp Integration – Booking Messages & Guest Replies with HeyDoot',
+    'description' => 'Connect Smoobu with WhatsApp using HeyDoot. Send booking confirmations, check-in details, changes and cancellations from Smoobu, and post guest replies back into the booking inbox.',
 
-    'og_title' => 'Smoobu WhatsApp API Service | HeyDoot',
-    'og_description' => 'Use HeyDoot\'s API to connect Smoobu PMS with WhatsApp. Programmatically send booking confirmations, reminders, and support messages through a reliable API-first solution.',
+    'og_title' => 'Smoobu WhatsApp Integration | HeyDoot',
+    'og_description' => 'Integrate Smoobu with WhatsApp via a small relay. Send confirmations, check-in info, changes and cancellations; guest replies appear in the booking\'s Smoobu inbox.',
+
     'og_image' => 'https://heydoot.com/public/images/m1.png',
     'og_url' => 'https://heydoot.com/integrations/smoobu.php',
 
-    'twitter_title' => 'Smoobu WhatsApp API Service | HeyDoot',
-    'twitter_description' => 'API-first integration for Smoobu + WhatsApp. HeyDoot provides the technical bridge to automate guest communication at scale.',
+    'twitter_title' => 'Smoobu WhatsApp Integration | HeyDoot',
+    'twitter_description' => 'Smoobu bookings trigger WhatsApp sends via HeyDoot; guest replies land in the Smoobu inbox. Includes daily check-in reminders.',
+
     'twitter_image' => 'https://heydoot.com/public/images/m1.png',
 
     'canonical' => 'https://heydoot.com/integrations/smoobu.php'
 ];
-
 $page_json_ld = [
     "@context" => "https://schema.org",
     "@type" => "Service",
-    "name" => "Smoobu WhatsApp API Service",
-    "serviceType" => "API Integration Service",
+    "name" => "Smoobu WhatsApp Integration",
+    "serviceType" => "WhatsApp Integration Service",
     "provider" => [
         "@type" => "Organization",
         "name" => "HeyDoot",
         "url" => "https://heydoot.com/"
     ],
-    "description" => "HeyDoot provides API connectivity to integrate Smoobu PMS with WhatsApp Business. Send automated booking confirmations, pre-arrival instructions, and support messages through our reliable WhatsApp API bridge.",
+    "description" => "HeyDoot Smoobu WhatsApp Integration connects Smoobu bookings with WhatsApp through a small relay. Booking events trigger WhatsApp messages, and guest replies are posted back into the booking's Smoobu inbox.",
     "areaServed" => "Worldwide",
     "url" => "https://heydoot.com/integrations/smoobu.php",
     "offers" => [
@@ -37,672 +37,1064 @@ $page_json_ld = [
         "priceCurrency" => "USD"
     ]
 ];
-
 $page_gtag_id = 'G-Q64SDSY0Y4';
-
 include ROOT_PATH . '/components/header.php';
 include ROOT_PATH . '/components/navbar.php';
 ?>
+
 <style>
-    .card-1 {
-        top: 8%;
-        left: 14%;
-    }
-
-    .card-2 {
-        top: 12%;
-        right: -4%;
-    }
-
-    .card-3 {
-        bottom: 10%;
-        left: 0%;
-    }
-
-    .card-4 {
-        bottom: 0%;
-    }
-
     .btn-smoobu {
-        background: #1E3A5F;
+        background: #2563EB;
         color: white;
-        box-shadow: 0 2px 8px rgba(30, 58, 95, 0.2);
+        box-shadow: 0 2px 8px rgba(37, 99, 235, 0.25);
     }
 
     .btn-smoobu:hover {
-        background: #152c48;
+        background: #1d4ed8;
         transform: translateY(-3px);
-        box-shadow: 0 12px 22px -8px rgba(30, 58, 95, 0.3);
+        box-shadow: 0 12px 22px -8px rgba(37, 99, 235, 0.35);
     }
 
     .smoobu-accent {
-        color: #1E3A5F;
+        color: #2563EB;
     }
 
-    .api-badge {
-        background: #eef2ff;
-        color: #1E3A5F;
-        font-family: monospace;
-        padding: 4px 12px;
-        border-radius: 20px;
-        font-size: 0.8rem;
-        display: inline-block;
-    }
-
-    .section-block {
-        margin-bottom: 56px;
-    }
-
-    .section-header {
-        display: flex;
-        align-items: center;
-        gap: 14px;
-        margin-bottom: 28px;
-    }
-
-    .icon-circle {
-        background: #e9f5ef;
-        width: 52px;
-        height: 52px;
-        border-radius: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .icon-circle i {
-        font-size: 24px;
-        color: var(--wa-teal);
-    }
-
-    h2 {
-        font-size: 1.8rem;
-        font-weight: 700;
-    }
-
-    .step-card {
-        background: white;
-        border-radius: 28px;
-        padding: 15px;
-        /* box-shadow: var(--card-shadow); */
-        border: var(--border-light);
-    }
-
-    .step-card-header {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        margin-bottom: 0px;
-    }
-
-    .step-num {
-        background: #1E3A5F;
-        width: 42px;
-        height: 42px;
-        border-radius: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: 800;
-        color: white;
-        font-size: 1.4rem;
-        margin-bottom: 20px;
-    }
-
-
-    .step-card h3 {
-        font-size: 1.2rem;
-    }
-
-    .step-card p {
-        margin-bottom: 0;
-    }
-
-    .code-block {
-        background: #1e1e2f;
-        color: #e2e2e2;
-        padding: 20px;
-        border-radius: 16px;
-        font-family: monospace;
-        font-size: 0.85rem;
-        overflow-x: auto;
-        margin: 20px 0;
-    }
-
-    .api-endpoint {
-        background: #f8f9fa;
-        border-left: 4px solid #25D366;
-        padding: 16px 20px;
-        border-radius: 12px;
-        margin: 15px 0;
-    }
-
-    .api-endpoint strong {
-        font-family: monospace;
-        color: #1E3A5F;
-    }
-
-    .use-case-item,
-    .benefit-item {
+    .setup-step {
         background: white;
         border-radius: 24px;
-        padding: 15px 20px;
-        transition: all 0.2s;
-        border: var(--border-light);
+        padding: 24px;
+        margin-bottom: 24px;
+        border-left: 4px solid #2563EB;
+        transition: all 0.25s ease;
     }
 
-    .use-case-item p,
-    .benefit-item p {
-        margin-top: 8px;
-        color: #4b5563;
-        font-size: 1.0rem;
-        margin-bottom: 5px;
+    .setup-step:hover {
+        transform: translateX(6px);
+        box-shadow: var(--card-shadow);
     }
 
-    .use-case-item h3,
-    .benefit-item h3 {
-        display: flex;
+    .step-number {
+        display: inline-flex;
         align-items: center;
-        font-size: 20px;
-        gap: 10px;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        background: #2563EB;
+        color: white;
+        border-radius: 12px;
+        font-weight: 700;
+        margin-right: 12px;
     }
 
-    @media (max-width: 768px) {
-        .bar-mob {
-            flex-direction: column;
-            gap: 5px;
-        }
+    .use-case-card {
+        background: white;
+        border-radius: 28px;
+        padding: 28px;
+        transition: all 0.25s ease;
+        height: 100%;
+    }
 
-        .icon-rotate {
-            rotate: 90deg;
-        }
+    .use-case-card:hover {
+        transform: translateY(-6px);
+        box-shadow: var(--card-shadow);
+    }
+
+    .smoobu-code {
+        background: #0f172a;
+        color: #e2e8f0;
+        border-radius: 16px;
+        padding: 18px;
+        overflow-x: auto;
+        font-size: 0.82rem;
+        line-height: 1.55;
+        margin-top: 14px;
+    }
+
+    .smoobu-code code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .smoobu-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.88rem;
+        overflow-x: auto;
+        display: block;
+    }
+
+    .smoobu-table th,
+    .smoobu-table td {
+        padding: 10px;
+        border: 1px solid #d7e6dc;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    .smoobu-table thead tr {
+        background: #e8effd;
+    }
+
+    .feature-card:hover {
+        transform: translateY(0px) scale(1.0) !important;
     }
 </style>
 
 <main>
-    <section class="hero" style="background: linear-gradient(135deg, #0f2b3d 0%, #1E3A5F 100%);">
+    <!-- Hero Section with Smoobu flavor -->
+    <section class="hero"
+        style="background: linear-gradient(135deg, #0b1c3f 0%, #1e3a8a 100%);padding: 20px 20px 20px;">
         <div class="floating-dots"></div>
         <div style="max-width: 900px; margin: 0 auto; position: relative; z-index: 2;">
             <div
-                style="display: inline-block; background: rgba(255,255,255,0.12); backdrop-filter: blur(8px); padding: 6px 18px; border-radius: 60px; margin-bottom: 24px;">
+                style="display: inline-block; background: rgba(255,255,255,0.12); backdrop-filter: blur(8px); padding: 6px 16px; border-radius: 60px; margin-bottom: 0;">
                 <span style="color: #ffffff; font-weight: 700; display: flex; align-items: center; gap: 10px;">
-                    <i class="fab fa-whatsapp"></i>
-                    <i class="fas fa-exchange-alt"></i>
-                    <i class="fas fa-building"></i>
-                    Official Smoobu Partner
+                    <i class="fas fa-home"></i>
+                    Booking Events + Signed Webhooks for Smoobu
                 </span>
-            </div>
-            <h1>
-                <span style="color: #F59E0B;">Smoobu</span><br>WhatsApp Integration
-            </h1>
-            <p class="hero-desc">
-                HeyDoot provides the API bridge that connects Smoobu PMS to WhatsApp Business. Use our
-                reliable endpoints to send automated messages, manage templates, and enable two-way communication — no
-                complex infrastructure required.
-            </p>
-            <div class="cta-group">
-                <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20integrate%20Smoobu%20with%20WhatsApp%20using%20HeyDoot%20API"
-                    class="btn btn-smoobu btn-lg">
-                    <i class="fab fa-whatsapp"></i> Contact Sales
-                </a>
-                <a href="<?php echo BASE_URL; ?>/services/smoobu.php" class="btn btn-secondary btn-lg">
-                    <i class="fas fa-code"></i> API Documentation
-                </a>
-            </div>
-            <div class="visual-stage" style="margin-top: 20px;">
-                <div class="float-card card-1">
-                    <i class="fas fa-code" style="color:#F59E0B; font-size: 22px;"></i>
-                    <span>POST /api/send</span>
-                </div>
-                <div class="float-card card-2">
-                    <i class="fas fa-exchange-alt" style="color:#25D366;"></i>
-                    <span>Smoobu → HeyDoot API → WhatsApp</span>
-                </div>
-                <div class="float-card card-3">
-                    <i class="fab fa-whatsapp" style="color:#25D366; font-size: 22px;"></i>
-                    New Booking → WhatsApp
-                </div>
-                <div class="float-card card-4">
-                    <i class="fas fa-times-circle" style="color:#e74c3c;"></i> Cancellation Alerts
-                </div>
-                <div class="mockup-phone"
-                    style="width: 65%; margin: 0 auto; background: #1e1e2a; border-radius: 48px; padding: 8px;">
-                    <div style="background: #2a2a35; border-radius: 40px; padding: 30px 20px; text-align: center;">
-                        <div class="bar-mob" style=" display: flex; justify-content: center; align-items: center;">
-                            <i class="fas fa-building" style="font-size: 48px; color: #1E3A5F;"></i>
-                            <i class="fas fa-arrow-right icon-rotate" style="margin: 0 20px; color: white;"></i>
-                            <i class="fas fa-magic" style="font-size: 36px; color: #F59E0B;"></i>
-                            <i class="fas fa-arrow-right icon-rotate" style="margin: 0 20px; color: white;"></i>
-                            <i class="fab fa-whatsapp" style="font-size: 48px; color: #25D366;"></i>
-                        </div>
-                        <p style="color: #aaa; margin-top: 16px;">Your application → HeyDoot API → WhatsApp</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <section>
+    <!-- Main Integration Container -->
+    <section style="padding: 40px 0;">
         <div class="container-fluid">
-            <!-- API Status Banner -->
-            <div
-                style="background: linear-gradient(105deg, #eef2ff 0%, #e0e7ff 100%); border-left: 5px solid #1E3A5F; border-radius: 20px; padding: 20px 28px; margin-bottom: 48px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
-                <div>
-                    <i class="fas fa-cloud-upload-alt" style="color: #1E3A5F; margin-right: 12px;"></i>
-                    <strong>API Service Status:</strong>
-                    <span style="color: #4b5563;">
-                        HeyDoot provides the WhatsApp API layer. Your Smoobu instance or
-                        custom app connects to our endpoints to send/receive messages.
-                    </span>
-                </div>
-            </div>
+
+            <!-- Two-column layout -->
             <div style="display: flex; gap: 48px; flex-wrap: wrap;">
+                <!-- Sidebar -->
                 <aside class="sidebar-card">
                     <div
                         style="position: sticky; top: 100px; background: white; border-radius: 28px; padding: 24px; box-shadow: var(--card-shadow); border: 1px solid rgba(0,0,0,0.04);">
-                        <h4 style="font-weight: 700; margin-bottom: 20px; font-size: 1.1rem;">
-                            <i class="fas fa-bookmark" style="color: var(--wa-teal); margin-right: 8px;"></i> On this
-                            page
-                        </h4>
+                        <h4 style="font-weight: 700; margin-bottom: 20px; font-size: 1.1rem;"><i class="fas fa-cog"
+                                style="color: #2563EB; margin-right: 8px;"></i> On this page</h4>
                         <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px;">
-                            <li>
-                                <a href="#how-it-works" style="color: #2c3e2f;">
-                                    <i class="fas fa-cogs"></i>
-                                    How the API Works
-                                </a>
+                            <li><a href="#overview" style="color: #2c3e2f; font-size: 0.9rem;"><i
+                                        class="fas fa-info-circle" style="color: #2563EB;"></i> Overview</a></li>
+                            <li><a href="#benefits" style="color: #2c3e2f; font-size: 0.9rem;"><i class="fas fa-gift"
+                                        style="color: #2563EB;"></i> What a rental business gets</a>
                             </li>
-                            <li>
-                                <a href="#api-endpoints" style="color: #2c3e2f;">
-                                    <i class="fas fa-plug"></i>
-                                    API Endpoints
-                                </a>
+                            <li><a href="#prerequisites" style="color: #2c3e2f; font-size: 0.9rem;"><i
+                                        class="fas fa-check-circle" style="color: #2563EB;"></i> What you need</a></li>
+                            <li><a href="#setup-guide" style="color: #2c3e2f; font-size: 0.9rem;"><i
+                                        class="fas fa-list-ol" style="color: #2563EB;"></i> Credentials &amp; setup</a>
                             </li>
-                            <li>
-                                <a href="#integration-steps" style="color: #2c3e2f;">
-                                    <i class="fas fa-rocket"></i>
-                                    Integration Steps
-                                </a>
+                            <li><a href="#sending" style="color: #2c3e2f; font-size: 0.9rem;"><i
+                                        class="fas fa-paper-plane" style="color: #2563EB;"></i> Sending on booking
+                                    events</a></li>
+                            <li><a href="#checkin" style="color: #2c3e2f; font-size: 0.9rem;"><i
+                                        class="fas fa-calendar-check" style="color: #2563EB;"></i> Check-in
+                                    reminders</a>
                             </li>
-                            <li>
-                                <a href="#features" style="color: #2c3e2f;">
-                                    <i class="fas fa-umbrella-beach"></i>
-                                    Key Features
-                                </a>
+                            <li><a href="#receiving" style="color: #2c3e2f; font-size: 0.9rem;"><i class="fas fa-inbox"
+                                        style="color: #2563EB;"></i> Guest replies in Smoobu</a>
                             </li>
-                            <li>
-                                <a href="#why-heydoot" style="color: #2c3e2f;">
-                                    <i class="fas fa-star"></i>
-                                    Why HeyDoot API
-                                </a>
+                            <li><a href="#errors-limits" style="color: #2c3e2f; font-size: 0.9rem;"><i
+                                        class="fas fa-exclamation-triangle" style="color: #2563EB;"></i> Errors &amp;
+                                    retries</a></li>
+                            <li><a href="#go-live" style="color: #2c3e2f; font-size: 0.9rem;"><i
+                                        class="fas fa-list-check" style="color: #2563EB;"></i> Go-live checklist</a>
                             </li>
-                            <li>
-                                <a href="#use-cases" style="color: #2c3e2f;">
-                                    <i class="fas fa-briefcase"></i>
-                                    Use Cases
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#faqs" style="color: #2c3e2f;">
-                                    <i class="fas fa-question-circle"></i>
-                                    FAQs
-                                </a>
-                            </li>
+                            <li><a href="#faq-smoobu" style="color: #2c3e2f;"><i class="fas fa-question-circle"
+                                        style="color: #2563EB;"></i> FAQs</a></li>
+                            <li><a href="#cta" style="color: #2c3e2f;"><i class="fas fa-rocket"
+                                        style="color: #2563EB;"></i> Get Started</a></li>
                         </ul>
-                        <!-- cross-link to integration page -->
                         <div style="margin-top:24px;padding-top:20px;border-top:1px solid #f0f0f0;">
                             <p style="font-size:.85rem;color:#6b7280;margin-bottom:10px;">Need API / technical docs?</p>
                             <a href="<?php echo BASE_URL; ?>/services/smoobu.php"
-                                style="display:flex;align-items:center;gap:10px;background:#eef2ff;border-radius:14px;padding:12px 16px;color:#1E3A5F;font-weight:600;font-size:.9rem;text-decoration:none;">
+                                style="display:flex;align-items:center;gap:10px;background:#e8effd;border-radius:14px;padding:12px 16px;color:#1E3A5F;font-weight:600;font-size:.9rem;text-decoration:none;">
                                 <i class="fas fa-code"></i>
                                 Services Page →
                             </a>
                         </div>
                     </div>
                 </aside>
+
+                <!-- Main Content -->
                 <main style="flex: 2.5; min-width: 280px;">
-                    <!-- How the API Works -->
-                    <div id="how-it-works" class="section-block">
-                        <div class="section-header">
-                            <div class="icon-circle"><i class="fas fa-cogs"></i></div>
-                            <h2>How the HeyDoot API Works</h2>
-                        </div>
-                        <p style="margin-bottom: 24px;">
-                            HeyDoot is a pure API service provider. We don't offer a direct
-                            Smoobu plugin — instead, we give you the API endpoints to connect <strong>your</strong>
-                            Smoobu integration or custom application to WhatsApp Business.
-                        </p>
-                        <div style="background: #f4f9f5; border-radius: 32px; padding: 28px; text-align: center;">
+
+                    <!-- Overview -->
+                    <div id="overview" style="margin-bottom: 56px;">
+                        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
                             <div
-                                style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; align-items: center;">
-                                <span><i class="fas fa-calendar-check"></i> Your App / Smoobu Webhook</span>
-                                <i class="fas fa-arrow-right"></i>
-                                <span><i class="fas fa-code"></i> HeyDoot API Request</span>
-                                <i class="fas fa-arrow-right"></i>
-                                <span><i class="fab fa-whatsapp"></i> WhatsApp Message Sent</span>
-                                <i class="fas fa-arrow-right"></i>
-                                <span><i class="fas fa-reply"></i> Webhook to Your Server</span>
+                                style="background: #e8effd; width: 48px; height: 48px; border-radius: 28px; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-info-circle" style="color: #2563EB; font-size: 22px;"></i>
                             </div>
+                            <h2 style="font-size: 1.8rem; font-weight: 700;">Overview</h2>
                         </div>
-                        <div class="code-block" style="margin-top: 24px;">
-                            <span style="color: #9cdcfe;">// Example: Send WhatsApp message via HeyDoot API</span><br>
-                            POST /api/v1/whatsapp/send<br>
-                            {<br>
-                            &nbsp;&nbsp;"api_key": "your_heydoot_api_key",<br>
-                            &nbsp;&nbsp;"to": "+1234567890",<br>
-                            &nbsp;&nbsp;"template_name": "booking_confirmation",<br>
-                            &nbsp;&nbsp;"language": "en",<br>
-                            &nbsp;&nbsp;"components": [<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;{"type": "body", "parameters": [{"type": "text", "text": "John"},
-                            {"type": "text", "text": "2025-12-25"}]}<br>
-                            &nbsp;&nbsp;]<br>
-                            }
-                        </div>
-                    </div>
-                    <!-- API Endpoints -->
-                    <div id="api-endpoints" class="section-block">
-                        <div class="section-header">
-                            <div class="icon-circle"><i class="fas fa-plug"></i></div>
-                            <h2>API Endpoints</h2>
-                        </div>
-                        <div class="api-endpoint automation-card">
-                            <strong>POST /api/v1/whatsapp/send</strong> — Send template-based or free-form WhatsApp
-                            messages
-                        </div>
-                        <div class="api-endpoint automation-card">
-                            <strong>POST /api/v1/whatsapp/templates</strong> — Manage WhatsApp message templates
-                        </div>
-                        <div class="api-endpoint automation-card">
-                            <strong>GET /api/v1/messages/{id}/status</strong> — Check delivery and read status
-                        </div>
-                        <div class="api-endpoint automation-card">
-                            <strong>POST /api/v1/webhooks/register</strong> — Register your endpoint to receive incoming
-                            messages
-                        </div>
-                        <div class="api-endpoint automation-card">
-                            <strong>GET /api/v1/contacts/verify</strong> — Validate phone numbers for WhatsApp
-                            compatibility
-                        </div>
-                        <p class="api-badge" style="margin-top: 16px;">All endpoints require API key authentication
-                            (Bearer token)</p>
-                    </div>
-                    <!-- Integration Steps -->
-                    <div id="integration-steps" class="section-block">
-                        <div class="section-header">
-                            <div class="icon-circle"><i class="fas fa-rocket"></i></div>
-                            <h2>Integration Steps for Developers</h2>
-                        </div>
-                        <div class="feature-grid" style="display: grid; gap: 20px;">
-                            <div class="step-card automation-card">
-                                <div class="step-card-header">
-                                    <div class="step-num">1</div>
-                                    <h3>Get API Credentials</h3>
-                                </div>
-                                <p>Sign up at HeyDoot and generate your API key from the dashboard.</p>
+                        <div class="feature-card" style="background: white; border-radius: 28px; padding: 24px 28px;">
+                            <p style="color: #4a5568; margin-bottom: 18px;">
+                                Smoobu connects to HeyDoot through a small relay service: Smoobu tells the relay about
+                                each booking, the relay sends the guest a WhatsApp through HeyDoot, and guest replies
+                                are
+                                posted back into the booking's Smoobu inbox.
+                            </p>
+
+                            <div style="overflow-x:auto; margin-bottom: 20px;">
+                                <table class="smoobu-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Direction</th>
+                                            <th>How</th>
+                                            <th>Auth</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Smoobu → relay (bookings)</td>
+                                            <td>Smoobu webhook to
+                                                <code>https://&lt;YOUR_RELAY_DOMAIN&gt;/smoobu/&lt;RELAY_PATH_SECRET&gt;</code>
+                                            </td>
+                                            <td>secret path; the relay re-reads the booking from Smoobu</td>
+                                        </tr>
+                                        <tr>
+                                            <td>relay → HeyDoot (send)</td>
+                                            <td><code>POST /v1/messages/send</code></td>
+                                            <td><code>Authorization: Bearer &lt;HEYDOOT_API_TOKEN&gt;</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td>HeyDoot → relay (replies)</td>
+                                            <td>HeyDoot webhook to
+                                                <code>https://&lt;YOUR_RELAY_DOMAIN&gt;/heydoot/events</code>
+                                            </td>
+                                            <td>HMAC-SHA256 with the webhook's signing secret</td>
+                                        </tr>
+                                        <tr>
+                                            <td>relay → Smoobu (log)</td>
+                                            <td><code>POST /api/reservations/{id}/messages/send-message-to-host</code>
+                                            </td>
+                                            <td>Smoobu HMAC API key + secret</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                            <div class="step-card automation-card">
-                                <div class="step-card-header">
-                                    <div class="step-num">2</div>
-                                    <h3>Configure WhatsApp Templates</h3>
-                                </div>
-                                <p>Use our API or dashboard to create/approve WhatsApp message templates.</p>
-                            </div>
-                            <div class="step-card automation-card">
-                                <div class="step-card-header">
-                                    <div class="step-num">3</div>
-                                    <h3>Connect Your Smoobu Data</h3>
-                                </div>
-                                <p>Use Smoobu's webhooks or API to capture reservation events (new booking, check-in,
-                                    etc.).</p>
-                            </div>
-                            <div class="step-card automation-card">
-                                <div class="step-card-header">
-                                    <div class="step-num">4</div>
-                                    <h3>Call HeyDoot API on Events</h3>
-                                </div>
-                                <p>When a Smoobu event occurs, your server calls HeyDoot's /send endpoint.</p>
-                            </div>
-                            <div class="step-card automation-card">
-                                <div class="step-card-header">
-                                    <div class="step-num">5</div>
-                                    <h3>Handle Incoming Replies</h3>
-                                </div>
-                                <p>Set up a webhook URL to receive guest responses and forward them to your system.</p>
-                            </div>
+
+                            <p style="color:#4a5568; font-style: italic;">
+                                Bookings trigger WhatsApp sends; guest replies land in the Smoobu inbox.
+                            </p>
+                            <p style="color:#4a5568; margin-top: 12px;">
+                                The relay sits in the middle of both directions: it is the only part that holds the
+                                HeyDoot token and the Smoobu key.
+                            </p>
+                            <p style="color:#4a5568; margin-top: 12px;">
+                                <strong>Why a relay is needed.</strong> Smoobu webhooks can only call a URL; they can't
+                                add HeyDoot's Bearer token or reshape the data. Smoobu also doesn't sign its webhooks,
+                                so the relay treats each one as a hint and fetches the booking from Smoobu's API before
+                                sending anything. The relay is about 150 lines of Node.js and runs on any small server
+                                or
+                                serverless platform.
+                            </p>
                         </div>
                     </div>
-                    <!-- Key Features Section -->
-                    <div id="features" class="section-block">
-                        <div class="section-header">
-                            <div class="icon-circle">
-                                <i class="fas fa-umbrella-beach"></i>
+
+                    <!-- Benefits -->
+                    <div id="benefits" style="margin-bottom: 56px;">
+                        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
+                            <div
+                                style="background: #e8effd; width: 48px; height: 48px; border-radius: 28px; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-gift" style="color: #2563EB; font-size: 22px;"></i>
                             </div>
-                            <h2>Key Features</h2>
+                            <h2 style="font-size: 1.8rem; font-weight: 700;">What a rental business gets</h2>
                         </div>
-                        <div
-                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
-                            <div class="use-case-card feature-card">
-                                <i class="fas fa-bell"
-                                    style="font-size: 32px; color: #1E3A5F; margin-bottom: 16px;"></i>
-                                <h3 style="font-weight: 700; margin-bottom: 12px;">Instant New Reservation Alerts</h3>
-                                <p>Receive WhatsApp notifications whenever a new booking is received through Smoobu.</p>
-                            </div>
-                            <div class="use-case-card feature-card">
-                                <i class="fas fa-ban" style="font-size: 32px; color: #e74c3c; margin-bottom: 16px;"></i>
-                                <h3 style="font-weight: 700; margin-bottom: 12px;">Cancellation Notifications</h3>
-                                <p>Get immediate alerts when a guest cancels a reservation, allowing you to update
-                                    availability quickly.</p>
-                            </div>
-                            <div class="use-case-card feature-card">
-                                <i class="fas fa-clock"
-                                    style="font-size: 32px; color: #1E3A5F; margin-bottom: 16px;"></i>
-                                <h3 style="font-weight: 700; margin-bottom: 12px;">Real-Time WhatsApp Delivery</h3>
-                                <p>Notifications are delivered instantly to your preferred WhatsApp number.</p>
-                            </div>
-                            <div class="use-case-card feature-card">
-                                <i class="fas fa-eye-slash"
-                                    style="font-size: 32px; color: #1E3A5F; margin-bottom: 16px;"></i>
-                                <h3 style="font-weight: 700; margin-bottom: 12px;">No Manual Monitoring</h3>
-                                <p>Reduce the need to constantly check your Smoobu dashboard or email inbox.</p>
-                            </div>
-                            <div class="use-case-card feature-card">
-                                <i class="fas fa-plug"
-                                    style="font-size: 32px; color: #1E3A5F; margin-bottom: 16px;"></i>
-                                <h3 style="font-weight: 700; margin-bottom: 12px;">Easy Setup</h3>
-                                <p>Connect your Smoobu account with Heydoot in just a few minutes — no coding required.
-                                </p>
-                            </div>
-                            <div class="use-case-card feature-card">
-                                <i class="fas fa-building"
-                                    style="font-size: 32px; color: #1E3A5F; margin-bottom: 16px;"></i>
-                                <h3 style="font-weight: 700; margin-bottom: 12px;">Multi-Property Support</h3>
-                                <p>Perfect for vacation rental managers handling multiple listings and properties.</p>
+                        <div class="feature-card" style="background: white; border-radius: 28px; padding: 24px 28px;">
+                            <div style="overflow-x:auto;">
+                                <table class="smoobu-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Moment</th>
+                                            <th>WhatsApp to the guest</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>booking created (<code>newReservation</code>)</td>
+                                            <td>confirmation with dates, property and the guest app link</td>
+                                        </tr>
+                                        <tr>
+                                            <td>day before arrival (scheduled job)</td>
+                                            <td>check-in time, address and access details</td>
+                                        </tr>
+                                        <tr>
+                                            <td>booking changed (<code>updateReservation</code>)</td>
+                                            <td>the new dates</td>
+                                        </tr>
+                                        <tr>
+                                            <td>booking cancelled (<code>cancelReservation</code>)</td>
+                                            <td>cancellation notice</td>
+                                        </tr>
+                                        <tr>
+                                            <td>guest replies on WhatsApp</td>
+                                            <td>the reply appears in the booking's Smoobu messages, visible only to the
+                                                host</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
-                    <!-- Why HeyDoot API -->
-                    <div id="why-heydoot" class="section-block">
-                        <div class="section-header">
-                            <div class="icon-circle"><i class="fas fa-star"></i></div>
-                            <h2>Why Choose HeyDoot as Your API Provider</h2>
+
+                    <!-- Prerequisites -->
+                    <div id="prerequisites" style="margin-bottom: 56px;">
+                        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
+                            <div
+                                style="background: #e8effd; width: 48px; height: 48px; border-radius: 28px; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-clipboard-list" style="color: #2563EB; font-size: 22px;"></i>
+                            </div>
+                            <h2 style="font-size: 1.8rem; font-weight: 700;">What you need before you start</h2>
                         </div>
-                        <div class="feature-grid" style="display: grid; gap: 20px;">
-                            <div class="benefit-item automation-card">
-                                <h3><i class="fas fa-code"></i> Developer-First Design</h3>
-                                <p>Clean REST API, detailed documentation, and sandbox environment for testing.</p>
-                            </div>
-                            <div class="benefit-item automation-card">
-                                <h3><i class="fas fa-charging-station"></i> Scalable Infrastructure</h3>
-                                <p>Handle thousands of messages per minute without performance degradation.</p>
-                            </div>
-                            <div class="benefit-item automation-card">
-                                <h3><i class="fas fa-shield-alt"></i> Enterprise Security</h3>
-                                <p>API key authentication, IP whitelisting, and end-to-end encryption support.</p>
-                            </div>
-                            <div class="benefit-item automation-card">
-                                <h3><i class="fas fa-chart-line"></i> Delivery Analytics</h3>
-                                <p>Track sent, delivered, read, and failed messages through our API.</p>
-                            </div>
-                            <div class="benefit-item automation-card">
-                                <h3><i class="fas fa-headset"></i> Technical Support</h3>
-                                <p>Direct support for integration engineers with SLAs for business plans.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Use Cases -->
-                    <div id="use-cases" class="section-block">
-                        <div class="section-header">
-                            <div class="icon-circle"><i class="fas fa-briefcase"></i></div>
-                            <h2>API Use Cases</h2>
-                        </div>
-                        <div class="feature-grid" style="display: grid; gap: 20px;">
-                            <div class="use-case-item feature-card">
-                                <h3><i class="fas fa-address-book" style="color: #1E3A5F; font-size: 30px;"></i>
-                                    <strong>Booking Confirmation API Call</strong>
-                                </h3>
-                                <p>Trigger from Smoobu webhook → Send WhatsApp confirmation with guest name + dates</p>
-                            </div>
-                            <div class="use-case-item feature-card">
-                                <h3><i class="fas fa-cancel"
-                                        style="color: #ce1414; font-size: 30px;"></i><strong>Booking
-                                        Cancellation Alerts</strong></h3>
-                                <p>
-                                    Instant WhatsApp notification when a reservation is cancelled → Update staff,
-                                    release calendar blocks, or offer rebooking incentives
-                                </p>
-                            </div>
-                            <div class="use-case-item feature-card">
-                                <h3><i class="fas fa-sync" style="color: #1E3A5F; font-size: 30px;"></i>
-                                    <strong>Modification & Date Change Alerts</strong>
-                                </h3>
-                                <p>
-                                    API trigger when booking dates change → Notify housekeeping and update automated
-                                    reminder schedules
-                                </p>
-                            </div>
-                            <!-- <div class="use-case-item feature-card">
-                                <h3>🗝️ <strong>Pre-Arrival Instructions</strong></h3>
-                                <p>Schedule API call 7 days before check-in → Send door codes, WiFi, directions</p>
-                            </div>
-                            <div class="use-case-item feature-card">
-                                <h3>🛎️ <strong>Two-Way Guest Support</strong></h3>
-                                <p>Receive guest replies via webhook → Route to your CRM or support desk</p>
-                            </div>
-                            <div class="use-case-item feature-card">
-                                <h3>⭐ <strong>Review Requests</strong></h3>
-                                <p>Trigger API call after checkout → Send Google/TripAdvisor review links</p>
-                            </div> -->
+                        <div class="feature-card" style="background: white; border-radius: 28px; padding: 24px 28px;">
+                            <ul style="list-style: none;">
+                                <li style="margin-bottom: 14px; display: flex; gap: 12px;"><i
+                                        class="fas fa-check-circle" style="color: #2563EB;"></i>
+                                    <span>
+                                        <strong>HeyDoot</strong>:
+                                        base URL <code>https://&lt;HEYDOOT_API_BASE_URL&gt;</code>, a <em>Read &amp;
+                                            Send</em>
+                                        API token, and the number ID of the WhatsApp line
+                                    </span>
+                                </li>
+                                <li style="margin-bottom: 14px; display: flex; gap: 12px;"><i
+                                        class="fas fa-check-circle" style="color: #2563EB;"></i>
+                                    <strong>Smoobu</strong>:
+                                    an account with API access, and an API key + secret (<em>Settings → Advanced → API
+                                        Keys</em>)
+                                </li>
+                                <li style="display: flex; gap: 12px;"><i class="fas fa-check-circle"
+                                        style="color: #2563EB;"></i> A place to run the relay over public HTTPS, with a
+                                    small database (Postgres, MySQL or SQLite) for the booking ↔ chat mapping</li>
+                            </ul>
                         </div>
                     </div>
-                    <!-- FAQs -->
-                    <div id="faqs" class="section-block">
-                        <div class="section-header">
-                            <div class="icon-circle"><i class="fas fa-question-circle"></i></div>
-                            <h2>API Frequently Asked Questions</h2>
+
+                    <!-- Credentials & setup -->
+                    <div id="setup-guide" style="margin-bottom: 56px;">
+                        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
+                            <div
+                                style="background: #e8effd; width: 48px; height: 48px; border-radius: 28px; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-list-ol" style="color: #2563EB; font-size: 22px;"></i>
+                            </div>
+                            <h2 style="font-size: 1.8rem; font-weight: 700;">Credentials and setup</h2>
                         </div>
-                        <div class="faq-list">
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    Does HeyDoot have a direct Smoobu plugin?
-                                    <i class="fas fa-chevron-down"></i>
-                                </div>
-                                <div class="faq-answer">
-                                    No, HeyDoot is a pure API service provider. You (or your
-                                    developer) build the connection between Smoobu and our API. We provide all the
-                                    endpoints you need.
-                                </div>
-                            </div>
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    How do I get my WhatsApp Business API access?
-                                    <i class="fas fa-chevron-down"></i>
-                                </div>
-                                <div class="faq-answer">HeyDoot provides the WhatsApp Business API connectivity. We
-                                    handle the Meta provider setup — you just need a Facebook Business Manager account.
-                                </div>
-                            </div>
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    Can I use Smoobu webhooks with HeyDoot API?
-                                    <i class="fas fa-chevron-down"></i>
-                                </div>
-                                <div class="faq-answer">
-                                    Absolutely. Smoobu can send webhooks for new reservations,
-                                    cancellations, and modifications. Your server then calls HeyDoot's API to send
-                                    messages.
-                                </div>
-                            </div>
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    What programming languages are supported?
-                                    <i class="fas fa-chevron-down"></i>
-                                </div>
-                                <div class="faq-answer">
-                                    Our API works with any language that can make HTTP requests
-                                    (PHP, Python, Node.js, Java, Ruby, Go, etc.). We provide SDKs for popular languages.
-                                </div>
-                            </div>
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    Do you offer a sandbox environment?
-                                    <i class="fas fa-chevron-down"></i>
-                                </div>
-                                <div class="faq-answer">
-                                    Yes, we provide a complete sandbox environment with test phone
-                                    numbers for integration testing before going live.
-                                </div>
-                            </div>
-                            <div class="faq-item">
-                                <div class="faq-question">What's the pricing model?
-                                    <i class="fas fa-chevron-down"></i>
-                                </div>
-                                <div class="faq-answer">
-                                    We charge per successful message sent, with volume discounts.
-                                    Contact sales for detailed
-                                    <span style=" color: #1E3A5F !important;">
-                                        <a href="<?php echo BASE_URL; ?>/pricing.php"><strong>pricing</strong></a>
-                                    </span>.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Final CTA -->
-                    <div
-                        style="background: linear-gradient(105deg, #eef2ff, #e0e7ff); border-radius: 36px; padding: 36px 28px; text-align: center; margin: 32px 0 24px;">
-                        <i class="fas fa-code" style="font-size: 48px; color: #1E3A5F;"></i>
-                        <h2 style="font-size: 2rem; font-weight: 800;">Ready to Build Your Integration?</h2>
-                        <p style="margin-top: 12px;">
-                            Get API credentials, read our documentation, and connect Smoobu to
-                            WhatsApp in hours, not weeks.
+
+                        <p style="color:#4a5568; margin-bottom:18px;">
+                            All secrets live in the relay's environment variables, never in code.
                         </p>
-                        <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20API%20access%20for%20Smoobu%20WhatsApp%20integration"
-                            class="btn btn-primary" style="background: #1E3A5F; margin-top: 20px; padding: 12px 28px;">
-                            <i class="fas fa-key"></i> Request API Access
-                        </a>
+
+                        <div style="overflow-x:auto; margin-bottom: 24px;">
+                            <table class="smoobu-table">
+                                <thead>
+                                    <tr>
+                                        <th>Env variable</th>
+                                        <th>Value</th>
+                                        <th>Where it comes from</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>HEYDOOT_BASE_URL</code></td>
+                                        <td><code>https://&lt;HEYDOOT_API_BASE_URL&gt;</code></td>
+                                        <td>the HeyDoot team</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>HEYDOOT_TOKEN</code></td>
+                                        <td><code>hd_live_…</code> (Read &amp; Send)</td>
+                                        <td>HeyDoot admin → Settings → Integrations → API Tokens</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>HEYDOOT_NUMBER_ID</code></td>
+                                        <td>the WhatsApp line UUID</td>
+                                        <td>HeyDoot admin → Settings → Phones</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>HEYDOOT_WEBHOOK_SECRET</code></td>
+                                        <td>shown once when the HeyDoot webhook is added</td>
+                                        <td>HeyDoot → Settings → Integrations → Webhooks</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>SMOOBU_API_KEY</code> / <code>SMOOBU_API_SECRET</code></td>
+                                        <td>API key + secret</td>
+                                        <td>Smoobu → Settings → Advanced → API Keys</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>RELAY_PATH_SECRET</code></td>
+                                        <td>a random string you choose</td>
+                                        <td>you</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>DEFAULT_COUNTRY_CODE</code></td>
+                                        <td>e.g. <code>91</code></td>
+                                        <td>you</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Step 1 -->
+                        <div class="setup-step">
+                            <div style="display: flex; align-items: center; margin-bottom: 16px;">
+                                <span class="step-number">1</span>
+                                <h3 style="font-size: 1.3rem; font-weight: 700; margin: 0;">HeyDoot</h3>
+                            </div>
+                            <p>A HeyDoot admin checks that API Access is on, creates a <em>Read &amp; Send</em> token
+                                labelled "Smoobu relay", and notes the number ID.</p>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="setup-step">
+                            <div style="display: flex; align-items: center; margin-bottom: 16px;">
+                                <span class="step-number">2</span>
+                                <h3 style="font-size: 1.3rem; font-weight: 700; margin: 0;">Smoobu API key</h3>
+                            </div>
+                            <p>Create an API key and secret. Use HMAC signing (below): Smoobu's older
+                                <code>Api-Key</code> header is deprecated and stops working on <strong>31 October
+                                    2026</strong>.
+                            </p>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="setup-step">
+                            <div style="display: flex; align-items: center; margin-bottom: 16px;">
+                                <span class="step-number">3</span>
+                                <h3 style="font-size: 1.3rem; font-weight: 700; margin: 0;">Smoobu webhook</h3>
+                            </div>
+                            <p>In Smoobu's API settings, enter
+                                <code>https://&lt;YOUR_RELAY_DOMAIN&gt;/smoobu/&lt;RELAY_PATH_SECRET&gt;</code>. Smoobu
+                                sends every event to it; there is no per-event choice, so the relay ignores what it
+                                doesn't need.
+                            </p>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="setup-step">
+                            <div style="display: flex; align-items: center; margin-bottom: 16px;">
+                                <span class="step-number">4</span>
+                                <h3 style="font-size: 1.3rem; font-weight: 700; margin: 0;">HeyDoot webhook</h3>
+                            </div>
+                            <p>In HeyDoot, open <strong>Settings → Integrations → Webhooks</strong>, add
+                                <code>https://&lt;YOUR_RELAY_DOMAIN&gt;/heydoot/events</code>, choose
+                                <code>hd.message.received</code>, <code>hd.message.status</code> and
+                                <code>hd.number.disconnected</code>, and copy the signing secret.
+                            </p>
+                        </div>
+
+                        <!-- Step 5 -->
+                        <div class="setup-step">
+                            <div style="display: flex; align-items: center; margin-bottom: 16px;">
+                                <span class="step-number">5</span>
+                                <h3 style="font-size: 1.3rem; font-weight: 700; margin: 0;">Database table</h3>
+                            </div>
+                            <p>The relay remembers which HeyDoot chat belongs to which booking:</p>
+                            <pre class="smoobu-code"><code>CREATE TABLE smoobu_chats (
+  booking_id      BIGINT PRIMARY KEY,
+  conversation_id TEXT,
+  guest_phone     TEXT NOT NULL,
+  arrival         DATE,
+  sent_kinds      TEXT NOT NULL DEFAULT ''  -- e.g. 'confirm,checkin' so nothing is sent twice
+);
+CREATE INDEX smoobu_chats_conv ON smoobu_chats (conversation_id);</code></pre>
+                        </div>
+
+                        <h3 style="font-size: 1.3rem; font-weight: 700; margin-top: 28px; margin-bottom: 12px;">Signing
+                            Smoobu API calls</h3>
+                        <p style="color:#4a5568; margin-bottom:12px;">
+                            Every call carries <code>X-API-Key</code>, <code>X-Timestamp</code> (ISO 8601 UTC),
+                            <code>X-Nonce</code> (a new UUID v4) and <code>X-Signature</code>. The signature is
+                            Base64 HMAC-SHA256, keyed with the API secret, over these seven lines joined by
+                            <code>\n</code>: method, path, sorted query string, timestamp, nonce, hex SHA-256 of the
+                            body, API key.
+                        </p>
+                        <pre class="smoobu-code"><code>const crypto = require('crypto');
+
+async function smoobu(method, path, body) {
+  const raw = body ? JSON.stringify(body) : '';
+  const [p, q = ''] = path.split('?');
+  const query = q.split('&').filter(Boolean).sort().join('&'); // keys/values RFC 3986 encoded
+  const ts = new Date().toISOString().replace(/\.\d{3}Z$/, 'Z');
+  const nonce = crypto.randomUUID();
+  const bodyHash = crypto.createHash('sha256').update(raw).digest('hex');
+  const canonical = [method, p, query, ts, nonce, bodyHash, process.env.SMOOBU_API_KEY].join('\n');
+  const sig = crypto.createHmac('sha256', process.env.SMOOBU_API_SECRET).update(canonical).digest('base64');
+
+  const r = await fetch(`https://login.smoobu.com${path}`, {
+    method,
+    headers: {
+      'Content-Type': 'application/json',
+      'X-API-Key':   process.env.SMOOBU_API_KEY,
+      'X-Timestamp': ts,
+      'X-Nonce':     nonce,
+      'X-Signature': sig,
+    },
+    body: raw || undefined,
+  });
+  if (!r.ok) throw new Error(`Smoobu ${r.status}: ${await r.text()}`);
+  return r.json();
+}</code></pre>
+                        <p style="color:#4a5568; margin-top: 12px;">
+                            Check it with <code>await smoobu('GET', '/api/me')</code>: it returns your Smoobu user's
+                            id, name and email.
+                        </p>
                     </div>
+
+                    <!-- Sending on booking events -->
+                    <div id="sending" style="margin-bottom: 56px;">
+                        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
+                            <div
+                                style="background: #e8effd; width: 48px; height: 48px; border-radius: 28px; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-paper-plane" style="color: #2563EB; font-size: 22px;"></i>
+                            </div>
+                            <h2 style="font-size: 1.8rem; font-weight: 700;">Sending WhatsApp on Smoobu booking
+                                events</h2>
+                        </div>
+                        <p style="color:#4a5568; margin-bottom:16px;">
+                            Smoobu posts <code>{"action", "user", "data"}</code> to the relay for every event. The relay
+                            acts on four booking actions, re-reads the booking from Smoobu, and sends through HeyDoot.
+                        </p>
+
+                        <div style="overflow-x:auto; margin-bottom: 24px;">
+                            <table class="smoobu-table">
+                                <thead>
+                                    <tr>
+                                        <th>Smoobu action</th>
+                                        <th>Relay does</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>newReservation</code></td>
+                                        <td>sends the confirmation, stores the booking ↔ chat mapping</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>updateReservation</code></td>
+                                        <td>sends the new dates, only when the arrival date changed</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>cancelReservation</code></td>
+                                        <td>sends a cancellation notice</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>deleteReservation</code>, <code>updateRates</code>,
+                                            <code>newMessage</code>, price elements, online check-in update
+                                        </td>
+                                        <td>ignored (answer 200)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h3 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 12px;">Relay: Smoobu webhook
+                            handler</h3>
+                        <pre class="smoobu-code"><code>const express = require('express');
+const app = express();
+// db: your database client (pg, mysql2, better-sqlite3); smoobu(): from the setup section.
+
+app.post(`/smoobu/${process.env.RELAY_PATH_SECRET}`, express.json(), async (req, res) =&gt; {
+  res.sendStatus(200); // acknowledge first
+  const { action, data } = req.body || {};
+  if (!['newReservation', 'updateReservation', 'cancelReservation'].includes(action) || !data?.id) return;
+
+  try {
+    // Smoobu webhooks aren't signed: trust only what the API returns.
+    const b = await smoobu('GET', `/api/reservations/${Number(data.id)}`);
+    if (b['is-blocked-booking']) return;              // owner block, no guest
+    const phone = toE164(b.phone);
+    if (!phone) return console.warn('booking without usable phone', b.id);
+
+    const row = await db.get('SELECT * FROM smoobu_chats WHERE booking_id = ?', [b.id]);
+
+    if (action === 'newReservation') {
+      if (row?.sent_kinds.includes('confirm')) return; // duplicate webhook
+      await sendToGuest(b, phone, 'confirm', confirmText(b));
+    } else if (action === 'updateReservation') {
+      if (!row || String(row.arrival) === b.arrival) return; // nothing guest-facing changed
+      await sendToGuest(b, phone, `update-${b.arrival}`, updateText(b));
+    } else {
+      await sendToGuest(b, phone, 'cancel', cancelText(b));
+    }
+  } catch (e) {
+    console.error('smoobu event failed', action, data.id, e);
+  }
+});
+
+async function sendToGuest(b, phone, kind, text) {
+  const row = await db.get('SELECT * FROM smoobu_chats WHERE booking_id = ?', [b.id]);
+  const body = {
+    text,
+    dispatch_id: uuidFrom(`smoobu-${b.id}-${kind}`), // same event twice = one message
+    user_id: 'smoobu-relay', username: 'Smoobu automation',
+    ...(row?.conversation_id ? { conversation_id: row.conversation_id }
+                             : { to: phone, number_id: process.env.HEYDOOT_NUMBER_ID }),
+  };
+  const r = await fetch(`${process.env.HEYDOOT_BASE_URL}/v1/messages/send`, {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${process.env.HEYDOOT_TOKEN}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify(body),
+  });
+  const out = await r.json();
+  if (!r.ok) throw new Error(`HeyDoot ${r.status} ${out.error}: ${out.message}`);
+
+  await db.run(
+    `INSERT INTO smoobu_chats (booking_id, conversation_id, guest_phone, arrival, sent_kinds)
+     VALUES (?, ?, ?, ?, ?)
+     ON CONFLICT (booking_id) DO UPDATE SET
+       conversation_id = excluded.conversation_id,
+       arrival         = excluded.arrival,
+       sent_kinds      = smoobu_chats.sent_kinds || ',' || excluded.sent_kinds`,
+    [b.id, out.conversation_id, phone, b.arrival, kind]);
+}
+
+// Smoobu stores phones as typed ("+49123...", "0177..."). HeyDoot needs + and the country code.
+function toE164(p, defaultCc = process.env.DEFAULT_COUNTRY_CODE || '91') {
+  const d = String(p || '').replace(/[^\d+]/g, '');
+  if (d.startsWith('+'))  return d.length &gt;= 9 ? d : null;
+  if (d.startsWith('00')) return `+${d.slice(2)}`;
+  const national = d.replace(/^0+/, '');
+  return national.length &gt;= 8 ? `+${defaultCc}${national}` : null;
+}
+
+function uuidFrom(s) {
+  const h = require('crypto').createHash('sha256').update(s).digest('hex');
+  return `${h.slice(0,8)}-${h.slice(8,12)}-4${h.slice(13,16)}-a${h.slice(17,20)}-${h.slice(20,32)}`;
+}</code></pre>
+
+                        <h3 style="font-size: 1.3rem; font-weight: 700; margin-top: 28px; margin-bottom: 12px;">Message
+                            texts</h3>
+                        <p style="color:#4a5568; margin-bottom:12px;">
+                            Adapt the wording and language; <code>b.language</code> holds the guest's language code.
+                        </p>
+                        <pre class="smoobu-code"><code>const confirmText = (b) =&gt;
+  `Hi ${b.firstname || b['guest-name']}, your stay at ${b.apartment.name} is confirmed: ` +
+  `${b.arrival} to ${b.departure}. Check-in from ${b['check-in'] || '15:00'}. ` +
+  `Your guest guide: ${b['guest-app-url']}`;
+
+const updateText = (b) =&gt;
+  `Hi ${b.firstname || b['guest-name']}, your booking at ${b.apartment.name} now runs ` +
+  `${b.arrival} to ${b.departure}.`;
+
+const cancelText = (b) =&gt;
+  `Hi ${b.firstname || b['guest-name']}, your booking at ${b.apartment.name} for ` +
+  `${b.arrival} has been cancelled.`;</code></pre>
+                    </div>
+
+                    <!-- Check-in reminders -->
+                    <div id="checkin" style="margin-bottom: 56px;">
+                        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
+                            <div
+                                style="background: #e8effd; width: 48px; height: 48px; border-radius: 28px; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-calendar-check" style="color: #2563EB; font-size: 22px;"></i>
+                            </div>
+                            <h2 style="font-size: 1.8rem; font-weight: 700;">Check-in details the day before
+                                arrival</h2>
+                        </div>
+                        <p style="color:#4a5568; margin-bottom:16px;">
+                            Smoobu has no "day before" webhook, so run a daily job (e.g. 10:00 local time) that lists
+                            tomorrow's arrivals and sends each one once:
+                        </p>
+                        <pre class="smoobu-code"><code>async function sendCheckinReminders() {
+  const tomorrow = new Date(Date.now() + 864e5).toISOString().slice(0, 10);
+  for (let page = 1; ; page++) {
+    const r = await smoobu('GET',
+      `/api/reservations?arrivalFrom=${tomorrow}&arrivalTo=${tomorrow}` +
+      `&excludeBlocked=true&page=${page}&pageSize=100`);
+    for (const b of r.bookings) {
+      const row = await db.get('SELECT sent_kinds FROM smoobu_chats WHERE booking_id = ?', [b.id]);
+      const phone = toE164(b.phone);
+      if (!phone || row?.sent_kinds.includes('checkin')) continue;
+      await sendToGuest(b, phone, 'checkin',
+        `Hi ${b['guest-name']}, see you tomorrow at ${b.apartment.name}! ` +
+        `Check-in from ${b['check-in'] || '15:00'}. ` +
+        `Directions and door code: ${b['guest-app-url']}`);
+    }
+    if (page &gt;= r.page_count) break;
+  }
+}</code></pre>
+                        <p style="color:#4a5568; margin-top: 12px;">
+                            <strong>Guest phone numbers.</strong> Smoobu only has the phone the booking channel passed
+                            on. Some channels share no number, or a masked one that isn't on WhatsApp. Those sends fail
+                            with <code>not_on_whatsapp</code> in the status webhook; fall back to Smoobu's own messaging
+                            for them.
+                        </p>
+                    </div>
+
+                    <!-- Guest replies in Smoobu -->
+                    <div id="receiving" style="margin-bottom: 56px;">
+                        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
+                            <div
+                                style="background: #e8effd; width: 48px; height: 48px; border-radius: 28px; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-inbox" style="color: #2563EB; font-size: 22px;"></i>
+                            </div>
+                            <h2 style="font-size: 1.8rem; font-weight: 700;">Guest replies in Smoobu</h2>
+                        </div>
+                        <p style="color:#4a5568; margin-bottom:16px;">
+                            When a guest answers on WhatsApp, HeyDoot calls the relay. The relay checks the signature,
+                            finds the booking by <code>conversation_id</code>, and posts the reply as an internal host
+                            message on that booking, so the host sees it in Smoobu and it stays hidden from the guest.
+                        </p>
+
+                        <pre class="smoobu-code"><code>const crypto = require('crypto');
+
+// Raw body: HeyDoot's signature covers the exact bytes.
+app.post('/heydoot/events', express.raw({ type: '*/*' }), async (req, res) =&gt; {
+  const raw = req.body;
+  const ts  = req.get('x-hd-timestamp') || '';
+  const sig = req.get('x-hd-signature') || '';
+  if (!/^\d+$/.test(ts) || Math.abs(Date.now() / 1000 - Number(ts)) &gt; 300) return res.sendStatus(401);
+
+  const expected = crypto.createHmac('sha256', process.env.HEYDOOT_WEBHOOK_SECRET)
+    .update(`${ts}.`).update(raw).digest('hex');
+  if (sig.length !== expected.length ||
+      !crypto.timingSafeEqual(Buffer.from(sig), Buffer.from(expected))) return res.sendStatus(401);
+
+  const ev = JSON.parse(raw.toString('utf8'));
+  res.sendStatus(200);
+
+  try {
+    const row = ev.conversation_id &amp;&amp;
+      await db.get('SELECT booking_id FROM smoobu_chats WHERE conversation_id = ?', [ev.conversation_id]);
+    if (!row) return; // a chat not started by a booking
+
+    if (ev.event === 'hd.message.received') {
+      if (await db.get('SELECT 1 FROM seen_refs WHERE ref = ?', [ev.message_ref])) return; // duplicate
+      await db.run('INSERT INTO seen_refs (ref) VALUES (?)', [ev.message_ref]);
+
+      await smoobu('POST', `/api/reservations/${row.booking_id}/messages/send-message-to-host`, {
+        subject: 'WhatsApp reply',
+        messageBody: `WhatsApp from ${ev.sender_name || 'guest'}: ${ev.text || 'photo or file - open HeyDoot'}`,
+        internal: true, // hidden from the guest
+      });
+    } else if (ev.event === 'hd.message.status' &amp;&amp; ev.status === 'failed') {
+      await smoobu('POST', `/api/reservations/${row.booking_id}/messages/send-message-to-host`, {
+        subject: 'WhatsApp not delivered',
+        messageBody: `The WhatsApp to this guest failed (${ev.send_error || 'unknown'}). Contact them through Smoobu instead.`,
+        internal: true,
+      });
+    }
+  } catch (e) {
+    console.error('heydoot event failed', ev.event, e);
+  }
+});</code></pre>
+
+                        <p style="color:#4a5568; margin-top: 12px;">
+                            Add <code>CREATE TABLE seen_refs (ref TEXT PRIMARY KEY);</code> next to
+                            <code>smoobu_chats</code>.
+                        </p>
+                        <p style="color:#4a5568; margin-top: 12px;">
+                            <strong>Answering the guest.</strong> The host replies from the HeyDoot inbox, where the
+                            full WhatsApp chat lives. Smoobu's own "send to guest" goes through the booking channel
+                            (Airbnb, Booking.com, email), not WhatsApp.
+                        </p>
+                        <p style="color:#4a5568; margin-top: 12px;">
+                            <strong>Disconnected line.</strong> On <code>hd.number.disconnected</code>, alert whoever
+                            looks after WhatsApp (email, Slack): nothing can be sent until the line is reconnected in
+                            HeyDoot.
+                        </p>
+                        <p style="color:#4a5568; margin-top: 12px;">
+                            <strong>Retries and duplicates.</strong> HeyDoot retries a delivery without a 2xx 6 more
+                            times over about 50 minutes. The <code>seen_refs</code> table stops a reply from appearing
+                            twice in Smoobu.
+                        </p>
+                    </div>
+
+                    <!-- Errors, limits, retries -->
+                    <div id="errors-limits" style="margin-bottom: 56px;">
+                        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
+                            <div
+                                style="background: #e8effd; width: 48px; height: 48px; border-radius: 28px; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-exclamation-triangle" style="color: #2563EB; font-size: 22px;"></i>
+                            </div>
+                            <h2 style="font-size: 1.8rem; font-weight: 700;">Errors, limits and retries</h2>
+                        </div>
+                        <p style="color:#4a5568; margin-bottom:16px;">
+                            Retry only temporary errors, always with the same <code>dispatch_id</code>; the relay builds
+                            it from booking id + message kind, so a retry never double-sends.
+                        </p>
+
+                        <div style="overflow-x:auto; margin-bottom: 24px;">
+                            <table class="smoobu-table">
+                                <thead>
+                                    <tr>
+                                        <th>From</th>
+                                        <th>HTTP</th>
+                                        <th>Error</th>
+                                        <th>Cause</th>
+                                        <th>What to do</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>HeyDoot</td>
+                                        <td>400</td>
+                                        <td><code>invalid_request</code>, <code>invalid_recipient</code></td>
+                                        <td>phone without country code, or too short</td>
+                                        <td>check <code>DEFAULT_COUNTRY_CODE</code> and the booking's phone</td>
+                                    </tr>
+                                    <tr>
+                                        <td>HeyDoot</td>
+                                        <td>401</td>
+                                        <td><code>unauthorized</code></td>
+                                        <td>token wrong or revoked</td>
+                                        <td>update <code>HEYDOOT_TOKEN</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td>HeyDoot</td>
+                                        <td>402</td>
+                                        <td><code>api_not_licensed</code>, <code>api_quota_exceeded</code></td>
+                                        <td>no API access on the plan, or quota used up</td>
+                                        <td>wait for <code>resets_at</code>, or upgrade</td>
+                                    </tr>
+                                    <tr>
+                                        <td>HeyDoot</td>
+                                        <td>403</td>
+                                        <td><code>forbidden</code>, <code>license_inactive</code></td>
+                                        <td>read-only token, or the organisation can't send</td>
+                                        <td>use a Read &amp; Send token / contact the HeyDoot admin</td>
+                                    </tr>
+                                    <tr>
+                                        <td>HeyDoot</td>
+                                        <td>422</td>
+                                        <td><code>recipient_opted_out</code></td>
+                                        <td>guest is on the Do-Not-Contact list</td>
+                                        <td>don't retry</td>
+                                    </tr>
+                                    <tr>
+                                        <td>HeyDoot</td>
+                                        <td>429</td>
+                                        <td><code>rate_limited</code></td>
+                                        <td>over 600 requests a minute</td>
+                                        <td>wait <code>Retry-After</code> seconds</td>
+                                    </tr>
+                                    <tr>
+                                        <td>HeyDoot</td>
+                                        <td>502 / 503</td>
+                                        <td><code>connector_error</code></td>
+                                        <td>WhatsApp line issue</td>
+                                        <td>retry after 2, 4, 8 s</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Smoobu</td>
+                                        <td>401</td>
+                                        <td><code>bad signature</code></td>
+                                        <td>clock more than 5 min off, or a reused nonce</td>
+                                        <td>sync the server clock (NTP); new nonce per call</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Smoobu</td>
+                                        <td>429</td>
+                                        <td>over 700 requests a minute</td>
+                                        <td>too many calls</td>
+                                        <td>wait until <code>X-RateLimit-Retry-After</code></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p style="color:#4a5568; margin-bottom:12px;">
+                            <strong>Failed webhook work.</strong> The relay answers 200 before working, so neither side
+                            retries a failure inside the relay. Log failures and re-run them: for Smoobu events, a
+                            nightly job can list bookings with <code>modifiedFrom=&lt;yesterday&gt;</code> and send
+                            anything missing from <code>sent_kinds</code>.
+                        </p>
+                        <p style="color:#4a5568; margin-bottom:12px;">
+                            <strong>Plan quota:</strong> HeyDoot responses carry <code>X-Quota-Remaining</code>; pause
+                            sends when it is low.
+                        </p>
+                        <p style="color:#4a5568;">
+                            <strong>Ban risk:</strong> booking messages go to guests who just booked and expect to hear
+                            from you. Never use the relay for bulk promotions to past guests.
+                        </p>
+                    </div>
+
+                    <!-- Go-live checklist -->
+                    <div id="go-live" style="margin-bottom: 56px;">
+                        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
+                            <div
+                                style="background: #e8effd; width: 48px; height: 48px; border-radius: 28px; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-list-check" style="color: #2563EB; font-size: 22px;"></i>
+                            </div>
+                            <h2 style="font-size: 1.8rem; font-weight: 700;">Go-live checklist</h2>
+                        </div>
+                        <div class="feature-card" style="background: white; border-radius: 28px; padding: 24px 28px;">
+                            <ul style="list-style: none;">
+                                <li style="margin-bottom: 12px; display: flex; gap: 12px;"><i
+                                        class="fas fa-check-circle" style="color: #2563EB;"></i> HeyDoot token (Read
+                                    &amp; Send), number ID and Smoobu key + secret are relay env variables, not in code
+                                </li>
+                                <li style="margin-bottom: 12px; display: flex; gap: 12px;"><i
+                                        class="fas fa-check-circle" style="color: #2563EB;"></i> HeyDoot API Access is
+                                    on, with a plan quota that fits your bookings</li>
+                                <li style="margin-bottom: 12px; display: flex; gap: 12px;"><i
+                                        class="fas fa-check-circle" style="color: #2563EB;"></i> Smoobu calls use HMAC
+                                    signing, not the <code>Api-Key</code> header (it stops working on 31 October 2026)
+                                </li>
+                                <li style="margin-bottom: 12px; display: flex; gap: 12px;"><i
+                                        class="fas fa-check-circle" style="color: #2563EB;"></i> The relay server's
+                                    clock is synced (Smoobu rejects timestamps more than 5 minutes off)</li>
+                                <li style="margin-bottom: 12px; display: flex; gap: 12px;"><i
+                                        class="fas fa-check-circle" style="color: #2563EB;"></i> The Smoobu webhook URL
+                                    contains <code>RELAY_PATH_SECRET</code>, and the relay re-reads each booking from
+                                    the API</li>
+                                <li style="margin-bottom: 12px; display: flex; gap: 12px;"><i
+                                        class="fas fa-check-circle" style="color: #2563EB;"></i>
+                                    <code>DEFAULT_COUNTRY_CODE</code> matches where most guests' national numbers come
+                                    from
+                                </li>
+                                <li style="margin-bottom: 12px; display: flex; gap: 12px;"><i
+                                        class="fas fa-check-circle" style="color: #2563EB;"></i> One test booking on
+                                    your own phone produced the confirmation, and your WhatsApp reply showed up in
+                                    Smoobu</li>
+                                <li style="margin-bottom: 12px; display: flex; gap: 12px;"><i
+                                        class="fas fa-check-circle" style="color: #2563EB;"></i> The daily check-in job
+                                    runs once a day and skips bookings already reminded</li>
+                                <li style="margin-bottom: 12px; display: flex; gap: 12px;"><i
+                                        class="fas fa-check-circle" style="color: #2563EB;"></i> <code>seen_refs</code>
+                                    and <code>smoobu_chats</code> live in a real database, not memory</li>
+                                <li style="display: flex; gap: 12px;"><i class="fas fa-check-circle"
+                                        style="color: #2563EB;"></i> Someone is alerted on
+                                    <code>hd.number.disconnected</code> and on failed sends
+                                </li>
+                            </ul>
+                            <p style="color:#4a5568; margin-top: 12px;">
+                                <strong>Not tested yet.</strong> The HeyDoot calls match HeyDoot's code, and the Smoobu
+                                calls follow Smoobu's API docs, but the relay hasn't run against a real Smoobu account.
+                                Test with a test booking first, especially the HMAC signing and how your channels pass
+                                guest phone numbers.
+                            </p>
+                            <p style="color:#6b7280; margin-top: 10px; font-size:0.85rem;"><em>Sources: Smoobu API
+                                    documentation (authentication, reservations, messages, webhooks)</em></p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Section -->
+                    <div id="faq-smoobu" style="margin-top: 48px;">
+                        <h3 style="font-size: 1.6rem; font-weight: 700; margin-bottom: 24px;"><i
+                                class="fas fa-question-circle" style="color: #2563EB;"></i> FAQs</h3>
+
+                        <div class="faq-item">
+                            <div class="faq-question">Why do I need a relay between Smoobu and HeyDoot? <i
+                                    class="fas fa-chevron-down"></i></div>
+                            <div class="faq-answer">Smoobu webhooks can only call a URL; they can't add HeyDoot's Bearer
+                                token or reshape the data. Smoobu also doesn't sign its webhooks, so the relay treats
+                                each one as a hint and fetches the booking from Smoobu's API before sending anything.
+                                The relay is about 150 lines of Node.js and holds the only HeyDoot token and Smoobu
+                                key.</div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">Do I need the Smoobu Api-Key header? <i
+                                    class="fas fa-chevron-down"></i></div>
+                            <div class="faq-answer">No. Use HMAC signing (<code>X-API-Key</code>,
+                                <code>X-Timestamp</code>,
+                                <code>X-Nonce</code>, <code>X-Signature</code>). The old <code>Api-Key</code> header is
+                                deprecated and stops working on 31 October 2026.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">Will every channel's guest phone work on WhatsApp? <i
+                                    class="fas fa-chevron-down"></i></div>
+                            <div class="faq-answer">No. Smoobu only has the phone the booking channel passed on. Some
+                                channels share no number, or a masked one that isn't on WhatsApp. Those sends fail with
+                                <code>not_on_whatsapp</code> in the status webhook; fall back to Smoobu's own messaging
+                                for them.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">How are check-in reminders sent the day before arrival? <i
+                                    class="fas fa-chevron-down"></i></div>
+                            <div class="faq-answer">Smoobu has no "day before" webhook, so run a daily job (e.g. 10:00
+                                local time) that lists tomorrow's arrivals and sends each one once, tracked by
+                                <code>sent_kinds</code> in <code>smoobu_chats</code>.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">Where do guest replies appear? <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">As an internal host message on the booking in Smoobu's messages.
+                                It's visible to the host only, so the guest doesn't see it. The host answers from the
+                                HeyDoot inbox, where the full WhatsApp chat lives.</div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">How do you avoid sending the same message twice? <i
+                                    class="fas fa-chevron-down"></i></div>
+                            <div class="faq-answer">The relay builds a deterministic <code>dispatch_id</code> from the
+                                booking id + message kind (e.g. <code>smoobu-1234-confirm</code>), so a repeated webhook
+                                or a retry never sends twice. It also tracks <code>sent_kinds</code> per booking and
+                                de-duplicates replies with a <code>seen_refs</code> table.</div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">Can I use this for bulk promotions to past guests? <i
+                                    class="fas fa-chevron-down"></i></div>
+                            <div class="faq-answer">No. Booking messages go to guests who just booked and expect to hear
+                                from you. Never use the relay for bulk promotions to past guests — it risks your
+                                WhatsApp line being banned.</div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">Is there a free trial available? <i
+                                    class="fas fa-chevron-down"></i></div>
+                            <div class="faq-answer">Yes, we offer a 14-day free trial with full Smoobu integration
+                                features.</div>
+                        </div>
+                    </div>
+
+                    <!-- CTA Section -->
+                    <div id="cta"
+                        style="background: linear-gradient(115deg, #0b1c3f, #1e3a8a); border-radius: 32px; padding: 48px; text-align: center; margin: 56px 0 32px; color: white;">
+                        <i class="fab fa-whatsapp" style="font-size: 56px; color: #25D366; margin-bottom: 16px;"></i>
+                        <h2 style="font-size: 2rem; font-weight: 800;">Send Booking WhatsApps from Smoobu</h2>
+                        <p style="margin-top: 16px; opacity: 0.9;">Deploy the relay, drop your secrets into environment
+                            variables, add the two webhook URLs, and your bookings start sending WhatsApp
+                            automatically.</p>
+                        <div
+                            style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; margin-top: 32px;">
+                            <span style="background: rgba(255,255,255,0.15); padding: 6px 16px; border-radius: 40px;"><i
+                                    class="fas fa-code"></i> Node.js Relay</span>
+                            <span style="background: rgba(255,255,255,0.15); padding: 6px 16px; border-radius: 40px;"><i
+                                    class="fas fa-shield-alt"></i> Signed Webhooks</span>
+                            <span style="background: rgba(255,255,255,0.15); padding: 6px 16px; border-radius: 40px;"><i
+                                    class="fas fa-calendar-check"></i> Check-in Reminders</span>
+                            <span style="background: rgba(255,255,255,0.15); padding: 6px 16px; border-radius: 40px;"><i
+                                    class="fas fa-inbox"></i> Replies in Smoobu Inbox</span>
+                        </div>
+                        <div style="margin-top: 36px;">
+                            <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20start%20the%20HeyDoot%20Smoobu%20WhatsApp%20integration"
+                                class="btn btn-lg" style="background: white; color: #2563EB; font-weight: 700;"><i
+                                    class="fab fa-whatsapp"></i> Get Started Today</a>
+                        </div>
+                    </div>
+
                 </main>
             </div>
-            <!-- Utility Bar -->
+
+            <!-- Utility bar -->
             <div class="utility-bar">
                 <div class="utility-bar-inner">
+
                     <div class="utility-item">
                         <i class="fas fa-search"></i>
                         <span>Search...</span>
                     </div>
+
                     <span class="shortcut-key">Ctrl K</span>
-                    <a href="<?php echo BASE_URL; ?>/smoobu-api.php" class="utility-item utility-link"
-                        style="color: var(--wa-teal);">
+
+                    <a href="<?php echo BASE_URL; ?>/smoobu-api.php" class="utility-item utility-link">
                         <i class="fas fa-code"></i>
-                        API reference
+                        Smoobu API Docs
                     </a>
+
                     <a href="tel:+919718517228" class="utility-item utility-link">
                         <i class="fas fa-headset"></i>
-                        Developer support
+                        Support
                     </a>
-                    <a href="<?php echo BASE_URL; ?>/integrations/dashboard.php" class="dashboard-btn"
-                        style="background: #1E3A5F; color: white;">
+
+                    <a href="<?php echo BASE_URL; ?>/integrations/dashboard.php" class="dashboard-btn">
                         <i class="fas fa-tachometer-alt"></i>
-                        API Dashboard
+                        Dashboard
                     </a>
+
                 </div>
             </div>
         </div>

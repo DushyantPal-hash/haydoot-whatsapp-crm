@@ -3,7 +3,7 @@ require_once 'config.php';
 $page_meta = [
     'title' => 'Frequently Asked Questions | HeyDoot',
     'meta_title' => 'FAQ – Frequently Asked Questions About HeyDoot',
-    'description' => 'Find answers to common questions about HeyDoot, WhatsApp integrations, pricing, setup, automation, multi-agent access, CRM integrations, and customer communication features.',
+    'description' => 'Find answers to common questions about HeyDoot WhatsApp CRM, integrations, multi-agent inbox, automations, pricing, and setup.',
 
     'og_title' => 'Frequently Asked Questions | HeyDoot',
     'og_description' => 'Explore HeyDoot FAQs covering WhatsApp automation, CRM integrations, team collaboration, setup process, pricing, and support.',
@@ -68,6 +68,7 @@ include 'components/navbar.php';
         <h1>Frequently Asked <span style="color: var(--wa-green);">Questions</span></h1>
         <p>Everything you need to know about HeyDoot.</p>
     </div>
+
     <section class="section-container">
         <div class="container-fluid faq-container">
             <div class="faq-item">
@@ -121,12 +122,10 @@ include 'components/navbar.php';
                         history beyond your retention policy.</div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">Can multiple team members use the same number?
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        Yes, the shared inbox allows unlimited agents to respond from one number simultaneously.
-                    </div>
+                    <div class="faq-question">Can multiple team members use the same number? <i
+                            class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">Yes, the shared inbox allows unlimited agents to respond from one number
+                        simultaneously.</div>
                 </div>
             </div>
         </div>

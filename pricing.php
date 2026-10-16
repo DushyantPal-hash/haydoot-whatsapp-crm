@@ -2,22 +2,22 @@
 $page_meta = [
     'title' => 'Pricing - HeyDoot WhatsApp CRM',
     'meta_title' => 'Pricing | HeyDoot - Simple & Transparent WhatsApp CRM Plans',
-    'description' => 'Choose the perfect plan for your team. Free trial available. Unlimited agents, multiple WhatsApp numbers, and powerful automation features.',
+    'description' => 'Choose the perfect WhatsApp CRM plan. Unlimited agents, multiple WhatsApp numbers, AI bots, and automation features with a free trial.',
     'og_title' => 'Pricing - HeyDoot WhatsApp CRM',
     'og_description' => 'Simple, transparent pricing for WhatsApp CRM. Start your free trial today.',
     'og_image' => 'https://heydoot.com/public/images/m1.png',
-    'og_url' => 'https://heydoot.com/pricing',
+    'og_url' => 'https://heydoot.com/pricing.php',
     'twitter_title' => 'Pricing - HeyDoot WhatsApp CRM',
     'twitter_description' => 'Affordable plans for teams of all sizes.',
     'twitter_image' => 'https://heydoot.com/public/images/m1.png',
-    'canonical' => 'https://heydoot.com/pricing'
+    'canonical' => 'https://heydoot.com/pricing.php'
 ];
 
 $page_json_ld = [
     "@context" => "https://schema.org",
     "@type" => "WebPage",
     "name" => "HeyDoot Pricing",
-    "url" => "https://heydoot.com/pricing",
+    "url" => "https://heydoot.com/pricing.php",
     "description" => "Pricing plans for HeyDoot WhatsApp CRM",
     "isPartOf" => [
         "@type" => "WebSite",
@@ -72,7 +72,7 @@ include 'components/navbar.php';
         font-size: 3.2rem;
         font-weight: 800;
         color: var(--wa-teal);
-        /* margin: 16px 0 8px; */
+        margin: 16px 0 8px;
     }
 
     .price-card {
@@ -108,13 +108,13 @@ include 'components/navbar.php';
 
     .feature-list {
         list-style: none;
-        margin: 15px 0;
+        margin: 28px 0;
         padding: 0;
         text-align: left;
     }
 
     .feature-list li {
-        margin-bottom: 5px;
+        margin-bottom: 14px;
         display: flex;
         align-items: center;
         gap: 12px;
@@ -133,8 +133,8 @@ include 'components/navbar.php';
     }
 
     .feature-category {
-        /* margin-top: 20px;
-        margin-bottom: 12px; */
+        margin-top: 20px;
+        margin-bottom: 12px;
         font-weight: 700;
         color: #1a2a3a;
         font-size: 1rem;
@@ -198,17 +198,12 @@ include 'components/navbar.php';
         padding: 16px;
         text-align: left;
         border-bottom: 1px solid #eef2f6;
-        transition: all 0.3s ease;
-    }
-
-    .comparison-table td:hover {
-        transform: translateX(8px);
     }
 
     .comparison-table th {
-        background: #0d6a2e;
+        background: #F8FAFE;
         font-weight: 700;
-        color: #f5f5f5;
+        color: #1a2a3a;
     }
 
     .comparison-table td:first-child {
@@ -258,6 +253,7 @@ include 'components/navbar.php';
             </div>
         </div>
     </section>
+
     <!-- Pricing Cards -->
     <section class="section-container" style="padding: 60px 0; background: #fff;">
         <div class="container-fluid">
@@ -315,7 +311,7 @@ include 'components/navbar.php';
                     </ul>
 
                     <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20start%20the%20Starter%20plan%20free%20trial"
-                        class="btn btn-secondary btn-pricing trial-btn" target="_blank">
+                        class="btn btn-secondary btn-pricing trial-btn" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-whatsapp"></i> Start Free Trial
                     </a>
                 </div>
@@ -385,7 +381,7 @@ include 'components/navbar.php';
                     </ul>
 
                     <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20start%20the%20Professional%20plan%20free%20trial"
-                        class="btn btn-primary btn-pricing trial-btn" target="_blank">
+                        class="btn btn-primary btn-pricing trial-btn" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-whatsapp"></i> Start Free Trial
                     </a>
                 </div>
@@ -458,7 +454,7 @@ include 'components/navbar.php';
                     </ul>
 
                     <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27m%20interested%20in%20the%20Enterprise%20plan%20for%20HeyDoot"
-                        class="btn btn-secondary btn-pricing demo-btn" target="_blank">
+                        class="btn btn-secondary btn-pricing demo-btn" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-whatsapp"></i> Contact Sales
                     </a>
                 </div>
@@ -471,6 +467,7 @@ include 'components/navbar.php';
             </div>
         </div>
     </section>
+
     <!-- Features Comparison Table -->
     <section style="background: #F8FAFE; padding: 60px 0;">
         <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">
@@ -616,6 +613,7 @@ include 'components/navbar.php';
             </div>
         </div>
     </section>
+
     <!-- Add-ons Section -->
     <section style="background: #fff; padding: 60px 0;">
         <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">
@@ -660,6 +658,7 @@ include 'components/navbar.php';
             </div>
         </div>
     </section>
+
     <!-- CTA Section -->
     <section style="background: linear-gradient(135deg, #1a2a3a 0%, #2c3e50 100%); padding: 80px 0;">
         <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto; text-align: center;">
@@ -671,7 +670,7 @@ include 'components/navbar.php';
             </p>
             <div class="cta-buttons" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
                 <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20start%20a%20free%20trial%20of%20HeyDoot"
-                    class="btn btn-secondary btn-lg" target="_blank">
+                    class="btn btn-secondary btn-lg" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-whatsapp"></i> Start Free Trial
                 </a>
                 <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>" class="btn btn-primary btn-lg">
@@ -680,6 +679,7 @@ include 'components/navbar.php';
             </div>
         </div>
     </section>
+
     <!-- FAQ Section -->
     <section class="section-container" style="background: #F0F8FF; padding: 60px 0;">
         <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">

@@ -1,4 +1,5 @@
 <?php
+http_response_code(404);
 require_once 'config.php';
 
 $requested_page = isset($_GET['page']) ? htmlspecialchars($_GET['page']) : 'this';
@@ -7,25 +8,26 @@ $requested_page = isset($_GET['page']) ? htmlspecialchars($_GET['page']) : 'this
 $requested_page = preg_replace('/\.php$/i', '', $requested_page);
 
 $page_meta = [
-    'title' => 'Page Under Construction | HeyDoot WhatsApp CRM',
-    'meta_title' => 'Coming Soon - Page Under Construction | HeyDoot',
-    'description' => 'We are working hard to bring you something amazing. This page is currently under construction. Stay tuned for updates!',
-    'og_title' => 'Coming Soon | HeyDoot',
-    'og_description' => 'We are working hard to bring you something amazing. This page is currently under construction.',
-    'og_image' => 'https://heydoot.com/public/images/m1.png',
-    'og_url' => 'https://heydoot.com/under-construction',
-    'twitter_title' => 'Coming Soon | HeyDoot',
-    'twitter_description' => 'We are working hard to bring you something amazing.',
-    'twitter_image' => 'https://heydoot.com/public/images/m1.png',
-    'canonical' => 'https://heydoot.com/under-construction'
+    'title' => 'Page Not Found | ' . SITE_NAME,
+    'meta_title' => 'Page Not Found | ' . SITE_NAME,
+    'description' => 'The page you are looking for does not exist or has been moved.',
+    'robots' => 'noindex, nofollow',
+    'og_title' => 'Page Not Found | ' . SITE_NAME,
+    'og_description' => 'The page you are looking for does not exist or has been moved.',
+    'og_image' => BASE_URL . '/assets/images/logo/logo.png',
+    'og_url' => 'https://heydoot.com/404.php',
+    'twitter_title' => 'Page Not Found | ' . SITE_NAME,
+    'twitter_description' => 'The page you are looking for does not exist or has been moved.',
+    'twitter_image' => BASE_URL . '/assets/images/logo/logo.png',
+    'canonical' => 'https://heydoot.com/404.php'
 ];
 
 $page_json_ld = [
     "@context" => "https://schema.org",
     "@type" => "WebPage",
-    "name" => "Page Under Construction",
-    "description" => "We are working hard to bring you something amazing. This page is currently under construction.",
-    "url" => "https://heydoot.com/under-construction"
+    "name" => "Page Not Found",
+    "description" => "The page you are looking for does not exist or has been moved.",
+    "url" => "https://heydoot.com/404.php"
 ];
 
 $page_gtag_id = 'G-Q64SDSY0Y4';
@@ -362,7 +364,9 @@ include 'components/navbar.php';
     <!-- Hero Section with Animated Background -->
     <section class="error-section">
         <div class="particle-container" id="particleContainer">
+
         </div>
+
         <div class="container-fluid">
             <div class="under-construction-container">
                 <div class="construction-content">
@@ -420,7 +424,7 @@ include 'components/navbar.php';
                             <i class="fas fa-home"></i> Back to Home
                         </a>
                         <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I'm%20interested%20in%20HeyDoot%20and%20would%20like%20to%20know%20more"
-                            class="btn-outline-light-custom" target="_blank">
+                            class="btn-outline-light-custom" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-whatsapp"></i> Contact Support
                         </a>
                     </div>

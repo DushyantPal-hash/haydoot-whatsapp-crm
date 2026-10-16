@@ -1,0 +1,56 @@
+# HeyDoot
+
+> Manage WhatsApp Groups and Customer Communications at Scale for Modern Businesses without API Complexity.
+
+HeyDoot (by HashStudioz Technologies) is an enterprise-grade WhatsApp CRM and multi-number shared inbox platform designed for customer support, sales, marketing, and operations teams. It enables businesses to connect multiple WhatsApp accounts into a unified team workspace, automate responses, assign tickets, manage groups, and integrate with external CRMs and ERP systems.
+
+## Key Features
+
+- **Multi-Number Shared Inbox**: Connect multiple WhatsApp numbers and assign conversations seamlessly across team members and departments.
+- **Group Management & Automation**: Manage large-scale WhatsApp communities and groups with automated moderation, bulk actions, and member engagement workflows.
+- **Ticketing & Task Assignment**: Convert incoming WhatsApp chats into manageable tickets, set priority levels, assign agents, and monitor resolution times.
+- **AI & Rule-Based Automations**: Build intelligent auto-replies, conversational flows, keyword triggers, and 24/7 routing bots without writing complex code.
+- **Enterprise-Grade Security**: 256-bit encryption, role-based access control (RBAC), multi-factor authentication, audit logs, and compliance readiness (GDPR/SOC2).
+- **No Complex API Approval Required**: Get started instantly without cumbersome WhatsApp Cloud API verification bottlenecks.
+
+## Main Pages & Documentation
+
+- [Homepage](https://heydoot.com/): Official overview of HeyDoot WhatsApp CRM platform.
+- [Features](https://heydoot.com/features.php): In-depth breakdown of shared inbox, ticketing, automation, and analytics features.
+- [Pricing Plans](https://heydoot.com/pricing.php): Transparent tier pricing for startups, growing businesses, and enterprise teams.
+- [Why Choose HeyDoot](https://heydoot.com/whyus.php): Value proposition, key differentiators, and comparison against standard WhatsApp tools.
+- [WhatsApp Pricing Calculator](https://heydoot.com/calculator.php): Interactive tool to estimate conversation and messaging costs.
+- [Frequently Asked Questions (FAQ)](https://heydoot.com/faq.php): Answers to common questions regarding setup, numbers, and integrations.
+- [Contact Support & Sales](https://heydoot.com/contact.php): Inquiries for live demos, custom setups, and enterprise requirements.
+- [About Us](https://heydoot.com/about.php): Company mission, team, and background at HashStudioz Technologies.
+
+## Integrations
+
+HeyDoot integrates with thousands of business applications via webhooks, REST APIs, and native connectors:
+
+- [HubSpot WhatsApp Integration](https://heydoot.com/integrations/hubspot.php): Sync WhatsApp leads, conversation histories, and automate deal stage messages inside HubSpot CRM.
+- [Zapier & Make Automation](https://heydoot.com/integrations/zapier.php): Connect HeyDoot with 5000+ cloud apps to trigger WhatsApp notifications on external events.
+- [Smoobu Vacation Rental Integration](https://heydoot.com/integrations/smoobu.php): Automate guest booking confirmations, check-in instructions, and reservation alerts for property managers.
+- [Odoo ERP WhatsApp Integration](https://heydoot.com/integrations/odoo.php): Automate sales orders, PDF invoices, delivery tracking, and payment reminders directly from Odoo ERP.
+- [Partner Integration & API Guide (v1)](https://heydoot.com/integrations/guide.php): Comprehensive REST API, webhook signatures, message dispatch, error handling, and security reference for developers and partners.
+- [Integrations Directory](https://heydoot.com/integrations.php): Full catalog of available and supported third-party integrations.
+
+## Professional Services
+
+- [Services Overview](https://heydoot.com/services.php): Custom automation workflows, CRM integration, and enterprise rollout consulting.
+- [Odoo Implementation Services](https://heydoot.com/services/odoo.php): Tailored ERP workflow design, custom webhook development, and managed onboarding.
+- [Smoobu Guest Automation Services](https://heydoot.com/services/smoobu.php): Turnkey guest messaging setup for short-term rental hosts and hospitality businesses.
+
+## Legal & Compliance
+
+- [Privacy Policy](https://heydoot.com/privacy-policy.php): Data handling practices, encryption standards, and user privacy rights.
+- [Terms of Service](https://heydoot.com/terms-of-service.php): Platform usage terms, service level commitments, and billing policies.
+- [XML Sitemap](https://heydoot.com/sitemap.xml): Machine-readable index of all website URLs.
+- [HTML Sitemap](https://heydoot.com/sitemap.html): Human-navigable directory of all resources.
+
+## Contact Information
+
+- **Website**: https://heydoot.com
+- **Email**: info@heydoot.com
+- **WhatsApp Support**: +91 95000 69296
+- **Phone**: +91 83758 11375

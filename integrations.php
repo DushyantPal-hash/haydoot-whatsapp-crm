@@ -2,22 +2,22 @@
 $page_meta = [
     'title' => 'Integrations - HeyDoot WhatsApp CRM',
     'meta_title' => 'Integrations | HeyDoot - Connect WhatsApp with Your Favorite Tools',
-    'description' => 'Connect HeyDoot with Slack, Teams, HubSpot, Salesforce, Zapier, and 5000+ apps. Build powerful WhatsApp workflows with our REST API and webhooks.',
+    'description' => 'Connect HeyDoot with HubSpot, Zapier, Odoo, Smoobu, and 5000+ apps. Build automated WhatsApp workflows with webhooks and REST APIs.',
     'og_title' => 'Integrations - HeyDoot WhatsApp CRM',
     'og_description' => 'Seamlessly integrate WhatsApp with your existing tools. CRM, collaboration, automation, and more.',
     'og_image' => 'https://heydoot.com/public/images/m1.png',
-    'og_url' => 'https://heydoot.com/integrations',
+    'og_url' => 'https://heydoot.com/integrations.php',
     'twitter_title' => 'Integrations - HeyDoot WhatsApp CRM',
     'twitter_description' => 'Connect, automate, and scale with HeyDoot integrations.',
     'twitter_image' => 'https://heydoot.com/public/images/m1.png',
-    'canonical' => 'https://heydoot.com/integrations'
+    'canonical' => 'https://heydoot.com/integrations.php'
 ];
 
 $page_json_ld = [
     "@context" => "https://schema.org",
     "@type" => "WebPage",
     "name" => "HeyDoot Integrations",
-    "url" => "https://heydoot.com/integrations",
+    "url" => "https://heydoot.com/integrations.php",
     "description" => "Connect HeyDoot WhatsApp CRM with your favorite business tools.",
     "isPartOf" => [
         "@type" => "WebSite",
@@ -49,17 +49,18 @@ include 'components/navbar.php';
             <p class="hero-desc" style="font-size: 1.2rem; color: #cdddef; max-width: 700px; margin: 0 auto;">Connect
                 HeyDoot with your favorite tools and supercharge your WhatsApp workflow. No coding required.</p>
             <div class="cta-group" style="margin-top: 32px;">
-                <a href="<?php echo BASE_URL; ?>/404.php" class="btn btn-primary btn-lg">
+                <a href="#popular-integrations" class="btn btn-primary btn-lg">
                     <i class="fas fa-search"></i> Explore All Integrations
                 </a>
                 <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27m%20interested%20in%20custom%20integrations%20for%20HeyDoot"
-                    class="btn btn-secondary btn-lg" target="_blank">
+                    class="btn btn-secondary btn-lg" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-whatsapp"></i> Request Custom Integration
                 </a>
             </div>
         </div>
     </div>
 </section>
+
 <!-- Stats Bar -->
 <section style="background: #fff; border-bottom: 1px solid #eef2f6;">
     <div class="container-fluid">
@@ -84,6 +85,7 @@ include 'components/navbar.php';
         </div>
     </div>
 </section>
+
 <!-- All Integrations Section -->
 <section id="all-integrations" class="section-container" style="padding: 60px 0; background: #fff;">
     <div class="container-fluid">
@@ -225,13 +227,12 @@ include 'components/navbar.php';
                         automation.</p>
                     <span class="integration-badge">Available</span>
                 </div>
-                <div class="feature-card" style="background: #F8FAFE; border-radius: 20px; padding: 24px;">
+                <a href="<?php echo BASE_URL; ?>/integrations/guide.php" class="feature-card" style="background: #F8FAFE; border-radius: 20px; padding: 24px; text-decoration: none; color: inherit; display: block; transition: transform 0.2s;">
                     <div class="feature-icon"><i class="fas fa-code" style="font-size: 32px; color: #2C3E50;"></i></div>
-                    <h3>Webhooks</h3>
-                    <p>Real-time HTTP callbacks for every event. Build your own integrations with our powerful webhook
-                        system.</p>
-                    <span class="integration-badge">Developer</span>
-                </div>
+                    <h3>Webhooks & REST API</h3>
+                    <p>Real-time HTTP callbacks and full REST API for every event. Read the complete partner integration guide.</p>
+                    <span class="integration-badge" style="background: #0d7a62; color: #fff;">View API Guide &rarr;</span>
+                </a>
             </div>
         </div>
 
@@ -398,6 +399,7 @@ include 'components/navbar.php';
         </div>
     </div>
 </section>
+
 <!-- API Section -->
 <style>
     .automation-card {
@@ -458,6 +460,7 @@ include 'components/navbar.php';
         </div>
     </div>
 </section>
+
 <!-- Custom Integration CTA -->
 <section style="background: linear-gradient(115deg, #2d1b28, #4a2c42); padding: 80px 0;">
     <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto; text-align: center;">
@@ -466,7 +469,7 @@ include 'components/navbar.php';
             Our team can build a custom integration for your specific needs.</p>
         <div class="cta-buttons" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
             <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%20need%20a%20custom%20integration%20for%20HeyDoot"
-                class="btn btn-secondary btn-lg" target="_blank">
+                class="btn btn-secondary btn-lg" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-whatsapp"></i> Request Custom Integration
             </a>
             <!-- <a href="mailto:sales@heydoot.com" class="btn btn-cta-white btn-lg"
@@ -479,6 +482,7 @@ include 'components/navbar.php';
         </div>
     </div>
 </section>
+
 <!-- Integration Benefits -->
 <section style="padding: 60px 0; background: #fff;">
     <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">
@@ -512,6 +516,7 @@ include 'components/navbar.php';
         </div>
     </div>
 </section>
+
 <!-- FAQ Section -->
 <section class="section-container" style="background: #F0F8FF; padding: 60px 0;">
     <div class="container" style="width: 90%; max-width: 1280px; margin: 0 auto;">

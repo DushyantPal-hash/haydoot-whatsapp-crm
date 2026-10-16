@@ -1,21 +1,28 @@
 RewriteEngine On
 
+# 301 Redirects for moved/aliased pages
+RewriteRule ^why-us/?$ whyus.php [R=301,L,NC]
+RewriteRule ^services/zapier\.php$ integrations/zapier.php [R=301,L,NC]
+RewriteRule ^services/hubspot\.php$ integrations/hubspot.php [R=301,L,NC]
+RewriteRule ^Demo\.php$ contact.php [R=301,L,NC]
+RewriteRule ^under-construction/?$ 404.php [R=301,L,NC]
+
 # Remove .php extension from URLs
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^(.*)$ $1.php [NC,L]
 
-# Custom error pages - FIXED PATH
-ErrorDocument 404 /heydoot/404.php
-ErrorDocument 403 /heydoot/404.php
+# Custom error pages
+ErrorDocument 404 404.php
+ErrorDocument 403 404.php
 
 # Redirect all non-existent files/directories to 404.php
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ /heydoot/404.php?page=$1 [L]
+RewriteRule ^(.*)$ 404.php?page=$1 [L]
 
 # Cache control
-<FilesMatch "\.(css|js|jpg|jpeg|png|gif|ico)$">
+<FilesMatch "\.(css|js|jpg|jpeg|png|gif|ico|webp|svg)$">
     Header set Cache-Control "max-age=2592000, public"
 </FilesMatch>
 
@@ -23,3 +30,8 @@ RewriteRule ^(.*)$ /heydoot/404.php?page=$1 [L]
 <IfModule mod_deflate.c>
     AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript
 </IfModule>
+
+# cPanel-generated handler (uncomment in cPanel if required)
+# <IfModule mime_module>
+#   AddHandler application/x-httpd-ea-php74 .php .php7 .phtml
+# </IfModule>
