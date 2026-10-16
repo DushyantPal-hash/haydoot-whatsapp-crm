@@ -44,7 +44,6 @@ $navbar = [
         'icon' => 'fas fa-plug',
 
         'submenu' => [
-
             [
                 'title' => 'HubSpot Integration',
                 'link' => BASE_URL . '/integrations/hubspot.php',
@@ -52,20 +51,24 @@ $navbar = [
             ],
 
             [
-                'title' => 'Zapier & Make Integration',
-                'link' => BASE_URL . '/integrations/zapier.php',
-                'icon' => 'fas fa-bolt'
-            ],
-
-            [
-                'title' => 'Odoo WhatsApp Integration',
+                'title' => 'Odoo Integration',
                 'link' => BASE_URL . '/integrations/odoo.php',
                 'icon' => 'fab fa-slack'
             ],
             [
-                'title' => 'Smoobu WhatsApp Integration',
+                'title' => 'Salesforce Integration',
+                'link' => BASE_URL . '/integrations/salesforce.php',
+                'icon' => 'fa-brands fa-salesforce'
+            ],
+            [
+                'title' => 'Smoobu Integration',
                 'link' => BASE_URL . '/integrations/smoobu.php',
                 'icon' => 'fas fa-building'
+            ],
+            [
+                'title' => 'Zapier & Make Integration',
+                'link' => BASE_URL . '/integrations/zapier.php',
+                'icon' => 'fas fa-bolt'
             ],
             [
                 'title' => 'API & Partner Guide',
