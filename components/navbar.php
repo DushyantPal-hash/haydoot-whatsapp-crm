@@ -66,7 +66,7 @@ $navbar = [
                 'icon' => 'fas fa-building'
             ],
             [
-                'title' => 'Zapier & Make Integration',
+                'title' => 'Zapier Integration',
                 'link' => BASE_URL . '/integrations/zapier.php',
                 'icon' => 'fas fa-bolt'
             ],

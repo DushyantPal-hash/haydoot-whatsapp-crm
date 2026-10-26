@@ -409,8 +409,9 @@ include ROOT_PATH . '/components/navbar.php';
                                 <li style="margin-bottom:10px;"><strong>Turn on HeyDoot API access.</strong> A HeyDoot
                                     admin checks that API Access is on and that the plan includes API calls, then
                                     creates a <em>Read &amp; Send</em> token labelled e.g. "HubSpot production".</li>
-                                <li style="margin-bottom:10px;"><strong>Create a HubSpot private app.</strong> In
-                                    HubSpot go to <strong>Settings → Integrations → Private Apps</strong> (newer
+                                <li style="margin-bottom:10px;">
+                                    <strong>Create a HubSpot private app.</strong>
+                                    In HubSpot go to <strong>Settings → Integrations → Private Apps</strong> (newer
                                     portals may list it under <em>Legacy Apps</em>), create "HeyDoot relay" and grant
                                     these scopes:
                                     <ul style="padding-left:20px; margin-top:6px;">

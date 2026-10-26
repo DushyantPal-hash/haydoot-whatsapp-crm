@@ -3,19 +3,17 @@ require_once dirname(__DIR__) . '/config.php';
 $page_meta = [
     'title' => 'Salesforce WhatsApp Integration | HeyDoot',
     'meta_title' => 'Salesforce WhatsApp Integration – Send & Receive WhatsApp from Apex with HeyDoot',
-    'description' => 'Connect Salesforce with WhatsApp using HeyDoot. Send WhatsApp from Apex with HMAC-signed requests, receive replies and delivery updates through a signed webhook, and start HeyDoot automations from any record.',
-
+    'description' => 'Connect Salesforce with WhatsApp using HeyDoot. Send WhatsApp from Apex with HMAC-signed requests, receive replies and delivery 
+    updates through a signed webhook, and start HeyDoot automations from any record.',
     'og_title' => 'Salesforce WhatsApp Integration | HeyDoot',
-    'og_description' => 'Integrate Salesforce with WhatsApp using HeyDoot. Apex sends signed messages; HeyDoot pushes replies, delivery ticks and automation answers back into Salesforce.',
-
+    'og_description' => 'Integrate Salesforce with WhatsApp using HeyDoot. Apex sends signed messages; HeyDoot pushes replies, delivery ticks and 
+    automation answers back into Salesforce.',
     'og_image' => 'https://heydoot.com/public/images/m1.png',
     'og_url' => 'https://heydoot.com/integrations/salesforce.php',
-
     'twitter_title' => 'Salesforce WhatsApp Integration | HeyDoot',
-    'twitter_description' => 'Send WhatsApp from Apex with HeyDoot and receive replies through signed webhooks. Includes automations for lead intake, demos and onboarding.',
-
+    'twitter_description' => 'Send WhatsApp from Apex with HeyDoot and receive replies through signed webhooks. Includes automations for lead intake, 
+    demos and onboarding.',
     'twitter_image' => 'https://heydoot.com/public/images/m1.png',
-
     'canonical' => 'https://heydoot.com/integrations/salesforce.php'
 ];
 $page_json_ld = [
@@ -28,7 +26,8 @@ $page_json_ld = [
         "name" => "HeyDoot",
         "url" => "https://heydoot.com/"
     ],
-    "description" => "HeyDoot Salesforce WhatsApp Integration connects Salesforce with WhatsApp. Apex sends HMAC-signed messages; HeyDoot pushes replies, delivery statuses and automation answers back into Salesforce through signed webhooks.",
+    "description" => "HeyDoot Salesforce WhatsApp Integration connects Salesforce with WhatsApp. Apex sends HMAC-signed messages; 
+    HeyDoot pushes replies, delivery statuses and automation answers back into Salesforce through signed webhooks.",
     "areaServed" => "Worldwide",
     "url" => "https://heydoot.com/integrations/salesforce.php",
     "offers" => [
@@ -145,8 +144,8 @@ include ROOT_PATH . '/components/navbar.php';
         style="background: linear-gradient(135deg, #032d42 0%, #0a4a6b 100%);padding: 20px 20px 20px;">
         <div class="floating-dots"></div>
         <div style="max-width: 900px; margin: 0 auto; position: relative; z-index: 2;">
-            <div
-                style="display: inline-block; background: rgba(255,255,255,0.12); backdrop-filter: blur(8px); padding: 6px 16px; border-radius: 60px; margin-bottom: 0;">
+            <div style="display: inline-block; background: rgba(255,255,255,0.12); backdrop-filter: blur(8px); padding: 6px 16px; 
+                border-radius: 60px; margin-bottom: 0;">
                 <span style="color: #ffffff; font-weight: 700; display: flex; align-items: center; gap: 10px;">
                     <i class="fab fa-salesforce"></i>
                     Apex + Signed Webhooks for Salesforce
@@ -162,8 +161,8 @@ include ROOT_PATH . '/components/navbar.php';
             <div style="display: flex; gap: 48px; flex-wrap: wrap;">
                 <!-- Sidebar -->
                 <aside class="sidebar-card">
-                    <div
-                        style="position: sticky; top: 100px; background: white; border-radius: 28px; padding: 24px; box-shadow: var(--card-shadow); border: 1px solid rgba(0,0,0,0.04);">
+                    <div style="position: sticky; top: 100px; background: white; border-radius: 28px; padding: 24px; 
+                        box-shadow: var(--card-shadow); border: 1px solid rgba(0,0,0,0.04);">
                         <h4 style="font-weight: 700; margin-bottom: 20px; font-size: 1.1rem;"><i class="fas fa-cog"
                                 style="color: #00A1E0; margin-right: 8px;"></i> On this page</h4>
                         <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px;">
@@ -198,8 +197,8 @@ include ROOT_PATH . '/components/navbar.php';
                         </ul>
                         <div style="margin-top:24px;padding-top:20px;border-top:1px solid #f0f0f0;">
                             <p style="font-size:.85rem;color:#6b7280;margin-bottom:10px;">Need API / technical docs?</p>
-                            <a href="<?php echo BASE_URL; ?>/services/salesforce.php"
-                                style="display:flex;align-items:center;gap:10px;background:#e6f4fb;border-radius:14px;padding:12px 16px;color:#1E3A5F;font-weight:600;font-size:.9rem;text-decoration:none;">
+                            <a href="<?php echo BASE_URL; ?>/services/salesforce.php" style="display:flex;align-items:center;gap:10px;background:#e6f4fb;border-radius:14px;
+                                padding:12px 16px;color:#1E3A5F;font-weight:600;font-size:.9rem;text-decoration:none;">
                                 <i class="fas fa-code"></i>
                                 Services Page →
                             </a>
@@ -210,15 +209,17 @@ include ROOT_PATH . '/components/navbar.php';
                 <!-- Main Content -->
                 <main style="flex: 2.5; min-width: 280px;">
                     <!-- Status Banner -->
-                    <div
-                        style="background: linear-gradient(105deg, #e6f4fb 0%, #f5fbfe 100%); border-left: 5px solid #00A1E0; border-radius: 20px; padding: 20px 28px; margin-bottom: 48px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+                    <div style="background: linear-gradient(105deg, #e6f4fb 0%, #f5fbfe 100%); border-left: 5px solid #00A1E0; 
+                        border-radius: 20px; padding: 20px 28px; margin-bottom: 48px; display: flex; justify-content: space-between; align-items: center; 
+                        flex-wrap: wrap; gap: 16px;">
                         <div>
                             <i class="fas fa-check-circle" style="color: #00A1E0; margin-right: 12px;"></i>
                             <strong>Salesforce connects to HeyDoot in two directions.</strong>
                             <span style="color: #4b5563;"> Apex sends signed WhatsApp messages; HeyDoot posts replies
                                 and
                                 delivery updates to an Apex <code>@RestResource</code>.</span>
-                            <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20help%20setting%20up%20the%20HeyDoot%20Salesforce%20WhatsApp%20integration"
+                            <a href="https://wa.me/
+                            <?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20help%20setting%20up%20the%20HeyDoot%20Salesforce%20WhatsApp%20integration"
                                 style="color: #00A1E0; font-weight: 600;"> Start
                                 Integration →</a>
                         </div>
@@ -231,8 +232,8 @@ include ROOT_PATH . '/components/navbar.php';
                     <!-- Overview -->
                     <div id="overview" style="margin-bottom: 56px;">
                         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
-                            <div
-                                style="background: #e6f4fb; width: 48px; height: 48px; border-radius: 28px; display: flex; align-items: center; justify-content: center;">
+                            <div style="background: #e6f4fb; width: 48px; height: 48px; border-radius: 28px; display: flex; 
+                                align-items: center; justify-content: center;">
                                 <i class="fas fa-info-circle" style="color: #00A1E0; font-size: 22px;"></i>
                             </div>
                             <h2 style="font-size: 1.8rem; font-weight: 700;">Overview</h2>
@@ -284,31 +285,41 @@ include ROOT_PATH . '/components/navbar.php';
                     <!-- Prerequisites -->
                     <div id="prerequisites" style="margin-bottom: 56px;">
                         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
-                            <div
-                                style="background: #e6f4fb; width: 48px; height: 48px; border-radius: 28px; display: flex; align-items: center; justify-content: center;">
+                            <div style="background: #e6f4fb; width: 48px; height: 48px; border-radius: 28px; display: flex; 
+                                align-items: center; justify-content: center;">
                                 <i class="fas fa-clipboard-list" style="color: #00A1E0; font-size: 22px;"></i>
                             </div>
                             <h2 style="font-size: 1.8rem; font-weight: 700;">What you need before you start</h2>
                         </div>
                         <div class="feature-card" style="background: white; border-radius: 28px; padding: 24px 28px;">
                             <ul style="list-style: none;">
-                                <li style="margin-bottom: 14px; display: flex; gap: 12px;"><i
-                                        class="fas fa-check-circle" style="color: #00A1E0;"></i> Base URL of the HeyDoot
-                                    API: <code>https://&lt;HEYDOOT_API_BASE_URL&gt;</code> (from the HeyDoot team)</li>
-                                <li style="margin-bottom: 14px; display: flex; gap: 12px;"><i
-                                        class="fas fa-check-circle" style="color: #00A1E0;"></i> <strong>Salesforce
-                                        bridge secret</strong> (<code>SALESFORCE_HMAC_SECRET</code>): a shared secret
-                                    configured on the HeyDoot server. The HeyDoot team gives it to you once.</li>
-                                <li style="margin-bottom: 14px; display: flex; gap: 12px;"><i
-                                        class="fas fa-check-circle" style="color: #00A1E0;"></i> <strong>Number
-                                        ID</strong>:
-                                    the UUID of the WhatsApp line to send from (HeyDoot admin → Settings → Phones, or
-                                    <code>GET /v1/numbers</code>)
+                                <li style="margin-bottom: 14px; display: flex; gap: 12px;">
+                                    <i class="fas fa-check-circle" style="color: #00A1E0;"></i>
+                                    Base URL of the HeyDoot API: <code>https://&lt;HEYDOOT_API_BASE_URL&gt;</code> (from
+                                    the HeyDoot team)
                                 </li>
-                                <li style="margin-bottom: 14px; display: flex; gap: 12px;"><i
-                                        class="fas fa-check-circle" style="color: #00A1E0;"></i> <strong>Webhook signing
-                                        secret</strong> (and encryption key, if used): shown once when a HeyDoot admin
-                                    registers your Salesforce endpoint as a webhook</li>
+                                <li style="margin-bottom: 14px; display: flex; gap: 12px;">
+                                    <i class="fas fa-check-circle" style="color: #00A1E0;"></i>
+                                    <span>
+                                        <strong>Salesforce bridge secret</strong> (<code>SALESFORCE_HMAC_SECRET</code>):
+                                        a shared secret configured on the HeyDoot server. The HeyDoot team gives it to
+                                        you once.
+                                    </span>
+                                </li>
+                                <li style="margin-bottom: 14px; display: flex; gap: 12px;">
+                                    <i class="fas fa-check-circle" style="color: #00A1E0;"></i>
+                                    <span>
+                                        <strong>Number ID</strong>: the UUID of the WhatsApp line to send from (HeyDoot
+                                        admin → Settings → Phones, or <code>GET /v1/numbers</code>)
+                                    </span>
+                                </li>
+                                <li style="margin-bottom: 14px; display: flex; gap: 12px;">
+                                    <i class="fas fa-check-circle" style="color: #00A1E0;"></i>
+                                    <span>
+                                        <strong>Webhook signing secret</strong> (and encryption key, if used): shown
+                                        once when a HeyDoot admin registers your Salesforce endpoint as a webhook
+                                    </span>
+                                </li>
                                 <li style="display: flex; gap: 12px;"><i class="fas fa-check-circle"
                                         style="color: #00A1E0;"></i> A Salesforce org where you can deploy Apex classes,
                                     Remote Site Settings or Named Credentials, and a public Site for the inbound REST
@@ -320,8 +331,8 @@ include ROOT_PATH . '/components/navbar.php';
                     <!-- Credentials & setup -->
                     <div id="setup-guide" style="margin-bottom: 56px;">
                         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
-                            <div
-                                style="background: #e6f4fb; width: 48px; height: 48px; border-radius: 28px; display: flex; align-items: center; justify-content: center;">
+                            <div style="background: #e6f4fb; width: 48px; height: 48px; border-radius: 28px; display: flex; 
+                                align-items: center; justify-content: center;">
                                 <i class="fas fa-list-ol" style="color: #00A1E0; font-size: 22px;"></i>
                             </div>
                             <h2 style="font-size: 1.8rem; font-weight: 700;">Credentials and Salesforce setup</h2>
@@ -426,8 +437,8 @@ include ROOT_PATH . '/components/navbar.php';
                     <!-- Sending WhatsApp from Salesforce -->
                     <div id="sending" style="margin-bottom: 56px;">
                         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
-                            <div
-                                style="background: #e6f4fb; width: 48px; height: 48px; border-radius: 28px; display: flex; align-items: center; justify-content: center;">
+                            <div style="background: #e6f4fb; width: 48px; height: 48px; border-radius: 28px; display: flex; 
+                                align-items: center; justify-content: center;">
                                 <i class="fas fa-paper-plane" style="color: #00A1E0; font-size: 22px;"></i>
                             </div>
                             <h2 style="font-size: 1.8rem; font-weight: 700;">Sending a WhatsApp from Salesforce</h2>
@@ -613,8 +624,8 @@ include ROOT_PATH . '/components/navbar.php';
                     <!-- Receiving events in Salesforce -->
                     <div id="receiving" style="margin-bottom: 56px;">
                         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
-                            <div
-                                style="background: #e6f4fb; width: 48px; height: 48px; border-radius: 28px; display: flex; align-items: center; justify-content: center;">
+                            <div style="background: #e6f4fb; width: 48px; height: 48px; border-radius: 28px; display: flex; 
+                                align-items: center; justify-content: center;">
                                 <i class="fas fa-inbox" style="color: #00A1E0; font-size: 22px;"></i>
                             </div>
                             <h2 style="font-size: 1.8rem; font-weight: 700;">Receiving events in Salesforce</h2>
@@ -793,8 +804,8 @@ global without sharing class HeyDootWebhook {
                     <!-- User attribution -->
                     <div id="user-metrics" style="margin-bottom: 56px;">
                         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
-                            <div
-                                style="background: #e6f4fb; width: 48px; height: 48px; border-radius: 28px; display: flex; align-items: center; justify-content: center;">
+                            <div style="background: #e6f4fb; width: 48px; height: 48px; border-radius: 28px; display: flex; 
+                                align-items: center; justify-content: center;">
                                 <i class="fas fa-user" style="color: #00A1E0; font-size: 22px;"></i>
                             </div>
                             <h2 style="font-size: 1.8rem; font-weight: 700;">User attribution for User Metrics</h2>
@@ -843,8 +854,8 @@ global without sharing class HeyDootWebhook {
                     <!-- Errors, retries, idempotency -->
                     <div id="errors-limits" style="margin-bottom: 56px;">
                         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
-                            <div
-                                style="background: #e6f4fb; width: 48px; height: 48px; border-radius: 28px; display: flex; align-items: center; justify-content: center;">
+                            <div style="background: #e6f4fb; width: 48px; height: 48px; border-radius: 28px; display: flex; 
+                                align-items: center; justify-content: center;">
                                 <i class="fas fa-exclamation-triangle" style="color: #00A1E0; font-size: 22px;"></i>
                             </div>
                             <h2 style="font-size: 1.8rem; font-weight: 700;">Errors, retries and idempotency</h2>
@@ -936,8 +947,8 @@ global without sharing class HeyDootWebhook {
                     <!-- Optional: standard REST API -->
                     <div id="standard-api" style="margin-bottom: 56px;">
                         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
-                            <div
-                                style="background: #e6f4fb; width: 48px; height: 48px; border-radius: 28px; display: flex; align-items: center; justify-content: center;">
+                            <div style="background: #e6f4fb; width: 48px; height: 48px; border-radius: 28px; display: flex; 
+                                align-items: center; justify-content: center;">
                                 <i class="fas fa-code" style="color: #00A1E0; font-size: 22px;"></i>
                             </div>
                             <h2 style="font-size: 1.8rem; font-weight: 700;">Optional: standard REST API with a Bearer
@@ -1004,8 +1015,8 @@ global without sharing class HeyDootWebhook {
                     <!-- Starting HeyDoot automations from Salesforce -->
                     <div id="automations" style="margin-bottom: 56px;">
                         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
-                            <div
-                                style="background: #e6f4fb; width: 48px; height: 48px; border-radius: 28px; display: flex; align-items: center; justify-content: center;">
+                            <div style="background: #e6f4fb; width: 48px; height: 48px; border-radius: 28px; display: flex; 
+                                align-items: center; justify-content: center;">
                                 <i class="fas fa-robot" style="color: #00A1E0; font-size: 22px;"></i>
                             </div>
                             <h2 style="font-size: 1.8rem; font-weight: 700;">Starting HeyDoot automations from
@@ -1303,8 +1314,8 @@ global without sharing class HeyDootWebhook {
                     <!-- Go-live checklist -->
                     <div id="go-live" style="margin-bottom: 56px;">
                         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
-                            <div
-                                style="background: #e6f4fb; width: 48px; height: 48px; border-radius: 28px; display: flex; align-items: center; justify-content: center;">
+                            <div style="background: #e6f4fb; width: 48px; height: 48px; border-radius: 28px; display: flex; 
+                                align-items: center; justify-content: center;">
                                 <i class="fas fa-list-check" style="color: #00A1E0; font-size: 22px;"></i>
                             </div>
                             <h2 style="font-size: 1.8rem; font-weight: 700;">Go-live checklist</h2>
@@ -1330,10 +1341,12 @@ global without sharing class HeyDootWebhook {
                                     <code>@future(callout=true)</code> or a Queueable, not after DML in the same
                                     transaction
                                 </li>
-                                <li style="margin-bottom: 12px; display: flex; gap: 12px;"><i
-                                        class="fas fa-check-circle" style="color: #00A1E0;"></i> The webhook endpoint
-                                    is on a public Site, checks the timestamp and signature, and decrypts when
-                                    <code>x-hd-encryption</code> is set
+                                <li style="margin-bottom: 12px; display: flex; gap: 12px;">
+                                    <i class="fas fa-check-circle" style="color: #00A1E0;"></i>
+                                    <span>
+                                        The webhook endpoint is on a public Site, checks the timestamp and signature,
+                                        and decrypts when <code>x-hd-encryption</code> is set
+                                    </span>
                                 </li>
                                 <li style="margin-bottom: 12px; display: flex; gap: 12px;"><i
                                         class="fas fa-check-circle" style="color: #00A1E0;"></i> The receiver answers
@@ -1427,8 +1440,8 @@ global without sharing class HeyDootWebhook {
                     </div>
 
                     <!-- CTA Section -->
-                    <div id="cta"
-                        style="background: linear-gradient(115deg, #032d42, #0a4a6b); border-radius: 32px; padding: 48px; text-align: center; margin: 56px 0 32px; color: white;">
+                    <div id="cta" style="background: linear-gradient(115deg, #032d42, #0a4a6b); border-radius: 32px; padding: 48px; 
+                        text-align: center; margin: 56px 0 32px; color: white;">
                         <i class="fab fa-whatsapp" style="font-size: 56px; color: #25D366; margin-bottom: 16px;"></i>
                         <h2 style="font-size: 2rem; font-weight: 800;">Send and Receive WhatsApp from Salesforce</h2>
                         <p style="margin-top: 16px; opacity: 0.9;">Deploy the Apex sender and REST receiver, drop your
@@ -1446,7 +1459,8 @@ global without sharing class HeyDootWebhook {
                                     class="fas fa-bolt"></i> Real-Time Delivery Updates</span>
                         </div>
                         <div style="margin-top: 36px;">
-                            <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20start%20the%20HeyDoot%20Salesforce%20WhatsApp%20integration"
+                            <a href="https://wa.me/
+                            <?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20start%20the%20HeyDoot%20Salesforce%20WhatsApp%20integration"
                                 class="btn btn-lg" style="background: white; color: #00A1E0; font-weight: 700;"><i
                                     class="fab fa-whatsapp"></i> Get Started Today</a>
                         </div>
