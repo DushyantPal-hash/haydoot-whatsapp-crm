@@ -478,7 +478,7 @@ include 'components/navbar.php';
             <h2 style="color: white; margin-bottom: 20px;">Questions about our Terms?</h2>
             <p style="margin-bottom: 32px;">Our legal team is available to address your concerns.</p>
             <div class="cta-buttons" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-                <a href="https://wa.me/919718517228?text=I%20have%20a%20question%20about%20HeyDoot%20Terms%20of%20Service"
+                <a href="https://wa.me/919911432288?text=I%20have%20a%20question%20about%20HeyDoot%20Terms%20of%20Service"
                     class="btn btn-outline-light btn-lg"
                     style="background: transparent; border: 2px solid white; color: white; padding: 12px 32px; border-radius: 40px; text-decoration: none; display: inline-flex; align-items: center; gap: 10px;">
                     <i class="fab fa-whatsapp"></i> WhatsApp Legal Team

@@ -427,7 +427,7 @@ $navbar = [
     <a href="tel:<?php echo str_replace(' ', '', PHONE_NUMBER); ?>" class="floating-btn contact-btn"
         aria-label="Call us">
         <i class="fas fa-headset"></i>
-        <span class="btn-label">+91 83758 11375</span>
+        <span class="btn-label">+91 9911432288</span>
     </a>
 </div>
 

@@ -1140,7 +1140,7 @@ app.post('/heydoot/events', express.raw({ type: '*/*' }), async (req, res) =&gt;
                         Smoobu API Docs
                     </a>
 
-                    <a href="tel:+919718517228" class="utility-item utility-link">
+                    <a href="tel:+919911432288" class="utility-item utility-link">
                         <i class="fas fa-headset"></i>
                         Support
                     </a>

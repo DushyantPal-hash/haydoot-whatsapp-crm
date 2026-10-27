@@ -1,6 +1,5 @@
 <?php
 require_once dirname(__DIR__) . '/config.php';
-
 $page_meta = [
     'title' => 'HubSpot WhatsApp Integration | HeyDoot',
     'meta_title' => 'HubSpot WhatsApp Integration – Automate Customer Conversations with HeyDoot',
@@ -17,7 +16,6 @@ $page_meta = [
 
     'canonical' => 'https://heydoot.com/integrations/hubspot.php'
 ];
-
 $page_json_ld = [
     "@context" => "https://schema.org",
     "@type" => "Service",
@@ -37,9 +35,7 @@ $page_json_ld = [
         "priceCurrency" => "USD"
     ]
 ];
-
 $page_gtag_id = 'G-Q64SDSY0Y4';
-
 include ROOT_PATH . '/components/header.php';
 include ROOT_PATH . '/components/navbar.php';
 ?>
@@ -170,7 +166,6 @@ include ROOT_PATH . '/components/navbar.php';
                         </div>
                     </div>
                 </aside>
-
                 <!-- Main Content -->
                 <main style="flex: 2.5; min-width: 280px;">
                     <!-- Integration Status Banner -->
@@ -226,10 +221,12 @@ include ROOT_PATH . '/components/navbar.php';
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td style="padding:10px; border:1px solid #d7e6dc;">HubSpot → HeyDoot (send)
+                                            <td style="padding:10px; border:1px solid #d7e6dc;">
+                                                HubSpot → HeyDoot (send)
                                             </td>
-                                            <td style="padding:10px; border:1px solid #d7e6dc;">Workflow Custom code
-                                                action calls <code class="hubspot-code-1">POST /v1/messages/send</code>
+                                            <td style="padding:10px; border:1px solid #d7e6dc;">
+                                                Workflow Custom code action calls
+                                                <code class="hubspot-code-1">POST /v1/messages/send</code>
                                             </td>
                                             <td style="padding:10px; border:1px solid #d7e6dc;">
                                                 <code
@@ -237,20 +234,24 @@ include ROOT_PATH . '/components/navbar.php';
                                             </td>
                                         </tr>
                                         <tr style="background:#fafffb;">
-                                            <td style="padding:10px; border:1px solid #d7e6dc;">HeyDoot → relay (events)
+                                            <td style="padding:10px; border:1px solid #d7e6dc;">
+                                                HeyDoot → relay (events)
                                             </td>
-                                            <td style="padding:10px; border:1px solid #d7e6dc;">HeyDoot calls
-                                                <code
+                                            <td style="padding:10px; border:1px solid #d7e6dc;">
+                                                HeyDoot calls <code
                                                     class="hubspot-code-1">https://&lt;YOUR_RELAY_DOMAIN&gt;/heydoot/events</code>
                                             </td>
-                                            <td style="padding:10px; border:1px solid #d7e6dc;">HMAC-SHA256 signature
-                                                with the webhook's signing secret</td>
+                                            <td style="padding:10px; border:1px solid #d7e6dc;">
+                                                HMAC-SHA256 signature with the webhook's signing secret
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td style="padding:10px; border:1px solid #d7e6dc;">relay → HubSpot (log)
+                                            <td style="padding:10px; border:1px solid #d7e6dc;">
+                                                relay → HubSpot (log)
                                             </td>
-                                            <td style="padding:10px; border:1px solid #d7e6dc;">Relay calls the HubSpot
-                                                CRM API to log the message on the contact</td>
+                                            <td style="padding:10px; border:1px solid #d7e6dc;">
+                                                Relay calls the HubSpot CRM API to log the message on the contact
+                                            </td>
                                             <td style="padding:10px; border:1px solid #d7e6dc;">
                                                 <code
                                                     class="hubspot-code-1">Authorization: Bearer &lt;HUBSPOT_PRIVATE_APP_TOKEN&gt;</code>
@@ -329,8 +330,7 @@ include ROOT_PATH . '/components/navbar.php';
                             </div>
                             <p style="color:#4a5b4e; margin:16px 0;">
                                 Plan names change often. Confirm with your HubSpot admin that <strong>Custom
-                                    code</strong>
-                                appears in the workflow action list before you start.
+                                    code</strong> appears in the workflow action list before you start.
                             </p>
                         </div>
                     </div>
@@ -354,12 +354,15 @@ include ROOT_PATH . '/components/navbar.php';
                                 <table style="width:100%; border-collapse: collapse; font-size: 0.9rem;">
                                     <thead>
                                         <tr style="background:#e9f5ef;">
-                                            <th style="text-align:left; padding:10px; border:1px solid #d7e6dc;">Value
+                                            <th style="text-align:left; padding:10px; border:1px solid #d7e6dc;">
+                                                Value
                                             </th>
-                                            <th style="text-align:left; padding:10px; border:1px solid #d7e6dc;">Where
-                                                it comes from</th>
-                                            <th style="text-align:left; padding:10px; border:1px solid #d7e6dc;">Stored
-                                                in</th>
+                                            <th style="text-align:left; padding:10px; border:1px solid #d7e6dc;">
+                                                Where it comes from
+                                            </th>
+                                            <th style="text-align:left; padding:10px; border:1px solid #d7e6dc;">
+                                                Stored in
+                                            </th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -378,10 +381,12 @@ include ROOT_PATH . '/components/navbar.php';
                                                     class="hubspot-code-1">hd_live_…</code>, <em>Read
                                                     &amp; Send</em>)
                                             </td>
-                                            <td style="padding:10px; border:1px solid #d7e6dc;">HeyDoot admin →
+                                            <td style="padding:10px; border:1px solid #d7e6dc;">
+                                                HeyDoot admin →
                                                 <strong>Settings → Integrations → API Tokens</strong> (shown once)
                                             </td>
-                                            <td style="padding:10px; border:1px solid #d7e6dc;">workflow secret
+                                            <td style="padding:10px; border:1px solid #d7e6dc;">
+                                                workflow secret
                                                 <code class="hubspot-code-1">HEYDOOT_TOKEN</code> and relay env
                                             </td>
                                         </tr>
@@ -389,21 +394,23 @@ include ROOT_PATH . '/components/navbar.php';
                                             <td style="padding:10px; border:1px solid #d7e6dc;">
                                                 <code class="hubspot-code-1">&lt;NUMBER_ID&gt;</code>
                                             </td>
-                                            <td style="padding:10px; border:1px solid #d7e6dc;">HeyDoot admin →
-                                                <strong>Settings → Phones</strong>, or <code>GET /v1/numbers</code>
+                                            <td style="padding:10px; border:1px solid #d7e6dc;">
+                                                HeyDoot admin → <strong>Settings → Phones</strong>, or
+                                                <code>GET /v1/numbers</code>
                                             </td>
-                                            <td style="padding:10px; border:1px solid #d7e6dc;">workflow secret
-                                                <code class="hubspot-code-1">HEYDOOT_NUMBER_ID</code>
+                                            <td style="padding:10px; border:1px solid #d7e6dc;">
+                                                workflow secret <code class="hubspot-code-1">HEYDOOT_NUMBER_ID</code>
                                             </td>
                                         </tr>
                                         <tr style="background:#fafffb;">
                                             <td style="padding:10px; border:1px solid #d7e6dc;">
                                                 <code class="hubspot-code-1">&lt;WEBHOOK_SIGNING_SECRET&gt;</code>
                                             </td>
-                                            <td style="padding:10px; border:1px solid #d7e6dc;">shown once when the
-                                                relay URL is added as a HeyDoot webhook</td>
-                                            <td style="padding:10px; border:1px solid #d7e6dc;">relay env
-                                                <code class="hubspot-code-1">HEYDOOT_WEBHOOK_SECRET</code>
+                                            <td style="padding:10px; border:1px solid #d7e6dc;">
+                                                shown once when the relay URL is added as a HeyDoot webhook
+                                            </td>
+                                            <td style="padding:10px; border:1px solid #d7e6dc;">
+                                                relay env <code class="hubspot-code-1">HEYDOOT_WEBHOOK_SECRET</code>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -411,9 +418,11 @@ include ROOT_PATH . '/components/navbar.php';
                             </div>
 
                             <ol style="color:#4a5b4e; padding-left:20px;">
-                                <li style="margin-bottom:10px;"><strong>Turn on HeyDoot API access.</strong> A HeyDoot
-                                    admin checks that API Access is on and that the plan includes API calls, then
-                                    creates a <em>Read &amp; Send</em> token labelled e.g. "HubSpot production".</li>
+                                <li style="margin-bottom:10px;">
+                                    <strong>Turn on HeyDoot API access.</strong> A HeyDoot admin checks that API Access
+                                    is on and that the plan includes API calls, then creates a <em>Read &amp; Send</em>
+                                    token labelled e.g. "HubSpot production".
+                                </li>
                                 <li style="margin-bottom:10px;">
                                     <strong>Create a HubSpot private app.</strong>
                                     In HubSpot go to <strong>Settings → Integrations → Private Apps</strong> (newer
@@ -460,7 +469,8 @@ include ROOT_PATH . '/components/navbar.php';
                                 style="background: #e9f5ef; width: 48px; height: 48px; border-radius: 28px; display: flex; align-items: center; justify-content: center;">
                                 <i class="fas fa-rocket" style="color: var(--wa-teal); font-size: 22px;"></i>
                             </div>
-                            <h2 style="font-size: 1.8rem; font-weight: 700;">Steps to connect HeyDoot with HubSpot
+                            <h2 style="font-size: 1.8rem; font-weight: 700;">
+                                Steps to connect HeyDoot with HubSpot
                             </h2>
                         </div>
                         <div class="automation-grid"
@@ -468,8 +478,10 @@ include ROOT_PATH . '/components/navbar.php';
                             <div class="automation-card" style="padding: 24px;">
                                 <div class="automation-icon" style="background: #FF7A59; color: white;">1</div>
                                 <h3>Turn on HeyDoot API access</h3>
-                                <p>Confirm API Access is on, the plan includes API calls, and create a Read &amp; Send
-                                    token labelled e.g. "HubSpot production".</p>
+                                <p>
+                                    Confirm API Access is on, the plan includes API calls, and create a Read &amp; Send
+                                    token labelled e.g. "HubSpot production".
+                                </p>
                             </div>
                             <div class="automation-card" style="padding: 24px;">
                                 <div class="automation-icon" style="background: #FF7A59; color: white;">2</div>
@@ -505,7 +517,8 @@ include ROOT_PATH . '/components/navbar.php';
                                 style="background: #e9f5ef; width: 48px; height: 48px; border-radius: 28px; display: flex; align-items: center; justify-content: center;">
                                 <i class="fas fa-cogs" style="color: var(--wa-teal); font-size: 22px;"></i>
                             </div>
-                            <h2 style="font-size: 1.8rem; font-weight: 700;">What can be done with the integration?
+                            <h2 style="font-size: 1.8rem; font-weight: 700;">
+                                What can be done with the integration?
                             </h2>
                         </div>
 
@@ -520,47 +533,55 @@ include ROOT_PATH . '/components/navbar.php';
                                 <div>
                                     <h3 style="font-size: 1.5rem; font-weight: 700;">1. Sending a WhatsApp from HubSpot
                                     </h3>
-                                    <p style="color: #4a5b4e;">A contact-based workflow runs a Custom code action that
-                                        calls POST <code
+                                    <p style="color: #4a5b4e;">
+                                        A contact-based workflow runs a Custom code action that calls POST <code
                                             class="hubspot-code-1"> https://&lt;HEYDOOT_API_BASE_URL&gt;/v1/messages/send</code>.
                                         HeyDoot accepts the message straight away (<strong>202</strong>) and reports
-                                        delivery later by webhook.</p>
+                                        delivery later by webhook.
+                                    </p>
 
-                                    <p style="color:#4a5b4e; margin:16px 0;"><strong>Workflow setup</strong></p>
+                                    <p style="color:#4a5b4e; margin:16px 0;">
+                                        <strong>Workflow setup</strong>
+                                    </p>
                                     <ol style="color:#4a5b4e; padding-left:20px;">
-                                        <li style="margin-bottom:6px;"><strong>Automation → Workflows → Create workflow
-                                                → Contact-based.</strong>
+                                        <li style="margin-bottom:6px;">
+                                            <strong>Automation → Workflows → Create workflow → Contact-based.</strong>
                                             Pick the trigger, e.g. <em>Lifecycle stage is Customer</em> or <em>Deal
                                                 stage is Closed won</em> (in a deal-based workflow, use the associated
-                                            contact).</li>
-                                        <li style="margin-bottom:6px;">Add the action <strong>Custom code</strong>,
-                                            language Node.js.</li>
-                                        <li style="margin-bottom:6px;">Under <strong>Secrets</strong>, add
-                                            <code class="hubspot-code-1">HEYDOOT_BASE_URL</code>, <code
-                                                class="hubspot-code-1">HEYDOOT_TOKEN</code> and
-                                            <code class="hubspot-code-1">HEYDOOT_NUMBER_ID</code>.
+                                            contact).
                                         </li>
-                                        <li style="margin-bottom:6px;">Under <strong>Property to include in
-                                                code</strong>,
-                                            add <code class="hubspot-code-1">mobilephone</code>, <code
-                                                class="hubspot-code-1">firstname</code>,
-                                            <code class="hubspot-code-1">heyDoot_conversation_id</code> and <code
+                                        <li style="margin-bottom:6px;">
+                                            Add the action <strong>Custom code</strong>,language Node.js.
+                                        </li>
+                                        <li style="margin-bottom:6px;">
+                                            Under <strong>Secrets</strong>, add <code
+                                                class="hubspot-code-1">HEYDOOT_BASE_URL</code>, <code
+                                                class="hubspot-code-1">HEYDOOT_TOKEN</code> and <code
+                                                class="hubspot-code-1">HEYDOOT_NUMBER_ID</code>.
+                                        </li>
+                                        <li style="margin-bottom:6px;">
+                                            Under <strong>Property to include in code</strong>, add <code
+                                                class="hubspot-code-1">mobilephone</code>, <code
+                                                class="hubspot-code-1">firstname</code>, <code
+                                                class="hubspot-code-1">heyDoot_conversation_id</code> and <code
                                                 class="hubspot-code-1">hs_object_id</code>.
                                         </li>
-                                        <li style="margin-bottom:6px;">Paste the code below, then define the outputs
-                                            <code class="hubspot-code-1">message_ref</code>, <code
-                                                class="hubspot-code-1">conversation_id</code> and
-                                            <code class="hubspot-code-1">status</code> (all strings).
+                                        <li style="margin-bottom:6px;">
+                                            Paste the code below, then define the outputs <code
+                                                class="hubspot-code-1">message_ref</code>, <code
+                                                class="hubspot-code-1">conversation_id</code> and <code
+                                                class="hubspot-code-1">status</code> (all strings).
                                         </li>
-                                        <li>Add a <strong>Set property value</strong> action after it:
-                                            <code class="hubspot-code-1">heydoot_conversation_id</code> = the <code
-                                                class="hubspot-code-1">conversation_id</code>
-                                            output, so later sends reuse the same chat.
+                                        <li>
+                                            Add a <strong>Set property value</strong> action after it: <code
+                                                class="hubspot-code-1">heydoot_conversation_id</code> = the <code
+                                                class="hubspot-code-1">conversation_id</code> output, so later sends
+                                            reuse the same chat.
                                         </li>
                                     </ol>
-
-                                    <p style="color:#4a5b4e; margin:16px 0;"><strong>Custom code action
-                                            (Node.js)</strong></p>
+                                    <p style="color:#4a5b4e; margin:16px 0;">
+                                        <strong>Custom code action (Node.js)</strong>
+                                    </p>
                                     <pre
                                         style="background:#0f172a; color:#e2e8f0; border-radius:12px; padding:16px; overflow-x:auto; font-size:0.82rem; line-height:1.5;"><code>const axios  = require('axios');
 const crypto = require('crypto');
@@ -615,17 +636,16 @@ exports.main = async (event, callback) =&gt; {
 function uuidFrom(s) {
   const h = crypto.createHash('sha256').update(s).digest('hex');
   return `${h.slice(0,8)}-${h.slice(8,12)}-${h.slice(13,16)}-a${h.slice(17,20)}-${h.slice(20,32)}`;
-}</code></pre>
-
-                                    <p style="color:#4a5b4e; margin:16px 0;">To send from a person instead of the
-                                        workflow, set <code class="hubspot-code-1">user_id</code>, <code
-                                            class="hubspot-code-1">username</code> and
-                                        <code class="hubspot-code-1">user_email</code> from the contact owner (include
+}                                       </code>
+                                    </pre>
+                                    <p style="color:#4a5b4e; margin:16px 0;">
+                                        To send from a person instead of the workflow, set <code
+                                            class="hubspot-code-1">user_id</code>, <code
+                                            class="hubspot-code-1">username</code> and <code
+                                            class="hubspot-code-1">user_email</code> from the contact owner (include
                                         <code class="hubspot-code-1">hubspot_owner_id</code> as a property and look the
-                                        owner up), so
-                                        HeyDoot's User Metrics counts each sales rep separately.
+                                        owner up), so HeyDoot's User Metrics counts each sales rep separately.
                                     </p>
-
                                     <p style="color:#4a5b4e; margin:16px 0;">Example response:</p>
                                     <pre
                                         style="background:#0f172a; color:#e2e8f0; border-radius:12px; padding:16px; overflow-x:auto; font-size:0.82rem; line-height:1.5;"><code>{
@@ -633,20 +653,22 @@ function uuidFrom(s) {
   "message_ref": "hd_4F0C9A1B7E2D3C5A6B8E9F",
   "conversation_id": "c3a1_...",
   "dispatch_id": "6c0e1b2a-58f4-4b7e-9d0c-2f1a7e3b9c11"
-}</code></pre>
-                                    <p style="color:#4a5b4e; margin-top:8px;">A <code
-                                            class="hubspot-code-1">queued</code> status means
-                                        accepted, not delivered yet. Delivery arrives by webhook
-                                        (<code class="hubspot-code-1">hd.message.status</code>) with the same <code
-                                            class="hubspot-code-1">message_ref</code>.</p>
-
-                                    <p style="color:#4a5b4e; margin:16px 0;"><strong>No Operations Hub?</strong> Let
-                                        your relay or backend do the sending. Subscribe the private app to a contact
-                                        property change (e.g. a <code
+}                                       </code>
+                                    </pre>
+                                    <p style="color:#4a5b4e; margin-top:8px;">
+                                        A <code class="hubspot-code-1">queued</code> status means accepted, not
+                                        delivered yet. Delivery arrives by webhook (<code
+                                            class="hubspot-code-1">hd.message.status</code>) with the same <code
+                                            class="hubspot-code-1">message_ref</code>.
+                                    </p>
+                                    <p style="color:#4a5b4e; margin:16px 0;">
+                                        <strong>No Operations Hub?</strong> Let your relay or backend do the sending.
+                                        Subscribe the private app to a contact property change (e.g. a <code
                                             class="hubspot-code-1">send_whatsapp_welcome</code> checkbox your team
                                         ticks) under the app's <strong>Webhooks</strong> tab; HubSpot calls the relay,
-                                        and the relay calls HeyDoot with the same body as above. The workflow <em>Send
-                                            a webhook</em> action is also gated to Operations Hub Professional.</p>
+                                        and the relay calls HeyDoot with the same body as above. The workflow <em>Send a
+                                            webhook</em> action is also gated to Operations Hub Professional.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -667,51 +689,62 @@ function uuidFrom(s) {
                                                 <tr style="background:#e9f5ef;">
                                                     <th
                                                         style="text-align:left; padding:10px; border:1px solid #d7e6dc;">
-                                                        Field</th>
+                                                        Field
+                                                    </th>
                                                     <th
                                                         style="text-align:left; padding:10px; border:1px solid #d7e6dc;">
-                                                        Required</th>
+                                                        Required
+                                                    </th>
                                                     <th
                                                         style="text-align:left; padding:10px; border:1px solid #d7e6dc;">
-                                                        Rules / meaning</th>
+                                                        Rules / meaning
+                                                    </th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td style="padding:10px; border:1px solid #d7e6dc;"><code
-                                                            class="hubspot-code-1">to</code>
-                                                        + <code class="hubspot-code-1">number_id</code></td>
-                                                    <td style="padding:10px; border:1px solid #d7e6dc;">one of the two
-                                                        ways</td>
-                                                    <td style="padding:10px; border:1px solid #d7e6dc;">phone with
-                                                        country code, e.g. <code
+                                                    <td style="padding:10px; border:1px solid #d7e6dc;">
+                                                        <code class="hubspot-code-1">to</code> + <code
+                                                            class="hubspot-code-1">number_id</code>
+                                                    </td>
+                                                    <td style="padding:10px; border:1px solid #d7e6dc;">
+                                                        one of the two ways
+                                                    </td>
+                                                    <td style="padding:10px; border:1px solid #d7e6dc;">
+                                                        phone with country code, e.g. <code
                                                             class="hubspot-code-1">+919876543210</code> — start or
-                                                        continue a chat by phone number</td>
+                                                        continue a chat by phone number
+                                                    </td>
                                                 </tr>
                                                 <tr style="background:#fafffb;">
                                                     <td style="padding:10px; border:1px solid #d7e6dc;">
                                                         <code class="hubspot-code-1">conversation_id</code>
                                                     </td>
-                                                    <td style="padding:10px; border:1px solid #d7e6dc;">one of the two
-                                                        ways</td>
-                                                    <td style="padding:10px; border:1px solid #d7e6dc;">from an earlier
-                                                        send or a webhook — reply in a known chat</td>
+                                                    <td style="padding:10px; border:1px solid #d7e6dc;">
+                                                        one of the two ways
+                                                    </td>
+                                                    <td style="padding:10px; border:1px solid #d7e6dc;">
+                                                        from an earlier send or a webhook — reply in a known chat
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td style="padding:10px; border:1px solid #d7e6dc;">
                                                         <code class="hubspot-code-1">text</code>
                                                     </td>
-                                                    <td style="padding:10px; border:1px solid #d7e6dc;">text or
-                                                        attachment</td>
-                                                    <td style="padding:10px; border:1px solid #d7e6dc;">message text;
-                                                        the caption when there is a file</td>
+                                                    <td style="padding:10px; border:1px solid #d7e6dc;">
+                                                        text or attachment
+                                                    </td>
+                                                    <td style="padding:10px; border:1px solid #d7e6dc;">
+                                                        message text; the caption when there is a file
+                                                    </td>
                                                 </tr>
                                                 <tr style="background:#fafffb;">
                                                     <td style="padding:10px; border:1px solid #d7e6dc;">
                                                         <code class="hubspot-code-1">attachment</code>
                                                     </td>
-                                                    <td style="padding:10px; border:1px solid #d7e6dc;">text or
-                                                        attachment</td>
+                                                    <td style="padding:10px; border:1px solid #d7e6dc;">
+                                                        text or attachment
+                                                    </td>
                                                     <td style="padding:10px; border:1px solid #d7e6dc;">
                                                         <code
                                                             class="hubspot-code-1">{"kind": "document", "source_url": "https://...", "file_name": "Quote.pdf"}</code>,
@@ -723,8 +756,10 @@ function uuidFrom(s) {
                                                         <code class="hubspot-code-1">dispatch_id</code>
                                                     </td>
                                                     <td style="padding:10px; border:1px solid #d7e6dc;">recommended</td>
-                                                    <td style="padding:10px; border:1px solid #d7e6dc;">UUID idempotency
-                                                        key: a retry with the same value never sends twice</td>
+                                                    <td style="padding:10px; border:1px solid #d7e6dc;">
+                                                        UUID idempotency key: a retry with the same value never sends
+                                                        twice
+                                                    </td>
                                                 </tr>
                                                 <tr style="background:#fafffb;">
                                                     <td style="padding:10px; border:1px solid #d7e6dc;">
@@ -733,8 +768,9 @@ function uuidFrom(s) {
                                                         <code class="hubspot-code-1">user_email</code>
                                                     </td>
                                                     <td style="padding:10px; border:1px solid #d7e6dc;">recommended</td>
-                                                    <td style="padding:10px; border:1px solid #d7e6dc;">up to 128 / 200
-                                                        / 254 characters — who sent it (User Metrics)</td>
+                                                    <td style="padding:10px; border:1px solid #d7e6dc;">
+                                                        up to 128 / 200 / 254 characters — who sent it (User Metrics)
+                                                    </td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -754,18 +790,20 @@ function uuidFrom(s) {
                                 <div>
                                     <h3 style="font-size: 1.5rem; font-weight: 700;">3. Workflow setup recap</h3>
                                     <ol style="color:#4a5b4e; padding-left:20px;">
-                                        <li style="margin-bottom:6px;">Create a contact-based workflow and pick the
-                                            trigger.</li>
-                                        <li style="margin-bottom:6px;">Add the Custom code action (Node.js).</li>
-                                        <li style="margin-bottom:6px;">Add the workflow secrets
-                                            <code class="hubspot-code-1">HEYDOOT_BASE_URL</code>, <code
-                                                class="hubspot-code-1">HEYDOOT_TOKEN</code> and
-                                            <code class="hubspot-code-1">HEYDOOT_NUMBER_ID</code>.
+                                        <li style="margin-bottom:6px;">
+                                            Create a contact-based workflow and pick the trigger.
                                         </li>
-                                        <li style="margin-bottom:6px;">Include contact properties
-                                            <code class="hubspot-code-1">mobilephone</code>, <code
-                                                class="hubspot-code-1">firstname</code>,
-                                            <code class="hubspot-code-1">heyDoot_conversation_id</code>, <code
+                                        <li style="margin-bottom:6px;">Add the Custom code action (Node.js).</li>
+                                        <li style="margin-bottom:6px;">
+                                            Add the workflow secrets
+                                            <code class="hubspot-code-1">HEYDOOT_BASE_URL</code>, <code
+                                                class="hubspot-code-1">HEYDOOT_TOKEN</code> and <code
+                                                class="hubspot-code-1">HEYDOOT_NUMBER_ID</code>.
+                                        </li>
+                                        <li style="margin-bottom:6px;">
+                                            Include contact properties <code class="hubspot-code-1">mobilephone</code>,
+                                            <code class="hubspot-code-1">firstname</code>,<code
+                                                class="hubspot-code-1">heyDoot_conversation_id</code>, <code
                                                 class="hubspot-code-1">hs_object_id</code>.
                                         </li>
                                         <li style="margin-bottom:6px;">Define outputs <code
@@ -773,15 +811,18 @@ function uuidFrom(s) {
                                             <code class="hubspot-code-1">conversation_id</code>, <code
                                                 class="hubspot-code-1">status</code>.
                                         </li>
-                                        <li>Set <code class="hubspot-code-1">heydoot_conversation_id</code> from the
+                                        <li>
+                                            Set <code class="hubspot-code-1">heydoot_conversation_id</code> from the
                                             <code class="hubspot-code-1">conversation_id</code> output so later sends
                                             reuse the same chat.
                                         </li>
                                     </ol>
-                                    <p style="color:#4a5b4e; margin-top:12px;">A workflow that enrolls thousands of
+                                    <p style="color:#4a5b4e; margin-top:12px;">
+                                        A workflow that enrolls thousands of
                                         contacts at once will hit the rate limit and increase WhatsApp ban risk. Set
                                         the workflow's action rate limit (e.g. <strong>20 per minute</strong>) and keep
-                                        campaigns to contacts who expect your messages.</p>
+                                        campaigns to contacts who expect your messages.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -797,37 +838,43 @@ function uuidFrom(s) {
                                 <div>
                                     <h3 style="font-size: 1.5rem; font-weight: 700;">4. Receiving replies in HubSpot
                                     </h3>
-                                    <p style="color:#4a5b4e;">The relay checks each HeyDoot webhook's signature, finds
+                                    <p style="color:#4a5b4e;">
+                                        The relay checks each HeyDoot webhook's signature, finds
                                         or creates the HubSpot contact, and logs the message on the contact's timeline
                                         as a WhatsApp communication
                                         (<code class="hubspot-code-1">hs_communication_channel_type: WHATS_APP</code>).
                                     </p>
-
-                                    <p style="color:#4a5b4e; margin-top:14px;"><strong>Register the webhook (HeyDoot
-                                            admin)</strong></p>
+                                    <p style="color:#4a5b4e; margin-top:14px;">
+                                        <strong>Register the webhook (HeyDoot admin)</strong>
+                                    </p>
                                     <ol style="color:#4a5b4e; padding-left:20px;">
-                                        <li style="margin-bottom:6px;">Deploy the relay, so
-                                            <code
+                                        <li style="margin-bottom:6px;">
+                                            Deploy the relay, so <code
                                                 class="hubspot-code-1">https://&lt;YOUR_RELAY_DOMAIN&gt;/heydoot/events</code>
                                             exists.
                                         </li>
-                                        <li style="margin-bottom:6px;">In HeyDoot, open <strong>Settings → Integrations
-                                                → Webhooks</strong>, add that URL, and choose
-                                            <code class="hubspot-code-1">hd.message.received</code>, <code
-                                                class="hubspot-code-1">hd.message.status</code> and
-                                            <code class="hubspot-code-1">hd.number.disconnected</code>.
+                                        <li style="margin-bottom:6px;">
+                                            In HeyDoot, open <strong>Settings → Integrations → Webhooks</strong>, add
+                                            that URL, and choose <code
+                                                class="hubspot-code-1">hd.message.received</code>, <code
+                                                class="hubspot-code-1">hd.message.status</code> and <code
+                                                class="hubspot-code-1">hd.number.disconnected</code>.
                                         </li>
-                                        <li style="margin-bottom:6px;">Copy the signing secret (shown once) into the
-                                            relay's <code class="hubspot-code-1">HEYDOOT_WEBHOOK_SECRET</code>.</li>
-                                        <li>Leave <strong>Encrypt payloads</strong> off; HTTPS already encrypts the
-                                            traffic.</li>
+                                        <li style="margin-bottom:6px;">
+                                            Copy the signing secret (shown once) into the relay's <code
+                                                class="hubspot-code-1">HEYDOOT_WEBHOOK_SECRET</code>.
+                                        </li>
+                                        <li>
+                                            Leave <strong>Encrypt payloads</strong> off; HTTPS already encrypts the
+                                            traffic.
+                                        </li>
                                     </ol>
-                                    <p style="color:#4a5b4e; margin-top:10px;">The URL must be public HTTPS and answer
-                                        <strong>2xx within 8 seconds</strong>.
+                                    <p style="color:#4a5b4e; margin-top:10px;">
+                                        The URL must be public HTTPS and answer <strong>2xx within 8 seconds</strong>.
                                     </p>
-
-                                    <p style="color:#4a5b4e; margin:16px 0;"><strong>Relay (Node.js 18+,
-                                            Express)</strong></p>
+                                    <p style="color:#4a5b4e; margin:16px 0;">
+                                        <strong>Relay (Node.js 18+, Express)</strong>
+                                    </p>
                                     <pre
                                         style="background:#0f172a; color:#e2e8f0; border-radius:12px; padding:16px; overflow-x:auto; font-size:0.78rem; line-height:1.5;"><code>const express = require('express');
 const crypto  = require('crypto');
@@ -950,49 +997,50 @@ async function onStatus(ev) {
   });
 }
 
-app.listen(process.env.PORT || 3000);</code></pre>
-
-                                    <p style="color:#4a5b4e; margin-top:14px;"><strong>What the events carry.</strong>
-                                        <code class="hubspot-code-1">hd.message.received</code> has <code
-                                            class="hubspot-code-1">message_ref</code>,
-                                        <code class="hubspot-code-1">conversation_id</code>, <code
-                                            class="hubspot-code-1">number_id</code>, <code
-                                            class="hubspot-code-1">from</code>
-                                        (digits), <code class="hubspot-code-1">text</code>, <code
-                                            class="hubspot-code-1">message_type</code>,
-                                        <code class="hubspot-code-1">sender_name</code>, <code
-                                            class="hubspot-code-1">has_media</code> and
-                                        <code class="hubspot-code-1">received_at</code>. <code
-                                            class="hubspot-code-1">hd.message.status</code> has
-                                        <code class="hubspot-code-1">message_ref</code>, <code
-                                            class="hubspot-code-1">conversation_id</code> and
-                                        <code class="hubspot-code-1">status</code>, plus <code
-                                            class="hubspot-code-1">send_error</code> on failure.
+app.listen(process.env.PORT || 3000);
+                                        </code>
+                                    </pre>
+                                    <p style="color:#4a5b4e; margin-top:14px;">
+                                        <strong>What the events carry.</strong>
+                                        <code class="hubspot-code-1">hd.message.received</code> has
+                                        <code class="hubspot-code-1">message_ref</code>,
+                                        <code class="hubspot-code-1">conversation_id</code>,
+                                        <code class="hubspot-code-1">number_id</code>,
+                                        <code class="hubspot-code-1">from</code> (digits),
+                                        <code class="hubspot-code-1">text</code>,
+                                        <code class="hubspot-code-1">message_type</code>,
+                                        <code class="hubspot-code-1">sender_name</code>,
+                                        <code class="hubspot-code-1">has_media</code> and
+                                        <code class="hubspot-code-1">received_at</code>.
+                                        <code class="hubspot-code-1">hd.message.status</code> has
+                                        <code class="hubspot-code-1">message_ref</code>,
+                                        <code class="hubspot-code-1">conversation_id</code> and
+                                        <code class="hubspot-code-1">status</code>, plus
+                                        <code class="hubspot-code-1">send_error</code> on failure.
                                     </p>
-
-                                    <p style="color:#4a5b4e; margin-top:10px;"><strong>Logging your outgoing messages
-                                            too.</strong> To see sent messages on the timeline as well, have the relay
-                                        log
-                                        a communication when the first <em>sent</em> status arrives, or add a
-                                        <em>Create activity</em> step after the custom code action in the workflow.
+                                    <p style="color:#4a5b4e; margin-top:10px;">
+                                        <strong>Logging your outgoing messages too.</strong>
+                                        To see sent messages on the timeline as well, have the relay log a communication
+                                        when the first <em>sent</em> status arrives, or add a <em>Create activity</em>
+                                        step after the custom code action in the workflow.
                                     </p>
-
-                                    <p style="color:#4a5b4e; margin-top:10px;"><strong>Headers on every
-                                            delivery:</strong>
-                                        <code class="hubspot-code-1">x-hd-event</code> (event name), <code
-                                            class="hubspot-code-1">x-hd-timestamp</code> (Unix
-                                        seconds, new on every retry), <code class="hubspot-code-1">x-hd-signature</code>
+                                    <p style="color:#4a5b4e; margin-top:10px;">
+                                        <strong>Headers on every delivery:</strong>
+                                        <code class="hubspot-code-1">x-hd-event</code> (event name),
+                                        <code class="hubspot-code-1">x-hd-timestamp</code>
+                                        (Unix seconds, new on every retry),
+                                        <code class="hubspot-code-1">x-hd-signature</code>
                                         (hex HMAC-SHA256).
                                     </p>
-
-                                    <p style="color:#4a5b4e; margin-top:10px;"><strong>Retries and duplicates.</strong>
-                                        A
-                                        delivery without a 2xx is retried 6 more times over about 50 minutes, then
+                                    <p style="color:#4a5b4e; margin-top:10px;">
+                                        <strong>Retries and duplicates.</strong>
+                                        A delivery without a 2xx is retried 6 more times over about 50 minutes, then
                                         marked exhausted (an admin can resend it from HeyDoot). The relay skips
                                         duplicate replies by <code class="hubspot-code-1">message_ref</code> and ignores
-                                        status updates that
-                                        would go backwards. The in-memory seen set is lost on restart and isn't shared
-                                        across instances, so use Redis or a database in production.</p>
+                                        status updates that would go backwards. The in-memory seen set is lost on
+                                        restart and isn't shared across instances, so use Redis or a database in
+                                        production.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -1007,7 +1055,8 @@ app.listen(process.env.PORT || 3000);</code></pre>
                                 </div>
                                 <div>
                                     <h3 style="font-size: 1.5rem; font-weight: 700;">5. Errors, limits and retries</h3>
-                                    <p style="color:#4a5b4e;">Every HeyDoot error is JSON with an error code and a
+                                    <p style="color:#4a5b4e;">
+                                        Every HeyDoot error is JSON with an error code and a
                                         readable message. Retry only the temporary ones, always with the same
                                         <code>dispatch_id</code>. The custom code above already does this.
                                     </p>
@@ -1018,58 +1067,63 @@ app.listen(process.env.PORT || 3000);</code></pre>
                                                 <tr style="background:#e9f5ef;">
                                                     <th
                                                         style="text-align:left; padding:10px; border:1px solid #d7e6dc;">
-                                                        Code</th>
+                                                        Code
+                                                    </th>
                                                     <th
                                                         style="text-align:left; padding:10px; border:1px solid #d7e6dc;">
-                                                        Error</th>
+                                                        Error
+                                                    </th>
                                                     <th
                                                         style="text-align:left; padding:10px; border:1px solid #d7e6dc;">
-                                                        Meaning / fix</th>
+                                                        Meaning / fix
+                                                    </th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td style="padding:10px; border:1px solid #d7e6dc;">400</td>
                                                     <td style="padding:10px; border:1px solid #d7e6dc;">
-                                                        <code class="hubspot-code-1">invalid_request</code>, <code
-                                                            class="hubspot-code-1">invalid_recipient</code>,
+                                                        <code class="hubspot-code-1">invalid_request</code>,
+                                                        <code class="hubspot-code-1">invalid_recipient</code>,
                                                         <code class="hubspot-code-1">empty_message</code>
                                                     </td>
-                                                    <td style="padding:10px; border:1px solid #d7e6dc;">a field breaks
-                                                        the rules, e.g. a phone without country code — fix the contact's
-                                                        data</td>
+                                                    <td style="padding:10px; border:1px solid #d7e6dc;">
+                                                        a field breaks the rules, e.g. a phone without country code —
+                                                        fix the contact's data
+                                                    </td>
                                                 </tr>
                                                 <tr style="background:#fafffb;">
                                                     <td style="padding:10px; border:1px solid #d7e6dc;">401</td>
                                                     <td style="padding:10px; border:1px solid #d7e6dc;">
                                                         <code class="hubspot-code-1">unauthorized</code>
                                                     </td>
-                                                    <td style="padding:10px; border:1px solid #d7e6dc;">token missing,
-                                                        wrong, expired or revoked — update the
+                                                    <td style="padding:10px; border:1px solid #d7e6dc;">
+                                                        token missing, wrong, expired or revoked — update the
                                                         <code class="hubspot-code-1">HEYDOOT_TOKEN</code> secret
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td style="padding:10px; border:1px solid #d7e6dc;">402</td>
                                                     <td style="padding:10px; border:1px solid #d7e6dc;">
-                                                        <code class="hubspot-code-1">api_not_licensed</code>, <code
-                                                            class="hubspot-code-1">api_quota_exceeded</code>
+                                                        <code class="hubspot-code-1">api_not_licensed</code>,
+                                                        <code class="hubspot-code-1">api_quota_exceeded</code>
                                                     </td>
-                                                    <td style="padding:10px; border:1px solid #d7e6dc;">the plan has no
-                                                        API access, or the day/week/month quota is used up — wait for
-                                                        <code class="hubspot-code-1">resets_at</code>, or upgrade the
-                                                        plan
+                                                    <td style="padding:10px; border:1px solid #d7e6dc;">
+                                                        the plan has no API access, or the day/week/month quota is used
+                                                        up — wait for <code class="hubspot-code-1">resets_at</code>, or
+                                                        upgrade the plan
                                                     </td>
                                                 </tr>
                                                 <tr style="background:#fafffb;">
                                                     <td style="padding:10px; border:1px solid #d7e6dc;">403</td>
                                                     <td style="padding:10px; border:1px solid #d7e6dc;">
-                                                        <code class="hubspot-code-1">forbidden</code>, <code
-                                                            class="hubspot-code-1">license_inactive</code>
+                                                        <code class="hubspot-code-1">forbidden</code>,
+                                                        <code class="hubspot-code-1">license_inactive</code>
                                                     </td>
-                                                    <td style="padding:10px; border:1px solid #d7e6dc;">token is
-                                                        read-only, or the organisation can't send right now — use a Read
-                                                        &amp; Send token</td>
+                                                    <td style="padding:10px; border:1px solid #d7e6dc;">
+                                                        token is read-only, or the organisation can't send right now —
+                                                        use a Read &amp; Send token
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td style="padding:10px; border:1px solid #d7e6dc;">404</td>
@@ -1077,10 +1131,10 @@ app.listen(process.env.PORT || 3000);</code></pre>
                                                         <code class="hubspot-code-1">conversation_not_found</code>,
                                                         <code class="hubspot-code-1">number_not_found</code>
                                                     </td>
-                                                    <td style="padding:10px; border:1px solid #d7e6dc;">clear keyword
-                                                        <code class="hubspot-code-1">conversation_id</code> and send by
-                                                        phone, or fix the
-                                                        number ID
+                                                    <td style="padding:10px; border:1px solid #d7e6dc;">
+                                                        clear keyword
+                                                        <code class="hubspot-code-1">conversation_id</code>
+                                                        and send by phone, or fix the number ID
                                                     </td>
                                                 </tr>
                                                 <tr style="background:#fafffb;">
@@ -1088,56 +1142,62 @@ app.listen(process.env.PORT || 3000);</code></pre>
                                                     <td style="padding:10px; border:1px solid #d7e6dc;">
                                                         <code class="hubspot-code-1">recipient_opted_out</code>
                                                     </td>
-                                                    <td style="padding:10px; border:1px solid #d7e6dc;">contact is on
-                                                        HeyDoot's Do-Not-Contact list — don't retry; consider syncing it
-                                                        to HubSpot's opt-out</td>
+                                                    <td style="padding:10px; border:1px solid #d7e6dc;">
+                                                        contact is on HeyDoot's Do-Not-Contact list — don't retry;
+                                                        consider syncing it to HubSpot's opt-out
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td style="padding:10px; border:1px solid #d7e6dc;">429</td>
                                                     <td style="padding:10px; border:1px solid #d7e6dc;">
                                                         <code class="hubspot-code-1">rate_limited</code>
                                                     </td>
-                                                    <td style="padding:10px; border:1px solid #d7e6dc;">more than 600
-                                                        requests in a minute (default) — wait <code
-                                                            class="hubspot-code-1">Retry-After</code>
-                                                        seconds</td>
+                                                    <td style="padding:10px; border:1px solid #d7e6dc;">
+                                                        more than 600 requests in a minute (default) — wait
+                                                        <code class="hubspot-code-1">Retry-After</code> seconds
+                                                    </td>
                                                 </tr>
                                                 <tr style="background:#fafffb;">
                                                     <td style="padding:10px; border:1px solid #d7e6dc;">502 / 503</td>
                                                     <td style="padding:10px; border:1px solid #d7e6dc;">
-                                                        <code class="hubspot-code-1">connector_error</code>, <code
-                                                            class="hubspot-code-1">api_disabled</code>
+                                                        <code class="hubspot-code-1">connector_error</code>,
+                                                        <code class="hubspot-code-1">api_disabled</code>
                                                     </td>
-                                                    <td style="padding:10px; border:1px solid #d7e6dc;">WhatsApp line
-                                                        issue, or API access switched off by the admin — admin retry
-                                                        with backoff / contact the admin</td>
+                                                    <td style="padding:10px; border:1px solid #d7e6dc;">
+                                                        WhatsApp line issue, or API access switched off by the admin —
+                                                        admin retry with backoff / contact the admin
+                                                    </td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
 
                                     <ul style="color:#4a5b4e; padding-left:20px; margin-top:14px;">
-                                        <li style="margin-bottom:8px;"><strong>HubSpot retries for you.</strong> When
-                                            the custom code throws on a 429, 5xx or timeout, HubSpot retries the action
-                                            for up to three days. The <code class="hubspot-code-1">dispatch_id</code>
-                                            built from the
-                                            enrollment makes those retries safe.</li>
-                                        <li style="margin-bottom:8px;"><strong>Throttle big enrollments.</strong> A
-                                            workflow that enrolls thousands of contacts at once hits the rate limit
-                                            and the WhatsApp ban risk. Set the workflow's action rate limit (e.g. 20
-                                            per minute) and keep campaigns to contacts who expect your messages.</li>
-                                        <li style="margin-bottom:8px;"><strong>Plan quota:</strong> responses carry
-                                            <code class="hubspot-code-1">X-Quota-Limit</code>, <code
-                                                class="hubspot-code-1">X-Quota-Remaining</code> and
-                                            <code class="hubspot-code-1">X-Quota-Reset</code>. On 402 <code
-                                                class="hubspot-code-1">api_quota_exceeded</code>, pause
+                                        <li style="margin-bottom:8px;">
+                                            <strong>HubSpot retries for you.</strong> When the custom code throws on a
+                                            429, 5xx or timeout, HubSpot retries the action for up to three days. The
+                                            <code class="hubspot-code-1">dispatch_id</code> built from the enrollment
+                                            makes those retries safe.
+                                        </li>
+                                        <li style="margin-bottom:8px;">
+                                            <strong>Throttle big enrollments.</strong> A workflow that enrolls thousands
+                                            of contacts at once hits the rate limit and the WhatsApp ban risk. Set the
+                                            workflow's action rate limit (e.g. 20 per minute) and keep campaigns to
+                                            contacts who expect your messages.
+                                        </li>
+                                        <li style="margin-bottom:8px;">
+                                            <strong>Plan quota:</strong> responses carry
+                                            <code class="hubspot-code-1">X-Quota-Limit</code>,
+                                            <code class="hubspot-code-1">X-Quota-Remaining</code> and
+                                            <code class="hubspot-code-1">X-Quota-Reset</code>. On 402
+                                            <code class="hubspot-code-1">api_quota_exceeded</code>, pause
                                             the workflow until the reset.
                                         </li>
-                                        <li><strong>Phone format:</strong> HeyDoot accepts spaces and dashes, but the
+                                        <li>
+                                            <strong>Phone format:</strong> HeyDoot accepts spaces and dashes, but the
                                             number must start with <code class="hubspot-code-1">+</code> and the country
-                                            code. A contact
-                                            stored as <code class="hubspot-code-1">98765 43210</code> fails with
-                                            <code class="hubspot-code-1">invalid_recipient</code>.
+                                            code. A contact stored as <code class="hubspot-code-1">98765 43210</code>
+                                            fails with <code class="hubspot-code-1">invalid_recipient</code>.
                                         </li>
                                     </ul>
                                 </div>
@@ -1155,39 +1215,58 @@ app.listen(process.env.PORT || 3000);</code></pre>
                                 <div>
                                     <h3 style="font-size: 1.5rem; font-weight: 700;">6. Go-live checklist</h3>
                                     <ul style="color:#4a5b4e; padding-left:20px;">
-                                        <li>Production base URL, API token (Read &amp; Send) and number ID are workflow
-                                            secrets, not in code.</li>
-                                        <li>HeyDoot API Access is on, and the plan includes API access with a quota
-                                            that fits your volume.</li>
+                                        <li>
+                                            Production base URL, API token (Read &amp; Send) and number ID are workflow
+                                            secrets, not in code.
+                                        </li>
+                                        <li>
+                                            HeyDoot API Access is on, and the plan includes API access with a quota
+                                            that fits your volume.
+                                        </li>
                                         <li>Contact mobile numbers include the country code.</li>
-                                        <li>The custom code action is tested on one internal contact, and
+                                        <li>
+                                            The custom code action is tested on one internal contact, and
                                             <code class="hubspot-code-1">heydoot_conversation_id</code> is saved
                                             afterwards.
                                         </li>
-                                        <li>Every send carries a <code class="hubspot-code-1">dispatch_id</code> that
-                                            stays the same on
-                                            HubSpot's retries.</li>
+                                        <li>
+                                            Every send carries a <code class="hubspot-code-1">dispatch_id</code> that
+                                            stays the same on HubSpot's retries.
+                                        </li>
                                         <li>The workflow has an action rate limit set.</li>
-                                        <li>The relay is public HTTPS, checks the timestamp and signature, and answers
-                                            within 8 seconds.</li>
-                                        <li>The private app token has only the two contact scopes and lives in the
-                                            relay's environment.</li>
-                                        <li>Replies are de-duplicated by <code class="hubspot-code-1">message_ref</code>
-                                            in shared storage,
-                                            and statuses never move backwards.</li>
-                                        <li>Someone is alerted on <code
-                                                class="hubspot-code-1">hd.number.disconnected</code>.</li>
-                                        <li>A HubSpot sandbox or test portal uses its own HeyDoot token, webhook and
-                                            number.</li>
+                                        <li>
+                                            The relay is public HTTPS, checks the timestamp and signature, and answers
+                                            within 8 seconds.
+                                        </li>
+                                        <li>
+                                            The private app token has only the two contact scopes and lives in the
+                                            relay's environment.
+                                        </li>
+                                        <li>
+                                            Replies are de-duplicated by <code class="hubspot-code-1">message_ref</code>
+                                            in shared storage, and statuses never move backwards.
+                                        </li>
+                                        <li>
+                                            Someone is alerted on
+                                            <code class="hubspot-code-1">hd.number.disconnected</code>.
+                                        </li>
+                                        <li>
+                                            A HubSpot sandbox or test portal uses its own HeyDoot token, webhook and
+                                            number.
+                                        </li>
                                     </ul>
-                                    <p style="color:#4a5b4e; margin-top:12px;"><strong>Not tested yet.</strong> The
-                                        request formats match HeyDoot's code, and the HubSpot calls follow HubSpot's
-                                        current docs, but neither example has run in a real HubSpot portal. Test both
-                                        in a sandbox first, especially the phone search, which depends on how your
-                                        portal stores numbers.</p>
-                                    <p style="color:#6b7280; margin-top:10px; font-size:0.85rem;"><em>Sources: HubSpot
-                                            custom code actions · HubSpot communications API · HubSpot CRM search
-                                            API</em></p>
+                                    <p style="color:#4a5b4e; margin-top:12px;">
+                                        <strong>Not tested yet.</strong> The request formats match HeyDoot's code, and
+                                        the HubSpot calls follow HubSpot's current docs, but neither example has run in
+                                        a real HubSpot portal. Test both in a sandbox first, especially the phone
+                                        search, which depends on how your portal stores numbers.
+                                    </p>
+                                    <p style="color:#6b7280; margin-top:10px; font-size:0.85rem;">
+                                        <em>
+                                            Sources: HubSpot custom code actions · HubSpot communications API · HubSpot
+                                            CRM search API
+                                        </em>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -1198,12 +1277,13 @@ app.listen(process.env.PORT || 3000);</code></pre>
                         style="background: linear-gradient(115deg, #e8faf0, #e0f2fe); border-radius: 32px; padding: 32px; text-align: center; margin: 40px 0 32px;">
                         <i class="fas fa-party-horn" style="font-size: 48px; color: var(--wa-teal);"></i>
                         <h2 style="font-size: 2rem; font-weight: 800; margin-top: 12px;">Done</h2>
-                        <p style="margin-top: 8px;">Your HubSpot + WhatsApp integration is live. Start engaging
-                            customers
-                            smarter.</p>
+                        <p style="margin-top: 8px;">
+                            Your HubSpot + WhatsApp integration is live. Start engaging customers smarter.
+                        </p>
                         <a href="<?php echo BASE_URL; ?>/dashboard.php" class="btn btn-primary"
-                            style="background: #0d6a2e; margin-top: 20px; padding: 10px;"><i
-                                class="fas fa-chart-line"></i> View Dashboard</a>
+                            style="background: #0d6a2e; margin-top: 20px; padding: 10px;">
+                            <i class="fas fa-chart-line"></i> View Dashboard
+                        </a>
                     </div>
 
                     <!-- FAQs -->
@@ -1318,30 +1398,24 @@ app.listen(process.env.PORT || 3000);</code></pre>
             <!-- Utility bar -->
             <div class="utility-bar">
                 <div class="utility-bar-inner">
-
                     <div class="utility-item">
                         <i class="fas fa-search"></i>
                         <span>Search...</span>
                     </div>
-
                     <span class="shortcut-key">Ctrl K</span>
-
                     <a href="<?php echo BASE_URL; ?>/postman-api.php" class="utility-item utility-link"
                         style="color: var(--wa-teal);">
                         <i class="fas fa-code"></i>
                         Postman API collection
                     </a>
-
-                    <a href="tel:+919718517228" class="utility-item utility-link">
+                    <a href="tel:+919911432288" class="utility-item utility-link">
                         <i class="fas fa-headset"></i>
                         Support
                     </a>
-
                     <a href="<?php echo BASE_URL; ?>/integrations/dashboard.php" class="btn btn-secondary">
                         <i class="fas fa-tachometer-alt"></i>
                         Dashboard
                     </a>
-
                 </div>
             </div>
         </div>
