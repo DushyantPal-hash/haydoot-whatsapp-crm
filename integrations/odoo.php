@@ -150,6 +150,15 @@ include ROOT_PATH . '/components/navbar.php';
         display: block;
     }
 
+    .hubspot-code-1 {
+        background: #0f172ad4;
+        color: #e2e8f0;
+        border-radius: 10px;
+        padding: 2px 10px;
+        overflow-x: auto;
+        line-height: 1.55;
+    }
+
     .odoo-table th,
     .odoo-table td {
         padding: 10px;
@@ -270,14 +279,19 @@ include ROOT_PATH . '/components/navbar.php';
                                     <tbody>
                                         <tr>
                                             <td>Odoo → HeyDoot (send, read)</td>
-                                            <td>Python <code>requests</code> call to <code>POST /v1/messages/send</code>
-                                                and other <code>/v1</code> endpoints</td>
-                                            <td><code>Authorization: Bearer &lt;HEYDOOT_API_TOKEN&gt;</code></td>
+                                            <td>Python <code class="hubspot-code-1">requests</code> call to
+                                                <code class="hubspot-code-1">POST /v1/messages/send</code>
+                                                and other <code class="hubspot-code-1">/v1</code> endpoints
+                                            </td>
+                                            <td><code
+                                                    class="hubspot-code-1">Authorization: Bearer &lt;HEYDOOT_API_TOKEN&gt;</code>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>HeyDoot → Odoo (events)</td>
                                             <td>HeyDoot calls
-                                                <code>https://&lt;YOUR_ODOO_DOMAIN&gt;/heydoot/events</code>
+                                                <code
+                                                    class="hubspot-code-1">https://&lt;YOUR_ODOO_DOMAIN&gt;/heydoot/events</code>
                                             </td>
                                             <td>HMAC-SHA256 signature with the webhook's signing secret</td>
                                         </tr>
@@ -418,18 +432,20 @@ include ROOT_PATH . '/components/navbar.php';
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td><code>heydoot.base_url</code></td>
-                                            <td><code>https://&lt;HEYDOOT_API_BASE_URL&gt;</code></td>
-                                        </tr>
-                                        <tr>
-                                            <td><code>heydoot.api_token</code></td>
-                                            <td><code>&lt;HEYDOOT_API_TOKEN&gt;</code> (starts with
-                                                <code>hd_live_</code>)
+                                            <td><code class="hubspot-code-1">heydoot.base_url</code></td>
+                                            <td><code class="hubspot-code-1">https://&lt;HEYDOOT_API_BASE_URL&gt;</code>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td><code>heydoot.number_id</code></td>
-                                            <td><code>&lt;NUMBER_ID&gt;</code></td>
+                                            <td><code class="hubspot-code-1">heydoot.api_token</code></td>
+                                            <td><code class="hubspot-code-1">&lt;HEYDOOT_API_TOKEN&gt;</code> (starts
+                                                with
+                                                <code class="hubspot-code-1">hd_live_</code>)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><code class="hubspot-code-1">heydoot.number_id</code></td>
+                                            <td><code class="hubspot-code-1">&lt;NUMBER_ID&gt;</code></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -442,7 +458,8 @@ include ROOT_PATH . '/components/navbar.php';
                                 <span class="step-number">3</span>
                                 <h3 style="font-size: 1.3rem; font-weight: 700; margin: 0;">Module layout</h3>
                             </div>
-                            <p>The examples below make one module, <code>heydoot_whatsapp</code>:</p>
+                            <p>The examples below make one module, <code class="hubspot-code-1">heydoot_whatsapp</code>:
+                            </p>
                             <pre class="odoo-code"><code>heydoot_whatsapp/
 ├── __init__.py
 ├── __manifest__.py
@@ -497,28 +514,33 @@ include ROOT_PATH . '/components/navbar.php';
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><code>to</code> + <code>number_id</code></td>
+                                        <td><code class="hubspot-code-1">to</code> + <code
+                                                class="hubspot-code-1">number_id</code></td>
                                         <td>one of the two ways</td>
-                                        <td>phone with country code, e.g. <code>+919876543210</code>; spaces and dashes
+                                        <td>phone with country code, e.g. <code
+                                                class="hubspot-code-1">+919876543210</code>; spaces and dashes
                                             are fine — start or continue a chat by phone number</td>
                                     </tr>
                                     <tr>
-                                        <td><code>conversation_id</code></td>
+                                        <td><code class="hubspot-code-1">conversation_id</code></td>
                                         <td>one of the two ways</td>
                                         <td>from an earlier send or a webhook — reply in a known chat</td>
                                     </tr>
                                     <tr>
-                                        <td><code>text</code> / <code>attachment</code></td>
+                                        <td><code class="hubspot-code-1">text</code> / <code
+                                                class="hubspot-code-1">attachment</code></td>
                                         <td>text or attachment</td>
                                         <td>message text, or a file (image, document, audio, video, max 16 MB)</td>
                                     </tr>
                                     <tr>
-                                        <td><code>dispatch_id</code></td>
+                                        <td><code class="hubspot-code-1">dispatch_id</code></td>
                                         <td>recommended</td>
                                         <td>UUID idempotency key: a retry with the same value never sends twice</td>
                                     </tr>
                                     <tr>
-                                        <td><code>user_id</code>, <code>username</code>, <code>user_email</code></td>
+                                        <td><code class="hubspot-code-1">user_id</code>, <code
+                                                class="hubspot-code-1">username</code>, <code
+                                                class="hubspot-code-1">user_email</code></td>
                                         <td>recommended</td>
                                         <td>who sent it — feeds User Metrics in HeyDoot</td>
                                     </tr>
@@ -527,7 +549,7 @@ include ROOT_PATH . '/components/navbar.php';
                         </div>
 
                         <h3 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 12px;">Module code:
-                            <code>models/heydoot.py</code>
+                            <code class="hubspot-code-1">models/heydoot.py</code>
                         </h3>
                         <pre class="odoo-code"><code>import uuid
 import requests
@@ -625,8 +647,10 @@ class ResPartner(models.Model):
   "dispatch_id": "6c0e1b2a-58f4-4b7e-9d0c-2f1a7e3b9c11"
 }</code></pre>
                         <p style="color:#4a5568; margin-top: 10px;">
-                            <code>queued</code> means accepted, not delivered yet. Delivery arrives by webhook
-                            (<code>hd.message.status</code>) with the same <code>message_ref</code>.
+                            <code class="hubspot-code-1">queued</code> means accepted, not delivered yet. Delivery
+                            arrives by webhook
+                            (<code class="hubspot-code-1">hd.message.status</code>) with the same <code
+                                class="hubspot-code-1">message_ref</code>.
                         </p>
                         <p style="color:#4a5568; margin-top: 10px;">
                             The call blocks the Odoo worker for up to 30 seconds. For bulk sends, such as a campaign to
@@ -645,7 +669,8 @@ class ResPartner(models.Model):
                             <h2 style="font-size: 1.8rem; font-weight: 700;">Tracking delivery and reading history</h2>
                         </div>
                         <p style="color:#4a5568; margin-bottom:16px;">
-                            The <code>hd.message.status</code> webhook keeps <code>heydoot.message.status</code> current
+                            The <code class="hubspot-code-1">hd.message.status</code> webhook keeps <code
+                                class="hubspot-code-1">heydoot.message.status</code> current
                             without polling. Use the calls below only for an on-demand check or to load older messages.
                         </p>
 
@@ -660,39 +685,41 @@ class ResPartner(models.Model):
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><code>queued</code> / <code>sending</code></td>
+                                        <td><code class="hubspot-code-1">queued</code> / <code
+                                                class="hubspot-code-1">sending</code></td>
                                         <td>accepted, on its way to WhatsApp</td>
                                         <td>no</td>
                                     </tr>
                                     <tr>
-                                        <td><code>pending_review</code></td>
+                                        <td><code class="hubspot-code-1">pending_review</code></td>
                                         <td>held by the organisation's message monitoring for an admin</td>
                                         <td>no</td>
                                     </tr>
                                     <tr>
-                                        <td><code>sent</code></td>
+                                        <td><code class="hubspot-code-1">sent</code></td>
                                         <td>accepted by WhatsApp (one tick)</td>
                                         <td>no</td>
                                     </tr>
                                     <tr>
-                                        <td><code>delivered</code></td>
+                                        <td><code class="hubspot-code-1">delivered</code></td>
                                         <td>reached the phone (two grey ticks)</td>
                                         <td>no</td>
                                     </tr>
                                     <tr>
-                                        <td><code>read</code></td>
+                                        <td><code class="hubspot-code-1">read</code></td>
                                         <td>opened (two blue ticks; only if read receipts are on)</td>
                                         <td>yes</td>
                                     </tr>
                                     <tr>
-                                        <td><code>failed</code></td>
-                                        <td>not sent; <code>send_error</code> says why, e.g.
-                                            <code>not_on_whatsapp</code>
+                                        <td><code class="hubspot-code-1">failed</code></td>
+                                        <td>not sent; <code class="hubspot-code-1">send_error</code> says why, e.g.
+                                            <code class="hubspot-code-1">not_on_whatsapp</code>
                                         </td>
                                         <td>yes, unless retried</td>
                                     </tr>
                                     <tr>
-                                        <td><code>blocked</code> / <code>canceled</code></td>
+                                        <td><code class="hubspot-code-1">blocked</code> / <code
+                                                class="hubspot-code-1">canceled</code></td>
                                         <td>stopped by monitoring / cancelled before sending</td>
                                         <td>yes</td>
                                     </tr>
@@ -711,21 +738,27 @@ class ResPartner(models.Model):
                                 <tbody>
                                     <tr>
                                         <td>one message's status</td>
-                                        <td><code>GET /v1/messages/{message_ref}/status</code></td>
+                                        <td><code class="hubspot-code-1">GET /v1/messages/{message_ref}/status</code>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>a chat's messages, oldest first</td>
-                                        <td><code>GET /v1/conversations/{conversation_id}/messages?limit=50</code>;
-                                            older pages with <code>before="queued_at of the oldest"</code></td>
+                                        <td><code
+                                                class="hubspot-code-1">GET /v1/conversations/{conversation_id}/messages?limit=50</code>;
+                                            older pages with <code
+                                                class="hubspot-code-1">before="queued_at of the oldest"</code></td>
                                     </tr>
                                     <tr>
                                         <td>a received file</td>
-                                        <td><code>GET /v1/conversations/{conversation_id}/messages/{message_ref}/media</code>
-                                            (raw bytes; store as an <code>ir.attachment</code>)</td>
+                                        <td><code
+                                                class="hubspot-code-1">GET /v1/conversations/{conversation_id}/messages/{message_ref}/media</code>
+                                            (raw bytes; store as an <code class="hubspot-code-1">ir.attachment</code>)
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>retry a failed message</td>
-                                        <td><code>POST /v1/messages/{message_ref}/retry</code></td>
+                                        <td><code class="hubspot-code-1">POST /v1/messages/{message_ref}/retry</code>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -759,24 +792,29 @@ def action_refresh_status(self):
                                 <code class="odoo-code-1">https://&lt;YOUR_ODOO_DOMAIN&gt;/heydoot/events</code> exists.
                             </li>
                             <li style="margin-bottom: 8px;">In HeyDoot, open <strong>Settings → Integrations →
-                                    Webhooks</strong>, add that URL, and choose <code>hd.message.received</code>,
-                                <code>hd.message.status</code> and <code>hd.number.disconnected</code> (plus
-                                <code>hd.conversation.created</code> if you create leads from new chats).
+                                    Webhooks</strong>, add that URL, and choose <code
+                                    class="hubspot-code-1">hd.message.received</code>,
+                                <code class="hubspot-code-1">hd.message.status</code> and <code
+                                    class="hubspot-code-1">hd.number.disconnected</code> (plus
+                                <code class="hubspot-code-1">hd.conversation.created</code> if you create leads from new
+                                chats).
                             </li>
                             <li style="margin-bottom: 8px;">Copy the signing secret (shown once) into the System
-                                Parameter <code>heydoot.webhook_secret</code>.</li>
+                                Parameter <code class="hubspot-code-1">heydoot.webhook_secret</code>.</li>
                             <li style="margin-bottom: 8px;">Leave <strong>Encrypt payloads</strong> off unless you need
                                 it; HTTPS already encrypts the traffic. If it is on, see the decryption note below.</li>
                         </ol>
                         <p style="color:#4a5568; margin-top: 10px;">
                             The URL must be public HTTPS and answer <strong>2xx within 8 seconds</strong>. With several
-                            databases on one server, set <code>dbfilter</code> so this URL resolves to the right
+                            databases on one server, set <code class="hubspot-code-1">dbfilter</code> so this URL
+                            resolves to the right
                             database.
                         </p>
 
                         <h3 style="font-size: 1.3rem; font-weight: 700; margin-top: 28px; margin-bottom: 12px;">Module
-                            code: <code>controllers/main.py</code></h3>
-                        <pre class="odoo-code"><code>import hashlib
+                            code: <code class="hubspot-code-1">controllers/main.py</code></h3>
+                        <pre class="odoo-code"><code class="hubspot-code-1">
+import hashlib
 import hmac
 import json
 import re
@@ -851,17 +889,21 @@ class HeydootWebhook(http.Controller):
                         </p>
 
                         <p style="color:#4a5568; margin-top: 12px;">
-                            <strong>Headers on every delivery:</strong> <code>x-hd-event</code> (event name),
-                            <code>x-hd-timestamp</code> (Unix seconds, new on every retry), <code>x-hd-signature</code>
-                            (hex HMAC-SHA256), and <code>x-hd-encryption: aes-256-cbc</code> when encryption is on.
+                            <strong>Headers on every delivery:</strong> <code class="hubspot-code-1">x-hd-event</code>
+                            (event name),
+                            <code class="hubspot-code-1">x-hd-timestamp</code> (Unix seconds, new on every retry), <code
+                                class="hubspot-code-1">x-hd-signature</code>
+                            (hex HMAC-SHA256), and <code class="hubspot-code-1">x-hd-encryption: aes-256-cbc</code> when
+                            encryption is on.
                         </p>
 
                         <p style="color:#4a5568; margin-top: 12px;">
                             <strong>Decryption, only if encryption is on.</strong> Verify the signature first, because
                             it covers the encrypted text. The body is
-                            <code>base64(iv[16] || AES-256-CBC ciphertext)</code> with PKCS#7 padding. The key is the
+                            <code class="hubspot-code-1">base64(iv[16] || AES-256-CBC ciphertext)</code> with PKCS#7
+                            padding. The key is the
                             webhook's 64-hex-character encryption key, which you would store as another System
-                            Parameter, e.g. <code>heydoot.webhook_key</code>.
+                            Parameter, e.g. <code class="hubspot-code-1">heydoot.webhook_key</code>.
                         </p>
                         <pre class="odoo-code"><code>import base64
 from cryptography.hazmat.primitives import padding
@@ -891,7 +933,9 @@ def heydoot_decrypt(raw: bytes, key_hex: str) -> dict:
                             <h2 style="font-size: 1.8rem; font-weight: 700;">User attribution for User Metrics</h2>
                         </div>
                         <p style="color:#4a5568; margin-bottom:16px;">
-                            Send <code>user_id</code>, <code>username</code> and <code>user_email</code> of the Odoo
+                            Send <code class="hubspot-code-1">user_id</code>, <code
+                                class="hubspot-code-1">username</code> and <code
+                                class="hubspot-code-1">user_email</code> of the Odoo
                             user on every send (the module above does this), so HeyDoot's User Metrics report shows each
                             Odoo user by name and email.
                         </p>
@@ -909,7 +953,8 @@ def heydoot_decrypt(raw: bytes, key_hex: str) -> dict:
                                         <td>the user's name, with their email underneath</td>
                                     </tr>
                                     <tr>
-                                        <td><code>user_id</code> + <code>username</code> only</td>
+                                        <td><code class="hubspot-code-1">user_id</code> + <code
+                                                class="hubspot-code-1">username</code> only</td>
                                         <td>the name, with "no linked account &lt;user_id&gt;"</td>
                                     </tr>
                                     <tr>
@@ -920,10 +965,14 @@ def heydoot_decrypt(raw: bytes, key_hex: str) -> dict:
                             </table>
                         </div>
                         <ul style="color:#4a5568; padding-left: 20px;">
-                            <li><code>user_id</code> is any stable id from your side. The Odoo <code>res.users</code>
-                                id works (<code>str(env.user.id)</code>).</li>
-                            <li>Send <code>user_email</code> only when it is a real address: an invalid one makes
-                                HeyDoot refuse the send with <code>400 invalid_request</code>.</li>
+                            <li><code class="hubspot-code-1">user_id</code> is any stable id from your side. The Odoo
+                                <code class="hubspot-code-1">res.users</code>
+                                id works (<code class="hubspot-code-1">str(env.user.id)</code>).
+                            </li>
+                            <li>Send <code class="hubspot-code-1">user_email</code> only when it is a real address: an
+                                invalid one makes
+                                HeyDoot refuse the send with <code class="hubspot-code-1">400 invalid_request</code>.
+                            </li>
                             <li>Automated sends, such as order confirmations from an Automation rule, run as the user
                                 who triggered them. Use a dedicated "Odoo automation" user if you want those counted
                                 separately.</li>
@@ -942,8 +991,9 @@ def heydoot_decrypt(raw: bytes, key_hex: str) -> dict:
                         </div>
                         <p style="color:#4a5568; margin-bottom:16px;">
                             Every error is JSON with an error code and a readable message; the module turns it into a
-                            <code>UserError</code> the user can read. Retry only the temporary ones, always with the
-                            same <code>dispatch_id</code>.
+                            <code class="hubspot-code-1">UserError</code> the user can read. Retry only the temporary
+                            ones, always with the
+                            same <code class="hubspot-code-1">dispatch_id</code>.
                         </p>
 
                         <div style="overflow-x:auto; margin-bottom: 24px;">
@@ -959,52 +1009,59 @@ def heydoot_decrypt(raw: bytes, key_hex: str) -> dict:
                                 <tbody>
                                     <tr>
                                         <td>400</td>
-                                        <td><code>invalid_request</code>, <code>invalid_recipient</code>,
-                                            <code>empty_message</code>
+                                        <td><code class="hubspot-code-1">invalid_request</code>, <code
+                                                class="hubspot-code-1">invalid_recipient</code>,
+                                            <code class="hubspot-code-1">empty_message</code>
                                         </td>
                                         <td>a field breaks the rules, e.g. a phone without country code</td>
                                         <td>fix the data</td>
                                     </tr>
                                     <tr>
                                         <td>401</td>
-                                        <td><code>unauthorized</code></td>
+                                        <td><code class="hubspot-code-1">unauthorized</code></td>
                                         <td>token missing, wrong, expired or revoked</td>
-                                        <td>update <code>heydoot.api_token</code></td>
+                                        <td>update <code class="hubspot-code-1">heydoot.api_token</code></td>
                                     </tr>
                                     <tr>
                                         <td>402</td>
-                                        <td><code>api_not_licensed</code>, <code>api_quota_exceeded</code></td>
+                                        <td><code class="hubspot-code-1">api_not_licensed</code>, <code
+                                                class="hubspot-code-1">api_quota_exceeded</code></td>
                                         <td>the plan has no API access, or the day/week/month quota is used up</td>
-                                        <td>wait for <code>resets_at</code>, or upgrade the plan</td>
+                                        <td>wait for <code class="hubspot-code-1">resets_at</code>, or upgrade the plan
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>403</td>
-                                        <td><code>forbidden</code>, <code>license_inactive</code></td>
+                                        <td><code class="hubspot-code-1">forbidden</code>, <code
+                                                class="hubspot-code-1">license_inactive</code></td>
                                         <td>token is read-only, or the organisation can't send right now</td>
                                         <td>use a Read &amp; Send token / contact the HeyDoot admin</td>
                                     </tr>
                                     <tr>
                                         <td>404</td>
-                                        <td><code>conversation_not_found</code>, <code>number_not_found</code></td>
+                                        <td><code class="hubspot-code-1">conversation_not_found</code>, <code
+                                                class="hubspot-code-1">number_not_found</code></td>
                                         <td>wrong ID</td>
-                                        <td>clear <code>x_heydoot_conversation_id</code> and send by phone, or fix the
+                                        <td>clear <code class="hubspot-code-1">x_heydoot_conversation_id</code> and send
+                                            by phone, or fix the
                                             number ID</td>
                                     </tr>
                                     <tr>
                                         <td>422</td>
-                                        <td><code>recipient_opted_out</code></td>
+                                        <td><code class="hubspot-code-1">recipient_opted_out</code></td>
                                         <td>contact is on the Do-Not-Contact list</td>
                                         <td>don't retry</td>
                                     </tr>
                                     <tr>
                                         <td>429</td>
-                                        <td><code>rate_limited</code></td>
+                                        <td><code class="hubspot-code-1">rate_limited</code></td>
                                         <td>more than 600 requests in a minute (default)</td>
-                                        <td>wait <code>Retry-After</code> seconds</td>
+                                        <td>wait <code class="hubspot-code-1">Retry-After</code> seconds</td>
                                     </tr>
                                     <tr>
                                         <td>502 / 503</td>
-                                        <td><code>connector_error</code>, <code>api_disabled</code></td>
+                                        <td><code class="hubspot-code-1">connector_error</code>, <code
+                                                class="hubspot-code-1">api_disabled</code></td>
                                         <td>WhatsApp line issue, or API access switched off by the admin</td>
                                         <td>retry with backoff / contact the admin</td>
                                     </tr>
@@ -1013,20 +1070,26 @@ def heydoot_decrypt(raw: bytes, key_hex: str) -> dict:
                         </div>
 
                         <p style="color:#4a5568; margin-bottom:12px;">
-                            <strong>Rate limit:</strong> each response carries <code>X-RateLimit-Limit</code> and
-                            <code>X-RateLimit-Remaining</code>. Bulk jobs should pause when <code>Remaining</code> gets
+                            <strong>Rate limit:</strong> each response carries <code
+                                class="hubspot-code-1">X-RateLimit-Limit</code> and
+                            <code class="hubspot-code-1">X-RateLimit-Remaining</code>. Bulk jobs should pause when <code
+                                class="hubspot-code-1">Remaining</code> gets
                             low.
                         </p>
                         <p style="color:#4a5568; margin-bottom:12px;">
-                            <strong>Plan quota:</strong> responses carry <code>X-Quota-Limit</code>,
-                            <code>X-Quota-Remaining</code> and <code>X-Quota-Reset</code>. On 402
-                            <code>api_quota_exceeded</code>, stop sending until <code>resets_at</code> and keep the
+                            <strong>Plan quota:</strong> responses carry <code
+                                class="hubspot-code-1">X-Quota-Limit</code>,
+                            <code class="hubspot-code-1">X-Quota-Remaining</code> and <code
+                                class="hubspot-code-1">X-Quota-Reset</code>. On 402
+                            <code class="hubspot-code-1">api_quota_exceeded</code>, stop sending until <code
+                                class="hubspot-code-1">resets_at</code> and keep the
                             unsent messages queued in Odoo.
                         </p>
                         <p style="color:#4a5568;">
                             <strong>Backoff:</strong> on a timeout, 429 or 5xx, retry after about 2, 4, then 8 seconds,
-                            with the same <code>dispatch_id</code>. A scheduled action can pick up messages still stuck
-                            in <code>queued</code> later.
+                            with the same <code class="hubspot-code-1">dispatch_id</code>. A scheduled action can pick
+                            up messages still stuck
+                            in <code class="hubspot-code-1">queued</code> later.
                         </p>
                     </div>
 
@@ -1053,7 +1116,8 @@ def heydoot_decrypt(raw: bytes, key_hex: str) -> dict:
                                     include the country code</li>
                                 <li style="margin-bottom: 12px; display: flex; gap: 12px;"><i
                                         class="fas fa-check-circle" style="color: #714B67;"></i> Every send carries a
-                                    new <code>dispatch_id</code>, logged before the call and reused on retries</li>
+                                    new <code class="hubspot-code-1">dispatch_id</code>, logged before the call and
+                                    reused on retries</li>
                                 <li style="margin-bottom: 12px; display: flex; gap: 12px;"><i
                                         class="fas fa-check-circle" style="color: #714B67;"></i> Every send carries
                                     <code class="odoo-code-1">user_id</code>, <code class="odoo-code-1">username</code>
@@ -1114,7 +1178,8 @@ def heydoot_decrypt(raw: bytes, key_hex: str) -> dict:
                             <div class="faq-question">Can I send media messages (images, PDFs) from Odoo? <i
                                     class="fas fa-chevron-down"></i></div>
                             <div class="faq-answer">Yes. Attach order PDFs, invoices or delivery slips as WhatsApp media
-                                messages using the <code>attachment</code> field (image, document, audio or video, max
+                                messages using the <code class="hubspot-code-1">attachment</code> field (image,
+                                document, audio or video, max
                                 16 MB).</div>
                         </div>
 
@@ -1128,8 +1193,10 @@ def heydoot_decrypt(raw: bytes, key_hex: str) -> dict:
                         <div class="faq-item">
                             <div class="faq-question">Where are the HeyDoot credentials stored? <i
                                     class="fas fa-chevron-down"></i></div>
-                            <div class="faq-answer">In Odoo System Parameters (<code>heydoot.base_url</code>,
-                                <code>heydoot.api_token</code>, <code>heydoot.number_id</code>), never in module code.
+                            <div class="faq-answer">In Odoo System Parameters (<code
+                                    class="hubspot-code-1">heydoot.base_url</code>,
+                                <code class="hubspot-code-1">heydoot.api_token</code>, <code
+                                    class="hubspot-code-1">heydoot.number_id</code>), never in module code.
                                 That keeps production and staging isolated and prevents secrets from reaching Git.
                             </div>
                         </div>
@@ -1138,9 +1205,10 @@ def heydoot_decrypt(raw: bytes, key_hex: str) -> dict:
                             <div class="faq-question">Will replies from customers show up in Odoo? <i
                                     class="fas fa-chevron-down"></i></div>
                             <div class="faq-answer">Yes. HeyDoot posts replies and delivery statuses to your
-                                <code>/heydoot/events</code> HTTP controller. The controller verifies the HMAC signature
+                                <code class="hubspot-code-1">/heydoot/events</code> HTTP controller. The controller
+                                verifies the HMAC signature
                                 and logs the message in the contact's chatter, de-duplicated by
-                                <code>message_ref</code>.
+                                <code class="hubspot-code-1">message_ref</code>.
                             </div>
                         </div>
 
