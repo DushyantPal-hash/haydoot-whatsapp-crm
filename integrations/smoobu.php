@@ -137,6 +137,15 @@ include ROOT_PATH . '/components/navbar.php';
     .feature-card:hover {
         transform: translateY(0px) scale(1.0) !important;
     }
+
+    .hubspot-code-1 {
+        background: #0f172ad4;
+        color: #e2e8f0;
+        border-radius: 10px;
+        padding: 2px 10px;
+        overflow-x: auto;
+        line-height: 1.55;
+    }
 </style>
 
 <main>
@@ -167,7 +176,7 @@ include ROOT_PATH . '/components/navbar.php';
                         style="position: sticky; top: 100px; background: white; border-radius: 28px; padding: 24px; box-shadow: var(--card-shadow); border: 1px solid rgba(0,0,0,0.04);">
                         <h4 style="font-weight: 700; margin-bottom: 20px; font-size: 1.1rem;"><i class="fas fa-cog"
                                 style="color: #2563EB; margin-right: 8px;"></i> On this page</h4>
-                        <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px;">
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px;">
                             <li><a href="#overview" style="color: #2c3e2f; font-size: 0.9rem;"><i
                                         class="fas fa-info-circle" style="color: #2563EB;"></i> Overview</a></li>
                             <li><a href="#benefits" style="color: #2c3e2f; font-size: 0.9rem;"><i class="fas fa-gift"
@@ -243,25 +252,30 @@ include ROOT_PATH . '/components/navbar.php';
                                         <tr>
                                             <td>Smoobu → relay (bookings)</td>
                                             <td>Smoobu webhook to
-                                                <code>https://&lt;YOUR_RELAY_DOMAIN&gt;/smoobu/&lt;RELAY_PATH_SECRET&gt;</code>
+                                                <code
+                                                    class="hubspot-code-1">https://&lt;YOUR_RELAY_DOMAIN&gt;/smoobu/&lt;RELAY_PATH_SECRET&gt;</code>
                                             </td>
                                             <td>secret path; the relay re-reads the booking from Smoobu</td>
                                         </tr>
                                         <tr>
                                             <td>relay → HeyDoot (send)</td>
-                                            <td><code>POST /v1/messages/send</code></td>
-                                            <td><code>Authorization: Bearer &lt;HEYDOOT_API_TOKEN&gt;</code></td>
+                                            <td><code class="hubspot-code-1">POST /v1/messages/send</code></td>
+                                            <td><code
+                                                    class="hubspot-code-1">Authorization: Bearer &lt;HEYDOOT_API_TOKEN&gt;</code>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>HeyDoot → relay (replies)</td>
                                             <td>HeyDoot webhook to
-                                                <code>https://&lt;YOUR_RELAY_DOMAIN&gt;/heydoot/events</code>
+                                                <code
+                                                    class="hubspot-code-1">https://&lt;YOUR_RELAY_DOMAIN&gt;/heydoot/events</code>
                                             </td>
                                             <td>HMAC-SHA256 with the webhook's signing secret</td>
                                         </tr>
                                         <tr>
                                             <td>relay → Smoobu (log)</td>
-                                            <td><code>POST /api/reservations/{id}/messages/send-message-to-host</code>
+                                            <td><code
+                                                    class="hubspot-code-1">POST /api/reservations/{id}/messages/send-message-to-host</code>
                                             </td>
                                             <td>Smoobu HMAC API key + secret</td>
                                         </tr>
@@ -344,22 +358,24 @@ include ROOT_PATH . '/components/navbar.php';
                         </div>
                         <div class="feature-card" style="background: white; border-radius: 28px; padding: 24px 28px;">
                             <ul style="list-style: none;">
-                                <li style="margin-bottom: 14px; display: flex; gap: 12px;"><i
-                                        class="fas fa-check-circle" style="color: #2563EB;"></i>
+                                <li style="margin-bottom: 14px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
+                                        style="color: #2563EB;"></i>
                                     <span>
                                         <strong>HeyDoot</strong>:
-                                        base URL <code>https://&lt;HEYDOOT_API_BASE_URL&gt;</code>, a <em>Read &amp;
+                                        base URL <code
+                                            class="hubspot-code-1">https://&lt;HEYDOOT_API_BASE_URL&gt;</code>, a
+                                        <em>Read &amp;
                                             Send</em>
                                         API token, and the number ID of the WhatsApp line
                                     </span>
                                 </li>
-                                <li style="margin-bottom: 14px; display: flex; gap: 12px;"><i
-                                        class="fas fa-check-circle" style="color: #2563EB;"></i>
+                                <li style="margin-bottom: 14px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
+                                        style="color: #2563EB;"></i>
                                     <strong>Smoobu</strong>:
                                     an account with API access, and an API key + secret (<em>Settings → Advanced → API
                                         Keys</em>)
                                 </li>
-                                <li style="display: flex; gap: 12px;"><i class="fas fa-check-circle"
+                                <li style="display: flex; gap: 8px;"><i class="fas fa-check-circle"
                                         style="color: #2563EB;"></i> A place to run the relay over public HTTPS, with a
                                     small database (Postgres, MySQL or SQLite) for the booking ↔ chat mapping</li>
                             </ul>
@@ -391,38 +407,41 @@ include ROOT_PATH . '/components/navbar.php';
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><code>HEYDOOT_BASE_URL</code></td>
-                                        <td><code>https://&lt;HEYDOOT_API_BASE_URL&gt;</code></td>
+                                        <td><code class="hubspot-code-1">HEYDOOT_BASE_URL</code></td>
+                                        <td><code class="hubspot-code-1">https://&lt;HEYDOOT_API_BASE_URL&gt;</code>
+                                        </td>
                                         <td>the HeyDoot team</td>
                                     </tr>
                                     <tr>
-                                        <td><code>HEYDOOT_TOKEN</code></td>
-                                        <td><code>hd_live_…</code> (Read &amp; Send)</td>
+                                        <td><code class="hubspot-code-1">HEYDOOT_TOKEN</code></td>
+                                        <td><code class="hubspot-code-1">hd_live_…</code> (Read &amp; Send)</td>
                                         <td>HeyDoot admin → Settings → Integrations → API Tokens</td>
                                     </tr>
                                     <tr>
-                                        <td><code>HEYDOOT_NUMBER_ID</code></td>
+                                        <td><code class="hubspot-code-1">HEYDOOT_NUMBER_ID</code></td>
                                         <td>the WhatsApp line UUID</td>
                                         <td>HeyDoot admin → Settings → Phones</td>
                                     </tr>
                                     <tr>
-                                        <td><code>HEYDOOT_WEBHOOK_SECRET</code></td>
+                                        <td><code class="hubspot-code-1">HEYDOOT_WEBHOOK_SECRET</code></td>
                                         <td>shown once when the HeyDoot webhook is added</td>
                                         <td>HeyDoot → Settings → Integrations → Webhooks</td>
                                     </tr>
                                     <tr>
-                                        <td><code>SMOOBU_API_KEY</code> / <code>SMOOBU_API_SECRET</code></td>
+                                        <td><code class="hubspot-code-1">SMOOBU_API_KEY</code> /
+                                            <code>SMOOBU_API_SECRET</code>
+                                        </td>
                                         <td>API key + secret</td>
                                         <td>Smoobu → Settings → Advanced → API Keys</td>
                                     </tr>
                                     <tr>
-                                        <td><code>RELAY_PATH_SECRET</code></td>
+                                        <td><code class="hubspot-code-1">RELAY_PATH_SECRET</code></td>
                                         <td>a random string you choose</td>
                                         <td>you</td>
                                     </tr>
                                     <tr>
-                                        <td><code>DEFAULT_COUNTRY_CODE</code></td>
-                                        <td>e.g. <code>91</code></td>
+                                        <td><code class="hubspot-code-1">DEFAULT_COUNTRY_CODE</code></td>
+                                        <td>e.g. <code class="hubspot-code-1">91</code></td>
                                         <td>you</td>
                                     </tr>
                                 </tbody>
@@ -446,7 +465,8 @@ include ROOT_PATH . '/components/navbar.php';
                                 <h3 style="font-size: 1.3rem; font-weight: 700; margin: 0;">Smoobu API key</h3>
                             </div>
                             <p>Create an API key and secret. Use HMAC signing (below): Smoobu's older
-                                <code>Api-Key</code> header is deprecated and stops working on <strong>31 October
+                                <code class="hubspot-code-1">Api-Key</code> header is deprecated and stops working on
+                                <strong>31 October
                                     2026</strong>.
                             </p>
                         </div>
@@ -458,7 +478,9 @@ include ROOT_PATH . '/components/navbar.php';
                                 <h3 style="font-size: 1.3rem; font-weight: 700; margin: 0;">Smoobu webhook</h3>
                             </div>
                             <p>In Smoobu's API settings, enter
-                                <code>https://&lt;YOUR_RELAY_DOMAIN&gt;/smoobu/&lt;RELAY_PATH_SECRET&gt;</code>. Smoobu
+                                <code
+                                    class="hubspot-code-1">https://&lt;YOUR_RELAY_DOMAIN&gt;/smoobu/&lt;RELAY_PATH_SECRET&gt;</code>.
+                                Smoobu
                                 sends every event to it; there is no per-event choice, so the relay ignores what it
                                 doesn't need.
                             </p>
@@ -471,9 +493,11 @@ include ROOT_PATH . '/components/navbar.php';
                                 <h3 style="font-size: 1.3rem; font-weight: 700; margin: 0;">HeyDoot webhook</h3>
                             </div>
                             <p>In HeyDoot, open <strong>Settings → Integrations → Webhooks</strong>, add
-                                <code>https://&lt;YOUR_RELAY_DOMAIN&gt;/heydoot/events</code>, choose
-                                <code>hd.message.received</code>, <code>hd.message.status</code> and
-                                <code>hd.number.disconnected</code>, and copy the signing secret.
+                                <code class="hubspot-code-1">https://&lt;YOUR_RELAY_DOMAIN&gt;/heydoot/events</code>,
+                                choose
+                                <code class="hubspot-code-1">hd.message.received</code>, <code>hd.message.status</code>
+                                and
+                                <code class="hubspot-code-1">hd.number.disconnected</code>, and copy the signing secret.
                             </p>
                         </div>
 
@@ -497,10 +521,13 @@ CREATE INDEX smoobu_chats_conv ON smoobu_chats (conversation_id);</code></pre>
                         <h3 style="font-size: 1.3rem; font-weight: 700; margin-top: 28px; margin-bottom: 12px;">Signing
                             Smoobu API calls</h3>
                         <p style="color:#4a5568; margin-bottom:12px;">
-                            Every call carries <code>X-API-Key</code>, <code>X-Timestamp</code> (ISO 8601 UTC),
-                            <code>X-Nonce</code> (a new UUID v4) and <code>X-Signature</code>. The signature is
+                            Every call carries <code class="hubspot-code-1">X-API-Key</code>, <code
+                                class="hubspot-code-1">X-Timestamp</code> (ISO 8601 UTC),
+                            <code class="hubspot-code-1">X-Nonce</code> (a new UUID v4) and <code
+                                class="hubspot-code-1">X-Signature</code>. The signature is
                             Base64 HMAC-SHA256, keyed with the API secret, over these seven lines joined by
-                            <code>\n</code>: method, path, sorted query string, timestamp, nonce, hex SHA-256 of the
+                            <code class="hubspot-code-1">\n</code>: method, path, sorted query string, timestamp, nonce,
+                            hex SHA-256 of the
                             body, API key.
                         </p>
                         <pre class="smoobu-code"><code>const crypto = require('crypto');
@@ -530,7 +557,8 @@ async function smoobu(method, path, body) {
   return r.json();
 }</code></pre>
                         <p style="color:#4a5568; margin-top: 12px;">
-                            Check it with <code>await smoobu('GET', '/api/me')</code>: it returns your Smoobu user's
+                            Check it with <code class="hubspot-code-1">await smoobu('GET', '/api/me')</code>: it returns
+                            your Smoobu user's
                             id, name and email.
                         </p>
                     </div>
@@ -546,7 +574,8 @@ async function smoobu(method, path, body) {
                                 events</h2>
                         </div>
                         <p style="color:#4a5568; margin-bottom:16px;">
-                            Smoobu posts <code>{"action", "user", "data"}</code> to the relay for every event. The relay
+                            Smoobu posts <code class="hubspot-code-1">{"action", "user", "data"}</code> to the relay for
+                            every event. The relay
                             acts on four booking actions, re-reads the booking from Smoobu, and sends through HeyDoot.
                         </p>
 
@@ -560,20 +589,22 @@ async function smoobu(method, path, body) {
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><code>newReservation</code></td>
+                                        <td><code class="hubspot-code-1">newReservation</code></td>
                                         <td>sends the confirmation, stores the booking ↔ chat mapping</td>
                                     </tr>
                                     <tr>
-                                        <td><code>updateReservation</code></td>
+                                        <td><code class="hubspot-code-1">updateReservation</code></td>
                                         <td>sends the new dates, only when the arrival date changed</td>
                                     </tr>
                                     <tr>
-                                        <td><code>cancelReservation</code></td>
+                                        <td><code class="hubspot-code-1">cancelReservation</code></td>
                                         <td>sends a cancellation notice</td>
                                     </tr>
                                     <tr>
-                                        <td><code>deleteReservation</code>, <code>updateRates</code>,
-                                            <code>newMessage</code>, price elements, online check-in update
+                                        <td><code class="hubspot-code-1">deleteReservation</code>, <code
+                                                class="hubspot-code-1">updateRates</code>,
+                                            <code class="hubspot-code-1">newMessage</code>, price elements, online
+                                            check-in update
                                         </td>
                                         <td>ignored (answer 200)</td>
                                     </tr>
@@ -659,7 +690,8 @@ function uuidFrom(s) {
                         <h3 style="font-size: 1.3rem; font-weight: 700; margin-top: 28px; margin-bottom: 12px;">Message
                             texts</h3>
                         <p style="color:#4a5568; margin-bottom:12px;">
-                            Adapt the wording and language; <code>b.language</code> holds the guest's language code.
+                            Adapt the wording and language; <code class="hubspot-code-1">b.language</code> holds the
+                            guest's language code.
                         </p>
                         <pre class="smoobu-code"><code>const confirmText = (b) =&gt;
   `Hi ${b.firstname || b['guest-name']}, your stay at ${b.apartment.name} is confirmed: ` +
@@ -710,7 +742,8 @@ const cancelText = (b) =&gt;
                         <p style="color:#4a5568; margin-top: 12px;">
                             <strong>Guest phone numbers.</strong> Smoobu only has the phone the booking channel passed
                             on. Some channels share no number, or a masked one that isn't on WhatsApp. Those sends fail
-                            with <code>not_on_whatsapp</code> in the status webhook; fall back to Smoobu's own messaging
+                            with <code class="hubspot-code-1">not_on_whatsapp</code> in the status webhook; fall back to
+                            Smoobu's own messaging
                             for them.
                         </p>
                     </div>
@@ -726,7 +759,8 @@ const cancelText = (b) =&gt;
                         </div>
                         <p style="color:#4a5568; margin-bottom:16px;">
                             When a guest answers on WhatsApp, HeyDoot calls the relay. The relay checks the signature,
-                            finds the booking by <code>conversation_id</code>, and posts the reply as an internal host
+                            finds the booking by <code class="hubspot-code-1">conversation_id</code>, and posts the
+                            reply as an internal host
                             message on that booking, so the host sees it in Smoobu and it stays hidden from the guest.
                         </p>
 
@@ -774,8 +808,9 @@ app.post('/heydoot/events', express.raw({ type: '*/*' }), async (req, res) =&gt;
 });</code></pre>
 
                         <p style="color:#4a5568; margin-top: 12px;">
-                            Add <code>CREATE TABLE seen_refs (ref TEXT PRIMARY KEY);</code> next to
-                            <code>smoobu_chats</code>.
+                            Add <code class="hubspot-code-1">CREATE TABLE seen_refs (ref TEXT PRIMARY KEY);</code> next
+                            to
+                            <code class="hubspot-code-1">smoobu_chats</code>.
                         </p>
                         <p style="color:#4a5568; margin-top: 12px;">
                             <strong>Answering the guest.</strong> The host replies from the HeyDoot inbox, where the
@@ -783,13 +818,15 @@ app.post('/heydoot/events', express.raw({ type: '*/*' }), async (req, res) =&gt;
                             (Airbnb, Booking.com, email), not WhatsApp.
                         </p>
                         <p style="color:#4a5568; margin-top: 12px;">
-                            <strong>Disconnected line.</strong> On <code>hd.number.disconnected</code>, alert whoever
+                            <strong>Disconnected line.</strong> On <code
+                                class="hubspot-code-1">hd.number.disconnected</code>, alert whoever
                             looks after WhatsApp (email, Slack): nothing can be sent until the line is reconnected in
                             HeyDoot.
                         </p>
                         <p style="color:#4a5568; margin-top: 12px;">
                             <strong>Retries and duplicates.</strong> HeyDoot retries a delivery without a 2xx 6 more
-                            times over about 50 minutes. The <code>seen_refs</code> table stops a reply from appearing
+                            times over about 50 minutes. The <code class="hubspot-code-1">seen_refs</code> table stops a
+                            reply from appearing
                             twice in Smoobu.
                         </p>
                     </div>
@@ -804,7 +841,8 @@ app.post('/heydoot/events', express.raw({ type: '*/*' }), async (req, res) =&gt;
                             <h2 style="font-size: 1.8rem; font-weight: 700;">Errors, limits and retries</h2>
                         </div>
                         <p style="color:#4a5568; margin-bottom:16px;">
-                            Retry only temporary errors, always with the same <code>dispatch_id</code>; the relay builds
+                            Retry only temporary errors, always with the same <code
+                                class="hubspot-code-1">dispatch_id</code>; the relay builds
                             it from booking id + message kind, so a retry never double-sends.
                         </p>
 
@@ -823,56 +861,60 @@ app.post('/heydoot/events', express.raw({ type: '*/*' }), async (req, res) =&gt;
                                     <tr>
                                         <td>HeyDoot</td>
                                         <td>400</td>
-                                        <td><code>invalid_request</code>, <code>invalid_recipient</code></td>
+                                        <td><code class="hubspot-code-1">invalid_request</code>, <code
+                                                class="hubspot-code-1">invalid_recipient</code></td>
                                         <td>phone without country code, or too short</td>
-                                        <td>check <code>DEFAULT_COUNTRY_CODE</code> and the booking's phone</td>
+                                        <td>check <code class="hubspot-code-1">DEFAULT_COUNTRY_CODE</code> and the
+                                            booking's phone</td>
                                     </tr>
                                     <tr>
                                         <td>HeyDoot</td>
                                         <td>401</td>
-                                        <td><code>unauthorized</code></td>
+                                        <td><code class="hubspot-code-1">unauthorized</code></td>
                                         <td>token wrong or revoked</td>
-                                        <td>update <code>HEYDOOT_TOKEN</code></td>
+                                        <td>update <code class="hubspot-code-1">HEYDOOT_TOKEN</code></td>
                                     </tr>
                                     <tr>
                                         <td>HeyDoot</td>
                                         <td>402</td>
-                                        <td><code>api_not_licensed</code>, <code>api_quota_exceeded</code></td>
+                                        <td><code class="hubspot-code-1">api_not_licensed</code>, <code
+                                                class="hubspot-code-1">api_quota_exceeded</code></td>
                                         <td>no API access on the plan, or quota used up</td>
-                                        <td>wait for <code>resets_at</code>, or upgrade</td>
+                                        <td>wait for <code class="hubspot-code-1">resets_at</code>, or upgrade</td>
                                     </tr>
                                     <tr>
                                         <td>HeyDoot</td>
                                         <td>403</td>
-                                        <td><code>forbidden</code>, <code>license_inactive</code></td>
+                                        <td><code class="hubspot-code-1">forbidden</code>, <code
+                                                class="hubspot-code-1">license_inactive</code></td>
                                         <td>read-only token, or the organisation can't send</td>
                                         <td>use a Read &amp; Send token / contact the HeyDoot admin</td>
                                     </tr>
                                     <tr>
                                         <td>HeyDoot</td>
                                         <td>422</td>
-                                        <td><code>recipient_opted_out</code></td>
+                                        <td><code class="hubspot-code-1">recipient_opted_out</code></td>
                                         <td>guest is on the Do-Not-Contact list</td>
                                         <td>don't retry</td>
                                     </tr>
                                     <tr>
                                         <td>HeyDoot</td>
                                         <td>429</td>
-                                        <td><code>rate_limited</code></td>
+                                        <td><code class="hubspot-code-1">rate_limited</code></td>
                                         <td>over 600 requests a minute</td>
-                                        <td>wait <code>Retry-After</code> seconds</td>
+                                        <td>wait <code class="hubspot-code-1">Retry-After</code> seconds</td>
                                     </tr>
                                     <tr>
                                         <td>HeyDoot</td>
                                         <td>502 / 503</td>
-                                        <td><code>connector_error</code></td>
+                                        <td><code class="hubspot-code-1">connector_error</code></td>
                                         <td>WhatsApp line issue</td>
                                         <td>retry after 2, 4, 8 s</td>
                                     </tr>
                                     <tr>
                                         <td>Smoobu</td>
                                         <td>401</td>
-                                        <td><code>bad signature</code></td>
+                                        <td><code class="hubspot-code-1">bad signature</code></td>
                                         <td>clock more than 5 min off, or a reused nonce</td>
                                         <td>sync the server clock (NTP); new nonce per call</td>
                                     </tr>
@@ -881,7 +923,7 @@ app.post('/heydoot/events', express.raw({ type: '*/*' }), async (req, res) =&gt;
                                         <td>429</td>
                                         <td>over 700 requests a minute</td>
                                         <td>too many calls</td>
-                                        <td>wait until <code>X-RateLimit-Retry-After</code></td>
+                                        <td>wait until <code class="hubspot-code-1">X-RateLimit-Retry-After</code></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -890,11 +932,13 @@ app.post('/heydoot/events', express.raw({ type: '*/*' }), async (req, res) =&gt;
                         <p style="color:#4a5568; margin-bottom:12px;">
                             <strong>Failed webhook work.</strong> The relay answers 200 before working, so neither side
                             retries a failure inside the relay. Log failures and re-run them: for Smoobu events, a
-                            nightly job can list bookings with <code>modifiedFrom=&lt;yesterday&gt;</code> and send
-                            anything missing from <code>sent_kinds</code>.
+                            nightly job can list bookings with <code
+                                class="hubspot-code-1">modifiedFrom=&lt;yesterday&gt;</code> and send
+                            anything missing from <code class="hubspot-code-1">sent_kinds</code>.
                         </p>
                         <p style="color:#4a5568; margin-bottom:12px;">
-                            <strong>Plan quota:</strong> HeyDoot responses carry <code>X-Quota-Remaining</code>; pause
+                            <strong>Plan quota:</strong> HeyDoot responses carry <code
+                                class="hubspot-code-1">X-Quota-Remaining</code>; pause
                             sends when it is low.
                         </p>
                         <p style="color:#4a5568;">
@@ -914,42 +958,46 @@ app.post('/heydoot/events', express.raw({ type: '*/*' }), async (req, res) =&gt;
                         </div>
                         <div class="feature-card" style="background: white; border-radius: 28px; padding: 24px 28px;">
                             <ul style="list-style: none;">
-                                <li style="margin-bottom: 12px; display: flex; gap: 12px;"><i
-                                        class="fas fa-check-circle" style="color: #2563EB;"></i> HeyDoot token (Read
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
+                                        style="color: #2563EB;"></i> HeyDoot token (Read
                                     &amp; Send), number ID and Smoobu key + secret are relay env variables, not in code
                                 </li>
-                                <li style="margin-bottom: 12px; display: flex; gap: 12px;"><i
-                                        class="fas fa-check-circle" style="color: #2563EB;"></i> HeyDoot API Access is
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
+                                        style="color: #2563EB;"></i> HeyDoot API Access is
                                     on, with a plan quota that fits your bookings</li>
-                                <li style="margin-bottom: 12px; display: flex; gap: 12px;"><i
-                                        class="fas fa-check-circle" style="color: #2563EB;"></i> Smoobu calls use HMAC
-                                    signing, not the <code>Api-Key</code> header (it stops working on 31 October 2026)
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
+                                        style="color: #2563EB;"></i> Smoobu calls use HMAC
+                                    signing, not the <code class="hubspot-code-1">Api-Key</code> header (it stops
+                                    working on 31 October 2026)
                                 </li>
-                                <li style="margin-bottom: 12px; display: flex; gap: 12px;"><i
-                                        class="fas fa-check-circle" style="color: #2563EB;"></i> The relay server's
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
+                                        style="color: #2563EB;"></i> The relay server's
                                     clock is synced (Smoobu rejects timestamps more than 5 minutes off)</li>
-                                <li style="margin-bottom: 12px; display: flex; gap: 12px;"><i
-                                        class="fas fa-check-circle" style="color: #2563EB;"></i> The Smoobu webhook URL
-                                    contains <code>RELAY_PATH_SECRET</code>, and the relay re-reads each booking from
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
+                                        style="color: #2563EB;"></i> The Smoobu webhook URL
+                                    contains <code class="hubspot-code-1">RELAY_PATH_SECRET</code>, and the relay
+                                    re-reads each booking from
                                     the API</li>
-                                <li style="margin-bottom: 12px; display: flex; gap: 12px;"><i
-                                        class="fas fa-check-circle" style="color: #2563EB;"></i>
-                                    <code>DEFAULT_COUNTRY_CODE</code> matches where most guests' national numbers come
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
+                                        style="color: #2563EB;"></i>
+                                    <code class="hubspot-code-1">DEFAULT_COUNTRY_CODE</code> matches where most guests'
+                                    national numbers come
                                     from
                                 </li>
-                                <li style="margin-bottom: 12px; display: flex; gap: 12px;"><i
-                                        class="fas fa-check-circle" style="color: #2563EB;"></i> One test booking on
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
+                                        style="color: #2563EB;"></i> One test booking on
                                     your own phone produced the confirmation, and your WhatsApp reply showed up in
                                     Smoobu</li>
-                                <li style="margin-bottom: 12px; display: flex; gap: 12px;"><i
-                                        class="fas fa-check-circle" style="color: #2563EB;"></i> The daily check-in job
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
+                                        style="color: #2563EB;"></i> The daily check-in job
                                     runs once a day and skips bookings already reminded</li>
-                                <li style="margin-bottom: 12px; display: flex; gap: 12px;"><i
-                                        class="fas fa-check-circle" style="color: #2563EB;"></i> <code>seen_refs</code>
-                                    and <code>smoobu_chats</code> live in a real database, not memory</li>
-                                <li style="display: flex; gap: 12px;"><i class="fas fa-check-circle"
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
+                                        style="color: #2563EB;"></i> <code class="hubspot-code-1">seen_refs</code>
+                                    and <code class="hubspot-code-1">smoobu_chats</code> live in a real database, not
+                                    memory</li>
+                                <li style="display: flex; gap: 8px;"><i class="fas fa-check-circle"
                                         style="color: #2563EB;"></i> Someone is alerted on
-                                    <code>hd.number.disconnected</code> and on failed sends
+                                    <code class="hubspot-code-1">hd.number.disconnected</code> and on failed sends
                                 </li>
                             </ul>
                             <p style="color:#4a5568; margin-top: 12px;">
@@ -981,9 +1029,11 @@ app.post('/heydoot/events', express.raw({ type: '*/*' }), async (req, res) =&gt;
                         <div class="faq-item">
                             <div class="faq-question">Do I need the Smoobu Api-Key header? <i
                                     class="fas fa-chevron-down"></i></div>
-                            <div class="faq-answer">No. Use HMAC signing (<code>X-API-Key</code>,
-                                <code>X-Timestamp</code>,
-                                <code>X-Nonce</code>, <code>X-Signature</code>). The old <code>Api-Key</code> header is
+                            <div class="faq-answer">No. Use HMAC signing (<code class="hubspot-code-1">X-API-Key</code>,
+                                <code class="hubspot-code-1">X-Timestamp</code>,
+                                <code class="hubspot-code-1">X-Nonce</code>, <code
+                                    class="hubspot-code-1">X-Signature</code>). The old <code
+                                    class="hubspot-code-1">Api-Key</code> header is
                                 deprecated and stops working on 31 October 2026.
                             </div>
                         </div>
@@ -993,7 +1043,8 @@ app.post('/heydoot/events', express.raw({ type: '*/*' }), async (req, res) =&gt;
                                     class="fas fa-chevron-down"></i></div>
                             <div class="faq-answer">No. Smoobu only has the phone the booking channel passed on. Some
                                 channels share no number, or a masked one that isn't on WhatsApp. Those sends fail with
-                                <code>not_on_whatsapp</code> in the status webhook; fall back to Smoobu's own messaging
+                                <code class="hubspot-code-1">not_on_whatsapp</code> in the status webhook; fall back to
+                                Smoobu's own messaging
                                 for them.
                             </div>
                         </div>
@@ -1003,7 +1054,8 @@ app.post('/heydoot/events', express.raw({ type: '*/*' }), async (req, res) =&gt;
                                     class="fas fa-chevron-down"></i></div>
                             <div class="faq-answer">Smoobu has no "day before" webhook, so run a daily job (e.g. 10:00
                                 local time) that lists tomorrow's arrivals and sends each one once, tracked by
-                                <code>sent_kinds</code> in <code>smoobu_chats</code>.
+                                <code class="hubspot-code-1">sent_kinds</code> in <code
+                                    class="hubspot-code-1">smoobu_chats</code>.
                             </div>
                         </div>
 
@@ -1018,10 +1070,13 @@ app.post('/heydoot/events', express.raw({ type: '*/*' }), async (req, res) =&gt;
                         <div class="faq-item">
                             <div class="faq-question">How do you avoid sending the same message twice? <i
                                     class="fas fa-chevron-down"></i></div>
-                            <div class="faq-answer">The relay builds a deterministic <code>dispatch_id</code> from the
-                                booking id + message kind (e.g. <code>smoobu-1234-confirm</code>), so a repeated webhook
-                                or a retry never sends twice. It also tracks <code>sent_kinds</code> per booking and
-                                de-duplicates replies with a <code>seen_refs</code> table.</div>
+                            <div class="faq-answer">The relay builds a deterministic <code
+                                    class="hubspot-code-1">dispatch_id</code> from the
+                                booking id + message kind (e.g. <code
+                                    class="hubspot-code-1">smoobu-1234-confirm</code>), so a repeated webhook
+                                or a retry never sends twice. It also tracks <code
+                                    class="hubspot-code-1">sent_kinds</code> per booking and
+                                de-duplicates replies with a <code class="hubspot-code-1">seen_refs</code> table.</div>
                         </div>
 
                         <div class="faq-item">

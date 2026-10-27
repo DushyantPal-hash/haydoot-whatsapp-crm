@@ -116,6 +116,15 @@ include ROOT_PATH . '/components/navbar.php';
         font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
     }
 
+    .hubspot-code-1 {
+        background: #0f172ad4;
+        color: #e2e8f0;
+        border-radius: 10px;
+        padding: 2px 10px;
+        overflow-x: auto;
+        line-height: 1.55;
+    }
+
     .zapier-table {
         width: 100%;
         border-collapse: collapse;
@@ -203,7 +212,7 @@ include ROOT_PATH . '/components/navbar.php';
                         style="position: sticky; top: 100px; background: white; border-radius: 28px; padding: 24px; box-shadow: var(--card-shadow); border: 1px solid rgba(0,0,0,0.04);">
                         <h4 style="font-weight: 700; margin-bottom: 20px; font-size: 1.1rem;"><i class="fas fa-cog"
                                 style="color: #FF4A00; margin-right: 8px;"></i> On this page</h4>
-                        <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px;">
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px;">
                             <li><a href="#overview" style="color: #2c3e2f; font-size: 0.9rem;"><i
                                         class="fas fa-info-circle" style="color: #FF4A00;"></i> Overview</a></li>
                             <li><a href="#popular-zaps" style="color: #2c3e2f; font-size: 0.9rem;"><i
@@ -288,18 +297,23 @@ include ROOT_PATH . '/components/navbar.php';
                                     <tbody>
                                         <tr>
                                             <td>Zapier → HeyDoot (send)</td>
-                                            <td>Webhooks by Zapier calls <code>POST /v1/messages/send</code></td>
-                                            <td><code>Authorization: Bearer &lt;HEYDOOT_API_TOKEN&gt;</code></td>
+                                            <td>Webhooks by Zapier calls <code
+                                                    class="hubspot-code-1">POST /v1/messages/send</code></td>
+                                            <td><code
+                                                    class="hubspot-code-1">Authorization: Bearer &lt;HEYDOOT_API_TOKEN&gt;</code>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>HeyDoot → Zapier (replies)</td>
-                                            <td>HeyDoot webhook to <code>https://hooks.zapier.com/hooks/catch/…</code>
+                                            <td>HeyDoot webhook to <code
+                                                    class="hubspot-code-1">https://hooks.zapier.com/hooks/catch/…</code>
                                             </td>
                                             <td>HMAC-SHA256 signature with the webhook's signing secret</td>
                                         </tr>
                                         <tr>
                                             <td>HeyDoot → Zapier (status)</td>
-                                            <td><code>hd.message.status</code> to the same Catch Hook</td>
+                                            <td><code class="hubspot-code-1">hd.message.status</code> to the same Catch
+                                                Hook</td>
                                             <td>Same signing secret</td>
                                         </tr>
                                     </tbody>
@@ -413,23 +427,24 @@ include ROOT_PATH . '/components/navbar.php';
                         </div>
                         <div class="feature-card" style="background: white; border-radius: 28px; padding: 24px 28px;">
                             <ul style="list-style: none;">
-                                <li style="margin-bottom: 14px; display: flex; gap: 12px;"><i
-                                        class="fas fa-check-circle" style="color: #FF4A00;"></i> <strong>HeyDoot
+                                <li style="margin-bottom: 14px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
+                                        style="color: #FF4A00;"></i> <strong>HeyDoot
                                         account</strong>
                                     with API Access enabled and a <em>Read &amp; Send</em> API token</li>
-                                <li style="margin-bottom: 14px; display: flex; gap: 12px;"><i
-                                        class="fas fa-check-circle" style="color: #FF4A00;"></i> <strong>WhatsApp
+                                <li style="margin-bottom: 14px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
+                                        style="color: #FF4A00;"></i> <strong>WhatsApp
                                         Business number</strong> connected through HeyDoot (or use the shared demo
                                     number to test)</li>
-                                <li style="margin-bottom: 14px; display: flex; gap: 12px;"><i
-                                        class="fas fa-check-circle" style="color: #FF4A00;"></i> The <strong>number
+                                <li style="margin-bottom: 14px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
+                                        style="color: #FF4A00;"></i> The <strong>number
                                         ID</strong> of the WhatsApp line you'll send from
-                                    (<code>GET /v1/numbers</code> or HeyDoot → Settings → Phones)</li>
-                                <li style="margin-bottom: 14px; display: flex; gap: 12px;"><i
-                                        class="fas fa-check-circle" style="color: #FF4A00;"></i> <strong>Zapier
+                                    (<code class="hubspot-code-1">GET /v1/numbers</code> or HeyDoot → Settings → Phones)
+                                </li>
+                                <li style="margin-bottom: 14px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
+                                        style="color: #FF4A00;"></i> <strong>Zapier
                                         account</strong> — free plan works, but multi-step Zaps and premium apps need a
                                     paid plan</li>
-                                <li style="display: flex; gap: 12px;"><i class="fas fa-check-circle"
+                                <li style="display: flex; gap: 8px;"><i class="fas fa-check-circle"
                                         style="color: #FF4A00;"></i> Optional: a <em>Webhooks by Zapier → Catch
                                         Hook</em>
                                     URL if you want to receive replies and delivery updates</li>
@@ -468,10 +483,11 @@ include ROOT_PATH . '/components/navbar.php';
                                 <span class="step-number">2</span>
                                 <h3 style="font-size: 1.3rem; font-weight: 700; margin: 0;">Find your number ID</h3>
                             </div>
-                            <p style="color:#4a5568;">Call <code>GET /v1/numbers</code> with your token, or copy the
+                            <p style="color:#4a5568;">Call <code class="hubspot-code-1">GET /v1/numbers</code> with your
+                                token, or copy the
                                 UUID from <strong>HeyDoot → Settings → Phones</strong>. Save it — you'll paste it into
                                 every Zap.</p>
-                            <div class="zapier-code"><code>curl https://api.yourdomain.com/v1/numbers \
+                            <div class="zapier-code"><code class="hubspot-code-1">curl https://api.yourdomain.com/v1/numbers \
   -H "Authorization: Bearer $HEYDOOT_TOKEN"</code></div>
                         </div>
 
@@ -507,11 +523,13 @@ include ROOT_PATH . '/components/navbar.php';
                                     <tbody>
                                         <tr>
                                             <td><strong>URL</strong></td>
-                                            <td><code>https://api.yourdomain.com/v1/messages/send</code></td>
+                                            <td><code
+                                                    class="hubspot-code-1">https://api.yourdomain.com/v1/messages/send</code>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td><strong>Payload Type</strong></td>
-                                            <td><code>json</code></td>
+                                            <td><code class="hubspot-code-1">json</code></td>
                                         </tr>
                                         <tr>
                                             <td><strong>Data</strong></td>
@@ -519,8 +537,8 @@ include ROOT_PATH . '/components/navbar.php';
                                         </tr>
                                         <tr>
                                             <td><strong>Headers</strong></td>
-                                            <td><code>Authorization: Bearer hd_live_…</code> and
-                                                <code>Content-Type: application/json</code>
+                                            <td><code class="hubspot-code-1">Authorization: Bearer hd_live_…</code> and
+                                                <code class="hubspot-code-1">Content-Type: application/json</code>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -547,33 +565,35 @@ include ROOT_PATH . '/components/navbar.php';
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td><code>to</code></td>
-                                            <td>From trigger, e.g. <code>+919876543210</code></td>
+                                            <td><code>to class="hubspot-code-1"</code></td>
+                                            <td>From trigger, e.g. <code class="hubspot-code-1">+919876543210</code>
+                                            </td>
                                             <td>yes (or <code>conversation_id</code>)</td>
                                         </tr>
                                         <tr>
-                                            <td><code>number_id</code></td>
+                                            <td><code class="hubspot-code-1">number_id</code></td>
                                             <td>Your WhatsApp line UUID</td>
-                                            <td>yes with <code>to</code></td>
+                                            <td>yes with <code class="hubspot-code-1">to</code></td>
                                         </tr>
                                         <tr>
-                                            <td><code>text</code></td>
+                                            <td><code class="hubspot-code-1">text</code></td>
                                             <td>Hi {{First Name}}, your order {{Order ID}} is confirmed.</td>
                                             <td>yes</td>
                                         </tr>
                                         <tr>
-                                            <td><code>dispatch_id</code></td>
-                                            <td>From trigger, e.g. <code>{{zap_meta_id}}</code> or a UUID from a
+                                            <td><code class="hubspot-code-1">dispatch_id</code></td>
+                                            <td>From trigger, e.g. <code class="hubspot-code-1">{{zap_meta_id}}</code>
+                                                or a UUID from a
                                                 Code step</td>
                                             <td>recommended</td>
                                         </tr>
                                         <tr>
-                                            <td><code>user_id</code></td>
+                                            <td><code class="hubspot-code-1">user_id</code></td>
                                             <td>Zapier user or team ID</td>
                                             <td>recommended</td>
                                         </tr>
                                         <tr>
-                                            <td><code>username</code></td>
+                                            <td><code class="hubspot-code-1">username</code></td>
                                             <td>Zapier automation</td>
                                             <td>recommended</td>
                                         </tr>
@@ -588,8 +608,10 @@ include ROOT_PATH . '/components/navbar.php';
                                 <span class="step-number">6</span>
                                 <h3 style="font-size: 1.3rem; font-weight: 700; margin: 0;">Test and turn on</h3>
                             </div>
-                            <p style="color:#4a5568;">Click <strong>Test action</strong>. A <code>202 Accepted</code>
-                                response means HeyDoot queued the message. Save <code>message_ref</code> from the
+                            <p style="color:#4a5568;">Click <strong>Test action</strong>. A <code
+                                    class="hubspot-code-1">202 Accepted</code>
+                                response means HeyDoot queued the message. Save <code
+                                    class="hubspot-code-1">message_ref</code> from the
                                 response if you want to track delivery later. Then publish the Zap.</p>
                             <div class="zapier-code"><code>{
   "status": "queued",
@@ -637,7 +659,8 @@ include ROOT_PATH . '/components/navbar.php';
 
                         <h3 style="font-size: 1.3rem; font-weight: 700; margin-top: 28px; margin-bottom: 12px;">Sending
                             a file or attachment</h3>
-                        <p style="color:#4a5568;">Add an <code>attachment</code> object with a public HTTPS URL:</p>
+                        <p style="color:#4a5568;">Add an <code class="hubspot-code-1">attachment</code> object with a
+                            public HTTPS URL:</p>
                         <div class="zapier-code"><code>{
   "to": "{{Phone}}",
   "number_id": "01976117-a906-42f2-9b23-30394341f3ff",
@@ -650,14 +673,15 @@ include ROOT_PATH . '/components/navbar.php';
 }</code></div>
 
                         <h3 style="font-size: 1.3rem; font-weight: 700; margin-top: 28px; margin-bottom: 12px;">Why
-                            <code>dispatch_id</code> matters in Zaps
+                            <code class="hubspot-code-1">dispatch_id</code> matters in Zaps
                         </h3>
                         <ul style="color:#4a5568; padding-left: 20px;">
                             <li style="margin-bottom: 8px;">Zapier retries failed actions automatically. If you retry
-                                without a <code>dispatch_id</code>, the recipient may get the same WhatsApp twice.</li>
+                                without a <code class="hubspot-code-1">dispatch_id</code>, the recipient may get the
+                                same WhatsApp twice.</li>
                             <li style="margin-bottom: 8px;">Use a value that's unique per record and stable across
-                                retries — for example <code>shopify-{{Order ID}}</code> or
-                                <code>sheet-{{Row Number}}</code>.
+                                retries — for example <code class="hubspot-code-1">shopify-{{Order ID}}</code> or
+                                <code class="hubspot-code-1">sheet-{{Row Number}}</code>.
                             </li>
                             <li>If you need a proper UUID, add a <em>Code by Zapier</em> step before the Webhook and
                                 generate one from a stable input.</li>
@@ -692,13 +716,14 @@ output = { dispatch_id: `${h.slice(0,8)}-${h.slice(8,12)}-4${h.slice(13,16)}-a${
                         <ol style="color:#4a5568; padding-left: 20px;">
                             <li style="margin-bottom: 6px;">Create a new Zap. Trigger: <strong>Webhooks by Zapier →
                                     Catch Hook</strong>. Copy the URL Zapier gives you (it looks like
-                                <code>https://hooks.zapier.com/hooks/catch/…</code>).
+                                <code class="hubspot-code-1">https://hooks.zapier.com/hooks/catch/…</code>).
                             </li>
                             <li style="margin-bottom: 6px;">In Zapier, click <em>Test trigger</em> once so it's waiting
                                 for a sample.</li>
                             <li style="margin-bottom: 6px;">Ask your HeyDoot admin to add that URL in
                                 <strong>HeyDoot → Settings → Integrations → Webhooks</strong>, subscribing to
-                                <code>hd.message.received</code> and <code>hd.message.status</code>.
+                                <code class="hubspot-code-1">hd.message.received</code> and <code
+                                    class="hubspot-code-1">hd.message.status</code>.
                             </li>
                             <li style="margin-bottom: 6px;">Send a test WhatsApp to your number. The event arrives in
                                 Zapier within seconds.</li>
@@ -717,45 +742,48 @@ output = { dispatch_id: `${h.slice(0,8)}-${h.slice(8,12)}-4${h.slice(13,16)}-a${
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><code>event</code></td>
-                                        <td><code>hd.message.received</code> or <code>hd.message.status</code></td>
+                                        <td><code class="hubspot-code-1">event</code></td>
+                                        <td><code class="hubspot-code-1">hd.message.received</code> or <code
+                                                class="hubspot-code-1">hd.message.status</code></td>
                                     </tr>
                                     <tr>
-                                        <td><code>message_ref</code></td>
+                                        <td><code class="hubspot-code-1">message_ref</code></td>
                                         <td>Unique ID for the message</td>
                                     </tr>
                                     <tr>
-                                        <td><code>conversation_id</code></td>
+                                        <td><code class="hubspot-code-1">conversation_id</code></td>
                                         <td>Chat ID — reuse it to reply in the same thread</td>
                                     </tr>
                                     <tr>
-                                        <td><code>number_id</code></td>
+                                        <td><code class="hubspot-code-1">number_id</code></td>
                                         <td>WhatsApp line the message came into</td>
                                     </tr>
                                     <tr>
-                                        <td><code>from</code></td>
+                                        <td><code class="hubspot-code-1">from</code></td>
                                         <td>Sender's phone digits (no <code>+</code>)</td>
                                     </tr>
                                     <tr>
-                                        <td><code>text</code></td>
+                                        <td><code class="hubspot-code-1">text</code></td>
                                         <td>Message body</td>
                                     </tr>
                                     <tr>
-                                        <td><code>sender_name</code></td>
+                                        <td><code class="hubspot-code-1">sender_name</code></td>
                                         <td>WhatsApp profile name</td>
                                     </tr>
                                     <tr>
-                                        <td><code>has_media</code></td>
+                                        <td><code class="hubspot-code-1">has_media</code></td>
                                         <td>true if a file/image was sent</td>
                                     </tr>
                                     <tr>
-                                        <td><code>status</code></td>
-                                        <td>For status events: <code>sent</code>, <code>delivered</code>,
-                                            <code>read</code>, <code>failed</code>
+                                        <td><code class="hubspot-code-1">status</code></td>
+                                        <td>For status events: <code class="hubspot-code-1">sent</code>, <code
+                                                class="hubspot-code-1">delivered</code>,
+                                            <code class="hubspot-code-1">read</code>, <code
+                                                class="hubspot-code-1">failed</code>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><code>received_at</code></td>
+                                        <td><code class="hubspot-code-1">received_at</code></td>
                                         <td>ISO-8601 UTC timestamp</td>
                                     </tr>
                                 </tbody>
@@ -774,7 +802,8 @@ output = { dispatch_id: `${h.slice(0,8)}-${h.slice(8,12)}-4${h.slice(13,16)}-a${
 
                         <h3 style="font-size: 1.3rem; font-weight: 700; margin-top: 28px; margin-bottom: 12px;">Replying
                             to a WhatsApp from a Zap</h3>
-                        <p style="color:#4a5568;">Save <code>conversation_id</code> from the inbound event. Then, in
+                        <p style="color:#4a5568;">Save <code class="hubspot-code-1">conversation_id</code> from the
+                            inbound event. Then, in
                             another Zap (or the same one, chained), call Webhooks by Zapier → POST with just the chat
                             ID:</p>
                         <div class="zapier-code"><code>{
@@ -809,41 +838,49 @@ output = { dispatch_id: `${h.slice(0,8)}-${h.slice(8,12)}-4${h.slice(13,16)}-a${
                                 <tbody>
                                     <tr>
                                         <td>400</td>
-                                        <td><code>invalid_request</code>, <code>invalid_recipient</code></td>
+                                        <td>
+                                            <code class="hubspot-code-1">invalid_request</code>, <code
+                                                class="hubspot-code-1">invalid_recipient</code>
+                                        </td>
                                         <td>Bad phone, missing field — check the mapping and make sure the phone
                                             includes
                                             the country code</td>
                                     </tr>
                                     <tr>
                                         <td>401</td>
-                                        <td><code>unauthorized</code></td>
-                                        <td>Token missing, wrong or revoked — re-paste the <code>Authorization</code>
+                                        <td><code class="hubspot-code-1">unauthorized</code></td>
+                                        <td>Token missing, wrong or revoked — re-paste the <code
+                                                class="hubspot-code-1">Authorization</code>
                                             header</td>
                                     </tr>
                                     <tr>
                                         <td>402</td>
-                                        <td><code>api_quota_exceeded</code></td>
-                                        <td>Plan quota used up — wait for <code>resets_at</code> or upgrade</td>
+                                        <td><code class="hubspot-code-1">api_quota_exceeded</code></td>
+                                        <td>Plan quota used up — wait for <code class="hubspot-code-1">resets_at</code>
+                                            or upgrade</td>
                                     </tr>
                                     <tr>
                                         <td>403</td>
-                                        <td><code>license_inactive</code>, <code>https_required</code></td>
+                                        <td><code class="hubspot-code-1">license_inactive</code>, <code
+                                                class="hubspot-code-1">https_required</code></td>
                                         <td>Plan expired, or the URL isn't HTTPS</td>
                                     </tr>
                                     <tr>
                                         <td>422</td>
-                                        <td><code>recipient_opted_out</code></td>
+                                        <td><code class="hubspot-code-1">recipient_opted_out</code></td>
                                         <td>Contact is on Do-Not-Contact — don't retry</td>
                                     </tr>
                                     <tr>
                                         <td>429</td>
-                                        <td><code>rate_limited</code></td>
+                                        <td><code class="hubspot-code-1">rate_limited</code></td>
                                         <td>Over 600 requests/minute — Zapier will retry automatically</td>
                                     </tr>
                                     <tr>
                                         <td>502 / 503</td>
-                                        <td><code>connector_error</code>, <code>api_disabled</code></td>
-                                        <td>Temporary — retry with the same <code>dispatch_id</code>; ask the admin to
+                                        <td><code class="hubspot-code-1">connector_error</code>, <code
+                                                class="hubspot-code-1">api_disabled</code></td>
+                                        <td>Temporary — retry with the same <code
+                                                class="hubspot-code-1">dispatch_id</code>; ask the admin to
                                             re-enable API Access</td>
                                     </tr>
                                 </tbody>
@@ -884,31 +921,34 @@ output = { dispatch_id: `${h.slice(0,8)}-${h.slice(8,12)}-4${h.slice(13,16)}-a${
                         </div>
                         <div class="feature-card" style="background: white; border-radius: 28px; padding: 24px 28px;">
                             <ul style="list-style: none;">
-                                <li style="margin-bottom: 12px; display: flex; gap: 12px;"><i
-                                        class="fas fa-check-circle" style="color: #FF4A00;"></i> A dedicated HeyDoot API
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
+                                        style="color: #FF4A00;"></i> A dedicated HeyDoot API
                                     token for Zapier, stored in a Zapier Connection or a shared secret — never inline
                                     in a public Zap template</li>
-                                <li style="margin-bottom: 12px; display: flex; gap: 12px;"><i
-                                        class="fas fa-check-circle" style="color: #FF4A00;"></i> The token is
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
+                                        style="color: #FF4A00;"></i> The token is
                                     <em>Read &amp; Send</em>, has a sensible expiry, and is easy to rotate
                                 </li>
-                                <li style="margin-bottom: 12px; display: flex; gap: 12px;"><i
-                                        class="fas fa-check-circle" style="color: #FF4A00;"></i> Every send Zap
-                                    includes a stable <code>dispatch_id</code> so retries don't duplicate</li>
-                                <li style="margin-bottom: 12px; display: flex; gap: 12px;"><i
-                                        class="fas fa-check-circle" style="color: #FF4A00;"></i> Phone values in the
-                                    trigger always include the country code (<code>+91…</code>)</li>
-                                <li style="margin-bottom: 12px; display: flex; gap: 12px;"><i
-                                        class="fas fa-check-circle" style="color: #FF4A00;"></i> Every send Zap fills
-                                    in <code>user_id</code> / <code>username</code> so HeyDoot reports show who sent
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
+                                        style="color: #FF4A00;"></i> Every send Zap
+                                    includes a stable <code class="hubspot-code-1">dispatch_id</code> so retries don't
+                                    duplicate</li>
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
+                                        style="color: #FF4A00;"></i> Phone values in the
+                                    trigger always include the country code (<code class="hubspot-code-1">+91…</code>)
+                                </li>
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
+                                        style="color: #FF4A00;"></i> Every send Zap fills
+                                    in <code class="hubspot-code-1">user_id</code> / <code
+                                        class="hubspot-code-1">username</code> so HeyDoot reports show who sent
                                     what</li>
-                                <li style="margin-bottom: 12px; display: flex; gap: 12px;"><i
-                                        class="fas fa-check-circle" style="color: #FF4A00;"></i> Inbound Zaps use Catch
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
+                                        style="color: #FF4A00;"></i> Inbound Zaps use Catch
                                     Hook and map fields (message, phone, name) into the target app</li>
-                                <li style="margin-bottom: 12px; display: flex; gap: 12px;"><i
-                                        class="fas fa-check-circle" style="color: #FF4A00;"></i> Filters are set so
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
+                                        style="color: #FF4A00;"></i> Filters are set so
                                     Zaps don't spam contacts on every trigger</li>
-                                <li style="display: flex; gap: 12px;"><i class="fas fa-check-circle"
+                                <li style="display: flex; gap: 8px;"><i class="fas fa-check-circle"
                                         style="color: #FF4A00;"></i> You've enabled Zapier error notifications so you
                                     know if a Zap ever fails</li>
                             </ul>
@@ -943,7 +983,8 @@ output = { dispatch_id: `${h.slice(0,8)}-${h.slice(8,12)}-4${h.slice(13,16)}-a${
                             <div class="faq-answer">Create a Zap with the trigger <strong>Webhooks by Zapier → Catch
                                     Hook</strong>. Ask your HeyDoot admin to add the generated hook URL in
                                 <strong>Settings → Integrations → Webhooks</strong> and subscribe to
-                                <code>hd.message.received</code>. The payload arrives as JSON and maps to any action
+                                <code class="hubspot-code-1">hd.message.received</code>. The payload arrives as JSON and
+                                maps to any action
                                 step.
                             </div>
                         </div>
@@ -951,9 +992,11 @@ output = { dispatch_id: `${h.slice(0,8)}-${h.slice(8,12)}-4${h.slice(13,16)}-a${
                         <div class="faq-item">
                             <div class="faq-question">How do I avoid duplicate WhatsApps when Zapier retries? <i
                                     class="fas fa-chevron-down"></i></div>
-                            <div class="faq-answer">Send a <code>dispatch_id</code> with every message. Zapier retries
+                            <div class="faq-answer">Send a <code class="hubspot-code-1">dispatch_id</code> with every
+                                message. Zapier retries
                                 failed actions with the same input, so a stable ID like
-                                <code>shopify-{{Order ID}}</code> or <code>sheet-{{Row Number}}</code> ensures the
+                                <code class="hubspot-code-1">shopify-{{Order ID}}</code> or <code
+                                    class="hubspot-code-1">sheet-{{Row Number}}</code> ensures the
                                 recipient gets one message even if Zapier retries.
                             </div>
                         </div>
@@ -961,10 +1004,13 @@ output = { dispatch_id: `${h.slice(0,8)}-${h.slice(8,12)}-4${h.slice(13,16)}-a${
                         <div class="faq-item">
                             <div class="faq-question">Can I send images, PDFs or audio from a Zap? <i
                                     class="fas fa-chevron-down"></i></div>
-                            <div class="faq-answer">Yes. Add an <code>attachment</code> object with
-                                <code>kind</code> (<code>image</code>, <code>document</code>, <code>audio</code>,
-                                <code>video</code>) and either a public HTTPS <code>source_url</code> or a base64
-                                <code>file_base64</code>. Maximum 16 MB.
+                            <div class="faq-answer">Yes. Add an <code class="hubspot-code-1">attachment</code> object
+                                with
+                                <code class="hubspot-code-1">kind</code> (<code class="hubspot-code-1">image</code>,
+                                <code class="hubspot-code-1">document</code>, <code class="hubspot-code-1">audio</code>,
+                                <code class="hubspot-code-1">video</code>) and either a public HTTPS <code
+                                    class="hubspot-code-1">source_url</code> or a base64
+                                <code class="hubspot-code-1">file_base64</code>. Maximum 16 MB.
                             </div>
                         </div>
 
@@ -978,7 +1024,8 @@ output = { dispatch_id: `${h.slice(0,8)}-${h.slice(8,12)}-4${h.slice(13,16)}-a${
                         <div class="faq-item">
                             <div class="faq-question">What if my WhatsApp line gets disconnected? <i
                                     class="fas fa-chevron-down"></i></div>
-                            <div class="faq-answer">Subscribe a Catch Hook to <code>hd.number.disconnected</code> and
+                            <div class="faq-answer">Subscribe a Catch Hook to <code
+                                    class="hubspot-code-1">hd.number.disconnected</code> and
                                 send yourself an alert (email, Slack). Nothing can be sent until the line is
                                 reconnected in HeyDoot.</div>
                         </div>

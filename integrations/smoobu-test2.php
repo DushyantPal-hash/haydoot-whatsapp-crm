@@ -16,7 +16,6 @@ $page_meta = [
 
     'canonical' => 'https://heydoot.com/integrations/smoobu-test2.php'
 ];
-
 $page_json_ld = [
     "@context" => "https://schema.org",
     "@type" => "Service",
@@ -36,9 +35,7 @@ $page_json_ld = [
         "priceCurrency" => "USD"
     ]
 ];
-
 $page_gtag_id = 'G-Q64SDSY0Y4';
-
 include ROOT_PATH . '/components/header.php';
 include ROOT_PATH . '/components/navbar.php';
 ?>
@@ -220,7 +217,7 @@ include ROOT_PATH . '/components/navbar.php';
                         style="position: sticky; top: 100px; background: white; border-radius: 28px; padding: 24px; box-shadow: var(--card-shadow); border: 1px solid rgba(0,0,0,0.04);">
                         <h4 style="font-weight: 700; margin-bottom: 20px; font-size: 1.1rem;"><i class="fas fa-cog"
                                 style="color: #1E3A5F; margin-right: 8px;"></i> On this page</h4>
-                        <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px;">
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px;">
                             <li><a href="#prerequisites" style="color: #2c3e2f; font-size: 0.9rem;"><i
                                         class="fas fa-check-circle" style="color: #1E3A5F;"></i> Prerequisites</a></li>
                             <li><a href="#setup-guide" style="color: #2c3e2f; font-size: 0.9rem;"><i
@@ -254,16 +251,16 @@ include ROOT_PATH . '/components/navbar.php';
                         </div>
                         <div class="feature-card" style="background: white; border-radius: 28px; padding: 24px 28px;">
                             <ul style="list-style: none;">
-                                <li style="margin-bottom: 14px; display: flex; gap: 12px;"><i
-                                        class="fas fa-check-circle" style="color: #1E3A5F;"></i> Active HeyDoot account
+                                <li style="margin-bottom: 14px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
+                                        style="color: #1E3A5F;"></i> Active HeyDoot account
                                     (any paid plan or trial)</li>
-                                <li style="margin-bottom: 14px; display: flex; gap: 12px;"><i
-                                        class="fas fa-check-circle" style="color: #1E3A5F;"></i> Active Smoobu account
+                                <li style="margin-bottom: 14px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
+                                        style="color: #1E3A5F;"></i> Active Smoobu account
                                     (any plan with API access)</li>
-                                <li style="margin-bottom: 14px; display: flex; gap: 12px;"><i
-                                        class="fas fa-check-circle" style="color: #1E3A5F;"></i> WhatsApp Business
+                                <li style="margin-bottom: 14px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
+                                        style="color: #1E3A5F;"></i> WhatsApp Business
                                     number connected via HeyDoot</li>
-                                <li style="display: flex; gap: 12px;"><i class="fas fa-check-circle"
+                                <li style="display: flex; gap: 8px;"><i class="fas fa-check-circle"
                                         style="color: #1E3A5F;"></i> Smoobu API credentials (API Key)</li>
                             </ul>
                         </div>
@@ -282,8 +279,7 @@ include ROOT_PATH . '/components/navbar.php';
                         <!-- Image Placeholder 1 -->
                         <div style="margin-bottom: 32px;">
                             <img src="<?php echo BASE_URL; ?>/assets/images/integrations/smoobu/smoobu-dashboard.webp"
-                                alt="Smoobu Integration Dashboard"
-                                width="800" height="450" loading="lazy"
+                                alt="Smoobu Integration Dashboard" width="800" height="450" loading="lazy"
                                 style="width: 100%; height: auto; border-radius: 24px; box-shadow: var(--card-shadow); margin-bottom: 12px;">
                             <div style="text-align: center;">
                                 <p style="font-size: 14px; color: #5a6a7a;">Smoobu Integration Dashboard Preview</p>
@@ -329,8 +325,7 @@ include ROOT_PATH . '/components/navbar.php';
                         <!-- Image Placeholder 2 -->
                         <div style="margin-bottom: 32px;">
                             <img src="<?php echo BASE_URL; ?>/assets/images/integrations/smoobu/smoobu-webhook.webp"
-                                alt="Smoobu Webhook Configuration"
-                                width="800" height="450" loading="lazy"
+                                alt="Smoobu Webhook Configuration" width="800" height="450" loading="lazy"
                                 style="width: 100%; height: auto; border-radius: 24px; box-shadow: var(--card-shadow); margin-bottom: 12px;">
                             <div style="text-align: center;">
                                 <p style="font-size: 14px; color: #5a6a7a;">Smoobu Webhook Configuration Screen</p>
@@ -353,8 +348,7 @@ include ROOT_PATH . '/components/navbar.php';
                         <!-- Image Placeholder 3 -->
                         <div style="margin-bottom: 32px;">
                             <img src="<?php echo BASE_URL; ?>/assets/images/integrations/smoobu/smoobu-connect.webp"
-                                alt="HeyDoot Smoobu Connection Screen"
-                                width="800" height="450" loading="lazy"
+                                alt="HeyDoot Smoobu Connection Screen" width="800" height="450" loading="lazy"
                                 style="width: 100%; height: auto; border-radius: 24px; box-shadow: var(--card-shadow); margin-bottom: 12px;">
                             <div style="text-align: center;">
                                 <p style="font-size: 14px; color: #5a6a7a;">HeyDoot Smoobu Connection UI</p>
@@ -382,8 +376,7 @@ include ROOT_PATH . '/components/navbar.php';
                         <!-- Image Placeholder 4 -->
                         <div style="margin-bottom: 32px;">
                             <img src="<?php echo BASE_URL; ?>/assets/images/integrations/smoobu/smoobu-templates.webp"
-                                alt="Notification Template Editor"
-                                width="800" height="450" loading="lazy"
+                                alt="Notification Template Editor" width="800" height="450" loading="lazy"
                                 style="width: 100%; height: auto; border-radius: 24px; box-shadow: var(--card-shadow); margin-bottom: 12px;">
                             <div style="text-align: center;">
                                 <p style="font-size: 14px; color: #5a6a7a;">WhatsApp Notification Template Editor</p>
