@@ -41,7 +41,6 @@ $page_gtag_id = 'G-Q64SDSY0Y4';
 include ROOT_PATH . '/components/header.php';
 include ROOT_PATH . '/components/navbar.php';
 ?>
-
 <style>
     .btn-odoo {
         background: #714B67;
@@ -175,7 +174,6 @@ include ROOT_PATH . '/components/navbar.php';
         transform: translateY(0px) scale(1.0) !important;
     }
 </style>
-
 <main>
     <!-- Hero Section with Odoo flavor -->
     <section class="hero"
@@ -201,40 +199,73 @@ include ROOT_PATH . '/components/navbar.php';
                 <aside class="sidebar-card">
                     <div
                         style="position: sticky; top: 100px; background: white; border-radius: 28px; padding: 24px; box-shadow: var(--card-shadow); border: 1px solid rgba(0,0,0,0.04);">
-                        <h4 style="font-weight: 700; margin-bottom: 20px; font-size: 1.1rem;"><i class="fas fa-cog"
-                                style="color: #714B67; margin-right: 8px;"></i> On this page</h4>
+                        <h4 style="font-weight: 700; margin-bottom: 20px; font-size: 1.1rem;">
+                            <i class="fas fa-cog" style="color: #714B67; margin-right: 8px;"></i> On this page
+                        </h4>
                         <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px;">
-                            <li><a href="#overview" style="color: #2c3e2f; font-size: 0.9rem;"><i
-                                        class="fas fa-info-circle" style="color: #714B67;"></i> Overview</a></li>
-                            <li><a href="#hosting" style="color: #2c3e2f; font-size: 0.9rem;"><i class="fas fa-server"
-                                        style="color: #714B67;"></i> Which Odoo hosting can do
-                                    this</a></li>
-                            <li><a href="#prerequisites" style="color: #2c3e2f; font-size: 0.9rem;"><i
-                                        class="fas fa-check-circle" style="color: #714B67;"></i> What you need</a></li>
-                            <li><a href="#setup-guide" style="color: #2c3e2f; font-size: 0.9rem;"><i
-                                        class="fas fa-list-ol" style="color: #714B67;"></i> Credentials &amp; setup</a>
+                            <li>
+                                <a href="#overview" style="color: #2c3e2f; font-size: 0.9rem;">
+                                    <i class="fas fa-info-circle" style="color: #714B67;"></i> Overview
+                                </a>
                             </li>
-                            <li><a href="#sending" style="color: #2c3e2f; font-size: 0.9rem;"><i
-                                        class="fas fa-paper-plane" style="color: #714B67;"></i> Sending from Odoo</a>
+                            <li>
+                                <a href="#hosting" style="color: #2c3e2f; font-size: 0.9rem;">
+                                    <i class="fas fa-server" style="color: #714B67;"></i>
+                                    Which Odoo hosting can do this
+                                </a>
                             </li>
-                            <li><a href="#tracking" style="color: #2c3e2f; font-size: 0.9rem;"><i
-                                        class="fas fa-chart-line" style="color: #714B67;"></i> Tracking &amp;
-                                    history</a>
+                            <li>
+                                <a href="#prerequisites" style="color: #2c3e2f; font-size: 0.9rem;">
+                                    <i class="fas fa-check-circle" style="color: #714B67;"></i> What you need
+                                </a>
                             </li>
-                            <li><a href="#receiving" style="color: #2c3e2f; font-size: 0.9rem;"><i class="fas fa-inbox"
-                                        style="color: #714B67;"></i> Receiving replies</a></li>
-                            <li><a href="#user-metrics" style="color: #2c3e2f; font-size: 0.9rem;"><i
-                                        class="fas fa-user" style="color: #714B67;"></i> User attribution</a></li>
-                            <li><a href="#errors-limits" style="color: #2c3e2f; font-size: 0.9rem;"><i
-                                        class="fas fa-exclamation-triangle" style="color: #714B67;"></i> Errors &amp;
-                                    retries</a></li>
-                            <li><a href="#go-live" style="color: #2c3e2f; font-size: 0.9rem;"><i
-                                        class="fas fa-list-check" style="color: #714B67;"></i> Go-live checklist</a>
+                            <li>
+                                <a href="#setup-guide" style="color: #2c3e2f; font-size: 0.9rem;">
+                                    <i class="fas fa-list-ol" style="color: #714B67;"></i> Credentials &amp; setup
+                                </a>
                             </li>
-                            <li><a href="#faq-odoo" style="color: #2c3e2f;"><i class="fas fa-question-circle"
-                                        style="color: #714B67;"></i> FAQs</a></li>
-                            <li><a href="#cta" style="color: #2c3e2f;"><i class="fas fa-rocket"
-                                        style="color: #714B67;"></i> Get Started</a></li>
+                            <li>
+                                <a href="#sending" style="color: #2c3e2f; font-size: 0.9rem;">
+                                    <i class="fas fa-paper-plane" style="color: #714B67;"></i> Sending from Odoo
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tracking" style="color: #2c3e2f; font-size: 0.9rem;">
+                                    <i class="fas fa-chart-line" style="color: #714B67;"></i>
+                                    Tracking &amp; history
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#receiving" style="color: #2c3e2f; font-size: 0.9rem;">
+                                    <i class="fas fa-inbox" style="color: #714B67;"></i> Receiving replies
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#user-metrics" style="color: #2c3e2f; font-size: 0.9rem;">
+                                    <i class="fas fa-user" style="color: #714B67;"></i> User attribution
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#errors-limits" style="color: #2c3e2f; font-size: 0.9rem;">
+                                    <i class="fas fa-exclamation-triangle" style="color: #714B67;"></i>
+                                    Errors &amp; retries
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#go-live" style="color: #2c3e2f; font-size: 0.9rem;">
+                                    <i class="fas fa-list-check" style="color: #714B67;"></i> Go-live checklist
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#faq-odoo" style="color: #2c3e2f;">
+                                    <i class="fas fa-question-circle" style="color: #714B67;"></i> FAQs
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#cta" style="color: #2c3e2f;">
+                                    <i class="fas fa-rocket" style="color: #714B67;"></i> Get Started
+                                </a>
+                            </li>
                         </ul>
                         <!-- cross-link to integration page -->
                         <div style="margin-top:24px;padding-top:20px;border-top:1px solid #f0f0f0;">
@@ -279,21 +310,27 @@ include ROOT_PATH . '/components/navbar.php';
                                     <tbody>
                                         <tr>
                                             <td>Odoo → HeyDoot (send, read)</td>
-                                            <td>Python <code class="hubspot-code-1">requests</code> call to
+                                            <td>
+                                                Python <code class="hubspot-code-1">requests</code> call to
                                                 <code class="hubspot-code-1">POST /v1/messages/send</code>
                                                 and other <code class="hubspot-code-1">/v1</code> endpoints
                                             </td>
-                                            <td><code
-                                                    class="hubspot-code-1">Authorization: Bearer &lt;HEYDOOT_API_TOKEN&gt;</code>
+                                            <td>
+                                                <code class="hubspot-code-1">
+                                                    Authorization: Bearer &lt;HEYDOOT_API_TOKEN&gt;
+                                                </code>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>HeyDoot → Odoo (events)</td>
                                             <td>HeyDoot calls
-                                                <code
-                                                    class="hubspot-code-1">https://&lt;YOUR_ODOO_DOMAIN&gt;/heydoot/events</code>
+                                                <code class="hubspot-code-1">
+                                                    https://&lt;YOUR_ODOO_DOMAIN&gt;/heydoot/events
+                                                </code>
                                             </td>
-                                            <td>HMAC-SHA256 signature with the webhook's signing secret</td>
+                                            <td>
+                                                HMAC-SHA256 signature with the webhook's signing secret
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -363,23 +400,26 @@ include ROOT_PATH . '/components/navbar.php';
                         </div>
                         <div class="feature-card" style="background: white; border-radius: 28px; padding: 24px 28px;">
                             <ul style="list-style: none;">
-                                <li style="margin-bottom: 14px; display: flex; gap: 12px;"><i
-                                        class="fas fa-check-circle" style="color: #714B67;"></i> Base URL of the HeyDoot
-                                    API: <code class="odoo-code-1">https://&lt;HEYDOOT_API_BASE_URL&gt;</code> (from the
-                                    HeyDoot team)</li>
-                                <li style="margin-bottom: 14px; display: flex; gap: 12px;"><i
-                                        class="fas fa-check-circle" style="color: #714B67;"></i> API token
+                                <li style="margin-bottom: 14px; display: flex; gap: 12px;">
+                                    <i class="fas fa-check-circle" style="color: #714B67;"></i>
+                                    Base URL of the HeyDoot API:
+                                    <code class="odoo-code-1">https://&lt;HEYDOOT_API_BASE_URL&gt;</code>
+                                    (from the HeyDoot team)
+                                </li>
+                                <li style="margin-bottom: 14px; display: flex; gap: 12px;">
+                                    <i class="fas fa-check-circle" style="color: #714B67;"></i> API token
                                     (<code class="odoo-code-1">hd_live_...</code>) with <strong>Read &amp; Send</strong>
-                                    access, created by
-                                    a HeyDoot admin</li>
-                                <li style="margin-bottom: 14px; display: flex; gap: 12px;"><i
-                                        class="fas fa-check-circle" style="color: #714B67;"></i> <strong>Number
-                                        ID</strong>:
-                                    the UUID of the WhatsApp line to send from</li>
-                                <li style="margin-bottom: 14px; display: flex; gap: 12px;"><i
-                                        class="fas fa-check-circle" style="color: #714B67;"></i> <strong>Webhook signing
+                                    access, created by a HeyDoot admin
+                                </li>
+                                <li style="margin-bottom: 14px; display: flex; gap: 12px;">
+                                    <i class="fas fa-check-circle" style="color: #714B67;"></i>
+                                    <strong>Number ID</strong>: the UUID of the WhatsApp line to send from
+                                </li>
+                                <li style="margin-bottom: 14px; display: flex; gap: 12px;">
+                                    <i class="fas fa-check-circle" style="color: #714B67;"></i> <strong>Webhook signing
                                         secret</strong>: shown once when a HeyDoot admin registers your Odoo URL as a
-                                    webhook</li>
+                                    webhook
+                                </li>
                                 <li style="display: flex; gap: 12px;"><i class="fas fa-check-circle"
                                         style="color: #714B67;"></i> An Odoo 16, 17 or 18 database where you can install
                                     a custom module, reachable from the internet over HTTPS</li>
@@ -1264,7 +1304,7 @@ def heydoot_decrypt(raw: bytes, key_hex: str) -> dict:
                         Odoo API Docs
                     </a>
 
-                    <a href="tel:+919718517228" class="utility-item utility-link">
+                    <a href="tel:+919911432288" class="utility-item utility-link">
                         <i class="fas fa-headset"></i>
                         Support
                     </a>
