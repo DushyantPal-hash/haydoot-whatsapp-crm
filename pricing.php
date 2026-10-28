@@ -108,17 +108,17 @@ include 'components/navbar.php';
 
     .feature-list {
         list-style: none;
-        margin: 28px 0;
+        margin: 5px 0 0 0;
         padding: 0;
         text-align: left;
     }
 
     .feature-list li {
-        margin-bottom: 14px;
+        margin-bottom: 8px;
         display: flex;
         align-items: center;
-        gap: 12px;
-        font-size: 0.95rem;
+        gap: 10px;
+        font-size: 0.90rem;
         color: #2c3e50;
     }
 
@@ -201,9 +201,9 @@ include 'components/navbar.php';
     }
 
     .comparison-table th {
-        background: #F8FAFE;
+        background: linear-gradient(135deg, #0a2b2c 0%, #1d4b2c 100%);
         font-weight: 700;
-        color: #1a2a3a;
+        color: #fff;
     }
 
     .comparison-table td:first-child {

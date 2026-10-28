@@ -427,27 +427,42 @@ include ROOT_PATH . '/components/navbar.php';
                         </div>
                         <div class="feature-card" style="background: white; border-radius: 28px; padding: 24px 28px;">
                             <ul style="list-style: none;">
-                                <li style="margin-bottom: 14px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
-                                        style="color: #FF4A00;"></i> <strong>HeyDoot
-                                        account</strong>
-                                    with API Access enabled and a <em>Read &amp; Send</em> API token</li>
-                                <li style="margin-bottom: 14px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
-                                        style="color: #FF4A00;"></i> <strong>WhatsApp
-                                        Business number</strong> connected through HeyDoot (or use the shared demo
-                                    number to test)</li>
-                                <li style="margin-bottom: 14px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
-                                        style="color: #FF4A00;"></i> The <strong>number
-                                        ID</strong> of the WhatsApp line you'll send from
-                                    (<code class="hubspot-code-1">GET /v1/numbers</code> or HeyDoot → Settings → Phones)
+                                <li style="margin-bottom: 14px; display: flex; gap: 8px;">
+                                    <i class="fas fa-check-circle" style="color: #FF4A00;"></i>
+                                    <span>
+                                        <strong>HeyDoot account</strong>
+                                        with API Access enabled and a <em>Read &amp; Send</em> API token
+                                    </span>
                                 </li>
-                                <li style="margin-bottom: 14px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
-                                        style="color: #FF4A00;"></i> <strong>Zapier
-                                        account</strong> — free plan works, but multi-step Zaps and premium apps need a
-                                    paid plan</li>
-                                <li style="display: flex; gap: 8px;"><i class="fas fa-check-circle"
-                                        style="color: #FF4A00;"></i> Optional: a <em>Webhooks by Zapier → Catch
-                                        Hook</em>
-                                    URL if you want to receive replies and delivery updates</li>
+                                <li style="margin-bottom: 14px; display: flex; gap: 8px;">
+                                    <i class="fas fa-check-circle" style="color: #FF4A00;"></i>
+                                    <span>
+                                        <strong>WhatsApp Business number</strong> connected through HeyDoot (or use the
+                                        shared demo number to test)
+                                    </span>
+                                </li>
+                                <li style="margin-bottom: 14px; display: flex; gap: 8px;">
+                                    <i class="fas fa-check-circle" style="color: #FF4A00;"></i>
+                                    <span>
+                                        The <strong>number ID</strong> of the WhatsApp line you'll send from
+                                        (<code class="hubspot-code-1">GET /v1/numbers</code> or HeyDoot → Settings →
+                                        Phones)
+                                    </span>
+                                </li>
+                                <li style="margin-bottom: 14px; display: flex; gap: 8px;">
+                                    <i class="fas fa-check-circle" style="color: #FF4A00;"></i>
+                                    <span>
+                                        <strong>Zapier account</strong> — free plan works, but multi-step Zaps and
+                                        premium apps need a paid plan
+                                    </span>
+                                </li>
+                                <li style="display: flex; gap: 8px;">
+                                    <i class="fas fa-check-circle" style="color: #FF4A00;"></i>
+                                    <span>
+                                        Optional: a <em>Webhooks by Zapier → Catch Hook</em>
+                                        URL if you want to receive replies and delivery updates
+                                    </span>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -921,36 +936,62 @@ output = { dispatch_id: `${h.slice(0,8)}-${h.slice(8,12)}-4${h.slice(13,16)}-a${
                         </div>
                         <div class="feature-card" style="background: white; border-radius: 28px; padding: 24px 28px;">
                             <ul style="list-style: none;">
-                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
-                                        style="color: #FF4A00;"></i> A dedicated HeyDoot API
-                                    token for Zapier, stored in a Zapier Connection or a shared secret — never inline
-                                    in a public Zap template</li>
-                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
-                                        style="color: #FF4A00;"></i> The token is
-                                    <em>Read &amp; Send</em>, has a sensible expiry, and is easy to rotate
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;">
+                                    <i class="fas fa-check-circle" style="color: #FF4A00;"></i>
+                                    <span>
+                                        A dedicated HeyDoot API token for Zapier, stored in a Zapier Connection or a
+                                        shared secret — never inline in a public Zap template
+                                    </span>
                                 </li>
-                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
-                                        style="color: #FF4A00;"></i> Every send Zap
-                                    includes a stable <code class="hubspot-code-1">dispatch_id</code> so retries don't
-                                    duplicate</li>
-                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
-                                        style="color: #FF4A00;"></i> Phone values in the
-                                    trigger always include the country code (<code class="hubspot-code-1">+91…</code>)
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;">
+                                    <i class="fas fa-check-circle" style="color: #FF4A00;"></i>
+                                    <span>
+                                        The token is <em>Read &amp; Send</em>, has a sensible expiry, and is easy to
+                                        rotate
+                                    </span>
                                 </li>
-                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
-                                        style="color: #FF4A00;"></i> Every send Zap fills
-                                    in <code class="hubspot-code-1">user_id</code> / <code
-                                        class="hubspot-code-1">username</code> so HeyDoot reports show who sent
-                                    what</li>
-                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
-                                        style="color: #FF4A00;"></i> Inbound Zaps use Catch
-                                    Hook and map fields (message, phone, name) into the target app</li>
-                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
-                                        style="color: #FF4A00;"></i> Filters are set so
-                                    Zaps don't spam contacts on every trigger</li>
-                                <li style="display: flex; gap: 8px;"><i class="fas fa-check-circle"
-                                        style="color: #FF4A00;"></i> You've enabled Zapier error notifications so you
-                                    know if a Zap ever fails</li>
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;">
+                                    <i class="fas fa-check-circle" style="color: #FF4A00;"></i>
+                                    <span>
+                                        Every send Zap includes a stable <code class="hubspot-code-1">dispatch_id</code>
+                                        so retries don't duplicate
+                                    </span>
+                                </li>
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;">
+                                    <i class="fas fa-check-circle" style="color: #FF4A00;"></i>
+                                    <span>
+                                        Phone values in the trigger always include the country code
+                                        (<code class="hubspot-code-1">+91…</code>)
+                                    </span>
+                                </li>
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;">
+                                    <i class="fas fa-check-circle" style="color: #FF4A00;"></i>
+                                    <span>
+                                        Every send Zap fills in <code class="hubspot-code-1">user_id</code> /
+                                        <code class="hubspot-code-1">username</code> so HeyDoot reports show who sent
+                                        what
+                                    </span>
+                                </li>
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;">
+                                    <i class="fas fa-check-circle" style="color: #FF4A00;"></i>
+                                    <span>
+                                        Inbound Zaps use Catch Hook and map fields (message, phone, name) into the
+                                        target app
+                                    </span>
+                                </li>
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;">
+                                    <i class="fas fa-check-circle" style="color: #FF4A00;"></i>
+                                    <span>
+                                        Inbound Zaps use Catch Hook and map fields (message, phone, name) into the
+                                        target app
+                                    </span>
+                                </li>
+                                <li style="display: flex; gap: 8px;">
+                                    <i class="fas fa-check-circle" style="color: #FF4A00;"></i>
+                                    <span>
+                                        You've enabled Zapier error notifications so you know if a Zap ever fails
+                                    </span>
+                                </li>
                             </ul>
                         </div>
                     </div>

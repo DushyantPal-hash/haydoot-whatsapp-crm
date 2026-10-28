@@ -338,9 +338,11 @@ include ROOT_PATH . '/components/navbar.php';
                             <ul style="list-style: none;">
                                 <li style="margin-bottom: 14px; display: flex; gap: 8px;">
                                     <i class="fas fa-check-circle" style="color: #00A1E0;"></i>
-                                    Base URL of the HeyDoot API: <code
-                                        class="hubspot-code-1">https://&lt;HEYDOOT_API_BASE_URL&gt;</code> (from
-                                    the HeyDoot team)
+                                    <span>
+                                        Base URL of the HeyDoot API:
+                                        <code class="hubspot-code-1">https://&lt;HEYDOOT_API_BASE_URL&gt;</code> (from
+                                        the HeyDoot team)
+                                    </span>
                                 </li>
                                 <li style="margin-bottom: 14px; display: flex; gap: 8px;">
                                     <i class="fas fa-check-circle" style="color: #00A1E0;"></i>
@@ -1483,29 +1485,41 @@ global without sharing class HeyDootWebhook {
                         </div>
                         <div class="feature-card" style="background: white; border-radius: 28px; padding: 24px 28px;">
                             <ul style="list-style: none;">
-                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
-                                        style="color: #00A1E0;"></i> Production base URL,
-                                    bridge secret and number ID are in <code
-                                        class="hubspot-code-1">HeyDoot_Config__mdt</code>, not in Apex
-                                    code</li>
-                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
-                                        style="color: #00A1E0;"></i> Named Credential or
-                                    Remote Site Setting points at the production base URL</li>
-                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
-                                        style="color: #00A1E0;"></i> Every send carries a
-                                    new <code class="hubspot-code-1">dispatch_id</code>, saved on the record and reused
-                                    on retries</li>
-                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
-                                        style="color: #00A1E0;"></i> Every send carries
-                                    <code class="hubspot-code-1">sf_user_id</code>, <code
-                                        class="hubspot-code-1">sf_user_name</code> and <code
-                                        class="hubspot-code-1">sf_user_email</code>
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;">
+                                    <i class="fas fa-check-circle" style="color: #00A1E0;"></i>
+                                    <span>
+                                        Production base URL, bridge secret and number ID are in <code
+                                            class="hubspot-code-1">HeyDoot_Config__mdt</code>, not in Apex code
+                                    </span>
                                 </li>
-                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
-                                        style="color: #00A1E0;"></i> Sends run from
-                                    <code class="hubspot-code-1">@future(callout=true)</code> or a Queueable, not after
-                                    DML in the same
-                                    transaction
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;">
+                                    <i class="fas fa-check-circle" style="color: #00A1E0;"></i>
+                                    <span>
+                                        Named Credential or Remote Site Setting points at the production base URL
+                                    </span>
+                                </li>
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;">
+                                    <i class="fas fa-check-circle" style="color: #00A1E0;"></i>
+                                    <span>
+                                        Every send carries a new <code class="hubspot-code-1">dispatch_id</code>, saved
+                                        on the record and reused on retries
+                                    </span>
+                                </li>
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;">
+                                    <i class="fas fa-check-circle" style="color: #00A1E0;"></i>
+                                    <span>
+                                        Every send carries
+                                        <code class="hubspot-code-1">sf_user_id</code>,
+                                        <code class="hubspot-code-1">sf_user_name</code> and
+                                        <code class="hubspot-code-1">sf_user_email</code>
+                                    </span>
+                                </li>
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;">
+                                    <i class="fas fa-check-circle" style="color: #00A1E0;"></i>
+                                    <span>
+                                        Sends run from <code class="hubspot-code-1">@future(callout=true)</code> or a
+                                        Queueable, not after DML in the same transaction
+                                    </span>
                                 </li>
                                 <li style="margin-bottom: 12px; display: flex; gap: 8px;">
                                     <i class="fas fa-check-circle" style="color: #00A1E0;"></i>
@@ -1514,18 +1528,29 @@ global without sharing class HeyDootWebhook {
                                         and decrypts when <code class="hubspot-code-1">x-hd-encryption</code> is set
                                     </span>
                                 </li>
-                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
-                                        style="color: #00A1E0;"></i> The receiver answers
-                                    200 straight away and processes in a Queueable</li>
-                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
-                                        style="color: #00A1E0;"></i> Events are
-                                    de-duplicated, and statuses never move backwards</li>
-                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
-                                        style="color: #00A1E0;"></i> Someone is alerted on
-                                    <code class="hubspot-code-1">hd.number.disconnected</code>
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;">
+                                    <i class="fas fa-check-circle" style="color: #00A1E0;"></i>
+                                    <span>
+                                        The receiver answers 200 straight away and processes in a Queueable
+                                    </span>
                                 </li>
-                                <li style="display: flex; gap: 8px;"><i class="fas fa-check-circle"
-                                        style="color: #00A1E0;"></i> Sandboxes use their own number, webhook and secrets
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;">
+                                    <i class="fas fa-check-circle" style="color: #00A1E0;"></i>
+                                    <span>
+                                        Events are de-duplicated, and statuses never move backwards
+                                    </span>
+                                </li>
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;">
+                                    <i class="fas fa-check-circle" style="color: #00A1E0;"></i>
+                                    <span>
+                                        Someone is alerted on <code class="hubspot-code-1">hd.number.disconnected</code>
+                                    </span>
+                                </li>
+                                <li style="display: flex; gap: 8px;">
+                                    <i class="fas fa-check-circle" style="color: #00A1E0;"></i>
+                                    <span>
+                                        Sandboxes use their own number, webhook and secrets
+                                    </span>
                                 </li>
                             </ul>
                         </div>

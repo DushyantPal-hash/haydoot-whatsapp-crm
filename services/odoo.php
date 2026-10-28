@@ -372,7 +372,7 @@ include ROOT_PATH . '/components/navbar.php';
                                 </div>
                                 <div class="feature-pair-image">
                                     <img src="<?php echo BASE_URL; ?>/assets/images/logo/heydoot.webp"
-                                        alt="Why Choose HeyDoot" width="400" height="400" loading="lazy">
+                                        alt="Why Choose HeyDoot" loading="lazy">
                                 </div>
                             </div>
                         </div>

@@ -57,6 +57,8 @@
     transition: all 0.25s ease;
     border: 1px solid rgba(0, 0, 0, 0.03);
     position: relative;
+    scrollbar-width: thin;
+    overflow: auto;
 }
 
 .feature-card::before {
