@@ -336,7 +336,7 @@ include 'components/navbar.php';
                     </ul>
                 </div>
                 <div class="feature-pair-image"><img src="<?php echo BASE_URL; ?>/assets/images/f1.webp"
-                        alt="Multi Number Inbox Dashboard" width="540" height="340" loading="lazy"
+                        alt="Multi Number Inbox Dashboard" loading="lazy"
                         style="border-radius: 32px; box-shadow: 0 20px 30px -10px rgba(0,0,0,0.1);"></div>
             </div>
             <div class="feature-pair">
@@ -352,7 +352,7 @@ include 'components/navbar.php';
                     </ul>
                 </div>
                 <div class="feature-pair-image"><img src="<?php echo BASE_URL; ?>/assets/images/f2.webp"
-                        alt="Tickets and Tasks inside HeyDoot" width="540" height="340" loading="lazy"></div>
+                        alt="Tickets and Tasks inside HeyDoot" loading="lazy"></div>
             </div>
             <div class="feature-pair">
                 <div class="feature-pair-content">
@@ -367,7 +367,7 @@ include 'components/navbar.php';
                     </ul>
                 </div>
                 <div class="feature-pair-image"><img src="<?php echo BASE_URL; ?>/assets/images/f3.webp"
-                        alt="WhatsApp Groups Management Dashboard" width="540" height="340" loading="lazy"></div>
+                        alt="WhatsApp Groups Management Dashboard" loading="lazy"></div>
             </div>
             <div class="feature-pair">
                 <div class="feature-pair-content">
@@ -382,7 +382,7 @@ include 'components/navbar.php';
                     </ul>
                 </div>
                 <div class="feature-pair-image"><img src="<?php echo BASE_URL; ?>/assets/images/f4.webp"
-                        alt="Automation actions workflow" width="540" height="340" loading="lazy">
+                        alt="Automation actions workflow" loading="lazy">
                 </div>
             </div>
         </div>
@@ -526,7 +526,8 @@ include 'components/navbar.php';
                         our agents love the shared inbox. The ability to assign chats and add internal notes has been a
                         game-changer."</p>
                     <div class="feature-author">
-                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson" width="50" height="50" loading="lazy">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson" width="50"
+                            height="50" loading="lazy">
                         <div>
                             <h4>Sarah Johnson</h4>
                             <p>Support Director, TechFlow</p>
@@ -539,7 +540,8 @@ include 'components/navbar.php';
                         everything into one dashboard. Our sales team now responds 3x faster and we've seen a 40%
                         increase in conversions."</p>
                     <div class="feature-author">
-                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen" width="50" height="50" loading="lazy">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen" width="50"
+                            height="50" loading="lazy">
                         <div>
                             <h4>Michael Chen</h4>
                             <p>Sales Director, GlobalTrade</p>
@@ -552,7 +554,8 @@ include 'components/navbar.php';
                         allowing our team to focus on complex issues. Setup was incredibly easy and their support team
                         is amazing."</p>
                     <div class="feature-author">
-                        <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Priya Sharma" width="50" height="50" loading="lazy">
+                        <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Priya Sharma" width="50"
+                            height="50" loading="lazy">
                         <div>
                             <h4>Priya Sharma</h4>
                             <p>Operations Head, EduTech India</p>

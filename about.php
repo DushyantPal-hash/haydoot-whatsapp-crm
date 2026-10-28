@@ -508,7 +508,8 @@ include 'components/navbar.php';
                     consulting firm specializing in AI, IoT, and enterprise software solutions. With offices in India,
                     USA, and UK, we've helped 500+ businesses achieve digital transformation.</p>
                 <div style="margin-top: 32px;">
-                    <a href="https://www.hashstudioz.com/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-md">
+                    <a href="https://www.hashstudioz.com/" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-secondary btn-md">
                         Visit HashStudioz <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -521,7 +522,8 @@ include 'components/navbar.php';
         <div class="container-fluid">
             <div class="cta-container">
                 <div class="cta-image feature-pair-image">
-                    <img src="<?php echo BASE_URL; ?>/assets/images/logo/heydoot.webp" alt="Why Choose HeyDoot" width="400" height="400" loading="lazy">
+                    <img src="<?php echo BASE_URL; ?>/assets/images/logo/heydoot.webp" alt="Why Choose HeyDoot"
+                        width="400" height="auto" loading="lazy">
                 </div>
                 <div class="cta-text">
                     <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 20px;">Join Our Growing Community</h2>
@@ -532,7 +534,8 @@ include 'components/navbar.php';
                         style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
                         <a href="https://wa.me/<?php echo WHATSAPP_NUMBER; ?>?text=Hi%2C%20I%27d%20like%20to%20start%20a%20free%20trial%20of%20HeyDoot"
                             class="btn btn-primary btn-lg"
-                            style="background: var( --wa-green); border-color: var( --wa-teal);" target="_blank" rel="noopener noreferrer">
+                            style="background: var( --wa-green); border-color: var( --wa-teal);" target="_blank"
+                            rel="noopener noreferrer">
                             <i class="fab fa-whatsapp"></i> Start Free Trial
                         </a>
                         <a href="<?php echo BASE_URL; ?>/contact.php" class="btn btn-primary btn-lg">

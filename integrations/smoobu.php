@@ -958,46 +958,76 @@ app.post('/heydoot/events', express.raw({ type: '*/*' }), async (req, res) =&gt;
                         </div>
                         <div class="feature-card" style="background: white; border-radius: 28px; padding: 24px 28px;">
                             <ul style="list-style: none;">
-                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
-                                        style="color: #2563EB;"></i> HeyDoot token (Read
-                                    &amp; Send), number ID and Smoobu key + secret are relay env variables, not in code
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;">
+                                    <i class="fas fa-check-circle" style="color: #2563EB;"></i>
+                                    <span>
+                                        HeyDoot token (Read &amp; Send), number ID and Smoobu key + secret are relay env
+                                        variables, not in code
+                                    </span>
                                 </li>
-                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
-                                        style="color: #2563EB;"></i> HeyDoot API Access is
-                                    on, with a plan quota that fits your bookings</li>
-                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
-                                        style="color: #2563EB;"></i> Smoobu calls use HMAC
-                                    signing, not the <code class="hubspot-code-1">Api-Key</code> header (it stops
-                                    working on 31 October 2026)
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;">
+                                    <i class="fas fa-check-circle" style="color: #2563EB;"></i>
+                                    <span>
+                                        HeyDoot API Access is on, with a plan quota that fits your bookings
+                                    </span>
                                 </li>
-                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
-                                        style="color: #2563EB;"></i> The relay server's
-                                    clock is synced (Smoobu rejects timestamps more than 5 minutes off)</li>
-                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
-                                        style="color: #2563EB;"></i> The Smoobu webhook URL
-                                    contains <code class="hubspot-code-1">RELAY_PATH_SECRET</code>, and the relay
-                                    re-reads each booking from
-                                    the API</li>
-                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
-                                        style="color: #2563EB;"></i>
-                                    <code class="hubspot-code-1">DEFAULT_COUNTRY_CODE</code> matches where most guests'
-                                    national numbers come
-                                    from
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;">
+                                    <i class="fas fa-check-circle" style="color: #2563EB;"></i>
+                                    <span>
+                                        Smoobu calls use HMAC signing, not the
+                                        <code class="hubspot-code-1">Api-Key</code> header (it stops working on 31
+                                        October 2026)
+                                    </span>
                                 </li>
-                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
-                                        style="color: #2563EB;"></i> One test booking on
-                                    your own phone produced the confirmation, and your WhatsApp reply showed up in
-                                    Smoobu</li>
-                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
-                                        style="color: #2563EB;"></i> The daily check-in job
-                                    runs once a day and skips bookings already reminded</li>
-                                <li style="margin-bottom: 12px; display: flex; gap: 8px;"><i class="fas fa-check-circle"
-                                        style="color: #2563EB;"></i> <code class="hubspot-code-1">seen_refs</code>
-                                    and <code class="hubspot-code-1">smoobu_chats</code> live in a real database, not
-                                    memory</li>
-                                <li style="display: flex; gap: 8px;"><i class="fas fa-check-circle"
-                                        style="color: #2563EB;"></i> Someone is alerted on
-                                    <code class="hubspot-code-1">hd.number.disconnected</code> and on failed sends
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;">
+                                    <i class="fas fa-check-circle" style="color: #2563EB;"></i>
+                                    <span>
+                                        The relay server's clock is synced (Smoobu rejects timestamps more than 5
+                                        minutes off)
+                                    </span>
+                                </li>
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;">
+                                    <i class="fas fa-check-circle" style="color: #2563EB;"></i>
+                                    <span>
+                                        The Smoobu webhook URL contains
+                                        <code class="hubspot-code-1">RELAY_PATH_SECRET</code>, and the relay re-reads
+                                        each booking from the API
+                                    </span>
+                                </li>
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;">
+                                    <i class="fas fa-check-circle" style="color: #2563EB;"></i>
+                                    <span>
+                                        <code class="hubspot-code-1">DEFAULT_COUNTRY_CODE</code> matches where most
+                                        guests' national numbers come from
+                                    </span>
+                                </li>
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;">
+                                    <i class="fas fa-check-circle" style="color: #2563EB;"></i>
+                                    <span>
+                                        One test booking on your own phone produced the confirmation, and your WhatsApp
+                                        reply showed up in Smoobu
+                                    </span>
+                                </li>
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;">
+                                    <i class="fas fa-check-circle" style="color: #2563EB;"></i>
+                                    <span>
+                                        The daily check-in job runs once a day and skips bookings already reminded
+                                    </span>
+                                </li>
+                                <li style="margin-bottom: 12px; display: flex; gap: 8px;">
+                                    <i class="fas fa-check-circle" style="color: #2563EB;"></i>
+                                    <span>
+                                        <code class="hubspot-code-1">seen_refs</code> and
+                                        <code class="hubspot-code-1">smoobu_chats</code> live in a real database, not
+                                        memory
+                                    </span>
+                                </li>
+                                <li style="display: flex; gap: 8px;">
+                                    <i class="fas fa-check-circle" style="color: #2563EB;"></i>
+                                    <span>
+                                        Someone is alerted on <code class="hubspot-code-1">hd.number.disconnected</code>
+                                        and on failed sends
+                                    </span>
                                 </li>
                             </ul>
                             <p style="color:#4a5568; margin-top: 12px;">

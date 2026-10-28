@@ -367,8 +367,7 @@ include ROOT_PATH . '/components/navbar.php';
                 style="background: #e9f5ef; width: 48px; height: 48px; border-radius: 28px; display: flex; align-items: center; justify-content: center;">
                 <i class="fas fa-key" style="color: #0d6a2e; font-size: 22px;"></i>
               </div>
-              <h2 style="font-size: 1.8rem; font-weight: 700;"><span class="step-number"
-                  style="margin-right: 8px;">1</span> Get your API token</h2>
+              <h2 style="font-size: 1.8rem; font-weight: 700;"> Get your API token</h2>
             </div>
 
             <p style="color:#4a5568;">API tokens are created by an <strong>organisation admin</strong> in
@@ -440,8 +439,7 @@ include ROOT_PATH . '/components/navbar.php';
                 style="background: #e9f5ef; width: 48px; height: 48px; border-radius: 28px; display: flex; align-items: center; justify-content: center;">
                 <i class="fas fa-server" style="color: #0d6a2e; font-size: 22px;"></i>
               </div>
-              <h2 style="font-size: 1.8rem; font-weight: 700;"><span class="step-number"
-                  style="margin-right: 8px;">2</span> Base URL, headers and request format</h2>
+              <h2 style="font-size: 1.8rem; font-weight: 700;">Base URL, headers and request format</h2>
             </div>
 
             <p style="color:#4a5568;">Every API path is under <code>/v1</code>. Combine it with the base URL
@@ -516,8 +514,7 @@ include ROOT_PATH . '/components/navbar.php';
                 style="background: #e9f5ef; width: 48px; height: 48px; border-radius: 28px; display: flex; align-items: center; justify-content: center;">
                 <i class="fas fa-phone" style="color: #0d6a2e; font-size: 22px;"></i>
               </div>
-              <h2 style="font-size: 1.8rem; font-weight: 700;"><span class="step-number"
-                  style="margin-right: 8px;">3</span> Find the WhatsApp number to send from</h2>
+              <h2 style="font-size: 1.8rem; font-weight: 700;">Find the WhatsApp number to send from</h2>
             </div>
 
             <p style="color:#4a5568;">An organisation can have several WhatsApp numbers (for example a Sales
@@ -565,8 +562,7 @@ include ROOT_PATH . '/components/navbar.php';
                 style="background: #e9f5ef; width: 48px; height: 48px; border-radius: 28px; display: flex; align-items: center; justify-content: center;">
                 <i class="fas fa-paper-plane" style="color: #0d6a2e; font-size: 22px;"></i>
               </div>
-              <h2 style="font-size: 1.8rem; font-weight: 700;"><span class="step-number"
-                  style="margin-right: 8px;">4</span> Send a message</h2>
+              <h2 style="font-size: 1.8rem; font-weight: 700;">Send a message</h2>
             </div>
 
             <div class="guide-code">
@@ -836,8 +832,7 @@ include ROOT_PATH . '/components/navbar.php';
                 style="background: #e9f5ef; width: 48px; height: 48px; border-radius: 28px; display: flex; align-items: center; justify-content: center;">
                 <i class="fas fa-chart-line" style="color: #0d6a2e; font-size: 22px;"></i>
               </div>
-              <h2 style="font-size: 1.8rem; font-weight: 700;"><span class="step-number"
-                  style="margin-right: 8px;">5</span> Track delivery</h2>
+              <h2 style="font-size: 1.8rem; font-weight: 700;"> Track delivery</h2>
             </div>
             <p style="color:#4a5568;">The best way is the <code>hd.message.status</code> webhook (step 7),
               which tells you as soon as the status changes. You can also ask for it directly:</p>
@@ -937,8 +932,7 @@ include ROOT_PATH . '/components/navbar.php';
                 style="background: #e9f5ef; width: 48px; height: 48px; border-radius: 28px; display: flex; align-items: center; justify-content: center;">
                 <i class="fas fa-comments" style="color: #0d6a2e; font-size: 22px;"></i>
               </div>
-              <h2 style="font-size: 1.8rem; font-weight: 700;"><span class="step-number"
-                  style="margin-right: 8px;">6</span> Read conversations and history</h2>
+              <h2 style="font-size: 1.8rem; font-weight: 700;"> Read conversations and history</h2>
             </div>
 
             <h3 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 12px;">List conversations</h3>
@@ -1043,8 +1037,7 @@ include ROOT_PATH . '/components/navbar.php';
                 style="background: #e9f5ef; width: 48px; height: 48px; border-radius: 28px; display: flex; align-items: center; justify-content: center;">
                 <i class="fas fa-bolt" style="color: #0d6a2e; font-size: 22px;"></i>
               </div>
-              <h2 style="font-size: 1.8rem; font-weight: 700;"><span class="step-number"
-                  style="margin-right: 8px;">7</span> Receive events with webhooks</h2>
+              <h2 style="font-size: 1.8rem; font-weight: 700;"> Receive events with webhooks</h2>
             </div>
 
             <p style="color:#4a5568;">A webhook is a URL on your server that HeyDoot calls with an HTTP
@@ -1682,45 +1675,60 @@ X-Quota-Reset: 2026-10-06T00:00:00+05:30</code>
                       token</strong>, separate from testing, stored in a secrets manager.
                   </span>
                 </li>
-                <li style="margin-bottom: 12px; display: flex; gap: 12px;"><i class="fas fa-check-circle"
-                    style="color: #0d6a2e;"></i> <strong>API
-                    Access</strong> is on and the plan includes API access, with quotas that fit
-                  your expected volume.</li>
-                <li style="margin-bottom: 12px; display: flex; gap: 12px;"><i class="fas fa-check-circle"
-                    style="color: #0d6a2e;"></i> The
-                  <code>number_id</code> for each line you send from is in your configuration, and the
-                  number is <code>linked</code>.
-                </li>
-                <li style="margin-bottom: 12px; display: flex; gap: 12px;"><i class="fas fa-check-circle"
-                    style="color: #0d6a2e;"></i> Every send carries a
-                  unique <code>dispatch_id</code>, plus <code>user_id</code> / <code>username</code> /
-                  <code>user_email</code> for messages a person sent.
-                </li>
-                <li style="margin-bottom: 12px; display: flex; gap: 12px;"><i class="fas fa-check-circle"
-                    style="color: #0d6a2e;"></i> You store
-                  <code>message_ref</code> and <code>conversation_id</code> against your own records.
+                <li style="margin-bottom: 12px; display: flex; gap: 12px;">
+                  <i class="fas fa-check-circle" style="color: #0d6a2e;"></i>
+                  <span>
+                    <strong>API Access</strong> is on and the plan includes API access, with quotas that fit
+                    your expected volume.
+                  </span>
                 </li>
                 <li style="margin-bottom: 12px; display: flex; gap: 12px;">
                   <i class="fas fa-check-circle" style="color: #0d6a2e;"></i>
                   <span>
-                    Your webhook endpoint
-                    is HTTPS and public, <strong>verifies the signature</strong>, rejects old
+                    The <code>number_id</code> for each line you send from is in your configuration, and the
+                    number is <code>linked</code>.
+                  </span>
+                </li>
+                <li style="margin-bottom: 12px; display: flex; gap: 12px;">
+                  <i class="fas fa-check-circle" style="color: #0d6a2e;"></i>
+                  <span>
+                    Every send carries a unique <code>dispatch_id</code>, plus <code>user_id</code> /
+                    <code>username</code> / <code>user_email</code> for messages a person sent.
+                  </span>
+                </li>
+                <li style="margin-bottom: 12px; display: flex; gap: 12px;">
+                  <i class="fas fa-check-circle" style="color: #0d6a2e;"></i>
+                  <span>
+                    You store <code>message_ref</code> and <code>conversation_id</code> against your own records.
+                  </span>
+                </li>
+                <li style="margin-bottom: 12px; display: flex; gap: 12px;">
+                  <i class="fas fa-check-circle" style="color: #0d6a2e;"></i>
+                  <span>
+                    Your webhook endpoint is HTTPS and public, <strong>verifies the signature</strong>, rejects old
                     timestamps, replies within 8 s, and removes duplicate events.
                   </span>
                 </li>
-                <li style="margin-bottom: 12px; display: flex; gap: 12px;"><i class="fas fa-check-circle"
-                    style="color: #0d6a2e;"></i> Retries use backoff,
-                  reuse the <code>dispatch_id</code>, and stop on <code>4xx</code>.
-                  <code>402 api_quota_exceeded</code> pauses until <code>resets_at</code>.
+                <li style="margin-bottom: 12px; display: flex; gap: 12px;">
+                  <i class="fas fa-check-circle" style="color: #0d6a2e;"></i>
+                  <span>
+                    Retries use backoff, reuse the <code>dispatch_id</code>, and stop on <code>4xx</code>.
+                    <code>402 api_quota_exceeded</code> pauses until <code>resets_at</code>.
+                  </span>
                 </li>
-                <li style="margin-bottom: 12px; display: flex; gap: 12px;"><i class="fas fa-check-circle"
-                    style="color: #0d6a2e;"></i> You alert on
-                  <code>hd.number.disconnected</code>, because messages can't go out until the number
-                  reconnects.
+                <li style="margin-bottom: 12px; display: flex; gap: 12px;">
+                  <i class="fas fa-check-circle" style="color: #0d6a2e;"></i>
+                  <span>
+                    You alert on <code>hd.number.disconnected</code>, because messages can't go out until the number
+                    reconnects.
+                  </span>
                 </li>
-                <li style="display: flex; gap: 12px;"><i class="fas fa-check-circle" style="color: #0d6a2e;"></i> You
-                  have a plan to rotate the token: create the new
-                  one, deploy it, then revoke the old one.</li>
+                <li style="display: flex; gap: 12px;">
+                  <i class="fas fa-check-circle" style="color: #0d6a2e;"></i>
+                  <span>
+                    You have a plan to rotate the token: create the new one, deploy it, then revoke the old one.
+                  </span>
+                </li>
               </ul>
             </div>
 
