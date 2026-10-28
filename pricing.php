@@ -55,7 +55,7 @@ include 'components/navbar.php';
 
     .popular-badge {
         position: relative;
-        top: -50px;
+        top: -24px;
         left: 50%;
         transform: translateX(-50%);
         background: var(--wa-teal);
